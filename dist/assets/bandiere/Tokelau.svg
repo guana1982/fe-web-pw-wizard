@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Tracciato_9325" data-name="Tracciato 9325" d="M.247,12.749a12,12,0,1,0,12-12,12,12,0,0,0-12,12" transform="translate(-0.247 -0.749)" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="ToKelau" transform="translate(-0.247 -0.749)">
+    <g id="Raggruppa_256" data-name="Raggruppa 256" transform="translate(0.247 0.749)" clip-path="url(#clip-path)">
+      <rect id="Rettangolo_815" data-name="Rettangolo 815" width="29.317" height="24" transform="translate(-2.658 0)" fill="#001a80"/>
+      <path id="Tracciato_9319" data-name="Tracciato 9319" d="M23.123,3.121h0L.727,2.959a.285.285,0,1,1,0-.57l22.4.161a.285.285,0,1,1,0,.57" transform="translate(1.598 15.261)" fill="#ffd200"/>
+      <path id="Tracciato_9320" data-name="Tracciato 9320" d="M.5,12.686A119.692,119.692,0,0,1,18.428,1.3c-3.132,2.443-1.571,10.827,4.143,11.57Z" transform="translate(2.203 4.62)" fill="#ffd200"/>
+      <path id="Tracciato_9321" data-name="Tracciato 9321" d="M1.192,1.279l.183.538h.56l-.452.334.172.549-.463-.344L.729,2.7l.183-.549L.45,1.818h.57Z" transform="translate(1.73 4.429)" fill="#fff"/>
+      <path id="Tracciato_9322" data-name="Tracciato 9322" d="M.88,1.6l.172.538h.57l-.452.334.172.549L.88,2.683l-.463.334L.6,2.468.137,2.134h.57Z" transform="translate(-1.32 7.523)" fill="#fff"/>
+      <path id="Tracciato_9323" data-name="Tracciato 9323" d="M1.279,2.086l.2.613h.635L1.6,3.076l.2.613-.527-.377-.517.377.194-.613L.44,2.7h.646Z" transform="translate(1.634 12.298)" fill="#fff"/>
+      <path id="Tracciato_9324" data-name="Tracciato 9324" d="M1.295,1.535l.129.409h.43l-.344.248.129.409-.344-.248L.95,2.6l.129-.409L.735,1.944h.43Z" transform="translate(4.517 6.921)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

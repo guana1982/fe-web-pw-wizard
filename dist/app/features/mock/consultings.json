@@ -1,0 +1,34 @@
+{
+    "advisoryList": [
+        {
+            "customizedName": "Aniello",
+            "holder": "Aniello",
+            "name": "Iaro",
+            "openingDate": "11-11-2022",
+            "preferred": true,
+            "productId": 5,
+            "productType": "causale",
+            "productTypeDescription": "causale"
+        },
+        {
+            "customizedName": "Aniello",
+            "holder": "Aniello",
+            "name": "Iaro",
+            "openingDate": "11-11-2022",
+            "preferred": true,
+            "productId": 5,
+            "productType": "causale",
+            "productTypeDescription": "causale"
+        },
+        {
+            "customizedName": "Aniello",
+            "holder": "Aniello",
+            "name": "Iaro",
+            "openingDate": "11-11-2022",
+            "preferred": true,
+            "productId": 5,
+            "productType": "causale",
+            "productTypeDescription": "causale"
+        }
+    ]
+}

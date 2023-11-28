@@ -1,0 +1,103 @@
+<message-handler *ngIf="userDataService.statusCommunicationService && !userDataService.hideCommunicationService"
+  [title]="userDataService.communicationService">
+</message-handler>
+
+<ng-container *ngIf="showFirstModal">
+  <pw-modal-email-identificazione-cliente (closedModal)="closeFirstModal()"
+    (closeSecondModal)="closeSecondModal()"></pw-modal-email-identificazione-cliente>
+</ng-container>
+
+<div class="box hero" *ngIf="allDataIdentifyUtente">
+  <h1 class="title">Le tue informazioni sono aggiornate?</h1>
+  <div class="sub-title-description">Ecco il riepilogo dei recapiti che hai comunicato a BPER Banca. <br>
+    Email e numero di cellulare sono necessari per ricevere le credenziali temporanee per l'accesso ai servizi digitali Smart. <br>
+    Se lo desideri, potrai modificare la tua email per Banca Cesare Ponti. Comunque, i recapiti che hai comunicato a BPER Banca non verranno modificati. <br>
+    Per ulteriori variazioni potrai rivolgerti alla tua filiale. <br>
+  </div>
+
+  <ng-container>
+    <div class="container anagrafica">
+      <h4 class="anagrafica">Anagrafica</h4>
+      <div class="row header"></div>
+      <div class="row">
+        <div class="col-4 item">
+          <span class="label">NOME E COGNOME</span>
+          <span class="value" style="text-transform: uppercase;">{{ allDataIdentifyUtente.anagrafica.nome }} {{
+            allDataIdentifyUtente.anagrafica.cognome
+            }}</span>
+        </div>
+      </div>
+      <div class="row header"></div>
+      <div class="row">
+        <div class="col-4 item">
+          <span class="label">LUOGO DI NASCITA</span>
+          <span class="value">{{ allDataIdentifyUtente.anagrafica.luogo_di_nascita }}</span>
+        </div>
+      </div>
+      <div class="row header"></div>
+      <div class="row">
+        <div class="col-4 item">
+          <span class="label">DATA DI NASCITA</span>
+          <span class="value">{{ allDataIdentifyUtente.anagrafica.data_di_nascita }}</span>
+        </div>
+      </div>
+    </div>
+  </ng-container>
+  <ng-container>
+    <div class="container contatti">
+      <div class="row header" style="
+      margin: 0px 0 38px 0;"></div>
+      <div class="row">
+        <div class="col-4 item">
+          <h4 class="contatti">Contatti</h4>
+        </div>
+      </div>
+      <div class="row header"></div>
+      <div class="row">
+        <div class="col-4 item">
+          <span class="label">N. DI CELLULARE</span>
+          <span class="value">{{ allDataIdentifyUtente.contatti.numero_di_cellulare }}</span>
+        </div>
+      </div>
+      <div class="row header"></div>
+      <!-- EMAIL -->
+      <div class="custom__email row">
+        <div class="col-4 item">
+          <span class="label">EMAIL</span>
+          <span class="value">{{ allDataIdentifyUtente.contatti.email }}</span>
+        </div>
+        <div (click)="modifyEmail()" *ngIf="!identificazioneClienteService.hideModifyEmail">
+          <span><img style="cursor: pointer;"
+              src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAAAXNSR0IArs4c6QAAAUtJREFUOI3N0z9IQlEUx/Hvef6hFBGCHCJoaKmlrYbGBsmtxaWtiGyq1fGRS23RptTaYhTRINXQXltLDS1NgYNh5SsUPQ3y9Imm9ZTojId7PvfHuVz4T7W6exgyzWuvsyduocL725GKLopSMsRYOdneOnUFrpvpQL72caWq845Uxch4YDSTSFSM32DxnXQ4X/2cVuHO2VcIvzx7QgDezqOdsYplXarIFCIxDKCmGwAicpE11wo/BhuYMgcKNXIYdVSUmZFgKG6f7bnDVsxRIq+ishDxDN1nzIRlt7sm/BYDBH3wBYcfM8km1jVhV0y48QUC0WwyUWy/aIBYR7AfrA3sF2sBB4GB45XLJesA+sMaCZdS+5NC1a9lcgoTbjGA+l+u6LKW2RM/MYEnt1gTpDarELVR4NgNBvYOVcZE9ByMW0XKZ6nNeI+5v6svLHS5HUctD0oAAAAASUVORK5CYII="
+              alt="image" iscopyblocked="false">
+          </span>
+        </div>
+      </div>
+      <!-- VERIFICA EMAIL -->
+      <div class="container__email__verify" *ngIf="(identificazioneClienteService.showVerificaEmail$ | async)">
+        <div class="email__verify">
+          <div style="display: flex;">
+            <img src="../../../../../../assets/bper-svg/Icon-40pt-Circle_Exclamation_Point.svg" style="width: 28px">
+          </div>
+
+          <div class="label__description__email__verify">
+            <span class="label__verifica">L'indirizzo email non è certificato, verificalo per proseguire</span>
+          </div>
+
+          <button class="custom__button__verifica__email" (click)="modifyEmail()">
+            <span class="label__verifica">Verifica</span>
+          </button>
+        </div>
+      </div>
+
+      <div class="row header"></div>
+      <div class="button-wrapper">
+        <button (click)="goToNextStep()" class="button__container">
+          <span>Continua</span>
+        </button>
+      </div>
+    </div>
+  </ng-container>
+
+
+</div>

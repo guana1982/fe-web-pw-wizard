@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Tracciato_2508" data-name="Tracciato 2508" d="M.632,12.749a12,12,0,1,0,12-12,12,12,0,0,0-12,12" transform="translate(-0.632 -0.749)" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Estonia" transform="translate(-0.632 -0.749)">
+    <g id="Raggruppa_48" data-name="Raggruppa 48" transform="translate(0.632 0.749)" clip-path="url(#clip-path)">
+      <rect id="Rettangolo_206" data-name="Rettangolo 206" width="37.604" height="23.925" transform="translate(-6.802 0.043)" fill="#fff"/>
+      <rect id="Rettangolo_207" data-name="Rettangolo 207" width="37.604" height="15.961" transform="translate(-6.802 0.032)"/>
+      <rect id="Rettangolo_208" data-name="Rettangolo 208" width="37.604" height="7.943" transform="translate(-6.802 0.043)" fill="#3a75c4"/>
+    </g>
+  </g>
+</svg>

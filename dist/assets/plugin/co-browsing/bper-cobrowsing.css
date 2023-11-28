@@ -1,0 +1,70 @@
+body {
+	background-color: white;
+}
+
+.btn--start-screen-share {
+	background-color: #E37222;
+	border-color: #E37222;
+	width: 400px;
+}
+
+.btn--start-screen-share:active,
+.btn--start-screen-share:focus,
+.btn--start-screen-share:hover,
+.btn--start-screen-share:focus:hover,
+.btn--start-screen-share:active:focus {
+	background-color: #B55B24;
+	border-color: #B55B24;
+	outline: none;
+}
+
+.webchat-security-key-form {
+	width: 100%;
+	padding: 0;
+	margin: 0;
+	height: 150px;
+	display: block;
+	border: none;
+}
+
+.webchat-security-key-form .start-section {
+	display: block;
+}
+
+.webchat-security-key-form .input-group {
+	display: block;
+	width: 100%;
+}
+
+.webchat-security-key-form .input-group>input {
+	display: block;
+	border-radius: 0px;
+	width: 100%;
+	margin-bottom: 40px;
+}
+
+.webchat-security-key-form .input-group-btn {
+	display: block;
+	width: 100%;
+	clear: both;
+}
+
+.webchat-security-key-form .input-group .input-group-btn>.btn {
+	border-bottom-left-radius: 6px;
+	border-top-left-radius: 6px;
+	width: 100%;
+	margin-left: 0px;
+}
+
+.webchat-security-key-form .start-section .error-section {
+	clear: both;
+	position: unset;
+	padding: 0;
+	width: 100%;
+}
+
+@media only screen and (max-width: 600px) {
+	.webchat-security-key-form .input-group>input {
+		margin-bottom: 15px;
+	}
+}

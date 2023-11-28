@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Tracciato_9316" data-name="Tracciato 9316" d="M.062,12.749a12,12,0,1,0,12-12,12,12,0,0,0-12,12" transform="translate(-0.062 -0.749)" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Timor_Est" data-name="Timor Est" transform="translate(-0.062 -0.749)">
+    <g id="Raggruppa_254" data-name="Raggruppa 254" transform="translate(0.062 0.749)" clip-path="url(#clip-path)">
+      <rect id="Rettangolo_808" data-name="Rettangolo 808" width="48" height="24" transform="translate(-0.667 0)" fill="#dc2415"/>
+      <path id="Tracciato_9313" data-name="Tracciato 9313" d="M0,.749l24,12-24,12Z" transform="translate(-0.667 -0.745)" fill="#ffc71f"/>
+      <path id="Tracciato_9314" data-name="Tracciato 9314" d="M0,.749l15.95,12L0,24.749Z" transform="translate(-0.667 -0.745)"/>
+      <path id="Tracciato_9315" data-name="Tracciato 9315" d="M2.269,1.518,4.5,3.606l2.68-1.474L5.875,4.9,8.1,6.985,5.067,6.6,3.776,9.364,3.195,6.372.171,5.984,2.84,4.51Z" transform="translate(0.998 6.756)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

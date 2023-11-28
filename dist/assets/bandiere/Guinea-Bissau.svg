@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="23.989" viewBox="0 0 24 23.989">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Tracciato_2951" data-name="Tracciato 2951" d="M.293,12.744A12,12,0,1,0,12.288.749,12,12,0,0,0,.293,12.744" transform="translate(-0.293 -0.749)" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Guinea-Bissau" transform="translate(-0.293 -0.749)">
+    <g id="Raggruppa_69" data-name="Raggruppa 69" transform="translate(0.293 0.749)" clip-path="url(#clip-path)">
+      <rect id="Rettangolo_288" data-name="Rettangolo 288" width="48.377" height="24.194" transform="translate(-3.152 -0.097)" fill="#ce1126"/>
+      <rect id="Rettangolo_289" data-name="Rettangolo 289" width="32.208" height="24.194" transform="translate(13.017 -0.097)" fill="#fcd111"/>
+      <rect id="Rettangolo_290" data-name="Rettangolo 290" width="32.208" height="12.091" transform="translate(13.017 12.005)" fill="#009e42"/>
+      <path id="Tracciato_2950" data-name="Tracciato 2950" d="M4.145,1.5,5.027,4.21H7.878L5.565,5.888,6.458,8.61,4.145,6.932,1.832,8.61l.882-2.722L.4,4.21H3.263Z" transform="translate(0.763 6.572)"/>
+    </g>
+  </g>
+</svg>

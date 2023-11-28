@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="233.347" height="231.011" viewBox="0 0 233.347 231.011">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#29696f"/>
+      <stop offset="1" stop-color="#183f42"/>
+    </linearGradient>
+    <filter id="Rettangolo_545" x="41.498" y="0" width="191.849" height="231.011" filterUnits="userSpaceOnUse">
+      <feOffset dy="16" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="12" result="blur"/>
+      <feFlood flood-opacity="0.322"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <linearGradient id="linear-gradient-2" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#51bd8e"/>
+      <stop offset="1" stop-color="#45ae64"/>
+    </linearGradient>
+  </defs>
+  <g id="Raggruppa_29701" data-name="Raggruppa 29701" transform="translate(-351.001 -270.999)">
+    <path id="Squircle" d="M-6.163,203.706a16,16,0,0,1-16-16V21.15C24.663-4.722,110.936.5,137.865,36.815,164.124,67.787,171.21,146.8,159.122,203.706Z" transform="translate(373.164 296.293)" fill="#dff5ec"/>
+    <g id="Raggruppa_29690" data-name="Raggruppa 29690" transform="translate(26 -116)">
+      <g id="Raggruppa_29031" data-name="Raggruppa 29031" transform="matrix(0.966, -0.259, 0.259, 0.966, -121.002, 227.165)">
+        <g id="Raggruppa_29026" data-name="Raggruppa 29026" transform="translate(3775.348 -1342.264)">
+          <g transform="matrix(0.97, 0.26, -0.26, 0.97, -3385.91, 1612.09)" filter="url(#Rettangolo_545)">
+            <rect id="Rettangolo_545-2" data-name="Rettangolo 545" width="86.152" height="141.536" rx="4" transform="matrix(0.97, -0.26, 0.26, 0.97, 77.5, 42.3)" fill="url(#linear-gradient)"/>
+          </g>
+          <rect id="Rettangolo_546" data-name="Rettangolo 546" width="69.742" height="108.716" rx="2" transform="translate(-3313.795 1681.205)" fill="#63a1a4"/>
+          <circle id="Ellisse_157" data-name="Ellisse 157" cx="6.154" cy="6.154" r="6.154" transform="translate(-3285.077 1796.075)" fill="#fff"/>
+        </g>
+        <rect id="Rettangolo_11877" data-name="Rettangolo 11877" width="57" height="12" rx="4" transform="translate(468 430)" fill="#b0cfd1"/>
+        <rect id="Rettangolo_11878" data-name="Rettangolo 11878" width="57" height="4" transform="translate(468 358)" fill="#b0cfd1"/>
+        <rect id="Rettangolo_11879" data-name="Rettangolo 11879" width="44" height="4" transform="translate(468 367)" fill="#b0cfd1"/>
+        <rect id="Rettangolo_11880" data-name="Rettangolo 11880" width="57" height="4" transform="translate(468 380)" fill="#b0cfd1"/>
+        <rect id="Rettangolo_11881" data-name="Rettangolo 11881" width="35" height="4" transform="translate(468 389)" fill="#b0cfd1"/>
+      </g>
+      <g id="Raggruppa_29032" data-name="Raggruppa 29032" transform="translate(-29 109)">
+        <circle id="Ellisse_1282" data-name="Ellisse 1282" cx="11" cy="11" r="11" transform="translate(505 298)" fill="url(#linear-gradient-2)"/>
+        <path id="Tracciato_86447" data-name="Tracciato 86447" d="M2.577-.386H4.8V-9.258H2.577L.359-8.149v2.218L2.577-7.04Z" transform="translate(512.404 313.731)" fill="#fff"/>
+      </g>
+    </g>
+  </g>
+</svg>

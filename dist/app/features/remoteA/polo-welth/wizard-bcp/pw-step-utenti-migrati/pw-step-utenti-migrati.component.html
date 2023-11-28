@@ -1,0 +1,20 @@
+<span class="box-title">{{nomeUtente}}, siamo felici di rivederti</span>
+
+
+<div class="box hero">
+    <img src="../../../../../../assets/bper-svg/Icon-40pt-Circle_Exclamation_Point.svg" alt="Success">
+
+    <div class="sub-title">
+        Hai già completato il tuo passaggio a Banca Cesare Ponti
+    </div>
+
+    <div class="description">
+        Continua per inserire le credenziali provvisorie ed effettuare il primo accesso.
+    </div>
+
+    <div class="button-wrapper">
+        <bper-button button-type="button" order="primary" [label]="'Continua'"
+            (clickBtn)="goToNextStep()">
+        </bper-button>
+    </div>
+</div>

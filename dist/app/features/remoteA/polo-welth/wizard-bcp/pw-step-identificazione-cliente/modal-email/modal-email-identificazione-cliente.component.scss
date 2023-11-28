@@ -1,0 +1,127 @@
+@import "src/scss/variables";
+
+.modal-container {
+    padding: 40px;
+    .modal-header {
+        display: flex;
+        justify-content: space-between;
+        h2 {
+            font-size: 1.5em;
+        }
+        i {
+            font-size: 2em;
+            cursor: pointer;
+        }
+    }
+    p {
+        font-size: 1.4em;
+    }
+}
+
+.container__email__label {
+    margin-top: 2rem;
+}
+
+.modal-header {
+    display: none !important;
+}
+
+.description {
+    display: flex;
+    justify-content: center;
+    color: map-get($bper-palette, neutral, --neutral-300);
+}
+
+.icon__container {
+    justify-content: end;
+    display: flex;
+    position: absolute;
+    top: 20px;
+    right: 29px;
+    color: map-get($bper-palette, primary, --primary-500);
+}
+
+.icon:hover {
+    cursor: pointer;
+}
+
+.email-label {
+    margin-bottom: -20px;
+    margin-top: 30px;
+    font-weight: bold;
+    color: map-get($bper-palette, primary, --primary-500);
+}
+
+.container-button {
+    display: flex;
+    justify-content: space-between;
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    font-size: 20px;
+    margin-top: 3px;
+    font-weight: bold;
+    color: map-get($bper-palette, primary, --primary-500);
+}
+
+.description__identificazione {
+    color: map-get($bper-palette, neutral, --neutral-300);
+}
+
+.master__container {
+    background: rgba(0, 0, 0, 0.32);
+    display: flex;
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    top: 0;
+}
+
+.container__modal__email {
+    padding: 28px 28px 20px 28px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    height: 408px;
+    width: 510px;
+}
+
+.item {
+    position: fixed;
+    background: white;
+    // padding: 27px;
+    border-radius: 17px;
+}
+
+.item__convalida {
+    padding: 3px 27px 27px 27px;
+}
+
+// MOBILE
+@media screen and (max-width: $bp-mobile) {
+    .container-button {
+        flex-wrap: wrap;
+    }
+
+    bper-button:first-child {
+        margin-bottom: 20px;
+    }
+
+    .item {
+        width: 95%;
+    }
+
+    .container__modal__email {
+        padding: 15px;
+        justify-content: initial;
+        height: auto;
+        width: auto;
+    }
+}

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Tracciato_187" data-name="Tracciato 187" d="M1.111,12.749a12,12,0,1,0,12-12,12,12,0,0,0-12,12" transform="translate(-1.111 -0.749)" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Azerbaijan" transform="translate(-1.111 -0.749)">
+    <g id="Raggruppa_10" data-name="Raggruppa 10" transform="translate(1.111 0.749)" clip-path="url(#clip-path)">
+      <rect id="Rettangolo_23" data-name="Rettangolo 23" width="47.914" height="23.957" transform="translate(-11.957 0.022)" fill="#0d92c7"/>
+      <rect id="Rettangolo_24" data-name="Rettangolo 24" width="47.914" height="15.95" transform="translate(-11.957 8.029)" fill="#ea0937"/>
+      <rect id="Rettangolo_25" data-name="Rettangolo 25" width="47.914" height="7.964" transform="translate(-11.957 16.014)" fill="#00ae57"/>
+      <g id="Raggruppa_14" data-name="Raggruppa 14" transform="translate(0.94)">
+        <path id="Tracciato_185" data-name="Tracciato 185" d="M5.889,7.636a2.75,2.75,0,0,1,0-5.5,2.676,2.676,0,0,1,1.9.8A3.33,3.33,0,0,0,1.767,4.881,3.335,3.335,0,0,0,7.794,6.85a2.712,2.712,0,0,1-1.9.786" transform="translate(5.293 7.119)" fill="#fff"/>
+        <path id="Tracciato_186" data-name="Tracciato 186" d="M4.024,1.7l-.323.9L2.754,2.2l.42.9-.947.334.893.323-.334.9.861-.4.377.883.366-.85.839.387-.377-.893.893-.366-.893-.334.366-.9-.85.42Z" transform="translate(9.776 8.566)" fill="#fff"/>
+      </g>
+    </g>
+  </g>
+</svg>

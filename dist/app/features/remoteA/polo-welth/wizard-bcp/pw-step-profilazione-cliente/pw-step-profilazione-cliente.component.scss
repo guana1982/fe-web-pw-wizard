@@ -1,0 +1,197 @@
+@import "src/scss/variables";
+
+h1 {
+  font-size: 24px;
+  margin-top: 32px;
+  color: map-get($bper-palette, primary, --primary-600);
+}
+
+.head,
+.footer {
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+
+.profilo,
+.rapporti {
+  display: flex;
+  flex-direction: column;
+  font-size: 18px;
+  font-family: "Kievit Pro Medium", sans-serif;
+  color: map-get($bper-palette, primary, --primary-500);
+}
+
+.double__item {
+  align-items: end;
+}
+
+div.box {
+  &.hero {
+    display: flex;
+    min-height: 392px;
+    padding: 20px;
+    position: relative;
+    background: #ffffff;
+    border-radius: 24px;
+    width: 480px;
+    flex-direction: column;
+    justify-content: center;
+
+    .container {
+      width: 100%; /* Occupa l'intera larghezza */
+      display: block; /* Imposta il display a blocco per le sezioni impilate */
+
+      .anagrafica {
+        color: map-get($bper-palette, primary, --primary-500) !important;
+        font-weight: bold;
+      }
+
+      .rows {
+        margin: 24px 0;
+        align-items: center;
+        display: flex;
+        justify-content: space-between;
+
+        &.profilo {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+        }
+
+        &.header {
+          margin-top: 15px;
+          display: flex;
+          justify-content: space-between;
+          border-bottom: 1px solid map-get($bper-palette, neutral, --neutral-50);
+
+          bper-button button.mat-icon-button i::before {
+            color: map-get($bper-palette, secondary, --secondary-90) !important;
+          }
+        }
+
+        .mappa {
+          margin-top: 10px;
+        }
+
+        .item {
+          display: flex;
+          flex-direction: column;
+
+          .document-status {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            .bper-ic-24px-i-informativa {
+              color: map-get($bper-palette, accent, --accent-90);
+            }
+          }
+
+          .label {
+            font-size: 15px;
+            margin-bottom: 10px;
+            color: map-get($bper-palette, primary, --primary-300);
+            text-transform: uppercase;
+          }
+
+          .value {
+            color: map-get($bper-palette, primary, --primary-500);
+            font-weight: bold;
+          }
+
+          .top-label {
+            font-size: 14px;
+            font-family: "Kievit Pro Medium";
+            color: map-get($bper-palette, neutral, --neutral-300);
+          }
+
+          .domicilio {
+            margin-top: 8px;
+          }
+
+          bper-button {
+            display: block;
+          }
+        }
+
+        bper-button.modifica {
+          margin-bottom: 10px;
+        }
+      }
+    }
+
+    .title {
+      font-size: 20px;
+      color: map-get($bper-palette, primary, --primary-500);
+      font-weight: bold;
+      padding-bottom: 25px;
+      display: flex;
+      justify-content: left;
+    }
+    .sub-title-description {
+      font-size: 16px;
+      color: map-get($bper-palette, neutral, --neutral-300);
+      padding-bottom: 25px;
+      display: flex;
+      justify-content: left;
+    }
+
+    .description__footer {
+      color: map-get($bper-palette, neutral, --neutral-300);
+    }
+
+    .footer-description {
+      font-size: 14px;
+      color: map-get($bper-palette, neutral, --neutral-300);
+      padding-bottom: 25px;
+      display: flex;
+      justify-content: left;
+    }
+
+    div[content] {
+      font-size: 14px;
+      color: #005157;
+      line-height: 150%;
+      padding-bottom: 40px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .button-wrapper {
+      display: flex;
+      justify-content: center;
+      margin-top: 50px;
+    }
+  }
+}
+
+.grid__custom {
+  grid-template-columns: repeat(12, 46px) !important;
+  column-gap: 32px !important;
+}
+
+.container__info {
+  display: flex;
+  align-items: center;
+  margin-top: 0.8rem;
+}
+
+// MOBILE
+@media screen and (max-width: $bp-mobile) {
+  div.box.hero {
+    width: 95%;
+    margin: 0 auto;
+    padding: 10px 15px;
+  }
+
+  .double__item {
+    align-items: initial;
+  }
+
+  .grid__custom {
+    grid-template-columns: initial !important;
+    column-gap: initial !important;
+  }
+}

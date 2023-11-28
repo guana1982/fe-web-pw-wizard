@@ -1,0 +1,111 @@
+@import "src/scss/variables";
+
+div.box {
+    &.hero {
+        width: 500px;
+        display: flex;
+        min-height: 392px;
+        padding: 20px 20px;
+        position: relative;
+        background: #ffffff;
+        border-radius: 24px;
+        flex-direction: column;
+        justify-content: center;
+
+        .title {
+            font-size: 20px;
+            color: map-get($bper-palette, primary, --primary-500);
+            font-weight: bold;
+            padding-bottom: 0;
+            display: flex;
+            justify-content: left;
+        }
+        .sub-title-description {
+            font-size: 16px;
+            color: map-get($bper-palette, primary, --primary-500);
+            padding-bottom: 3rem;
+            display: flex;
+            justify-content: left;
+        }
+
+        div[content] {
+            font-size: 14px;
+            color: #005157;
+            line-height: 150%;
+            padding-bottom: 40px;
+
+            display: flex;
+            justify-content: center;
+        }
+        .button-wrapper {
+            display: flex;
+            justify-content: center;
+            margin-top: 120px; /* Regola il margine superiore per posizionare il pulsante al posto giusto */
+        }
+    }
+
+    .codiceSMSText {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 1rem;
+    }
+
+    .container-new-code {
+        text-align: center;
+        margin-top: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .receive-new-code-link-sms {
+        margin-right: 10px;
+        color: map-get($bper-palette, warning, --warning-70) !important;
+        cursor: pointer;
+    }
+}
+
+::ng-deep bper-input-pincode div form {
+    width: 415px !important;
+    background: transparent !important;
+    border: 0 !important;
+    justify-content: space-between !important;
+
+    & div div input {
+        width: 40px !important;
+        background-color: transparent !important;
+    }
+}
+
+::ng-deep bper-input-pincode div div mat-error span {
+    margin: initial !important; 
+    width: auto !important;
+}
+
+::ng-deep .otpBorderRed {
+    & bper-input-pincode div form div div input {
+        border-bottom: 2px solid map-get($bper-palette, error, --error-300) !important;
+    }
+}
+
+// TABLET
+@media screen and (max-width: $bp-tablet) {
+    ::ng-deep bper-input-pincode div form {
+        width: 340px !important;
+    }
+}
+
+// MOBILE
+@media screen and (max-width: $bp-mobile) {
+    ::ng-deep bper-input-pincode div form {
+        width: 276px !important;
+        & div div input {
+            width: 31px !important;
+        }
+    }    
+    div.box.hero {
+        width: 95%;
+        margin: 0 auto;
+        padding: 20px 10px;
+    }
+}

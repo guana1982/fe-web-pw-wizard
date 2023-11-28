@@ -1,0 +1,43 @@
+<bper-modal modal-title="Come riceverai le comunicazioni periodiche" [enableFadeOverlay]="false"
+    *ngIf="data.allScopriDiPiu">
+    <div class="box hero">
+        <div>
+            <span class="sub-title-description">
+                Ecco le modalità di invio delle comunicazioni periodiche relative ai rapporti in essere collegati alla
+                tua nuova utenza Banca Cesare Ponti.
+            </span>
+        </div>
+
+        <div class="master__container">
+            <div style="margin-bottom: 8px;" *ngFor="let rapporto of data.allScopriDiPiu; let i = index">
+                <div class="container__items" [class.green]="i % 2 === 0">
+                    <div class="item">
+                        <span class="description__item">{{rapporto.nome}}</span> <span
+                            class="label__item">&nbsp;&nbsp;{{rapporto.value}}</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container__email__verify">
+            <div class="email__verify">
+                <div style="display: flex;">
+                    <img src="../../../../../../assets/bper-svg/Icon-40pt-Circle_Exclamation_Point.svg"
+                        style="width: 28px">
+                </div>
+
+                <div class="label__description__email__verify">
+                    <span class="label__verifica">Se desideri modificare la modalità di invio, puoi rivolgerti ai
+                        consulenti online o alla tua filiale.</span>
+                </div>
+            </div>
+        </div>
+
+        
+    </div>
+    <div footer >
+        <button (click)="closeModal()" class="button__container">
+            <span>Ok, ho capito</span>
+        </button>
+    </div>
+</bper-modal>

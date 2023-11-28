@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Tracciato_189" data-name="Tracciato 189" d="M.547,12.749a12,12,0,1,0,12-12,12,12,0,0,0-12,12" transform="translate(-0.547 -0.749)" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Bahamas" transform="translate(-0.547 -0.749)">
+    <g id="Raggruppa_11" data-name="Raggruppa 11" transform="translate(0.547 0.749)" clip-path="url(#clip-path)">
+      <rect id="Rettangolo_26" data-name="Rettangolo 26" width="47.882" height="23.935" transform="translate(-5.887 0.043)" fill="#00abdb"/>
+      <rect id="Rettangolo_27" data-name="Rettangolo 27" width="47.882" height="7.932" transform="translate(-5.887 8.039)" fill="#fae036"/>
+      <path id="Tracciato_188" data-name="Tracciato 188" d="M0,24.688V.753L20.642,12.72Z" transform="translate(-5.887 -0.715)"/>
+    </g>
+  </g>
+</svg>

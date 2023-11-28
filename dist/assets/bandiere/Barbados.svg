@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24.011" viewBox="0 0 24 24.011">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Tracciato_193" data-name="Tracciato 193" d="M.523,12.752A12,12,0,1,0,12.518.747,11.993,11.993,0,0,0,.523,12.752" transform="translate(-0.523 -0.747)" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Barbados" transform="translate(-0.523 -0.747)">
+    <g id="Raggruppa_13" data-name="Raggruppa 13" transform="translate(0.523 0.747)" clip-path="url(#clip-path)">
+      <rect id="Rettangolo_29" data-name="Rettangolo 29" width="35.262" height="24.506" transform="translate(-5.631 -0.248)" fill="#002696"/>
+      <rect id="Rettangolo_30" data-name="Rettangolo 30" width="12.318" height="24.506" transform="translate(5.841 -0.248)" fill="#ffc717"/>
+      <path id="Tracciato_192" data-name="Tracciato 192" d="M11.639,3.039A4.705,4.705,0,0,0,9.345,4.072c-.2.172-.2.269-.022.215.269-.075.334-.075.269.022-.6.926-1.034,3.855-1.141,4.565a.147.147,0,0,1-.162.14L7.074,8.821V4.4H8.15a6.7,6.7,0,0,1-1.68-3.079A6.5,6.5,0,0,1,4.769,4.4H5.857V8.821l-1.206.194a.155.155,0,0,1-.183-.14c-.108-.711-.517-3.639-1.131-4.565-.075-.1,0-.1.269-.022.194.054.194-.043-.022-.215a4.767,4.767,0,0,0-2.3-1.034c-.054-.011-.065.032-.032.075a13.577,13.577,0,0,1,2.358,7.042.1.1,0,0,0,.118.118,19.086,19.086,0,0,1,2.132-.291v3.187H7.074V9.984a18.733,18.733,0,0,1,2.121.291.111.111,0,0,0,.129-.118,13.478,13.478,0,0,1,2.358-7.042c.032-.043.011-.086-.043-.075" transform="translate(5.54 4.811)"/>
+    </g>
+  </g>
+</svg>

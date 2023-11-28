@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24.011" viewBox="0 0 24 24.011">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Tracciato_7047" data-name="Tracciato 7047" d="M.558,12.754A12,12,0,1,0,12.563.749,12,12,0,0,0,.558,12.754" transform="translate(-0.558 -0.749)" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Repubblica_del_Congo" data-name="Repubblica del Congo" transform="translate(-0.558 -0.749)">
+    <g id="Raggruppa_216" data-name="Raggruppa 216" transform="translate(0.558 0.749)" clip-path="url(#clip-path)">
+      <rect id="Rettangolo_535" data-name="Rettangolo 535" width="36.016" height="24.011" transform="translate(-6.008 0)" fill="#00954b"/>
+      <path id="Tracciato_7045" data-name="Tracciato 7045" d="M25.146,24.76H1.113L25.146.749Z" transform="translate(4.866 -0.745)" fill="#dc2422"/>
+      <path id="Tracciato_7046" data-name="Tracciato 7046" d="M0,24.76,24.022.749H36.016L12.027,24.76Z" transform="translate(-6.008 -0.745)" fill="#fbde43"/>
+    </g>
+  </g>
+</svg>

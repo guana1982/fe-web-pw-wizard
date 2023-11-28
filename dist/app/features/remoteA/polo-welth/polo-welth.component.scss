@@ -1,0 +1,14 @@
+@import "src/scss/variables";
+
+[console] {
+    margin: 42px 0 64px;
+}
+
+.items {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 160px;
+}

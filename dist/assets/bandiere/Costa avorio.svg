@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="23.989" viewBox="0 0 24 23.989">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Tracciato_10854" data-name="Tracciato 10854" d="M.554,12.744A12,12,0,1,0,12.549.749,11.992,11.992,0,0,0,.554,12.744" transform="translate(-0.554 -0.749)" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Costa_d_avorio" data-name="Costa d&apos;avorio" transform="translate(-0.554 -0.749)">
+    <g id="Raggruppa_293" data-name="Raggruppa 293" transform="translate(0.554 0.749)" clip-path="url(#clip-path)">
+      <rect id="Rettangolo_920" data-name="Rettangolo 920" width="35.909" height="23.935" transform="translate(-5.96 0.032)" fill="#f77f0d"/>
+      <rect id="Rettangolo_921" data-name="Rettangolo 921" width="23.925" height="23.935" transform="translate(6.024 0.032)" fill="#fff"/>
+      <rect id="Rettangolo_922" data-name="Rettangolo 922" width="11.93" height="23.935" transform="translate(18.019 0.032)" fill="#009e59"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Tracciato_9049" data-name="Tracciato 9049" d="M.316,12.749a12,12,0,1,0,12-12,12,12,0,0,0-12,12" transform="translate(-0.316 -0.749)" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Taiwan" transform="translate(-0.316 -0.749)">
+    <g id="Raggruppa_249" data-name="Raggruppa 249" transform="translate(0.316 0.749)" clip-path="url(#clip-path)">
+      <rect id="Rettangolo_793" data-name="Rettangolo 793" width="35.774" height="23.849" transform="translate(-3.401 0.075)" fill="#fe000a"/>
+      <rect id="Rettangolo_794" data-name="Rettangolo 794" width="17.887" height="11.925" transform="translate(-3.401 0.075)" fill="#00009c"/>
+      <path id="Tracciato_9036" data-name="Tracciato 9036" d="M5.1,3.341A2.239,2.239,0,1,1,2.862,1.1,2.237,2.237,0,0,1,5.1,3.341" transform="translate(2.681 2.697)" fill="#fff"/>
+      <path id="Tracciato_9037" data-name="Tracciato 9037" d="M1.319,2.8a2.826,2.826,0,0,1,.527.054L1.319.9.781,2.858A2.942,2.942,0,0,1,1.319,2.8" transform="translate(4.223 0.715)" fill="#fff"/>
+      <path id="Tracciato_9038" data-name="Tracciato 9038" d="M2.067,2.385.625.954l.517,1.959a2.558,2.558,0,0,1,.926-.527" transform="translate(2.701 1.252)" fill="#fff"/>
+      <path id="Tracciato_9039" data-name="Tracciato 9039" d="M2.434,1.622.475,1.105,1.906,2.536a2.428,2.428,0,0,1,.527-.915" transform="translate(1.236 2.726)" fill="#fff"/>
+      <path id="Tracciato_9040" data-name="Tracciato 9040" d="M1.532,2.546,2.964,1.1l-1.959.517a2.558,2.558,0,0,1,.527.926" transform="translate(6.41 2.717)" fill="#fff"/>
+      <path id="Tracciato_9041" data-name="Tracciato 9041" d="M1.818,2.914,2.334.955.9,2.386a2.514,2.514,0,0,1,.915.527" transform="translate(5.414 1.262)" fill="#fff"/>
+      <path id="Tracciato_9042" data-name="Tracciato 9042" d="M3.019,1.8,1.06,1.26a2.943,2.943,0,0,1,.054.538,2.826,2.826,0,0,1-.054.527Z" transform="translate(6.947 4.24)" fill="#fff"/>
+      <path id="Tracciato_9043" data-name="Tracciato 9043" d="M.9,2.011,2.345,3.443,1.829,1.484A2.558,2.558,0,0,1,.9,2.011" transform="translate(5.414 6.426)" fill="#fff"/>
+      <path id="Tracciato_9044" data-name="Tracciato 9044" d="M1.005,2.308l1.948.517L1.522,1.382a2.7,2.7,0,0,1-.517.926" transform="translate(6.41 5.431)" fill="#fff"/>
+      <path id="Tracciato_9045" data-name="Tracciato 9045" d="M1.309,1.594A2.826,2.826,0,0,1,.782,1.54L1.309,3.5,1.837,1.54a2.826,2.826,0,0,1-.527.054" transform="translate(4.233 6.973)" fill="#fff"/>
+      <path id="Tracciato_9046" data-name="Tracciato 9046" d="M1.906,1.382.475,2.824,2.434,2.3a2.428,2.428,0,0,1-.527-.915" transform="translate(1.236 5.431)" fill="#fff"/>
+      <path id="Tracciato_9047" data-name="Tracciato 9047" d="M1.143,1.484.626,3.443,2.057,2.011a2.428,2.428,0,0,1-.915-.527" transform="translate(2.71 6.426)" fill="#fff"/>
+      <path id="Tracciato_9048" data-name="Tracciato 9048" d="M2.324,1.788a2.826,2.826,0,0,1,.054-.527L.419,1.788l1.959.538a2.943,2.943,0,0,1-.054-.538" transform="translate(0.69 4.249)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="74" height="63" viewBox="0 0 74 63">
+    <defs>
+        <filter id="ymrnspy1ia" width="114.8%" height="119.9%" x="-8.9%" y="-7.2%" filterUnits="objectBoundingBox">
+            <feMorphology in="SourceAlpha" operator="dilate" radius="1.9" result="shadowSpreadOuter1"/>
+            <feOffset dx="-1" dy="2" in="shadowSpreadOuter1" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="1"/>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"/>
+            <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.243034309 0"/>
+        </filter>
+        <rect id="vogk5m6fxb" width="66.4" height="54.4" x="0" y="0" rx="2.4"/>
+    </defs>
+    <g fill="none" fill-rule="evenodd">
+        <g>
+            <g>
+                <g transform="translate(-58 -1031) translate(63 1034)">
+                    <use fill="#000" filter="url(#ymrnspy1ia)" xlink:href="#vogk5m6fxb"/>
+                    <rect width="68.8" height="56.8" x="-1.2" y="-1.2" fill="#8BCDB5" stroke="#FFF" stroke-width="2.4" rx="2.4"/>
+                </g>
+                <g fill="#FFF" fill-rule="nonzero">
+                    <g>
+                        <path d="M20.489 8.08c1.028.005 1.942-.7 2.26-1.742.318-1.042-.034-2.184-.869-2.824-.835-.64-1.962-.631-2.789.021-.826.653-1.162 1.8-.83 2.838l-4.73 2.926c-.563-.94-1.642-1.371-2.646-1.056C9.88 8.56 9.194 9.544 9.2 10.66c.006 1.115.705 2.092 1.712 2.394 1.008.303 2.082-.141 2.634-1.09l4.73 2.943c-.392 1.228.154 2.572 1.262 3.108 1.108.535 2.417.087 3.025-1.036.608-1.123.317-2.555-.673-3.309s-2.355-.585-3.156.392l-4.867-3.008c.046-.274.046-.555 0-.829l4.852-3.007c.445.546 1.09.86 1.77.861z" transform="translate(-58 -1031) translate(63 1034) translate(17.6 13.6)"/>
+                        <g>
+                            <path d="M29.64 21.28H2.28C1.02 21.28 0 20.26 0 19V2.28C0 1.02 1.02 0 2.28 0H7.6v1.52H2.28c-.42 0-.76.34-.76.76V19c0 .42.34.76.76.76h27.36c.42 0 .76-.34.76-.76V2.28c0-.42-.34-.76-.76-.76H7.6V0h22.04c1.26 0 2.28 1.02 2.28 2.28V19c0 1.26-1.02 2.28-2.28 2.28z" transform="translate(-58 -1031) translate(63 1034) translate(17.6 13.6)"/>
+                            <path d="M19 27.36h-6.08c-.42 0-.76-.34-.76-.76v-6.08c0-.42.34-.76.76-.76H19c.42 0 .76.34.76.76v6.08c0 .42-.34.76-.76.76zm-5.32-1.52h4.56v-4.56h-4.56v4.56z" transform="translate(-58 -1031) translate(63 1034) translate(17.6 13.6)"/>
+                            <path d="M9.12 25.84H22.799999999999997V27.36H9.12z" transform="translate(-58 -1031) translate(63 1034) translate(17.6 13.6)"/>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

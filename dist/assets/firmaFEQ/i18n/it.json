@@ -1,0 +1,106 @@
+{
+	"bper": {
+		"firma-conferma-punti": {
+			"body": {
+				"afterStrongText": "visione della documentazione e di voler apporre la firma su tutti i punti firma.",
+				"beforeStrongText": "Proseguendo ",
+				"strongText": "confermi di aver preso "
+			},
+			"buttonNext": "Conferma",
+			"buttonPrevious": "Indietro",
+			"title": "2/4 Firma documento"
+		},
+		"firma-documentazione": {
+			"buttonClose": "Esci",
+			"buttonNext": "Firma",
+			"buttonPrevious": "Indietro",
+			"downloadPdf": "Scarica PDF",
+			"title": "1/4 Firma documento"
+		},
+		"firma-elaborazione": {
+			"subtitle": {
+				"done": "Procedi per autorizzare l'operazione.",
+				"loading": "Attendi qualche istante"
+			},
+			"title": {
+				"done": "Documentazione firmata correttamente",
+				"loading": "Stiamo elaborando la documentazione"
+			}
+		},
+		"firma-emissione-certificato": {
+			"body": {
+				"checked": {
+					"checkbox-text": "Ho preso visione dell'informativa privacy prevista al QUADRO G e autorizzo INIZIATIVE TELEMATICHE PER I SERVIZI APPLICATIVI al trattamento dei dati personali",
+					"text": "Richiesta emissione certificato di firma"
+				},
+				"not-checked": {
+					"checkbox-text": "Ho preso visione dell'informativa privacy prevista al QUADRO G e autorizzo INIZIATIVE TELEMATICHE PER I SERVIZI APPLICATIVI al trattamento dei dati personali",
+					"text": "Richiesta emissione certificato di firma"
+				}
+			},
+			"buttonNext": "Continua",
+			"buttonPrevious": "Indietro",
+			"subtitle": {
+				"first": "Fornisci i consensi per proseguire con la firma dei documenti",
+				"second": "Per completare la tua richiesta, devi accettare e firmare i seguenti documenti."
+			},
+			"title": "3/4 Firma documento",
+			"view": "Visualizza"
+		},
+		"firma-error": {
+			"button-text": "Ok, ho capito",
+			"subtitle": "Ti chiediamo di riprovare",
+			"title": "Questo servizio tornerà attivo il prima possibile."
+		},
+		"firma-inserimento-otp": {
+			"buttonNext": "Continua",
+			"buttonPrevious": "Indietro",
+			"codice-verifica": {
+				"active": "Inserisci il codice a 6 cifre ricevuto via SMS",
+				"expired": "Il codice inserito non è più valido. Richiedine uno nuovo",
+				"not-timer": {
+					"first": "Il tuo codice è scaduto",
+					"second": "Richiedi un nuovo codice da SMS"
+				},
+				"retry": "Il codice inserito non è corretto. Ti chiediamo di riprovare",
+				"timer": {
+					"first": {
+						"afterStrongText": "minuti",
+						"beforeStrongText": "Il tuo codice di verifica scade tra ",
+						"strongText": "{{ minutes }}:{{ seconds }} "
+					},
+					"second": "Richiedi un nuovo codice da SMS"
+				}
+			},
+			"subtitle": {
+				"first": "Inserisci il codice inviato via SMS",
+				"second": {
+					"afterStrongText": "con un codice di verifica al tuo numero di cellulare certificato.",
+					"beforeStrongText": "Per firmare il documento abbiamo inviato un ",
+					"strongText": "SMS "
+				},
+				"third": {
+					"afterStrongText": ".",
+					"beforeStrongText": "Riferimento transazione: "
+				}
+			},
+			"title": "4/4 Firma documento"
+		},
+		"firma-richiesta-certificato": {
+			"buttonNext": "Continua",
+			"buttonPrevious": "Indietro",
+			"downloadPdf": "Scarica documenti",
+			"text": {
+				"afterButton": " per le procedure di firma remota nell'ambito dei servizi BPER e confermo la volontà di richiedere l'emissione di un certificato qualificato di firma elettronica erogato dal QTSP INIZIATIVE TELEMATICHE PER I SERVIZI APPLICATIVI e disciplinato dal presente Modulo, dal Manuale Operativo e dalla normativa applicabile.",
+				"beforeButton": "Cliccando il tasto Continua dichiaro di aver preso visione del ",
+				"button": "Manuale Operativo"
+			},
+			"title": "Modulo di richiesta certificato"
+		},
+		"firma-tutorial": {
+			"body": "Per firmare la documentazione prendi visione del documento e inserisci il codice che ti invieremo via SMS sul tuo numero di telefono certificato",
+			"buttonNext": "Continua",
+			"title": "Un nuovo modo semplice e veloce per firmare i tuoi documenti online"
+		}
+	}
+}

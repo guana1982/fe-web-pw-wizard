@@ -1,0 +1,143 @@
+@import "src/scss/variables";
+
+.title {
+    font-size: 20px;
+    color: map-get($bper-palette, primary, --primary-500);
+    font-weight: bold;
+    padding-bottom: 0;
+    display: flex;
+    justify-content: left;
+}
+.sub-title-description {
+    font-size: 16px;
+    color: map-get($bper-palette, neutral, --neutral-300);
+    padding-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+}
+
+div[content] {
+    font-size: 14px;
+    color: map-get($bper-palette, primary, --primary-500);
+    line-height: 150%;
+    padding-bottom: 40px;
+    display: flex;
+    justify-content: center;
+}
+
+.button-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.codiceSMSText {
+    display: flex;
+    justify-content: center;
+    color: map-get($bper-palette, neutral, --neutral-300);
+    margin-bottom: -0.1rem;
+    font-weight: bold;
+}
+
+.description__new__code {
+    color: map-get($bper-palette, neutral, --neutral-300);
+}
+
+.container-new-code {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.container__info {
+    display: flex;
+    align-items: center;
+}
+
+.orange {
+    color: map-get($bper-palette, accent, --accent-90) !important;
+}
+
+.receive-new-code-link-sms {
+    margin-right: 10px;
+    color: map-get($bper-palette, warning, --warning-70) !important;
+    cursor: pointer;
+}
+
+::ng-deep bper-input-pincode div form {
+    width: 415px !important;
+    background: transparent !important;
+    border: 0 !important;
+    justify-content: space-between !important;
+
+    & div div input {
+        width: 40px !important;
+        background-color: transparent !important;
+    }
+}
+
+::ng-deep bper-input-pincode div div mat-error span {
+    margin: initial !important;
+    width: auto !important;
+}
+
+::ng-deep .otpBorderRed {
+    & bper-input-pincode div form div div input {
+        border-bottom: 2px solid map-get($bper-palette, error, --error-300) !important;
+    }
+}
+
+.icon__container {
+    justify-content: end;
+    display: flex;
+    position: absolute;
+    top: 20px;
+    right: 29px;
+    color: map-get($bper-palette, primary, --primary-500);
+}
+
+.icon:hover {
+    cursor: pointer;
+}
+
+.master__container__email {
+    padding: 40px 50px; 
+    height: 408px; 
+    width: 510px;
+}
+
+// TABLET
+@media screen and (max-width: $bp-tablet) {
+    ::ng-deep bper-input-pincode div form {
+        width: 340px !important;
+    }
+}
+
+// MOBILE
+@media screen and (max-width: $bp-mobile) {
+    ::ng-deep bper-input-pincode div form {
+        width: 276px !important;
+        & div div input {
+            width: 31px !important;
+        }
+    }
+    div.box.hero {
+        width: 95%;
+        margin: 0 auto;
+        padding: 20px 10px;
+    }
+
+    .item {
+        width: 95%;
+    }
+
+    .master__container__email {
+        height: auto;
+        width: auto;
+        padding: 15px;
+    }
+}

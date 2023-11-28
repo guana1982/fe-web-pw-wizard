@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24.011" viewBox="0 0 24 24.011">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Tracciato_2846" data-name="Tracciato 2846" d="M1.142,12.754A12,12,0,1,0,13.137.749,12,12,0,0,0,1.142,12.754" transform="translate(-1.142 -0.749)" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Gran_bretagna" data-name="Gran bretagna" transform="translate(-1.142 -0.749)">
+    <g id="Raggruppa_62" data-name="Raggruppa 62" transform="translate(1.142 0.749)" clip-path="url(#clip-path)">
+      <rect id="Rettangolo_259" data-name="Rettangolo 259" width="48.592" height="24.248" transform="translate(-12.296 -0.118)" fill="#00248d"/>
+      <path id="Tracciato_2840" data-name="Tracciato 2840" d="M48.592,3.549V.739H43.133L28.253,8.189V.739H20.307V8.1L5.459.739H0V3.333L11.079,8.879H0v7.957H11.015L0,22.348v2.595H5.459l14.848-7.365v7.408h7.946V17.492l14.88,7.451h5.459v-2.81l-10.681-5.3H48.592V8.879H37.836Z" transform="translate(-12.296 -0.851)" fill="#fff"/>
+      <path id="Tracciato_2841" data-name="Tracciato 2841" d="M48.592,10.493H26.67V.738H21.922v9.755H0v4.738H21.922v9.755H26.67V15.231H48.592Z" transform="translate(-12.296 -0.854)" fill="#fa0000"/>
+      <path id="Tracciato_2842" data-name="Tracciato 2842" d="M19.122,2.248h-3.51L.032,10.195H3.219Z" transform="translate(-11.981 13.896)" fill="#fa0000"/>
+      <path id="Tracciato_2843" data-name="Tracciato 2843" d="M6.546,2.248H3.036l15.9,7.946V8.579Z" transform="translate(17.361 13.892)" fill="#fa0000"/>
+      <path id="Tracciato_2844" data-name="Tracciato 2844" d="M15.9,8.685,0,.739V2.364l12.393,6.32Z" transform="translate(-12.296 -0.851)" fill="#fa0000"/>
+      <path id="Tracciato_2845" data-name="Tracciato 2845" d="M2.74,8.685H6.25L21.83.739H18.643Z" transform="translate(14.468 -0.849)" fill="#fa0000"/>
+    </g>
+  </g>
+</svg>

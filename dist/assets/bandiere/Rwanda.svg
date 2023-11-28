@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Tracciato_7365" data-name="Tracciato 7365" d="M1.1,12.749a12,12,0,1,0,12-12,12,12,0,0,0-12,12" transform="translate(-1.096 -0.749)" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Ruanda" transform="translate(-1.096 -0.749)">
+    <g id="Raggruppa_223" data-name="Raggruppa 223" transform="translate(1.096 0.749)" clip-path="url(#clip-path)">
+      <rect id="Rettangolo_547" data-name="Rettangolo 547" width="36" height="24" transform="translate(-11.796 0)" fill="#0084d1"/>
+      <rect id="Rettangolo_548" data-name="Rettangolo 548" width="36" height="12" transform="translate(-11.796 12)" fill="#f9d616"/>
+      <rect id="Rettangolo_549" data-name="Rettangolo 549" width="36" height="6.016" transform="translate(-11.796 17.984)" fill="#007c4d"/>
+      <path id="Tracciato_7363" data-name="Tracciato 7363" d="M9.306,5.725l2.271-.3s-1.141-.161-2.271-.312l2.109-.883s-1.13.151-2.271.291l1.819-1.4s-1.065.43-2.12.872l1.388-1.819s-.915.689-1.819,1.388l.861-2.12L7.875,3.25l.3-2.271S7.724,2.033,7.283,3.1L6.982.828S6.831,1.958,6.669,3.1L5.787.979l.3,2.271-1.4-1.808s.43,1.055.861,2.12L3.731,2.173s.689.9,1.388,1.819L3,3.12s.915.7,1.819,1.4L2.547,4.229l2.109.883-2.271.312,2.271.3-2.109.883s1.13-.14,2.271-.291L3,7.716s1.065-.43,2.12-.872L3.731,8.663s.915-.689,1.819-1.388l-.861,2.12,1.4-1.808-.3,2.271.883-2.109.312,2.26.3-2.26.893,2.109-.3-2.271,1.4,1.808s-.43-1.055-.861-2.12l1.819,1.388s-.7-.9-1.388-1.819l2.12.872s-.915-.7-1.819-1.4l2.271.291L9.306,5.725M6.982,7.2A1.781,1.781,0,1,1,8.757,5.424,1.778,1.778,0,0,1,6.982,7.2" transform="translate(11.497 0.022)" fill="#eaaf0f"/>
+      <path id="Tracciato_7364" data-name="Tracciato 7364" d="M5.9,2.719A1.62,1.62,0,1,1,4.287,1.105,1.619,1.619,0,0,1,5.9,2.719" transform="translate(14.192 2.726)" fill="#eaaf0f"/>
+    </g>
+  </g>
+</svg>

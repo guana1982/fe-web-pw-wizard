@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="150" height="150" viewBox="0 0 150 150">
+  <g id="Raggruppa_26763" data-name="Raggruppa 26763" transform="translate(-168 -386)">
+    <rect id="Rettangolo_630" data-name="Rettangolo 630" width="150" height="150" transform="translate(168 386)" fill="none"/>
+    <g id="Raggruppa_26765" data-name="Raggruppa 26765" transform="translate(190.873 409.373)">
+      <path id="Tracciato_504" data-name="Tracciato 504" d="M51.627,8.5A43.128,43.128,0,1,0,94.756,51.627,43.176,43.176,0,0,0,51.627,8.5Zm0,78.757A35.628,35.628,0,1,1,87.256,51.627,35.668,35.668,0,0,1,51.627,87.256Z" transform="translate(0 0)" fill="#9d0000"/>
+      <path id="Tracciato_503" data-name="Tracciato 503" d="M46.127,10.5A35.628,35.628,0,1,0,81.756,46.127,35.668,35.668,0,0,0,46.127,10.5ZM48.79,72.227a3.741,3.741,0,0,1-6.112-4.087,3.871,3.871,0,0,1,.787-1.237,3.829,3.829,0,0,1,4.087-.787,3.381,3.381,0,0,1,2.025,2.025,3.712,3.712,0,0,1-.787,4.087Zm1.087-17.662a3.75,3.75,0,1,1-7.5,0V22.69a3.75,3.75,0,1,1,7.5,0Z" transform="translate(5.5 5.5)" fill="#f7fafa"/>
+      <path id="Tracciato_505" data-name="Tracciato 505" d="M22.75,12.75A3.749,3.749,0,0,0,19,16.5V48.375a3.75,3.75,0,1,0,7.5,0V16.5A3.749,3.749,0,0,0,22.75,12.75Z" transform="translate(28.877 11.69)" fill="#9d0000"/>
+      <path id="Tracciato_506" data-name="Tracciato 506" d="M25.412,26.322a3.871,3.871,0,0,0-1.237-.787,3.829,3.829,0,0,0-4.087.787A3.871,3.871,0,0,0,19.3,27.56a3.75,3.75,0,1,0,6.9,0A3.871,3.871,0,0,0,25.412,26.322Z" transform="translate(28.877 46.08)" fill="#9d0000"/>
+    </g>
+  </g>
+</svg>

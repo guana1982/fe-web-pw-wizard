@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Tracciato_369" data-name="Tracciato 369" d="M.573,12.749a12,12,0,1,0,12-12,12,12,0,0,0-12,12" transform="translate(-0.573 -0.749)" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Burkina_Faso" data-name="Burkina Faso" transform="translate(-0.573 -0.749)">
+    <g id="Raggruppa_24" data-name="Raggruppa 24" transform="translate(0.573 0.749)" clip-path="url(#clip-path)">
+      <rect id="Rettangolo_50" data-name="Rettangolo 50" width="36.344" height="24.226" transform="translate(-6.167 -0.108)" fill="#ef2b2d"/>
+      <rect id="Rettangolo_51" data-name="Rettangolo 51" width="36.344" height="12.108" transform="translate(-6.167 12.011)" fill="#009e3d"/>
+      <path id="Tracciato_368" data-name="Tracciato 368" d="M5.154,1.5l.9,2.777H8.974L6.618,5.983,7.511,8.76,5.154,7.048,2.8,8.76l.9-2.777L1.333,4.272H4.25Z" transform="translate(6.848 6.535)" fill="#fcd10a"/>
+    </g>
+  </g>
+</svg>

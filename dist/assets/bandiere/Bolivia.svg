@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Tracciato_228" data-name="Tracciato 228" d="M.52,12.749a12,12,0,1,0,12-12,12,12,0,0,0-12,12" transform="translate(-0.52 -0.749)" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Bolivia" transform="translate(-0.52 -0.749)">
+    <g id="Raggruppa_18" data-name="Raggruppa 18" transform="translate(0.52 0.749)" clip-path="url(#clip-path)">
+      <rect id="Rettangolo_38" data-name="Rettangolo 38" width="35.204" height="24" transform="translate(-5.596 0)" fill="#ce0026"/>
+      <rect id="Rettangolo_39" data-name="Rettangolo 39" width="35.204" height="15.993" transform="translate(-5.596 8.007)" fill="#f9d60a"/>
+      <rect id="Rettangolo_40" data-name="Rettangolo 40" width="35.204" height="7.996" transform="translate(-5.596 16.004)" fill="#007a2e"/>
+    </g>
+  </g>
+</svg>

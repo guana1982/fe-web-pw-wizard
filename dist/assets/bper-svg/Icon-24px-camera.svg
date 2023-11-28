@@ -1,0 +1,14 @@
+<svg id="Icon_24px_camera" data-name="Icon/24px/camera" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rettangolo_10989" data-name="Rettangolo 10989" width="22" height="19" fill="#e37222"/>
+    </clipPath>
+  </defs>
+  <path id="_24pt_Bounding_Box" data-name="24pt Bounding Box" d="M0,0H24V24H0Z" fill="#e37222" opacity="0"/>
+  <g id="Raggruppa_27161" data-name="Raggruppa 27161" transform="translate(1 2.5)">
+    <g id="Raggruppa_27161-2" data-name="Raggruppa 27161" clip-path="url(#clip-path)">
+      <path id="Tracciato_85957" data-name="Tracciato 85957" d="M11,5.5a5.25,5.25,0,1,0,5.25,5.25A5.256,5.256,0,0,0,11,5.5M11,14a3.25,3.25,0,1,1,3.25-3.25A3.254,3.254,0,0,1,11,14" fill="#e37222"/>
+      <path id="Tracciato_85958" data-name="Tracciato 85958" d="M19.874,3H16.127L15.179.629A1,1,0,0,0,14.25,0H7.75a1,1,0,0,0-.928.629L5.873,3H2.126A2.129,2.129,0,0,0,0,5.126V16.874A2.129,2.129,0,0,0,2.126,19H19.874A2.129,2.129,0,0,0,22,16.874V5.126A2.129,2.129,0,0,0,19.874,3M20,16.874a.127.127,0,0,1-.126.126H2.126A.127.127,0,0,1,2,16.874V5.126A.127.127,0,0,1,2.126,5H6.55a1,1,0,0,0,.928-.629L8.427,2h5.146l.948,2.371A1,1,0,0,0,15.45,5h4.424A.127.127,0,0,1,20,5.126Z" fill="#e37222"/>
+    </g>
+  </g>
+</svg>

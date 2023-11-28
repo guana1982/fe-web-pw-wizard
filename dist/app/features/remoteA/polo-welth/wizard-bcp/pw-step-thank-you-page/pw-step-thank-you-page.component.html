@@ -1,0 +1,51 @@
+<div class="box hero">
+    <img src="../../../../../../assets/bper-svg/vector-complimenti-194-x-142.svg" alt="Success">
+    <div class="sub-title">
+        Ben fatto! <br>
+    </div>
+
+    <div class="desc">
+        Le tue credenziali sono state create con successo.
+    </div>
+
+    <div class="sub-title" style="margin-bottom: 3rem;">
+        ...e ora? L'ultimo passo!
+    </div>
+
+    <div class="desc" style="margin-bottom: 4rem;">
+        Accedi alla tua nuova utenza Banca Cesare Ponti e puoi operare in modo semplice sui tuoi rapporti di
+        investimento.
+        <br><br>
+        Apri l'app e clicca su "Non sei tu", seleziona Banca Cesare Ponti e inserisci le credenziali per associare la
+        tua utenza al dispositivo. Successivamente potrai effettuare l'accesso sia da Web che Mobile nelle modalità che
+        già conosci!
+    </div>
+
+    <div style="margin-bottom: 2rem;">
+        <bper-button buttonType="icon-right" order="ghost-accent" [label]="'Scarica la guida'" icon="24px-download"
+            iconSize="24px" (clickBtn)="goDownload()">
+        </bper-button>
+    </div>
+
+    <div class="sub-title">
+        Se hai bisogno di assistenza
+    </div>
+    <hr style="margin: 0; width: 100%; margin-bottom: 1rem; margin-top: -1rem;">
+
+    <div class="description">
+        Ecco i contatti da utilizzare se hai necessità di supporto.
+    </div>
+
+    <div class="description" style="margin-bottom: 0.5rem; margin-top: 0.5rem;">
+        Numero servizio clienti
+    </div>
+
+    <bper-button order="ghost-accent" [label]="'059 4242'">
+    </bper-button>
+
+    <div class="button-wrapper">
+        <bper-button button-type="button" order="primary" [label]="'Accedi'"
+            (clickBtn)="goToNextStep()">
+        </bper-button>
+    </div>
+</div>

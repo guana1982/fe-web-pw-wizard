@@ -1,0 +1,15 @@
+<svg id="Icon_Checkmark" data-name="Icon/Checkmark" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <style>
+      .cls-1, .cls-2 {
+        fill: #00ae65;
+      }
+
+      .cls-1 {
+        opacity: 0;
+      }
+    </style>
+  </defs>
+  <path id="_24pt_Bounding_Box" data-name="24pt Bounding Box" class="cls-1" d="M0,0H24V24H0Z"/>
+  <path id="_Icon_style" data-name="🎨 Icon style" class="cls-2" d="M5.861,12.044h0a1,1,0,0,1-.73-.32L.271,6.554h0a1,1,0,0,1,1.46-1.37h0l4.12,4.39,8.41-9.2h0a1,1,0,1,1,1.48,1.34l-9.14,10h0a1,1,0,0,1-.73.33Z" transform="translate(3.999 5.956)"/>
+</svg>

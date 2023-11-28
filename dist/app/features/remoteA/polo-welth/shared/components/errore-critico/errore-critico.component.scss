@@ -1,0 +1,67 @@
+@import "src/scss/variables";
+
+div.box {
+    &.hero {
+        width: 509px;
+        display: flex;
+        min-height: 351px;
+        padding: 20px 0;
+        position: relative;
+        background: #ffffff;
+        border-radius: 24px;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+img {
+    display: flex;
+    width: 140px;
+    margin-top: -20px;
+}
+
+.sub-title {
+    font-size: 22px;
+    font-weight: bold;
+    color: map-get($bper-palette, primary, --primary-500);
+    padding-bottom: 1.3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    text-align: center;
+}
+
+.description {
+    color: map-get($bper-palette, primary, --primary-100);
+    text-align: center;
+    padding: 0 20px;
+}
+
+.servizio__clienti {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+}
+
+.title__servizio__clienti {
+    color: map-get($bper-palette, neutral, --neutral-300);
+    font-size: 15px;
+    margin-bottom: 0.7rem;
+}
+
+.description__servizio__clienti {
+    font-size: 26px;
+    font-weight: bold;
+    font-family: 'Kievit Pro Medium';
+    color: map-get($bper-palette, secondary, --secondary-90);
+}
+
+// MOBILE
+@media screen and (max-width: $bp-mobile) {
+    div.box.hero {
+        width: 95%;
+        padding: 10px 15px;
+        margin: 0 auto;
+    }
+}

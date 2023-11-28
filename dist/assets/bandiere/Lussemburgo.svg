@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="23.989" viewBox="0 0 24 23.989">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Tracciato_4889" data-name="Tracciato 4889" d="M.744,12.744A12,12,0,1,0,12.739.749,12,12,0,0,0,.744,12.744" transform="translate(-0.744 -0.749)" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Lussemburgo" transform="translate(-0.744 -0.749)">
+    <g id="Raggruppa_184" data-name="Raggruppa 184" transform="translate(0.744 0.749)" clip-path="url(#clip-path)">
+      <rect id="Rettangolo_405" data-name="Rettangolo 405" width="40.007" height="24.011" transform="translate(-8.004 -0.011)" fill="#ef2b21"/>
+      <rect id="Rettangolo_406" data-name="Rettangolo 406" width="40.007" height="15.986" transform="translate(-8.004 8.014)" fill="#fff"/>
+      <rect id="Rettangolo_407" data-name="Rettangolo 407" width="40.007" height="8.004" transform="translate(-8.004 15.996)" fill="#00abdd"/>
+    </g>
+  </g>
+</svg>

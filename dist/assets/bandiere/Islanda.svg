@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Tracciato_3440" data-name="Tracciato 3440" d="M.476,12.739a12,12,0,1,0,12-12,12,12,0,0,0-12,12" transform="translate(-0.476 -0.739)" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Islanda" transform="translate(-0.476 -0.739)">
+    <g id="Raggruppa_75" data-name="Raggruppa 75" transform="translate(0.476 0.739)" clip-path="url(#clip-path)">
+      <rect id="Rettangolo_334" data-name="Rettangolo 334" width="34.257" height="24.667" transform="translate(-5.123 -0.334)" fill="#339"/>
+      <path id="Tracciato_3438" data-name="Tracciato 3438" d="M34.256,10.276H15.035V.709H9.514v9.568H0V15.8H9.514v9.568h5.521V15.8H34.256Z" transform="translate(-5.125 -1.035)" fill="#fff"/>
+      <path id="Tracciato_3439" data-name="Tracciato 3439" d="M34.256,11.675H13.7V.708H10.967V11.675H0v2.744H10.967V25.375H13.7V14.419H34.256Z" transform="translate(-5.125 -1.042)" fill="#c33"/>
+    </g>
+  </g>
+</svg>

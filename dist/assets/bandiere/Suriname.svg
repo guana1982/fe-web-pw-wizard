@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24.011" viewBox="0 0 24 24.011">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Tracciato_8990" data-name="Tracciato 8990" d="M.548,12.754A12,12,0,1,0,12.543.749,12,12,0,0,0,.548,12.754" transform="translate(-0.548 -0.749)" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Suriname" transform="translate(-0.548 -0.749)">
+    <g id="Raggruppa_245" data-name="Raggruppa 245" transform="translate(0.548 0.749)" clip-path="url(#clip-path)">
+      <rect id="Rettangolo_761" data-name="Rettangolo 761" width="35.812" height="23.871" transform="translate(-5.9 0.075)" fill="#007222"/>
+      <rect id="Rettangolo_762" data-name="Rettangolo 762" width="35.812" height="14.32" transform="translate(-5.9 4.845)" fill="#fff"/>
+      <rect id="Rettangolo_763" data-name="Rettangolo 763" width="35.812" height="9.583" transform="translate(-5.9 7.214)" fill="#d2102d"/>
+      <path id="Tracciato_8989" data-name="Tracciato 8989" d="M5.843,1.452,6.931,4.79h3.51L7.6,6.868l1.087,3.338L5.843,8.139,3,10.206,4.088,6.868,1.235,4.79H4.756Z" transform="translate(6.159 6.121)" fill="#ffd100"/>
+    </g>
+  </g>
+</svg>

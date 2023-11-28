@@ -1,0 +1,19 @@
+<svg id="Icon_Document" data-name="Icon / Document" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        fill: #e37222;
+      }
+    </style>
+  </defs>
+  <rect id="Rettangolo_343" data-name="Rettangolo 343" class="cls-1" width="24" height="24"/>
+  <g id="Raggruppa_26762" data-name="Raggruppa 26762" transform="translate(-608.08 -426.627)">
+    <path id="Tracciato_85839" data-name="Tracciato 85839" class="cls-2" d="M628.385,434.539a.833.833,0,0,0-.1-.155.87.87,0,0,0-.085-.126l-5.25-5.25a.824.824,0,0,0-.152-.1.918.918,0,0,0-.128-.086.879.879,0,0,0-.338-.068h-9a1.626,1.626,0,0,0-1.625,1.625v16.5a1.627,1.627,0,0,0,1.625,1.625h13.5a1.627,1.627,0,0,0,1.625-1.625v-12A.862.862,0,0,0,628.385,434.539ZM623.2,434V431.74L625.466,434Zm-.875,1.75H626.7v11h-13.25V430.5h8v4.375A.876.876,0,0,0,622.329,435.752Z"/>
+    <path id="Tracciato_85840" data-name="Tracciato 85840" class="cls-2" d="M616.2,439.377a.876.876,0,0,0,.875.875h6a.875.875,0,0,0,0-1.75h-6A.876.876,0,0,0,616.2,439.377Z"/>
+    <path id="Tracciato_85841" data-name="Tracciato 85841" class="cls-2" d="M623.079,441.5h-6a.875.875,0,0,0,0,1.75h6a.875.875,0,0,0,0-1.75Z"/>
+  </g>
+</svg>

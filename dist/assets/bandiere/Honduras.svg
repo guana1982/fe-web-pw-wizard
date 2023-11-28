@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="23.989" viewBox="0 0 24 23.989">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Tracciato_3410" data-name="Tracciato 3410" d="M1.113,12.744A12,12,0,1,0,13.108.749,12,12,0,0,0,1.113,12.744" transform="translate(-1.113 -0.749)" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Honduras" transform="translate(-1.113 -0.749)">
+    <g id="Raggruppa_73" data-name="Raggruppa 73" transform="translate(1.113 0.749)" clip-path="url(#clip-path)">
+      <rect id="Rettangolo_329" data-name="Rettangolo 329" width="47.957" height="23.978" transform="translate(-11.973 0.011)" fill="#3346ad"/>
+      <rect id="Rettangolo_330" data-name="Rettangolo 330" width="47.957" height="8.154" transform="translate(-11.973 7.918)" fill="#fff"/>
+      <path id="Tracciato_3405" data-name="Tracciato 3405" d="M2.7,1.562l.28.882h.925l-.742.538.28.882L2.7,3.315l-.742.549.28-.882L1.5,2.444H2.41Z" transform="translate(2.62 7.183)" fill="#3346ad"/>
+      <path id="Tracciato_3406" data-name="Tracciato 3406" d="M2.7,1.935l.28.871h.925l-.742.549.28.882L2.7,3.689l-.742.549.28-.882L1.5,2.807H2.41Z" transform="translate(2.62 10.826)" fill="#3346ad"/>
+      <path id="Tracciato_3407" data-name="Tracciato 3407" d="M3.943,1.562l.29.882h.925l-.753.538.28.882-.742-.549L3.2,3.864l.28-.882-.742-.538h.925Z" transform="translate(14.746 7.183)" fill="#3346ad"/>
+      <path id="Tracciato_3408" data-name="Tracciato 3408" d="M3.323,1.745l.28.871h.925l-.742.549.28.882L3.323,3.5l-.742.549.28-.882-.742-.549h.925Z" transform="translate(8.699 8.969)" fill="#3346ad"/>
+      <path id="Tracciato_3409" data-name="Tracciato 3409" d="M3.943,1.935l.29.871h.925l-.753.549.28.882-.742-.549L3.2,4.237l.28-.882-.742-.549h.925Z" transform="translate(14.746 10.826)" fill="#3346ad"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Tracciato_7843" data-name="Tracciato 7843" d="M.557,12.749a12,12,0,1,0,12-12,12,12,0,0,0-12,12" transform="translate(-0.557 -0.749)" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Senegal" transform="translate(-0.557 -0.749)">
+    <g id="Raggruppa_233" data-name="Raggruppa 233" transform="translate(0.557 0.749)" clip-path="url(#clip-path)">
+      <rect id="Rettangolo_587" data-name="Rettangolo 587" width="36" height="24" transform="translate(-5.995 0)" fill="#00853a"/>
+      <rect id="Rettangolo_588" data-name="Rettangolo 588" width="24.011" height="24" transform="translate(5.995 0)" fill="#fdef38"/>
+      <rect id="Rettangolo_589" data-name="Rettangolo 589" width="12" height="24" transform="translate(18.005 0)" fill="#e31b1c"/>
+      <path id="Tracciato_7842" data-name="Tracciato 7842" d="M5,1.506l.861,2.658H8.671L6.4,5.811,7.272,8.48,5,6.834,2.731,8.48,3.6,5.811,1.331,4.164H4.14Z" transform="translate(7.003 6.643)" fill="#00853a"/>
+    </g>
+  </g>
+</svg>

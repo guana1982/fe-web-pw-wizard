@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Tracciato_2749" data-name="Tracciato 2749" d="M.524,12.749a12,12,0,1,0,12-12,12,12,0,0,0-12,12" transform="translate(-0.524 -0.749)" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Finlandia" transform="translate(-0.524 -0.749)">
+    <g id="Raggruppa_51" data-name="Raggruppa 51" transform="translate(0.524 0.749)" clip-path="url(#clip-path)">
+      <rect id="Rettangolo_214" data-name="Rettangolo 214" width="39.164" height="23.925" transform="translate(-5.639 0.043)" fill="#fff"/>
+      <path id="Tracciato_2748" data-name="Tracciato 2748" d="M39.164,9.481h-21.8V.753H10.891V9.481H0v6.468H10.891v8.728h6.468V15.949h21.8Z" transform="translate(-5.643 -0.712)" fill="#002680"/>
+    </g>
+  </g>
+</svg>

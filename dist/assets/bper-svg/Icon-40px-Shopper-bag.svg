@@ -1,0 +1,23 @@
+<svg id="Icon_40px_Shopper_bag" data-name="Icon/40px/Shopper bag" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40" height="40" viewBox="0 0 40 40">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+      }
+
+      .cls-2 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-3 {
+        fill: #ade5ce;
+      }
+    </style>
+    <clipPath id="clip-path">
+      <rect id="Rettangolo_12076" data-name="Rettangolo 12076" class="cls-1" width="40" height="40"/>
+    </clipPath>
+  </defs>
+  <g id="Raggruppa_29414" data-name="Raggruppa 29414" class="cls-2">
+    <path id="Tracciato_86508" data-name="Tracciato 86508" class="cls-3" d="M30.351,18.171a2.4,2.4,0,0,0-2.392-2.164H25.952v-2.24a5.952,5.952,0,1,0-11.9,0v2.24H12.041a2.4,2.4,0,0,0-2.392,2.164L8.512,29.542A2.4,2.4,0,0,0,10.9,32.185H29.1a2.4,2.4,0,0,0,2.392-2.643Zm-14.372-4.4a4.021,4.021,0,1,1,8.042,0v2.24H15.979ZM29.447,30.1a.47.47,0,0,1-.351.156H10.9a.474.474,0,0,1-.47-.521L11.57,18.363a.472.472,0,0,1,.471-.426h2.007v3.148a.966.966,0,1,0,1.931,0V17.937h8.042v3.148a.966.966,0,1,0,1.931,0V17.937h2.007a.472.472,0,0,1,.471.426l1.137,11.371a.465.465,0,0,1-.12.365"/>
+  </g>
+</svg>

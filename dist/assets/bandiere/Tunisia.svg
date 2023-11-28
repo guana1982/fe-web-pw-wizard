@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Tracciato_9334" data-name="Tracciato 9334" d="M.558,12.749a12,12,0,1,0,12-12,12,12,0,0,0-12,12" transform="translate(-0.558 -0.749)" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Tunisia" transform="translate(-0.558 -0.749)">
+    <g id="Raggruppa_259" data-name="Raggruppa 259" transform="translate(0.558 0.749)" clip-path="url(#clip-path)">
+      <rect id="Rettangolo_819" data-name="Rettangolo 819" width="36.022" height="24.011" transform="translate(-6.005 0)" fill="#e70011"/>
+      <path id="Tracciato_9331" data-name="Tracciato 9331" d="M13.137,7.311A6.011,6.011,0,1,1,7.12,1.306a6.01,6.01,0,0,1,6.016,6.005" transform="translate(4.88 4.689)" fill="#fff"/>
+      <path id="Tracciato_9332" data-name="Tracciato 9332" d="M3.358,1.631l1.13,1.55,1.83-.592L5.188,4.149,6.328,5.7,4.5,5.107,3.369,6.668V4.741l-1.83-.592,1.819-.592Z" transform="translate(9.021 7.859)" fill="#e70011"/>
+      <path id="Tracciato_9333" data-name="Tracciato 9333" d="M6.962,9.532a3.611,3.611,0,0,1,0-7.222,3.565,3.565,0,0,1,2.2.753,4.466,4.466,0,1,0,0,5.726,3.623,3.623,0,0,1-2.2.743" transform="translate(6.276 6.085)" fill="#e70011"/>
+    </g>
+  </g>
+</svg>

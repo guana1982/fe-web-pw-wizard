@@ -1,0 +1,52 @@
+@import "src/scss/variables";
+
+div.box {
+    &.hero {
+      display: flex;
+      min-height: 392px;
+      padding: 52px 40px;
+      position: relative;
+      background: #ffffff;
+      border-radius: 24px;
+      width: 420px;
+      flex-direction: column;
+      justify-content: center;
+      
+      /* Resto del tuo stile */
+      .title {
+        font-size: 12px;
+        color: #63a1a4;
+        font-weight: bold;
+        padding-bottom: 25px;
+        font-size: 16px; /* Riduci la dimensione del carattere a 16px o al valore desiderato */
+
+        display: flex;
+        justify-content: center;
+
+      }
+      div[content] {
+        font-size: 14px;
+        color: #005157;
+        line-height: 150%;
+        padding-bottom: 40px;
+
+        display: flex;
+        justify-content: center;
+      }
+      .button-wrapper {
+        display: flex;
+        justify-content: center;
+        margin-top: 120px; /* Regola il margine superiore per posizionare il pulsante al posto giusto */
+      }
+
+    }
+  }
+
+  // MOBILE
+@media screen and (max-width: $bp-mobile) {
+  div.box.hero {
+    width: 95%;
+    margin: 0 auto;
+    padding: 10px 15px;
+  }
+}

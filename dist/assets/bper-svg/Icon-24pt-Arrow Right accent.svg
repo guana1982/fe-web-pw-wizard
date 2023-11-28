@@ -1,0 +1,9 @@
+<svg id="Icon_24pt_Arrow_Right" data-name="Icon/24pt/Arrow Right" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="Rettangolo_4" data-name="Rettangolo 4" fill="none" stroke="#e37222" stroke-width="1" opacity="0">
+    <rect width="24" height="24" stroke="none"/>
+    <rect x="0.5" y="0.5" width="23" height="23" fill="none"/>
+  </g>
+  <g id="Back_Arrow" data-name="Back Arrow" transform="translate(22 20) rotate(180)">
+    <path id="Unione_25" data-name="Unione 25" d="M5.957,15.633l-5.73-7a1,1,0,0,1,0-1.268l5.73-7A1,1,0,1,1,7.5,1.632L3.078,7.041H19a1,1,0,0,1,0,2H3.143L7.5,14.368a1,1,0,1,1-1.546,1.266Z" fill="#e37222"/>
+  </g>
+</svg>

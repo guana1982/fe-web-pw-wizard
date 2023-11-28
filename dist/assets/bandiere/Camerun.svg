@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Tracciato_380" data-name="Tracciato 380" d="M.547,12.749a12,12,0,1,0,12-12,12,12,0,0,0-12,12" transform="translate(-0.547 -0.749)" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Camerun" transform="translate(-0.547 -0.749)">
+    <g id="Raggruppa_26" data-name="Raggruppa 26" transform="translate(0.547 0.749)" clip-path="url(#clip-path)">
+      <rect id="Rettangolo_53" data-name="Rettangolo 53" width="35.774" height="23.849" transform="translate(-5.887 0.075)" fill="#fcd100"/>
+      <rect id="Rettangolo_54" data-name="Rettangolo 54" width="23.774" height="27.849" transform="translate(-5.887 -0.925)" fill="#ce0026"/>
+      <rect id="Rettangolo_55" data-name="Rettangolo 55" width="11.86" height="23.849" transform="translate(-5.887 0.075)" fill="#007a52"/>
+      <path id="Tracciato_379" data-name="Tracciato 379" d="M4.318,1.579,5.006,3.7H7.234l-1.8,1.313.689,2.12L4.318,5.83l-1.808,1.3L3.2,5.012,1.39,3.7H3.629Z" transform="translate(7.685 7.352)" fill="#fcd100"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="23.989" viewBox="0 0 24 23.989">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Tracciato_9318" data-name="Tracciato 9318" d="M.239,12.744A12,12,0,1,0,12.244.749,12,12,0,0,0,.239,12.744" transform="translate(-0.239 -0.749)" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Togo_" data-name="Togo " transform="translate(-0.239 -0.749)">
+    <g id="Raggruppa_255" data-name="Raggruppa 255" transform="translate(0.239 0.749)" clip-path="url(#clip-path)">
+      <rect id="Rettangolo_809" data-name="Rettangolo 809" width="38.953" height="24.075" transform="translate(-2.571 -0.043)" fill="#006a44"/>
+      <rect id="Rettangolo_810" data-name="Rettangolo 810" width="38.953" height="19.277" transform="translate(-2.571 4.755)" fill="#ffd300"/>
+      <rect id="Rettangolo_811" data-name="Rettangolo 811" width="38.953" height="14.437" transform="translate(-2.571 9.596)" fill="#006a44"/>
+      <rect id="Rettangolo_812" data-name="Rettangolo 812" width="38.953" height="9.628" transform="translate(-2.571 14.404)" fill="#ffd300"/>
+      <rect id="Rettangolo_813" data-name="Rettangolo 813" width="38.953" height="4.809" transform="translate(-2.571 19.224)" fill="#006a44"/>
+      <rect id="Rettangolo_814" data-name="Rettangolo 814" width="14.383" height="14.437" transform="translate(-2.571 -0.032)" fill="#d21034"/>
+      <path id="Tracciato_9317" data-name="Tracciato 9317" d="M4.585,1l1.022,3.12H8.9L6.231,6.052l1.022,3.12L4.585,7.246,1.917,9.172l1.022-3.12L.271,4.116H3.563Z" transform="translate(0.073 1.661)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

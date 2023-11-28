@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Tracciato_7376" data-name="Tracciato 7376" d="M.557,12.749a12,12,0,1,0,12-12,12,12,0,0,0-12,12" transform="translate(-0.557 -0.749)" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Saint_Kitts_e_Nevis" data-name="Saint Kitts e Nevis" transform="translate(-0.557 -0.749)">
+    <g id="Raggruppa_225" data-name="Raggruppa 225" transform="translate(0.557 0.749)" clip-path="url(#clip-path)">
+      <rect id="Rettangolo_553" data-name="Rettangolo 553" width="36" height="24" transform="translate(-5.995 0)" fill="#009e44"/>
+      <path id="Tracciato_7370" data-name="Tracciato 7370" d="M36,24.749H0l36-24Z" transform="translate(-5.995 -0.746)" fill="#ce111a"/>
+      <path id="Tracciato_7371" data-name="Tracciato 7371" d="M0,24.749V18.658L26.938.749H36V6.808L9.073,24.749Z" transform="translate(-5.995 -0.746)"/>
+      <path id="Tracciato_7372" data-name="Tracciato 7372" d="M.6,20.825,30.133,1.151V2.884L3.206,20.825Z" transform="translate(-0.126 3.178)" fill="#fcd10f"/>
+      <path id="Tracciato_7373" data-name="Tracciato 7373" d="M0,20.412V18.647L26.938.75H29.5Z" transform="translate(-5.995 -0.742)" fill="#fcd10f"/>
+      <path id="Tracciato_7374" data-name="Tracciato 7374" d="M2.1,2.028l1.9,1.507L6.031,2.19l-.85,2.282,1.9,1.507-2.422-.1-.85,2.271L3.158,5.817.736,5.709,2.76,4.364Z" transform="translate(1.193 11.74)" fill="#fff"/>
+      <path id="Tracciato_7375" data-name="Tracciato 7375" d="M3.376,1.183l1.9,1.507L7.3,1.345l-.85,2.282,1.9,1.507L5.938,5.025l-.85,2.282L4.431,4.971,2.01,4.864,4.033,3.519Z" transform="translate(13.624 3.489)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="23.989" viewBox="0 0 24 23.989">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Tracciato_2851" data-name="Tracciato 2851" d="M.447,12.744A12,12,0,1,0,12.442.749,12,12,0,0,0,.447,12.744" transform="translate(-0.447 -0.749)" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Groenlandia" transform="translate(-0.447 -0.749)">
+    <g id="Raggruppa_64" data-name="Raggruppa 64" transform="translate(0.447 0.749)" clip-path="url(#clip-path)">
+      <rect id="Rettangolo_269" data-name="Rettangolo 269" width="35.995" height="24" transform="translate(-4.809 0)" fill="#fff"/>
+      <rect id="Rettangolo_270" data-name="Rettangolo 270" width="35.995" height="12.005" transform="translate(-4.809 11.995)" fill="#f30031"/>
+      <path id="Tracciato_2849" data-name="Tracciato 2849" d="M16.605,9.143A8.025,8.025,0,1,1,8.58,1.118a8.025,8.025,0,0,1,8.025,8.025" transform="translate(0.607 2.852)" fill="#fff"/>
+      <path id="Tracciato_2850" data-name="Tracciato 2850" d="M16.605,9.143H.555a8.025,8.025,0,0,1,16.05,0" transform="translate(0.607 2.852)" fill="#f30031"/>
+    </g>
+  </g>
+</svg>

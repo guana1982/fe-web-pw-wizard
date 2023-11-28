@@ -1,0 +1,48 @@
+<div class="master__container">
+    <div class="item">
+        <ng-container *ngIf="showSecondModal">
+            <pw-convalida-email-identificazione-cliente (showSecondModal)="stateShowSecondModal()"
+                (closedModal)="onCloseSecondModal()"
+                [emailValue]="emailUtente.value"></pw-convalida-email-identificazione-cliente>
+        </ng-container>
+
+        <div *ngIf="!showSecondModal" class="container__modal__email">
+            <div class="icon__container">
+                <i (click)="closeModal()" class="bper-ic-24px-close icon-bold icon" aria-label="Chiudi Finestra"
+                    role="button"></i>
+            </div>
+
+            <div style="display: flex; flex-direction: column; margin-bottom: 20px;">
+                <div class="title">
+                    Vuoi modificare la tua email?
+                </div>
+                <div class="description">Ti invieremo un codice di conferma per completare la modifica. <br><br>
+                    Assicurati di avere
+                    accesso a questa casella di posta elettronica.</div>
+                <div class="container__email__label">
+                    <!-- <div class="email-label">
+                        Email
+                    </div> -->
+                    <bper-input-text floatLabel="never" [label]="'Inserisci email'" [formControl]="emailUtente">
+                    </bper-input-text>
+                </div>
+
+                <div style="text-align: center; margin-bottom: 30px;" class="description__identificazione">
+                    Potrai modificare la tua email anche successivamente.
+                </div>
+
+                <div class="container-button">
+                    <button (click)="closeModal()" class="secondary-buttom">
+                        <span>Annulla</span>
+                    </button>
+                    <button (click)="saveEmail()" [disabled]="emailPatternValidator(emailUtente)"
+                        class="button__container">
+                        <span>Continua</span>
+                    </button>
+                </div>
+            </div>
+
+
+        </div>
+    </div>
+</div>

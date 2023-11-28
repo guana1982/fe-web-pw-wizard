@@ -1,0 +1,22 @@
+<bper-modal modal-title="Qual è la tua email?" [noCloseButton]="true">
+    <div class="description">Inserisci la tua email corretta per poterla certificare.</div>
+
+    <div>
+        <div class="email-label">
+            Email
+        </div>
+        <bper-input-text floatLabel="never" [formControl]="emailUtente">
+        </bper-input-text>
+    </div>
+
+    <div style="text-align: center; margin-bottom: 30px;">
+        Ti invieremo un codice via email per certificare il tuo indirizzo di <br> posta
+    </div>
+
+    <div class="container-button">
+        <bper-button class="pointer" [label]="'Annulla'" (clickBtn)="closeModal()"></bper-button>
+        <bper-button class="pointer" [label]="'Continua'" [disabled]="emailPatternValidator(emailUtente)"
+            (clickBtn)="saveEmail()"></bper-button>
+    </div>
+
+</bper-modal>

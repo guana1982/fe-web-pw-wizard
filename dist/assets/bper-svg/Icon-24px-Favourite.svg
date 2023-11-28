@@ -1,0 +1,30 @@
+<svg id="Icon_24px_Favourite" data-name="Icon/24px/Favourite" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22" height="22" viewBox="0 0 22 22">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-2 {
+        fill: none;
+      }
+
+      .cls-3 {
+        clip-path: url(#clip-path);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#00ae65"/>
+      <stop offset="1" stop-color="#45ae64"/>
+    </linearGradient>
+    <clipPath id="clip-path">
+      <rect id="Rettangolo_10935" data-name="Rettangolo 10935" class="cls-1" width="16.573" height="15.797"/>
+    </clipPath>
+  </defs>
+  <rect id="Rettangolo_533" data-name="Rettangolo 533" class="cls-2" width="22" height="22"/>
+  <g id="Raggruppa_26773" data-name="Raggruppa 26773" transform="translate(2 3.008)">
+    <g id="Raggruppa_26773-2" data-name="Raggruppa 26773" class="cls-3">
+      <path id="Tracciato_85881" data-name="Tracciato 85881" class="cls-1" d="M12.986,15.8a.679.679,0,0,1-.319-.079l-4.381-2.3-4.379,2.3A.684.684,0,0,1,2.915,15l.836-4.875L.207,6.67A.685.685,0,0,1,.586,5.5l4.9-.715L7.674.35A.711.711,0,0,1,8.9.35l2.19,4.437,4.9.715a.684.684,0,0,1,.379,1.168l-3.544,3.452L13.66,15a.684.684,0,0,1-.674.8" transform="translate(0 0)"/>
+    </g>
+  </g>
+</svg>

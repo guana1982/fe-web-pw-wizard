@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Tracciato_1022" data-name="Tracciato 1022" d="M.021,12.749a12,12,0,1,0,12-12,12,12,0,0,0-12,12" transform="translate(-0.021 -0.749)" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Comore" transform="translate(-0.021 -0.749)">
+    <g id="Raggruppa_38" data-name="Raggruppa 38" transform="translate(0.021 0.749)" clip-path="url(#clip-path)">
+      <rect id="Rettangolo_76" data-name="Rettangolo 76" width="39.993" height="24" transform="translate(-0.086 0)" fill="#ffc600"/>
+      <rect id="Rettangolo_77" data-name="Rettangolo 77" width="39.993" height="17.984" transform="translate(-0.086 6.016)" fill="#fff"/>
+      <rect id="Rettangolo_78" data-name="Rettangolo 78" width="39.993" height="12" transform="translate(-0.086 12)" fill="#ce0026"/>
+      <rect id="Rettangolo_79" data-name="Rettangolo 79" width="39.993" height="5.995" transform="translate(-0.086 18.005)" fill="#3a6bc4"/>
+      <path id="Tracciato_1016" data-name="Tracciato 1016" d="M.013.75l20,12-20,11.989Z" transform="translate(-0.098 -0.743)" fill="#3d8e24"/>
+      <path id="Tracciato_1017" data-name="Tracciato 1017" d="M2.6,6.794A5.427,5.427,0,0,1,6.8,1.5a5.106,5.106,0,0,0-1.227-.14,5.435,5.435,0,1,0,0,10.87,5.106,5.106,0,0,0,1.227-.14A5.427,5.427,0,0,1,2.6,6.794" transform="translate(1.16 5.206)" fill="#fff"/>
+      <path id="Tracciato_1018" data-name="Tracciato 1018" d="M1.576,1.416l.215.657h.7l-.57.409.215.667-.56-.409-.56.409.215-.667-.56-.409h.689Z" transform="translate(6.338 5.761)" fill="#fff"/>
+      <path id="Tracciato_1019" data-name="Tracciato 1019" d="M1.576,1.656l.215.657h.7l-.57.42.215.657-.56-.409-.56.409.215-.657-.56-.42h.689Z" transform="translate(6.338 8.107)" fill="#fff"/>
+      <path id="Tracciato_1020" data-name="Tracciato 1020" d="M1.576,1.9l.215.657h.7l-.57.409.215.667-.56-.409-.56.409.215-.667-.56-.409h.689Z" transform="translate(6.338 10.441)" fill="#fff"/>
+      <path id="Tracciato_1021" data-name="Tracciato 1021" d="M1.576,2.135l.215.657h.7l-.57.42.215.657-.56-.409-.56.409.215-.657-.56-.42h.689Z" transform="translate(6.338 12.779)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

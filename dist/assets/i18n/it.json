@@ -1,0 +1,534 @@
+{
+    "COMMON": {
+        "TITLE": "BPER Banca",
+        "CLIENT_FROM": "Cliente da ",
+        "YEARS": "Anni",
+        "AGE": "età",
+        "COD_FISCALE": "codice fiscale",
+        "NAME": "Nome",
+        "NO_DATA": "Nessun dato disponibile",
+        "AND": "e",
+        "SEARCH": "Cerca",
+        "RESEARCH": "Ricerca",
+        "SURNAME": "Cognome",
+        "BUSINESS_NAME": "Ragione sociale",
+        "EMAIL": "Mail",
+        "PHONE": "Telefono",
+        "ACCOUNT_NUMBER": "N° Conto",
+        "NAME_AND_SURNAME": "Nome e Cognome",
+        "SURNAME_AND_NAME": "Cognome e Nome",
+        "SURNAME_NAME": "Cognome Nome",
+        "BACK": "INDIETRO",
+        "SAVE": "Salva",
+        "LAST_NOTES": "ULTIME NOTE",
+        "PREC": "prec.",
+        "SUCC": "succ.",
+        "CAB": "cab",
+        "RESET": "Reset",
+        "RESULTS": "Risultati",
+        "LOADING_DOTS": "loading...",
+        "CANCELING": "Annulla",
+        "CONFIRM": "Conferma",
+        "CONCLUDE": "Concludi",
+        "GO_NEXT": "Continua",
+        "CANCELED": "Annullato",
+        "START": "Inizia",
+        "MODIFY": "Modifica",
+        "DELETE": "Elimina",
+        "TOTALE": "Totale",
+        "BIRTH_DATE": "Data di nascita",
+        "ADDITIONAL_INFORMATION": "Informazioni aggiuntive",
+        "OTHER": "altre",
+        "OPEN_FILTERS": "Apri filtri",
+        "CLOSE_FILTERS": "Chiudi filtri",
+        "ERROR_GEN": "Dati momentaneamente non disponibili",
+        "AGGIORNATO_AL": "Aggiornato al",
+        "PRIVACY": "PRIVACY",
+        "DEADLINE": "Scadenza",
+        "PRIORITY": "Priorità",
+        "TYPOLOGY": "Tipologia",
+        "CATEGORY": "Categoria",
+        "STATE": "Stato",
+        "AMOUNT": "Importo",
+        "A": "a",
+        "DATA_PROPOSTA": "Data proposta",
+        "INDIRIZZO": "Indirizzo",
+        "INSTALLMENT": "Rata",
+        "EXPIRATION_DATE": "Data scadenza",
+        "UPDATE_DATE": "Data aggiornamento",
+        "PRODUCT_OWNED": "Prodotto posseduto",
+        "PROPENSITY": "Propensione",
+        "SHOW_MORE": "Vedi tutte",
+        "SHOW_LESS": "Mostra meno",
+        "INDICATORS": "Indicatori",
+        "UPDATED_TO": "Aggiornato al",
+        "SHOW_ALL": "Vedi tutto",
+        "CLOSE": "Chiudi",
+        "LOADED": "Caricati",
+        "UPDATE": "Aggiorna",
+        "SIMULA": "Simula",
+        "DURATION": "Durata",
+        "HIGH": "Alta",
+        "MEDIUM": "Media",
+        "LOW": "Bassa",
+        "BANK_ACCOUNT": "Conto corrente",
+        "ANNO_CORRENTE": "Anno corrente",
+        "ANNO_PRECEDENTE": "Anno precedente",
+        "SCADENZE": "Scadenze",
+        "HESITATED": "Esitato",
+        "STATO_CIVILE": "Stato civile",
+        "CLASSIFICAZIONE": "Classificazione",
+        "DOMICILIO_SEDE_LEGALE": "Domicilio / sede legale",
+        "SKIP": "Salta",
+        "AUTHORIZE": "Autorizza"
+    },
+    "CANALI": {
+        "ATM_EVOLUTO": "ATM Evoluto",
+        "CASSAWEB": "CassaWeb",
+        "CBI_VELOCE": "CBI Veloce",
+        "CONTACT_CENTER_PRIVATI": "Contact center Privati",
+        "CONTACT_CENTER_SMALL_BUSINESS": "Contact center Small Business",
+        "CORPORATE_BANKING_TERZE_PARTI": "Corporate Banking terze parti",
+        "FILIALE": "Filiale",
+        "HOME_BANKING_PRIVATI": "Internet Banking",
+        "HOME_BANKING_SMALL_BUSINESS": "Home Banking Small Business",
+        "HOME_BANKING_TERZE_PARTI": "Home Banking terze parti",
+        "INTERNETBANKING_FULLSIX": "Internet Banking Fullsix",
+        "MOBILESITE_FULLSIX": "Mobile Fullsix",
+        "MOBILE_PRIVATI": "Mobile Banking",
+        "MOBILE_SMALL_BUSINESS": "Mobile Small Business",
+        "PHONE_BANKING": "Phone Banking",
+        "SERVIZIO_FISCALE": "Servizio Fiscale",
+        "TABLET_SMALLBUSINESS": "Tablet Small Business",
+        "TOL": "TOL",
+        "TUTTI_CANALI": "Tutti i canali"
+    },
+    "RICERCA_CLIENTE": {
+        "TITLE": "Ricerca Cliente",
+        "NO_RESULTS": "la ricerca non ha prodotto risultati"
+    },
+    "INVALIDATIONS": {
+        "AT_LEAST_3": "Inserisci almeno 3 caratteri",
+        "AT_LEAST_5": "Inserisci almeno 5 caratteri",
+        "AT_LEAST_8": "Inserisci almeno 8 caratteri",
+        "AT_LEAST_12": "Inserisci almeno 12 caratteri",
+        "AT_LEAST_8_NUMERIC": "Inserisci almeno 8 caratteri numerici",
+        "INVALID_EMAIL": "Email invalida",
+        "MAX_500_CHARACTERS": "Massimo 500 caratteri",
+        "MAX_160_CHARACTERS": "Massimo 160 caratteri",
+        "MAX_150_CHARACTERS": "Massimo 150 caratteri",
+        "MAX_250_CHARACTERS": "Massimo 250 caratteri",
+        "CAMPO_OBBLIG": "Campo obbligatorio",
+        "IMPORTO_OBBLIG": "Attenzione! L'importo non può essere zero",
+        "INSERISCI_CIFRA": "Formato non corretto",
+        "INVALID_SELECTION": "Selezione non valida",
+        "IMPORTO_NOT_ALLOWED": "L'importo deve essere un multiplo di {{step}}{{currency}}.",
+        "FORMATO_NON_VALIDO": "Formato non valido"
+    },
+    "PAGAMENTI": {
+        "DONAZIONE": "Bonifico per Donazione",
+        "ESTERO": "Bonifico estero",
+        "ABROAD_TRANSFER": "Bonifico estero",
+        "GIROCONTO": "Bonifico verso i miei conti",
+        "ACI_BILL": "Bollo Auto e Moto",
+        "AMAZON_COUPON": "Buoni Regalo Amazon",
+        "BANK_FUNDS_TRANSFER": "Distinta",
+        "BONIFICO_PERIODICO": "Bonifico periodico",
+        "BILL": "MAV - RAV - Freccia",
+        "BLANK_POSTAL_BILL": "Bollettino postale bianco",
+        "CBILL_PAGOPA": "Bollettino CBILL - pagoPA",
+        "DISTINCT_TRANSFER": "Distinta bonifici",
+        "DISTINTA_ORDINARIO": "Distinta bonifici",
+        "DONATION_TRANSFER": "Donazione",
+        "EFFICIENZA_ENERGETICA": "Bonifico per agevolazione fiscale",
+        "FRECCIA_BILL": "Bollettino Freccia",
+        "GIROFONDI_ALTRA_BANCA": "Girofondo altra banca",
+        "INSTANT_TRANSFER": "Bonifico istantaneo",
+        "ISTANTANEO": "Bonifico istantaneo",
+        "MAV": "Bollettino MAV",
+        "MAV_BILL": "Bollettino MAV",
+        "ORDINARIO_ALTRA_BANCA": "Bonifico ordinario",
+        "ORDINARIO_INTERNO": "Bonifico ordinario",
+        "ORDINARY_TRANSFER": "Bonifico ordinario",
+        "PHONE_TOPUP": "Ricarica telefonica",
+        "POSTAL_BILL": "Bollettino postale",
+        "PREPAID_TOPUP": "Ricarica prepagata",
+        "PREPRINTED_POSTAL_BILL": "Bollettino postale premarcato",
+        "RAV": "Bollettino RAV",
+        "RAV_BILL": "Bollettino RAV",
+        "RECURRING_TRANSFER": "Bonifico periodico",
+        "REVOKE_TRANSFER": "Revoca bonifico",
+        "RICHIESTA_ASSEGNI": "Richiesta assegni",
+        "RISTRUTTURAZIONE": "Bonifico per agevolazione fiscale",
+        "SALARY": "Inserimento stipendi",
+        "SEPA_TRANSFER": "Bonifico SEPA",
+        "STIPENDIO": "Inserimento stipendi",
+        "TAXRELIEF_TRANSFER": "Bonifico per agevolazione fiscale",
+        "TRANSFER": "Tutti i bonifici",
+        "TV_FEE": "Canone TV",
+        "DOMICILIAZIONE": "Domiciliazione Utenze",
+        "RIBA": "Pagamento Ri.Ba.",
+        "RIBA_PAYMENT": "Pagamento Ri.Ba.",
+        "AMAZON_COUPONS": {
+            "MESSAGE_EMAIL_GIFT": "Hai inviato per email un Buono Regalo* Amazon.it all'indirizzo di posta",
+            "MESSAGE_PRINT_GIFT": "Hai ricevuto un Buono Regalo* Amazon.it all'indirizzo di posta",
+            "MESSAGE_DISCLAIMER_GIFT": "Se acquisti un Buono Regalo Amazon.it potrai utilizzarlo per milioni di articoli su Amazon.it. Puoi anche scegliere di fare un regalo inviandolo ad un altro destinatario. Puoi ricaricare il tuo account al massimo ogni 24 ore con importi da 0,15 € a 900 €.<br> I Buono Regalo* Amazon.it scadono a 10 anni dal giorno della loro emissione e sono soggetti a <a class='amazon-url-anchor' href='https://www.amazon.it/gp/help/customer/display.html?nodeId=GNG9PXYZUMQT72QK' target='_blank'>Termini e condizioni</a>. Una volta acquistato un Buono Regalo Amazon.it l'operazione non potrà essere annullata."
+        },
+        "F24": {
+            "TITLE": "F24",
+            "SOLAR_YEAR_CHECKBOX_TEXT": "Barrare in caso di anno d'imposta non coincidente con l'anno solare",
+            "PAYER_TYPE": {
+                "PRIVATE": "Privato",
+                "COMPANY": "Azienda"
+            },
+            "SEZIONI": {
+                "ORDINANTE": {
+                    "TITLE": "Dati ordinante"
+                },
+                "CONTRIBUENTE": {
+                    "TITLE": "Dati contribuente"
+                },
+                "ERARIO": {
+                    "TITLE": "Sezione erario ed altro"
+                },
+                "INPS": {
+                    "TITLE": "Sezione INPS"
+                },
+                "REGIONI": {
+                    "TITLE": "Sezione regioni"
+                },
+                "ENTI_LOCALI": {
+                    "TITLE": "Sezione IMU e altri tributi locali"
+                },
+                "ENTI_PREVIDENZIALI": {
+                    "TITLE": "Sezione altri enti previdenziali e assicurativi"
+                },
+                "ACCISE": {
+                    "TITLE": "Sezione Accise/Monopoli e altri versamenti non ammessi in compensazione"
+                },
+                "ELIDE": {
+                    "TITLE": "Sezione erario ed altro"
+                },
+                "PAGAMENTI": {
+                    "TITLE": "Motivo del pagamento"
+                }
+            },
+            "F24": {
+                "TITLE": "F24 Semplificato / Ordinario"
+            },
+            "ACCISE": {
+                "TITLE": "F24 Accise"
+            },
+            "ELEMENTI_IDENTIFICATIVI": {
+                "TITLE": "F24 Elementi Identificativi"
+            },
+            "ORDINARIO": {
+                "TITLE": "F24 Ordinario"
+            },
+            "SEMPLIFICATO": {
+                "TITLE": "F24 Semplificato",
+                "COPY_SUCCESS_PAGAMENTO_TITLE": "Complimenti, l'operazione è andata a buon fine!",
+                "COPY_SUCCESS_PAGAMENTO_DESCRIPTION": "Il modulo F24 è stato inviato e tra circa 4 ore passerà in stato Accettato. Da quel momento, se dovessi riscontrare degli errori potrai revocarlo dalla sezione Riepilogo pagamenti. Ricorda che per farlo hai tempo fino alle 19 del giorno successivo alla data di pagamento.",
+                "COPY_OTTIENI_FAC_SIMILE": "Ottieni un facsimile del documento. La quietanza sarà disponibile nella sezione Riepilogo Pagamenti."
+            },
+            "REVOCA": {
+                "TITLE": "Revoca F24",
+                "INFO-BOX": "<p><span class=\"text-bold\">Devi annullare un pagamento F24?</span><br>Qui puoi visualizzare gli F24 revocabili. Ti ricordiamo che gli F24 possono essere revocati dopo circa 4 ore dalla data di inserimento e non appena la delega passerà in stato Accettata. Gli F24 possono essere revocati fino alle 19:00 del giorno successivo alla data di pagamento.</p>"
+            }
+        },
+        "RENDICONTAZIONE_POS": "Rendicontazione POS"
+    },
+    "STATI_BONIFICO": {
+        "ACTIVE": "Attivo",
+        "AUTHORIZED": "Autorizzato",
+        "CANCELLED": "Cancellato",
+        "CONCLUDED": "Concluso",
+        "CREATED": "Creato",
+        "FORWARDED": "Inoltrato",
+        "FORWARDED_REVOCABLE": "Revocabile",
+        "INOLTRATA_REVOCABILE": "Inoltrata revocabile",
+        "INOLTRATA_NON_REVOCABILE": "Inoltrata non revocabile",
+        "INSERTED": "Inserito",
+        "REFUSED": "Rifiutato",
+        "REVERSED": "Annullato",
+        "REVOKED": "Revocato",
+        "SENT": "Inviato",
+        "SUSPENDED": "Sospeso",
+        "TO_AUTHORIZE": "Da autorizzare",
+        "UNKNOWN": "Sconosciuto"
+    },
+    "STATI_RIBA": {
+        "EffettoPagato": "Effetto pagato"
+    },
+    "CBILL": {
+        "STATI": {
+            "1": "Da pagare",
+            "3": "Pagato",
+            "TOPAY": "Da pagare",
+            "PAYED": "Pagato",
+            "PAGATO": "Pagato"
+        }
+    },
+    "BOLLO_AUTO_MOTO": {
+        "BA1": "Autoveicolo",
+        "BA4": "Motociclo"
+    },
+    "POLIZZA_AUTO_MOTO": {
+        "1": "Autovettura",
+        "4": "Motociclo"
+    },
+    "AGEVOLAZIONI_FISCALI": {
+        "EFFICIENZA_ENERGETICA": "Risparmio energetico",
+        "RISTRUTTURAZIONE": "Lavori di Ristrutturazione Edilizia"
+    },
+    "CARTE": {
+        "CATEGORIE": {
+            "CREDIT": "Carta di credito",
+            "DEBIT": "Carta di debito",
+            "IBAN": "Carta IBAN",
+            "PREPAID": "Carta prepagata"
+        }
+    },
+    "STATO_FIRMA_DIGITALE": {
+        "EXPIRED": "Scaduta",
+        "MISSING": "Non attiva",
+        "REVOKED": "Revocata",
+        "SUSPENDED": "Sospesa",
+        "VALID": "Attiva"
+    },
+    "MUTUI": {
+        "PERIODICITA": {
+            "MENSILE": "Mensile"
+        },
+        "REGIME": {
+            "FISSO": "Fisso",
+            "VARIABILE": "Variabile"
+        },
+        "TIPOLOGIA_MUTUO": {
+            "FISSO": "Fisso",
+            "VARIABILE": "Variabile"
+        }
+    },
+    "PRESTITI": {
+        "PERIODICITA": {
+            "MENSILE": "Mensile"
+        },
+        "REGIME": {
+            "FISSO": "Fisso",
+            "VARIABILE": "Variabile"
+        },
+        "TIPOLOGIA_PRESTITO": {
+            "FISSO": "Fisso",
+            "VARIABILE": "Variabile"
+        },
+        "TIPOLOGIA_PRODOTTO": {
+            "OCS": "Prestito online",
+            "STANDARD": "Prestito standard"
+        },
+        "STATO_PROPOSTA": {
+            "ANNULLATA": "Annullata",
+            "CONTRATTUALIZZATA": "Contrattualizzata",
+            "IN_CORSO": "In corso",
+            "IN_VENDITA": "In vendita"
+        }
+    },
+    "STATO_DOCUMENTO": {
+        "ACCETTATO": "Documento accettato",
+        "IN_SCADENZA": "Documento in scadenza",
+        "IN_VALIDAZIONE": "Documento in validazione",
+        "RIFIUTATO": "Documento rifiutato",
+        "SCADUTO": "Documento scaduto",
+        "VALIDO": "Documento valido",
+        "NON_VALIDO": "Documento non valido"
+    },
+    "TIPO_DOCUMENTO": {
+        "001": "Carta di Identità",
+        "002": "Patente",
+        "003": "Passaporto"
+    },
+    "RUBRICA": {
+        "AZIONI": {
+            "BONIFICO": "Bonifico",
+            "RICARICA_PREPAGATA": "Ricarica prepagata",
+            "RICARICA_TELEFONICA": "Ricarica telefonica"
+        }
+    },
+    "MIFID": {
+        "PROFILO_INVESTITORE": "Profilo investitore MiFID",
+        "EDUCATIONAL_BOX_PROFILE": "Il questionario MiFID (acronimo di Direttiva su Mercati degli Strumenti Finanziari) è un insieme di domande sulle diverse conoscenze ed esperienze che hai sviluppato nel mondo finanziario, nonché sulla tua situazione economica e su quello che vorresti ottenere dal tuoi investimenti. Assicurati di avere un protocollo sempre aggiornato per permetterci di offrirti un servizio adeguato alle tue caratteristiche.",
+        "EDUCATIONAL_BOX_PROFILE_NOT_COMPILED": "Non hai ancora un Profilo Investitore, ma è importante crearlo affinché sia possibile farti proposte di investimento adeguate alle tue esigenze e ai tuoi obiettivi. La creazione di un profilo investitore viene fatta attraverso  la compilazione di un questionario (MiFID) la cui compilazione solitamente richiede circa 20 minuti.",
+        "EDUCATIONAL_BOX_COMPILAZIONE_QUESTIONARIO": "Il profilo investitore (questionario MiFID) si compone di domande suddivise in 6 distinte sezioni. Clicca su ciascuna per inserire le informazioni richieste.",
+        "MAGGIORI_DETTAGLI": "La Banca, in ottemperanza ai Regolamenti Comunitari e Nazionali, ha adottato il presente Questionario per la Profilazione del Cliente (o Questionario MiFID) per raccogliere in modo strutturato tutte le informazioni utili a comprendere il tuo profilo personale, al fine di permettere alla Banca stessa di verificare l'appropriatezza e/o valutare l'adeguatezza delle operazioni in prodotti finanziari da te poste in essere nell'ambito della prestazione dei servizi e delle attività di investimento.\n\nAttraverso la compilazione del Questionario MiFID, la Banca acquisisce una serie di informazioni e notizie riguardanti i tuoi obiettivi di investimento, la tua conoscenza, la tua esperienza in materia di investimenti o di prodotti finanziari e la tua situazione finanziaria; le predette informazioni vengono raccolte per la prestazione dei Servizi di investimento e vengono utilizzate per poter agire nel tuo miglior interesse. \n\nLa Banca confronterà le caratteristiche del servizio di investimento e/o del prodotto finanziario oggetto della prestazione del servizio e/o dell'attività di investimento medesimo rispetto al tuo profilo personale desunto dalle predette informazioni da te rilasciate, al fine di verificare l'appropriatezza, valutare l'adeguatezza e/o fornirà raccomandazioni personalizzate su prodotti o servizi a te adatti.\n\nAlcune delle informazioni raccolte possono essere utilizzate dalla Banca per finalità anche differenti da quelle sopra esposte: possono essere ad esempio utili ai fini della definizione di politiche commerciali sempre più vicine ai bisogni e alle caratteristiche della propria clientela.\n\nViste le molteplici finalità del presente Questionario, è pertanto necessario ottenere da parte tua, informazioni quanto più possibile complete, puntuali e veritiere, al fine di consentire alla Banca di definire nella maniera più corretta e completa il tuo profilo personale e assisterti in modo idoneo nel tuo pieno interesse.\n\nPoiché dette informazioni possono subire variazioni nel tempo, ogni eventuale modifica rispetto a quanto da te dichiarato nel presente Questionario dovrà essere raccolta in maniera quanto più tempestiva possibile da parte della Banca; per tali motivi, la validità del Questionario MiFID sarà limitata nel tempo e comunque, qualora intervenissero modifiche prima della scadenza stessa del Questionario, ti invitiamo a contattarci tempestivamente per aggiornare le informazioni in esso contenute.",
+        "TOOLTIPS": {
+            "DOMICILIO_SEDE_LEGALE": "Se le informazioni che visualizzi non sono aggiornate puoi modificarle accedendo alla sezione Il mio profilo o contattando la tua Filiale.",
+            "STATO_CIVILE": "Se le informazioni che visualizzi non sono aggiornate puoi modificarle contattando la tua Filiale.",
+            "CLASSIFICAZIONE": "Il cliente al dettaglio non possiede i requisiti di esperienza e conoscenza richiesti ad un cliente di tipo professionale ed è pertanto soggetto al più alto grado di protezione stabilito dalle norme sulla prestazione dei servizi di investimento. Se lo desideri puoi fare richiesta di modifica della classificazione rivolgendoti alla tua Filiale."
+        },
+        "LABELS": {
+            "COMPLETATA": "Completata",
+            "DA_COMPLETARE": "Da completare",
+            "NON_COMPILABILE": "Non compilabile",
+            "INFO_NOT_AVAILABLE": "Informazioni non fornite",
+            "COMPILAZIONE_PROFILO_INVESTITORE": "Compilazione profilo investitore",
+            "VAI_AL_TUO_PROFILO_INVESTITORE": "Vai al tuo profilo investitore",
+            "PRENOTA_UNA_CONSULENZA": "Prenota una consulenza",
+            "ECCO_ESITO_QUESTIONARIO": "Ecco l’esito del tuo questionario. Clicca su \"Autorizza\" per confermare.",
+            "ANTEPRIMA_QUESTIONARIO": "Anteprima del tuo profilo investitore",
+            "ADEGUATEZZA_PORTAFOGLIO": "Adeguatezza del Portafoglio di Investimento",
+            "COMPILAZIONE_NON_ANCORA_COMPLETATA": "Compilazione del profilo non ancora completata…",
+            "BOZZA_DISPONIBILE_PER": "Bozza disponibile ancora per",
+            "PROFILO_INVESTITORE_ASSENTE": "Profilo investitore assente"
+        },
+        "SECTIONS": {
+            "TITLE_1": "Anagrafica",
+            "TITLE_3": "Esperienza e Conoscenza",
+            "TITLE_4": "Obiettivi di investimento",
+            "TITLE_5": "Situazione finanziaria",
+            "TITLE_6": "Esigenze assicurative",
+            "TITLE_7": "Obiettivi di investimento - Gestione portafogli",
+            "DESCRIPTION_1": "I tuoi dati riguardanti la professione e la composizione del nucleo familiare.",
+            "DESCRIPTION_3": "Le tue conoscenze ed esperienze in materia di prodotti finanziari, servizi di investimento e principali fattori di rischio ad essi collegati.",
+            "DESCRIPTION_4": "Le informazioni sulla finalità dei tuoi investimenti, sulla tua propensione al rischio e sull'orizzonte temporale in cui desideri realizzarli.",
+            "DESCRIPTION_5": "I dati relativi al tuo reddito regolare, ai tuoi investimenti presso altri intermediari, ai tuoi beni immobili, alla tua capacità di risparmio annua e ai tuoi impegni finanziari.",
+            "DESCRIPTION_6": "Le informazioni sulle tue principali esigenze assicurative.",
+            "DESCRIPTION_7": "Le informazioni sulla finalità dei tuoi investimenti, sulla tua propensione al rischio e sull'orizzonte temporale nell'ambito del servizio di gestione di portafogli su base individuale.",
+            "SECTION_COMPLETE_TITLE": "Bene, hai completato la sezione {{sezione}}",
+            "SECTION_COMPLETE_DESCRIPTION_1": "Le risposte che ci hai fornito fino ad ora sono state salvate.\nContinua con la sezione {{sezione}}{{punctuation}}",
+            "SECTION_COMPLETE_DESCRIPTION_2": "se vuoi proseguire senza compilarla",
+            "LAST_SECTION_COMPLETE_TITLE": "Bene, hai terminato la compilazione del questionario!",
+            "LAST_SECTION_COMPLETE_DESCRIPTION": "Le risposte che ci hai fornito fino ad ora sono state salvate.\nContinua per visualizzare l’esito e confermare.",
+            "FIRST_SAVE_PROFILE_SUCCESS_TITLE": "Complimenti!Il tuo profilo investitore è aggiornato.",
+            "FIRST_SAVE_PROFILE_SUCCESS_SUBTITLE": "Primi passi per iniziare ad investire",
+            "FIRST_SAVE_PROFILE_SUCCESS_DESCRIPTION": "",
+            "UPDATE_PROFILE_SUCCESS_TITLE": "Complimenti!\nIl tuo profilo investitore è stato creato.",
+            "UPDATE_PROFILE_SUCCESS_DESCRIPTION": "Sappiamo che sono tante le esigenze e le variabili che intervengono nel rapporto con i tuoi risparmi e nella loro gestione. Prima ancora che ai numeri, a volte è necessario guardare alla propria storia finanziaria con sensibilità personale.\nSiamo a tua disposizione in filiale e sappiamo che scegliere il giusto piano di risparmio e di investimento è prima di tutto una questione di buon senso, di misurazione delle risorse e delle aspettative.",
+            "SKIP": {
+                "TEXT_3": "Se decidi di proseguire senza compilare la sezione Esperienza e Conoscenza non potremo prestarti i servizi di investimento e non potremo valutare se un prodotto è adeguato o appropriato per te.<br>Saltando la sezione, saranno inoltre perse tutte le risposte eventualmente fornite in una precedente compilazione.<br><br>Sei sicuro di voler proseguire?",
+                "TEXT_4": "Se decidi di proseguire senza compilare la sezione Obiettivi di investimento non potremo prestarti il servizio di consulenza.<br>Saltando la sezione, saranno inoltre perse tutte le risposte eventualmente fornite in una precedente compilazione.<br><br>Sei sicuro di voler proseguire?",
+                "TEXT_6": "Se decidi di proseguire senza compilare la sezione Esigenze assicurative non potremo prestarti servizi che riguardino prodotti di investimento assicurativi.<br>Saltando la sezione, saranno inoltre perse tutte le risposte eventualmente fornite in una precedente compilazione.<br><br>Sei sicuro di voler proseguire?",
+                "TEXT_7": "Se decidi di proseguire senza compilare la sezione Obiettivi di investimento per le gestioni di portafogli non potremo prestarti questo servizio.<br>Saltando la sezione, saranno inoltre perse tutte le risposte eventualmente fornite in una precedente compilazione.<br><br>Sei sicuro di voler proseguire?"
+            }
+        },
+        "INDICATORI": {
+            "ESPERIENZA_E_CONOSCENZA": "ESPERIENZA E CONOSCENZA",
+            "OBIETTIVI_DI_INVESTIMENTO": "OBIETTIVI DI INVESTIMENTO",
+            "RISCHIO_CREDITO": "RISCHIO CREDITO",
+            "RISCHIO_MERCATO": "RISCHIO MERCATO",
+            "E_C_LIVELLO_0": "NON RILEVABILE",
+            "E_C_LIVELLO_1": "BASSO",
+            "E_C_LIVELLO_2": "MEDIO-BASSO",
+            "E_C_LIVELLO_3": "MEDIO",
+            "E_C_LIVELLO_4": "MEDIO-ELEVATO",
+            "E_C_LIVELLO_5": "ELEVATO",
+            "E_C_LIVELLO_6": "NON RILEVABILE",
+            "E_C_LIVELLO_DESC_0": "",
+            "E_C_LIVELLO_DESC_1": "investitore con un livello generale di esperienza e conoscenza in ambito economico/finanziario idoneo alla comprensione delle caratteristiche di prodotti finanziari semplici, quali ad esempio BTP non strutturati o Fondi Comuni di Investimento",
+            "E_C_LIVELLO_DESC_2": "investitore con un livello generale di esperienza e conoscenza in ambito economico/finanziario idoneo alla comprensione delle caratteristiche di prodotti finanziari con un basso grado di complessità, quali ad esempio Titoli di Stato esteri non strutturati in divisa, Obbligazioni bancarie semplici non oggetto di bail-in o Azioni del MIB",
+            "E_C_LIVELLO_DESC_3": "investitore con un livello generale di esperienza e conoscenza in ambito economico/finanziario idoneo alla comprensione delle caratteristiche di prodotti finanziari di media complessità, quali ad esempio Obbligazioni strutturate complesse non oggetto di bail-in  o Polizze Ramo III/Multiramo",
+            "E_C_LIVELLO_DESC_4": "investitore con un livello generale di esperienza e conoscenza in ambito economico/finanziario idoneo alla comprensione delle caratteristiche di prodotti finanziari complessi, quali ad esempio Obbligazioni Subordinate o Obbligazioni Convertibili",
+            "E_C_LIVELLO_DESC_5": "investitore con un livello generale di esperienza e conoscenza in ambito economico/finanziario idoneo alla comprensione delle caratteristiche di prodotti finanziari di elevata complessità, quali derivati o prodotti finanziari a leva.",
+            "E_C_LIVELLO_DESC_6": "",
+            "O_I_LIVELLO_0": "NON RILEVABILE",
+            "O_I_LIVELLO_1": "MOLTO LIMITATO",
+            "O_I_LIVELLO_2": "LIMITATO",
+            "O_I_LIVELLO_3": "MEDIO",
+            "O_I_LIVELLO_4": "MEDIO ELEVATO",
+            "O_I_LIVELLO_5": "ELEVATO",
+            "O_I_LIVELLO_6": "NON RILEVABILE",
+            "O_I_LIVELLO_DESC_0": "",
+            "O_I_LIVELLO_DESC_1": "investitore molto prudente, caratterizzato da un basso livello di propensione al rischio. La protezione del capitale, a prescindere dal rendimento, è l’obiettivo principale del suo investimento, pur essendo consapevole di una minima possibilità di subire perdite limitate nel breve periodo a fronte di un andamento avverso dei mercati finanziari.",
+            "O_I_LIVELLO_DESC_2": "investitore prudente, caratterizzato da un limitato livello di  propensione al rischio. Il conseguimento di una crescita contenuta del valore del capitale nel medio periodo è l’obiettivo principale del suo investimento, pur essendo consapevole di una limitata possibilità di subire perdite nel breve periodo a fronte di un andamento avverso dei mercati finanziari.",
+            "O_I_LIVELLO_DESC_3": "investitore con un livello di  propensione al rischio moderato. Il conseguimento di una stabile crescita del capitale nel medio/lungo periodo è l’obiettivo principale del suo investimento, pur essendo consapevole di una possibilità di subire perdite nel breve e medio periodo a fronte di un andamento avverso dei mercati finanziari.",
+            "O_I_LIVELLO_DESC_4": "investitore con un livello di propensione al rischio medio alto. Il conseguimento di una crescita significativa del capitale nel lungo periodo è l’obiettivo principale del suo investimento, pur essendo consapevole di una possibilità di subire perdite, anche consistenti, nel breve e medio periodo a fronte di un andamento avverso dei mercati finanziari.",
+            "O_I_LIVELLO_DESC_5": "investitore con un livello di propensione al rischio alto. Il conseguimento di una crescita molto significativa del capitale nel lungo periodo è l’obiettivo principale del suo investimento, pur essendo consapevole di una possibilità di subire perdite, anche molto consistenti, a fronte di un andamento avverso dei mercati finanziari.",
+            "O_I_LIVELLO_DESC_6": "",
+            "R_C_LIVELLO_0": "Non rilevabile",
+            "R_C_LIVELLO_1": "Basso",
+            "R_C_LIVELLO_2": "Medio",
+            "R_C_LIVELLO_3": "Medio alto",
+            "R_C_LIVELLO_4": "Alto",
+            "R_M_LIVELLO_0": "Non rilevabile",
+            "R_M_LIVELLO_1": "Molto limitato",
+            "R_M_LIVELLO_2": "Limitato",
+            "R_M_LIVELLO_3": "Medio",
+            "R_M_LIVELLO_4": "Medio elevato",
+            "R_M_LIVELLO_5": "Elevato"
+        }
+    },
+    "BUSINESS": {
+        "ANTICIPI_FATTURE": {
+            "STATI": {
+                "ALL": "Tutte",
+                "ANTICIPATED": "Anticipata",
+                "CLOSED": "Chiusa",
+                "INSERTED": "Inserita",
+                "EXPIRED": "Scaduta",
+                "PAID": "Pagata",
+                "REFUSED": "Rifiutata",
+                "REVOKED": "Revocata"
+            }
+        }
+    },
+    "CONSULENZE": {
+        "STATO_CONSULENZA": {
+            "ACTIVE": "Attiva",
+            "ACCEPTED": "Accettata",
+            "COMPLETED": "Completata",
+            "EXPIRED": "Scaduta",
+            "DELETED": "Annullata"
+        },
+        "STATO_PROPOSTA": {
+            "EXPIRED": "Scaduta",
+            "PARTIALLY_REFUSED": "Rifiutata parzialmente",
+            "REFUSED": "Rifiutata",
+            "PARTIALLY_COMPLETED": "Completata parzialmente",
+            "COMPLETED": "Completata",
+            "CANCELED": "Annullata",
+            "TO_REFUSE": "Da rifiutare",
+            "TO_CONFIRM": "Da confermare",
+            "CONFIRMED": "Confermata"
+        },
+        "STATO_ORDINE_OFS": {
+            "CANCELED": "Annullato",
+            "CONFIRMED": "Confermato",
+            "TO_CONFIRM_BY_BRANCH_OFFICE": "Da confermare in filiale",
+            "FULFILLED": "Eseguito",
+            "TO_CONFIRM": "In attesa di conferma",
+            "IN_PREPARATION": "In preparazione",
+            "UNFULFILLED": "Ineseguito",
+            "TERMINATION_ACCEPTED": "Recesso accettato",
+            "TO_REGENERATE": "Da rigenerare",
+            "EXPIRED": "Scaduto",
+            "SUSPENDED": "Sospeso",
+            "REVERSED": "Stornato"
+        },
+        "STATO_ORDINE_OAD": {
+            "IN_PROGRESS": "In preparazione",
+            "TO_CONFIRM": "In attesa di conferma",
+            "TO_CONFIRM_BRANCH": "Da confermare in filiale",
+            "CONFIRMED": "Confermato",
+            "EXPIRED": "Scaduto",
+            "TO_RESTORE": "Da rigenerare",
+            "CANCELED": "Annullato"
+        },
+        "TIPO_ORDINE": {
+            "PURCHASE": "Acquisto",
+            "PURCHASE_FROM_BASKET": "Acquisto da paniere",
+            "AUCTION": "Asta",
+            "SETTLEMENT": "Estinzione",
+            "CASH_TRANSFER": "Giro denaro",
+            "TENDER_OFFER": "OPA",
+            "EXCHANGE_OFFER": "OPS",
+            "PUBLIC_OFFERING": "OPV",
+            "CAPITAL_ACCUMULATION_PLAN": "PAC",
+            "CASH_WITHDRAWAL": "Prelievo denaro",
+            "REFUND": "Rimborso",
+            "SUBSCRIPTION": "Sottoscrizione",
+            "FUNDS_SWITCH": "Switch fondi",
+            "SALE": "Vendita",
+            "SALE_FROM_BASKET": "Vendita da paniere",
+            "DEPOSIT": "Versamento",
+            "CAPITAL_INCREASE": "Aumento capitale"
+        }
+    }
+}

@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Tracciato_9312" data-name="Tracciato 9312" d="M.368,12.749a12,12,0,1,0,12-12,12,12,0,0,0-12,12" transform="translate(-0.368 -0.749)" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Territori_Palestinesi" data-name="Territori Palestinesi" transform="translate(-0.368 -0.749)">
+    <g id="Raggruppa_253" data-name="Raggruppa 253" transform="translate(0.368 0.749)" clip-path="url(#clip-path)">
+      <rect id="Rettangolo_805" data-name="Rettangolo 805" width="48.065" height="24.032" transform="translate(-3.961 -0.011)"/>
+      <rect id="Rettangolo_806" data-name="Rettangolo 806" width="48.065" height="16.047" transform="translate(-3.961 7.975)" fill="#fff"/>
+      <rect id="Rettangolo_807" data-name="Rettangolo 807" width="48.065" height="8.018" transform="translate(-3.961 16.004)" fill="#007b2f"/>
+      <path id="Tracciato_9311" data-name="Tracciato 9311" d="M0,24.78V.748L15.939,12.759Z" transform="translate(-3.961 -0.759)" fill="#f00822"/>
+    </g>
+  </g>
+</svg>

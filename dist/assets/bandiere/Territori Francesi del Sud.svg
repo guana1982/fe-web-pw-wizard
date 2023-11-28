@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Tracciato_9310" data-name="Tracciato 9310" d="M.6,12.749a12,12,0,1,0,12-12,12,12,0,0,0-12,12" transform="translate(-0.601 -0.749)" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Territori_Francesi_del_Sud" data-name="Territori Francesi del Sud" transform="translate(-0.601 -0.749)">
+    <g id="Raggruppa_252" data-name="Raggruppa 252" transform="translate(0.601 0.749)" clip-path="url(#clip-path)">
+      <rect id="Rettangolo_800" data-name="Rettangolo 800" width="35.29" height="23.526" transform="translate(-6.468 0.237)" fill="#00247d"/>
+      <path id="Tracciato_9304" data-name="Tracciato 9304" d="M8.635,4.657l-1.6,2.508V4.84h.926l.7-1.119H7.032V2.968H9.173l.775-1.195H2.759l.764,1.184H5.654V7.143l-1.6-2.5-2.2,3.476,1.367-.011.226-.377H4.825l1.528,2.518L7.9,7.746H9.27l.2.355H10.8ZM3.663,6.885l.42-.775.506.775Zm4.488.022.5-.775.43.775Z" transform="translate(11.641 9.248)" fill="#fff"/>
+      <path id="Tracciato_9305" data-name="Tracciato 9305" d="M2.849,1.9l.269.818h.861l-.7.517.269.818-.7-.506-.7.506.269-.818-.7-.517H2.58Z" transform="translate(10.31 10.497)" fill="#fff"/>
+      <path id="Tracciato_9306" data-name="Tracciato 9306" d="M3.748,1.9l.269.818h.861l-.7.517.269.818-.7-.506-.7.506.269-.818-.7-.517h.861Z" transform="translate(19.091 10.497)" fill="#fff"/>
+      <path id="Tracciato_9307" data-name="Tracciato 9307" d="M3.055,2.453l.269.818h.861l-.7.506.269.829-.7-.506-.7.506.269-.829-.7-.506h.861Z" transform="translate(12.323 15.884)" fill="#fff"/>
+      <path id="Tracciato_9308" data-name="Tracciato 9308" d="M3.544,2.453l.269.818h.861l-.7.506.269.829-.7-.506-.7.506.269-.829-.7-.506h.861Z" transform="translate(17.1 15.884)" fill="#fff"/>
+      <path id="Tracciato_9309" data-name="Tracciato 9309" d="M3.3,2.643l.269.818h.861l-.7.517L4,4.8l-.7-.506L2.6,4.8l.269-.818-.7-.517h.861Z" transform="translate(14.672 17.739)" fill="#fff"/>
+      <rect id="Rettangolo_801" data-name="Rettangolo 801" width="14.26" height="9.525" transform="translate(-2.325 0.248)" fill="#fff"/>
+      <rect id="Rettangolo_802" data-name="Rettangolo 802" width="13.937" height="9.277" transform="translate(-2.325 0.248)" fill="#f10c27"/>
+      <rect id="Rettangolo_803" data-name="Rettangolo 803" width="9.396" height="9.277" transform="translate(-2.325 0.248)" fill="#fff"/>
+      <rect id="Rettangolo_804" data-name="Rettangolo 804" width="4.682" height="9.277" transform="translate(-2.325 0.248)" fill="#00247d"/>
+    </g>
+  </g>
+</svg>

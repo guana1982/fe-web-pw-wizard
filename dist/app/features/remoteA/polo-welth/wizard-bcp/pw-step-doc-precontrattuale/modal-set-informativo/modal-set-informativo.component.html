@@ -1,0 +1,21 @@
+<bper-modal>
+    <bper-esito [title]="data.title" [descriptionHTML]="data.descriptionHtml"></bper-esito>
+
+    <div footer>
+        <div class="button-wrapper">
+            <button (click)="download(PagaPoiButtonEvent.PRIMARY_ACTION)" class="secondary-buttom">
+                <span style="margin-top: 2px;">{{data.primaryButtonLabel}}</span>
+                <img style="width: 23px; margin: 0 -10px 0 5px;"
+                    src="../../../../../../../assets/bper-svg/icon-download.png">
+            </button>
+        </div>
+        <div class="button-wrapper" *ngIf="data.secondaryButtonLabel">
+            <button (click)="sendMail(PagaPoiButtonEvent.SECONDARY_ACTION)" class="secondary-buttom">
+                <span style="margin-top: 2px;">{{data.secondaryButtonLabel}}</span>
+                <img style="width: 23px; margin: 0 -10px 0 5px;"
+                    src="../../../../../../../assets/bper-svg/icon-send.png">
+            </button>
+        </div>
+
+    </div>
+</bper-modal>

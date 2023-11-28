@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="23.989" viewBox="0 0 24 23.989">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Tracciato_9330" data-name="Tracciato 9330" d="M.743,12.744A12,12,0,1,0,12.748.749,12,12,0,0,0,.743,12.744" transform="translate(-0.743 -0.749)" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Trinidad_e_Tobago" data-name="Trinidad e Tobago" transform="translate(-0.743 -0.749)">
+    <g id="Raggruppa_258" data-name="Raggruppa 258" transform="translate(0.743 0.749)" clip-path="url(#clip-path)">
+      <rect id="Rettangolo_818" data-name="Rettangolo 818" width="39.986" height="23.989" transform="translate(-7.993 0)" fill="#ce0c26"/>
+      <path id="Tracciato_9328" data-name="Tracciato 9328" d="M0,.749,27.711,24.739H39.986L12.231.749Z" transform="translate(-7.993 -0.746)" fill="#fff"/>
+      <path id="Tracciato_9329" data-name="Tracciato 9329" d="M.19.749,27.9,24.739h8.176L8.334.749Z" transform="translate(-6.136 -0.746)"/>
+    </g>
+  </g>
+</svg>

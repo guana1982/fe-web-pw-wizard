@@ -1,0 +1,62 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="120" height="120" viewBox="0 0 120 120">
+  <defs>
+    <filter id="Tracciato_86761" x="63.365" y="60.75" width="51.326" height="60.549" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.051"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rettangolo_12243" x="-2.836" y="-29.496" width="127.213" height="157.277" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-2"/>
+      <feFlood flood-opacity="0.051"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <clipPath id="clip-path">
+      <rect id="Rettangolo_12244" data-name="Rettangolo 12244" width="120" height="120" transform="translate(-18184 -17553)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+    <filter id="Unione_44" x="20.902" y="18.676" width="92.991" height="98.551" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-3"/>
+      <feFlood flood-opacity="0.051"/>
+      <feComposite operator="in" in2="blur-3"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Gruppo_di_maschere_37" data-name="Gruppo di maschere 37" transform="translate(18184 17553)" clip-path="url(#clip-path)">
+    <g id="Raggruppa_29966" data-name="Raggruppa 29966" transform="translate(3.525 -1.882)">
+      <g id="Raggruppa_29961" data-name="Raggruppa 29961" transform="translate(2217.737 -1371.917)">
+        <g id="Raggruppa_29960" data-name="Raggruppa 29960" transform="translate(-20382.824 -16166.062)">
+          <g transform="matrix(1, 0, 0, 1, -22.44, -13.14)" filter="url(#Unione_44)">
+            <path id="Unione_44-2" data-name="Unione 44" d="M66.493,77.33,44.564,52.53a28.756,28.756,0,0,1-15.9,4.814h-.006a28.692,28.692,0,1,1,26.48-17.668L52.787,38.7l-2.354-.978A23.547,23.547,0,1,0,28.661,52.245,23.494,23.494,0,0,0,50.433,37.719l2.354.978,2.354.978a28.654,28.654,0,0,1-5.06,8.067l22.043,24.93a3.474,3.474,0,0,1-.446,5.008,3.78,3.78,0,0,1-1.63.787L70,78.478l-.023,0a3.845,3.845,0,0,1-.724.069A3.663,3.663,0,0,1,66.493,77.33Z" transform="translate(30.9 25.67)" fill="#acb5b5" stroke="#acb5b5" stroke-width="2"/>
+          </g>
+          <g id="Rectangle_2344_2_" transform="translate(14.989 0) rotate(5)">
+            <path id="Tracciato_86763" data-name="Tracciato 86763" d="M.974,0h0a1,1,0,0,1,.973.973v5.71a1,1,0,0,1-.973.973h0A1,1,0,0,1,0,6.683V.973A1,1,0,0,1,.974,0Z" transform="translate(0 0)" fill="#acb5b5" stroke="#acb5b5" stroke-width="1"/>
+          </g>
+          <g id="Rectangle_2345_2_" transform="translate(5.042 3.135) rotate(5)">
+            <path id="Tracciato_86764" data-name="Tracciato 86764" d="M.292.292h0a.941.941,0,0,1,1.363,0L5.678,4.315a.941.941,0,0,1,0,1.363h0a.941.941,0,0,1-1.363,0L.292,1.655A.941.941,0,0,1,.292.292Z" transform="translate(0 0)" fill="#acb5b5" stroke="#acb5b5" stroke-width="1"/>
+          </g>
+          <g id="Rectangle_2346_2_" transform="translate(0.172 13.033) rotate(5)">
+            <path id="Tracciato_86765" data-name="Tracciato 86765" d="M0,.973H0A1,1,0,0,1,.973,0H6.684a1,1,0,0,1,.973.973h0a1,1,0,0,1-.973.973H.973A1,1,0,0,1,0,.973Z" transform="translate(0 0)" fill="#acb5b5" stroke="#acb5b5" stroke-width="1"/>
+          </g>
+        </g>
+      </g>
+      <g id="Raggruppa_29962" data-name="Raggruppa 29962" transform="translate(-18802 -17840)">
+        <g id="Raggruppa_29967" data-name="Raggruppa 29967" transform="matrix(0.998, 0.07, -0.07, 0.998, 24.949, -51.181)">
+          <path id="Tracciato_86767" data-name="Tracciato 86767" d="M91.838,35.5h0a2.408,2.408,0,1,0,1.424,3.093A2.408,2.408,0,0,0,91.838,35.5" transform="translate(605.418 275.938)" fill="#d7dbdb"/>
+          <path id="Tracciato_86768" data-name="Tracciato 86768" d="M102.13,1.4a2.2,2.2,0,0,0-.5-.35,7.48,7.48,0,0,0-8.589.645,2.412,2.412,0,0,0,.7,4.117,2.453,2.453,0,0,0,2.394-.428,2.412,2.412,0,1,1,2.172,4.194,8.811,8.811,0,0,0-6.035,5.291s-.08.158-.142.317a.933.933,0,0,0-.047.1c-.272.753.5,1.738,1.8,2.206s2.412.372,2.684-.381l.226-.577a4.117,4.117,0,0,1,2.84-2.339c5.193-1.478,7.434-8.275,2.493-12.8" transform="translate(603.768 292.883)" fill="#d7dbdb"/>
+        </g>
+        <g id="Raggruppa_29964" data-name="Raggruppa 29964" transform="matrix(0.966, -0.259, 0.259, 0.966, 612.348, 322.262)">
+          <path id="Tracciato_86769" data-name="Tracciato 86769" d="M132.72,70.793h0a1.7,1.7,0,1,0,.294,2.386,1.7,1.7,0,0,0-.294-2.386" transform="translate(-34.855 -20.277)" fill="#d7dbdb"/>
+          <path id="Tracciato_86770" data-name="Tracciato 86770" d="M143.472,55.016a1.558,1.558,0,0,0-.258-.342,5.283,5.283,0,0,0-5.917-1.408,1.7,1.7,0,0,0-.409,2.92,1.733,1.733,0,0,0,1.7.226,1.7,1.7,0,1,1,.561,3.287,6.22,6.22,0,0,0-5.2,2.264s-.087.089-.163.183a.664.664,0,0,0-.054.059c-.345.449-.037,1.277.735,1.87s1.542.767,1.887.319l.276-.339a2.907,2.907,0,0,1,2.412-.964c3.811.12,6.776-3.972,4.423-8.075" transform="translate(-36.113 -14.182)" fill="#d7dbdb"/>
+        </g>
+        <g id="Raggruppa_29965" data-name="Raggruppa 29965" transform="translate(614.039 292.376) rotate(-7)">
+          <path id="Tracciato_86771" data-name="Tracciato 86771" d="M13.9,80.173h0a1.424,1.424,0,1,0,2.011-.1,1.424,1.424,0,0,0-2.011.1" transform="translate(-4.353 -22.052)" fill="#d7dbdb"/>
+          <path id="Tracciato_86772" data-name="Tracciato 86772" d="M2.054,67.569a1.323,1.323,0,0,0-.3.195A4.426,4.426,0,0,0,.208,72.618a1.427,1.427,0,0,0,2.414.524,1.451,1.451,0,0,0,.294-1.408A1.426,1.426,0,1,1,5.7,71.469a5.21,5.21,0,0,0,1.568,4.48s.069.079.142.149c.015.016.03.033.046.048.353.316,1.064.111,1.608-.5s.737-1.241.384-1.557L9.18,73.84a2.435,2.435,0,0,1-.655-2.075,4.345,4.345,0,0,0-6.47-4.2" transform="translate(0 -17.979)" fill="#d7dbdb"/>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

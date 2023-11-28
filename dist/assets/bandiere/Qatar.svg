@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Tracciato_6822" data-name="Tracciato 6822" d="M1.163,12.749a12,12,0,1,0,12-12,12,12,0,0,0-12,12" transform="translate(-1.163 -0.749)" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Qatar" transform="translate(-1.163 -0.749)">
+    <g id="Raggruppa_212" data-name="Raggruppa 212" transform="translate(1.163 0.749)" clip-path="url(#clip-path)">
+      <rect id="Rettangolo_516" data-name="Rettangolo 516" width="60.603" height="23.796" transform="translate(-12.517 0.108)" fill="#70193d"/>
+      <path id="Tracciato_6821" data-name="Tracciato 6821" d="M17.5,24.555H0V.759H17.5l4.111,1.313L17.5,3.4,21.611,4.72,17.5,6.043l4.111,1.324L17.5,8.691l4.111,1.324L17.5,11.328l4.111,1.324L17.5,13.975,21.611,15.3,17.5,16.623l4.111,1.324L17.5,19.259l4.111,1.324L17.5,21.907l4.111,1.324Z" transform="translate(-12.515 -0.651)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

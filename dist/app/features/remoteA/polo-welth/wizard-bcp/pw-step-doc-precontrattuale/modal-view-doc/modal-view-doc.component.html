@@ -1,0 +1,6 @@
+<!-- data.doc.id ad [src] al posto di src -->
+<bper-modal [hasLeftImage]="false" [modal-title]="data.doc.docName" *ngIf="dataFile">
+    <pdf-viewer [src]="src" [rotation]="0" [original-size]="false" [show-all]="true" [fit-to-page]="false" [zoom]="1"
+        [zoom-scale]="'page-width'" [stick-to-page]="false" [render-text]="true" [external-link-target]="'blank'"
+        [autoresize]="true" [show-borders]="false" class="pdf-viewer-custom-width"></pdf-viewer>
+</bper-modal>

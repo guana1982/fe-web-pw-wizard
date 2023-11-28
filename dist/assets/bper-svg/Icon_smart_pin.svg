@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40" height="40" viewBox="0 0 40 40">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rettangolo_12082" data-name="Rettangolo 12082" width="40" height="40" transform="translate(191 997)" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+    <filter id="Tracciato_86511" x="-5.001" y="13.998" width="32.245" height="25.317" filterUnits="userSpaceOnUse">
+      <feOffset dy="2" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feFlood flood-color="#05696f" flood-opacity="0.239"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Tracciato_86512" x="-0.959" y="17.134" width="27.675" height="19.045" filterUnits="userSpaceOnUse">
+      <feOffset dy="2" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="2" result="blur-2"/>
+      <feFlood flood-color="#05696f" flood-opacity="0.239"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Tracciato_86513" x="16.506" y="3" width="27.72" height="37.055" filterUnits="userSpaceOnUse">
+      <feOffset dy="2" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="2" result="blur-3"/>
+      <feFlood flood-color="#05696f" flood-opacity="0.239"/>
+      <feComposite operator="in" in2="blur-3"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Tracciato_86514" x="23.419" y="17.77" width="13.893" height="16.49" filterUnits="userSpaceOnUse">
+      <feOffset dy="2" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="2" result="blur-4"/>
+      <feFlood flood-color="#05696f" flood-opacity="0.239"/>
+      <feComposite operator="in" in2="blur-4"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Gruppo_di_maschere_33" data-name="Gruppo di maschere 33" transform="translate(-191 -997)" clip-path="url(#clip-path)">
+    <g id="icona-smartpin-login" transform="translate(195.203 1006.427)">
+      <g id="Raggruppa_29464" data-name="Raggruppa 29464" transform="translate(-3.204 -2.426)">
+        <g id="Raggruppa_29463" data-name="Raggruppa 29463" transform="translate(0 0)">
+          <g id="Raggruppa_29462" data-name="Raggruppa 29462">
+            <g id="Raggruppa_29461" data-name="Raggruppa 29461">
+              <g transform="matrix(1, 0, 0, 1, -1, -7)" filter="url(#Tracciato_86511)">
+                <path id="Tracciato_86511-2" data-name="Tracciato 86511" d="M20.245,13.892a.949.949,0,0,0-.946-.954H6.6a6.659,6.659,0,0,0,0,13.317H19.3a.955.955,0,0,0,0-1.91H6.6a4.749,4.749,0,0,1,0-9.5H19.3a.95.95,0,0,0,.946-.955" transform="translate(1 5.06)" fill="#00845b" fill-rule="evenodd"/>
+              </g>
+              <g transform="matrix(1, 0, 0, 1, -1, -7)" filter="url(#Tracciato_86512)">
+                <path id="Tracciato_86512-2" data-name="Tracciato 86512" d="M11.582,18.778a.945.945,0,0,0-1.236-.519L9.1,18.777V17.418a.946.946,0,1,0-1.892,0v1.541l-1.475-.4a.943.943,0,0,0-1.159.676.957.957,0,0,0,.67,1.17l1.418.382-.789,1.25a.962.962,0,0,0,.289,1.32.939.939,0,0,0,1.307-.292l.79-1.25L9.2,22.953a.939.939,0,0,0,1.332.118.962.962,0,0,0,.118-1.346L9.711,20.59l1.358-.565a.959.959,0,0,0,.513-1.247m8.564,0a.942.942,0,0,0-1.235-.519l-1.245.519V17.418a.946.946,0,1,0-1.892,0v1.541l-1.474-.4a.945.945,0,0,0-1.159.676.956.956,0,0,0,.669,1.17l1.419.382-.789,1.25a.962.962,0,0,0,.289,1.32.935.935,0,0,0,.507.15.945.945,0,0,0,.8-.442l.789-1.25.943,1.137a.939.939,0,0,0,1.332.118.961.961,0,0,0,.117-1.346l-.943-1.136,1.358-.565a.958.958,0,0,0,.514-1.247" transform="translate(0.5 4.67)" fill="#00845b" fill-rule="evenodd"/>
+              </g>
+              <g id="Raggruppa_29460" data-name="Raggruppa 29460" transform="translate(21.507)">
+                <g transform="matrix(1, 0, 0, 1, -22.51, -7)" filter="url(#Tracciato_86513)">
+                  <path id="Tracciato_86513-2" data-name="Tracciato 86513" d="M14.179,20.931a2.672,2.672,0,0,1-2.656,2.682H4.9a2.672,2.672,0,0,1-2.656-2.682V14.245A2.672,2.672,0,0,1,4.9,11.564h6.623a2.672,2.672,0,0,1,2.656,2.682v6.686ZM11.523,9.653H4.9a4.617,4.617,0,0,0-.473.025V5.386c0-1.658,1.669-3.007,3.718-3.007H8.28C10.33,2.379,12,3.728,12,5.386a.946.946,0,1,0,1.893,0c0-2.712-2.517-4.918-5.61-4.918H8.146c-3.094,0-5.611,2.206-5.611,4.919V10.33A4.6,4.6,0,0,0,.352,14.245v6.686A4.576,4.576,0,0,0,4.9,25.523h6.623a4.576,4.576,0,0,0,4.549-4.592V14.245a4.576,4.576,0,0,0-4.549-4.592Z" transform="translate(22.15 6.53)" fill="#00845b" fill-rule="evenodd"/>
+                </g>
+              </g>
+              <g transform="matrix(1, 0, 0, 1, -1, -7)" filter="url(#Tracciato_86514)">
+                <path id="Tracciato_86514-2" data-name="Tracciato 86514" d="M32.9,17.179a.95.95,0,0,0-.946.955v2.579a.946.946,0,1,0,1.893,0V18.134a.951.951,0,0,0-.946-.955" transform="translate(-2.53 4.59)" fill="#00845b" fill-rule="evenodd"/>
+              </g>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+</svg>

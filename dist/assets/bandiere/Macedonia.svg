@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Tracciato_4911" data-name="Tracciato 4911" d="M1.111,12.749a12,12,0,1,0,12-12,12,12,0,0,0-12,12" transform="translate(-1.111 -0.749)" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Macedonia" transform="translate(-1.111 -0.749)">
+    <g id="Raggruppa_186" data-name="Raggruppa 186" transform="translate(1.111 0.749)" clip-path="url(#clip-path)">
+      <rect id="Rettangolo_409" data-name="Rettangolo 409" width="47.903" height="23.946" transform="translate(-11.957 0.032)" fill="#d70000"/>
+      <path id="Tracciato_4902" data-name="Tracciato 4902" d="M8.772,4.978A3.433,3.433,0,1,1,5.339,1.545,3.436,3.436,0,0,1,8.772,4.978" transform="translate(6.65 7.022)" fill="#ffeb00"/>
+      <path id="Tracciato_4903" data-name="Tracciato 4903" d="M3.564,8.575,2,.751H6.7L5.2,8.575a2.655,2.655,0,0,0-1.636,0" transform="translate(7.597 -0.729)" fill="#ffeb00"/>
+      <path id="Tracciato_4904" data-name="Tracciato 4904" d="M19.7,4.453,0,6.39V1.644L19.674,3.592a2.6,2.6,0,0,0,.022.861" transform="translate(-11.957 7.988)" fill="#ffeb00"/>
+      <path id="Tracciato_4905" data-name="Tracciato 4905" d="M3.564,2.25,2,10.074H6.7L5.2,2.25a2.578,2.578,0,0,1-1.636,0" transform="translate(7.597 13.904)" fill="#ffeb00"/>
+      <path id="Tracciato_4906" data-name="Tracciato 4906" d="M20.136,10.857,0,.751H7.2l13.248,9.492a4.1,4.1,0,0,0-.312.613" transform="translate(-11.957 -0.729)" fill="#ffeb00"/>
+      <path id="Tracciato_4907" data-name="Tracciato 4907" d="M20.136,2.038,0,12.144H7.2L20.448,2.651a4.1,4.1,0,0,1-.312-.613" transform="translate(-11.957 11.835)" fill="#ffeb00"/>
+      <path id="Tracciato_4908" data-name="Tracciato 4908" d="M2.621,4.453l19.7,1.937V1.644L2.643,3.592a2.6,2.6,0,0,1-.022.861" transform="translate(13.63 7.988)" fill="#ffeb00"/>
+      <path id="Tracciato_4909" data-name="Tracciato 4909" d="M2.873,10.857,23.009.751h-7.2L2.55,10.243a3.338,3.338,0,0,1,.323.613" transform="translate(12.937 -0.729)" fill="#ffeb00"/>
+      <path id="Tracciato_4910" data-name="Tracciato 4910" d="M2.873,2.038,23.009,12.144h-7.2L2.55,2.651a3.338,3.338,0,0,0,.323-.613" transform="translate(12.937 11.835)" fill="#ffeb00"/>
+    </g>
+  </g>
+</svg>

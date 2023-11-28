@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="23.989" viewBox="0 0 24 23.989">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Tracciato_1035" data-name="Tracciato 1035" d="M.743,12.744A12,12,0,1,0,12.748.749,12,12,0,0,0,.743,12.744" transform="translate(-0.743 -0.749)" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Costa_rica" data-name="Costa rica" transform="translate(-0.743 -0.749)">
+    <g id="Raggruppa_41" data-name="Raggruppa 41" transform="translate(0.743 0.749)" clip-path="url(#clip-path)">
+      <rect id="Rettangolo_90" data-name="Rettangolo 90" width="39.986" height="23.989" transform="translate(-7.993 0)" fill="#001c7f"/>
+      <rect id="Rettangolo_91" data-name="Rettangolo 91" width="39.986" height="14.964" transform="translate(-7.993 5)" fill="#fff"/>
+      <rect id="Rettangolo_92" data-name="Rettangolo 92" width="39.986" height="8.014" transform="translate(-7.993 8)" fill="#ce0a26"/>
+    </g>
+  </g>
+</svg>

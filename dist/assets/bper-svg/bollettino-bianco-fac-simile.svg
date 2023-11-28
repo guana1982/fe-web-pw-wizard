@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="375" height="357" viewBox="0 0 375 357">
+  <g id="Raggruppa_27011" data-name="Raggruppa 27011" transform="translate(0 -263)">
+    <rect id="Rettangolo_10965" data-name="Rettangolo 10965" width="375" height="357" transform="translate(0 263)" fill="#f7fafa"/>
+    <g id="Raggruppa_26999" data-name="Raggruppa 26999" transform="translate(-10 21)">
+      <rect id="Rettangolo_10966" data-name="Rettangolo 10966" width="40" height="40" rx="5" transform="translate(26 257)" fill="#b0cfd1"/>
+      <text id="_" data-name="€" transform="translate(46 286)" fill="#fff" font-size="29" font-family="KievitPro-Bold, Kievit Pro" font-weight="700"><tspan x="-8" y="0">€</tspan></text>
+    </g>
+    <text id="su_C_C_n._12345678" data-name="su C/C n. 12345678" transform="translate(71 306)" fill="#005157" font-size="18" font-family="KievitPro-Medium, Kievit Pro" font-weight="500"><tspan x="0" y="0">su C/C n. 12345678</tspan></text>
+    <text id="Intestato_a" data-name="Intestato a" transform="translate(16 411)" fill="#005157" font-size="18" font-family="KievitPro-Medium, Kievit Pro" font-weight="500"><tspan x="0" y="0">Intestato a</tspan></text>
+    <text id="Causale" transform="translate(16 486)" fill="#005157" font-size="18" font-family="KievitPro-Medium, Kievit Pro" font-weight="500"><tspan x="0" y="0">Causale</tspan></text>
+    <text id="di_123_45_" data-name="di 123,45 €" transform="translate(359 306)" fill="#005157" font-size="18" font-family="KievitPro-Medium, Kievit Pro" font-weight="500"><tspan x="-79" y="0">di 123,45 €</tspan></text>
+    <text id="_123_" data-name="&lt; 123 &gt;" transform="translate(359 573)" fill="#005157" font-size="18" font-family="KievitPro-Medium, Kievit Pro" font-weight="500"><tspan x="-43" y="0">&lt; 123 &gt;</tspan></text>
+    <rect id="Rettangolo_10967" data-name="Rettangolo 10967" width="343" height="15" transform="translate(16 364)" fill="#fff"/>
+    <rect id="Rettangolo_10968" data-name="Rettangolo 10968" width="250" height="15" transform="translate(109 398)" fill="#fff"/>
+    <rect id="Rettangolo_10969" data-name="Rettangolo 10969" width="273" height="15" transform="translate(86 473)" fill="#fff"/>
+    <line id="Linea_65" data-name="Linea 65" x2="343" transform="translate(16.5 541)" fill="none" stroke="#bcc4c4" stroke-width="1"/>
+    <g id="Tag_Small_Default" data-name="Tag/Small/Default" transform="translate(71 326)">
+      <rect id="Rettangolo_5" data-name="Rettangolo 5" width="124" height="23" rx="11.5" fill="#e1eded"/>
+      <text id="Num._C_C_Postale" data-name="Num. C/C Postale" transform="translate(62 16)" fill="#005157" font-size="14" font-family="KievitPro-Regular, Kievit Pro"><tspan x="-51" y="0">Num. C/C Postale</tspan></text>
+    </g>
+    <g id="Tag_Small_Default-2" data-name="Tag/Small/Default" transform="translate(235 326)">
+      <rect id="Rettangolo_5-2" data-name="Rettangolo 5" width="124" height="23" rx="11.5" fill="#e1eded"/>
+      <text id="Num._C_C_Postale-2" data-name="Num. C/C Postale" transform="translate(62 16)" fill="#005157" font-size="14" font-family="KievitPro-Regular, Kievit Pro"><tspan x="-51" y="0">Num. C/C Postale</tspan></text>
+    </g>
+    <g id="Tag_Small_Default-3" data-name="Tag/Small/Default" transform="translate(16 431)">
+      <rect id="Rettangolo_5-3" data-name="Rettangolo 5" width="90" height="23" rx="11.5" fill="#e1eded"/>
+      <text id="Intestatario" transform="translate(45 16)" fill="#005157" font-size="14" font-family="KievitPro-Regular, Kievit Pro"><tspan x="-33" y="0">Intestatario</tspan></text>
+    </g>
+    <g id="Tag_Small_Default-4" data-name="Tag/Small/Default" transform="translate(16 503)">
+      <rect id="Rettangolo_5-4" data-name="Rettangolo 5" width="68" height="23" rx="11.5" fill="#e1eded"/>
+      <text id="Causale-2" data-name="Causale" transform="translate(34 16)" fill="#005157" font-size="14" font-family="KievitPro-Regular, Kievit Pro"><tspan x="-22" y="0">Causale</tspan></text>
+    </g>
+    <g id="Tag_Small_Default-5" data-name="Tag/Small/Default" transform="translate(271 582)">
+      <rect id="Rettangolo_5-5" data-name="Rettangolo 5" width="88" height="23" rx="11.5" fill="#e1eded"/>
+      <text id="Tipo_codice" data-name="Tipo codice" transform="translate(44 16)" fill="#005157" font-size="14" font-family="KievitPro-Regular, Kievit Pro"><tspan x="-32" y="0">Tipo codice</tspan></text>
+    </g>
+  </g>
+</svg>

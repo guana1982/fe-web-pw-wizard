@@ -1,0 +1,45 @@
+
+<div class="box hero">
+    <span class="box-title">Giulia, ci siamo quasi!</span>
+
+    <h1 class="title">Inserisci ora le nuove credenziali</h1>
+    <div class="sub-title-description">
+        Ti abbiamo inviato tramite SMS il Codice Utente Cesare Ponti e via email la Password temporanea. Se non li hai
+        ricevuti, clicca su "Invia di nuovo"
+    </div>
+
+    <div>
+        <div class="sub-title-description title-input">
+            Codice Utente ricevuto via sms
+        </div>
+        <bper-input-text floatLabel="never" label="Inserisci codice utente" [formControl]="codiceUtenteControl">
+        </bper-input-text>
+        <div class="invia-nuovo">
+            <button class="button-invia-nuovo" (click)="resendCod('sms')">
+                Invia di nuovo
+            </button>
+        </div>
+    </div>
+
+    <div>
+        <div class="sub-title-description title-input-psw ">
+            Password temporanea ricevuta via email
+        </div>
+        <bper-input-text floatLabel="never" label="Inserisci password temporanea"
+            [formControl]="passwordTemporaneaControl">
+        </bper-input-text>
+        <div class="invia-nuovo">
+            <button class="button-invia-nuovo" (click)="resendCod('email')">
+                Invia di nuovo
+            </button>
+        </div>
+    </div>
+
+    <div class="button-wrapper">
+        <bper-button button-type="button" order="primary" [label]="'Continua'"
+            [disabled]="this.codiceUtenteControl.value === '' || this.passwordTemporaneaControl.value === ''"
+            (clickBtn)="goToNextStep()">
+        </bper-button>
+    </div>
+
+</div>

@@ -1,0 +1,17 @@
+@import "src/scss/variables";
+@import "src/scss/mixins";
+
+.pdf-viewer-custom-width {
+  width: 650px; /* Imposta la larghezza desiderata */
+  height: 80vh;
+}
+
+.pdfViewer.removePageBorders {
+  margin-left: -8px;
+} 
+
+@media screen and (max-width: $bp-mobile) {
+  .pdf-viewer-custom-width {
+    width: 100%;
+  }
+}
