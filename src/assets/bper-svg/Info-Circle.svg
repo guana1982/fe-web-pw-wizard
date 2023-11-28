@@ -1,0 +1,38 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="76.001" height="76.001" viewBox="0 0 76.001 76.001">
+  <defs>
+    <filter id="Shape" x="0" y="0" width="76.001" height="76.001" filterUnits="userSpaceOnUse">
+      <feOffset dy="2" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feFlood flood-color="#05696f" flood-opacity="0.239"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Path" x="28.8" y="16" width="18.4" height="18.4" filterUnits="userSpaceOnUse">
+      <feOffset dy="2" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="2" result="blur-2"/>
+      <feFlood flood-color="#05696f" flood-opacity="0.239"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Path-2" x="28.8" y="25.601" width="18.4" height="34.4" filterUnits="userSpaceOnUse">
+      <feOffset dy="2" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="2" result="blur-3"/>
+      <feFlood flood-color="#05696f" flood-opacity="0.239"/>
+      <feComposite operator="in" in2="blur-3"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Raggruppa_29697" data-name="Raggruppa 29697" transform="translate(6 4)">
+    <g id="Raggruppa_29696" data-name="Raggruppa 29696">
+      <g transform="matrix(1, 0, 0, 1, -6, -4)" filter="url(#Shape)">
+        <path id="Shape-2" data-name="Shape" d="M32,64A32.009,32.009,0,0,1,19.544,2.515,32.009,32.009,0,0,1,44.456,61.486,31.8,31.8,0,0,1,32,64ZM32,6.4a25.52,25.52,0,1,0,9.965,2.012A25.441,25.441,0,0,0,32,6.4Z" transform="translate(6 4)" fill="#005157"/>
+      </g>
+      <g transform="matrix(1, 0, 0, 1, -6, -4)" filter="url(#Path)">
+        <path id="Path-3" data-name="Path" d="M5.463.937a3.2,3.2,0,1,1-4.525,0,3.2,3.2,0,0,1,4.525,0" transform="translate(41.2 26.4) rotate(180)" fill="#005157"/>
+      </g>
+      <g transform="matrix(1, 0, 0, 1, -6, -4)" filter="url(#Path-2)">
+        <path id="Path-4" data-name="Path" d="M3.2,0h0A3.2,3.2,0,0,0,0,3.2H0v16H0a3.2,3.2,0,0,0,6.4,0V3.2h0A3.2,3.2,0,0,0,3.2,0Z" transform="translate(41.2 52) rotate(180)" fill="#005157"/>
+      </g>
+    </g>
+  </g>
+</svg>

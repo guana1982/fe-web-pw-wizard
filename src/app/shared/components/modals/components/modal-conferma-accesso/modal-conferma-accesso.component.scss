@@ -1,0 +1,91 @@
+@import "src/scss/variables";
+
+.conferma-accesso {
+    position: relative;
+
+    .sublabel {
+        font-family: 'Kievit Pro Bold';
+    }
+
+    bper-button {
+        padding-right: 56px;
+    }
+
+    [footer] {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+
+        .img-counter-container {
+            display: flex;
+            margin-top: 5px;
+        }
+    }
+
+    .img-counter {
+        margin-right: 12px;
+    }
+
+    span {
+        font-family: 'Kievit Pro';
+        font-size: 16px;
+        color: map-get($bper-palette, primary, --primary-500);
+
+        &.scadenza {
+            margin-right: 32px;
+        }
+
+        .counter {
+            font-family: 'Kievit Pro Bold';
+            font-size: 24px;
+        }
+    }
+}
+
+// TABLET
+@media screen and (max-width: $bp-tablet) {
+    .conferma-accesso {
+
+        p {
+            margin-left: 0;
+        }
+
+        bper-button {
+            padding-right: 0p;
+        }
+
+        [footer] {
+            justify-content: space-between;
+            width: 100%;
+        }
+    }
+}
+
+// MOBILE
+@media screen and (max-width: $bp-mobile) {
+    .conferma-accesso {
+
+        bper-button {
+            padding-right: 0px;
+        }
+
+
+        p {
+            margin-left: 0;
+        }
+
+        [footer] {
+            justify-content: space-around;
+            flex-direction: column-reverse;
+
+            .img-counter-container {
+                display: flex;
+            }
+        }
+
+        bper-button {
+            padding-right: 0;
+        }
+    }
+}

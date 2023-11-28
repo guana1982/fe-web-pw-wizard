@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Tracciato_5949" data-name="Tracciato 5949" d="M.428,12.749a12,12,0,1,0,12-12,12,12,0,0,0-12,12" transform="translate(-0.428 -0.749)" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Svalbard_e_Jan_Mayen" data-name="Svalbard e Jan Mayen" transform="translate(-0.428 -0.749)">
+    <g id="Raggruppa_199" data-name="Raggruppa 199" transform="translate(0.428 0.749)" clip-path="url(#clip-path)">
+      <rect id="Rettangolo_463" data-name="Rettangolo 463" width="33.202" height="24.151" transform="translate(-4.606 -0.075)" fill="#ef1c2d"/>
+      <path id="Tracciato_5947" data-name="Tracciato 5947" d="M33.2,9.794H15.089V.743H9.051V9.794H0v6.038H9.051v9.051h6.038V15.832H33.2Z" transform="translate(-4.603 -0.809)" fill="#fff"/>
+      <path id="Tracciato_5948" data-name="Tracciato 5948" d="M33.2,11.311H13.582V.742H10.569V11.311H0v3.013H10.569V24.893h3.013V14.324H33.2Z" transform="translate(-4.603 -0.816)" fill="#001768"/>
+    </g>
+  </g>
+</svg>

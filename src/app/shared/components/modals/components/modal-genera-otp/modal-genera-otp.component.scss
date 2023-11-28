@@ -1,0 +1,51 @@
+@import "src/scss/variables";
+
+.genera-otp {
+    p {
+        line-height: 20px;
+    }
+
+    .conferma {
+        font-family: 'Kievit Pro Bold';
+        text-align: center;
+    }
+
+    .qrcode {
+        margin-bottom: 24px;
+        align-self: center;
+    }
+
+    .input {
+        width: 216px;
+        height: 48px;
+        margin-top: 16px;
+        margin-bottom: 24px;
+        align-self: center;
+        background-color: #005157;
+    }
+
+    [footer] {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: $bp-tablet) {
+    .genera-otp {
+        .modal-container {
+           grid-template-rows: 60px auto 70px;
+        }
+    }
+}
+
+// MOBILE
+@media screen and (max-width: $bp-mobile) {
+    .genera-otp {
+
+        .modal-container {
+          grid-template-rows: 60px auto 70px;
+        }
+    }
+}

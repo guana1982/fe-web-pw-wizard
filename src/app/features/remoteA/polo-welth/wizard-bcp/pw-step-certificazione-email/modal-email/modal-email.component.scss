@@ -1,0 +1,61 @@
+@import "src/scss/variables";
+
+.modal-container {
+    padding: 40px;
+    .modal-header {
+        display: flex;
+        justify-content: space-between;
+        h2 {
+            font-size: 1.5em;
+        }
+        i {
+            font-size: 2em;
+            cursor: pointer;
+        }
+    }
+    p {
+        font-size: 1.4em;
+    }
+}
+
+.modal-header {
+    display: none !important;
+}
+
+.description {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px !important;
+    color: $table-text-color;
+}
+
+.email-label {
+    margin-bottom: -20px;
+    margin-top: 30px;
+    font-weight: bold;
+}
+
+.container-button {
+    display: flex;
+    justify-content: space-between;
+}
+
+::ng-deep bper-modal div .modal-header {
+    justify-content: center !important;
+    margin-top: 30px !important;
+}
+
+::ng-deep bper-modal div .modal-header h2 {
+    font-size: 27px !important;
+}
+
+// MOBILE
+@media screen and (max-width: $bp-mobile) {
+    .container-button {
+        flex-wrap: wrap;
+    }
+
+    bper-button:first-child {
+        margin-bottom: 20px;
+    }
+}

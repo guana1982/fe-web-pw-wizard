@@ -1,0 +1,84 @@
+
+bper-checkbox .mat-checkbox {
+    
+    /* FRAME */
+    .mat-checkbox-frame {
+        width: 18px;
+        height: 18px;
+        border: 2px solid map-get($bper-palette, secondary, --secondary-90);
+    }
+
+    /* LABEL */
+    .mat-checkbox-layout {
+        // TODO DA CAMBIARE IN RELATIVE
+        position: absolute;
+        
+        .mat-checkbox-label {
+            position: relative;
+            top: 2px;
+            font-size: 16px;
+            font-weight: 200 !important;
+            color: map-get($bper-palette, primary, --primary-500);
+        }
+    }
+
+}
+
+/* CHECKBOX CHECKED */
+bper-checkbox .mat-checkbox-checked.mat-accent .mat-checkbox-background,
+bper-checkbox .mat-checkbox-indeterminate.mat-accent .mat-checkbox-background {
+    top: 2px;
+    left: 2px;
+    background-color: transparent;
+    .mat-checkbox-checkmark {
+        transform: scale(0.8);
+        transform-origin: center;
+        width: 100%;
+    }
+    .mat-checkbox-checkmark-path {
+        stroke: map-get($bper-palette, secondary, --secondary-90) !important;
+        stroke-linecap: round;
+        stroke-width: 3.5px;
+    }
+    .mat-checkbox-mixedmark {
+        width: 8px;
+        background-color: map-get($bper-palette, secondary, --secondary-90);
+    }
+}
+
+bper-checkbox .mat-checkbox .mat-checkbox-ripple {
+    position: absolute;
+    left: -6px;
+    top: -6px;
+    height: 30px;
+    width: 30px;
+}
+
+/* CHECKBOX DISABLED */
+bper-checkbox .mat-checkbox-disabled .mat-checkbox-frame {
+    border-color: map-get($bper-palette, neutral, --neutral-50) !important;
+}
+bper-checkbox .mat-checkbox-disabled.mat-accent .mat-checkbox-background {
+    .mat-checkbox-checkmark-path {
+        stroke: map-get($bper-palette, neutral, --neutral-50) !important;
+    }
+}
+bper-checkbox .mat-checkbox-disabled .mat-checkbox-label {
+    color: map-get($bper-palette, neutral, --neutral-50) !important;
+}
+
+/* CHECKBOX HOVER */
+bper-checkbox .mat-checkbox:hover {
+    .mat-checkbox-frame {
+        border-color: map-get($bper-palette, accent, --accent-90);
+    }
+}
+.mat-checkbox-checked:hover.mat-accent .mat-checkbox-background,
+.mat-checkbox-indeterminate:hover.mat-accent .mat-checkbox-background {
+    .mat-checkbox-checkmark-path {
+        stroke: map-get($bper-palette, accent, --accent-90) !important;
+    }
+    .mat-checkbox-mixedmark {
+        background-color: map-get($bper-palette, accent, --accent-90);
+    }
+}

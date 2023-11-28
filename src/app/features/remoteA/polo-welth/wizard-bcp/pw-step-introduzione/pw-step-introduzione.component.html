@@ -1,0 +1,25 @@
+<message-handler *ngIf="userDataService.statusCommunicationService && !userDataService.hideCommunicationService"
+    [title]="userDataService.communicationService">
+</message-handler>
+
+<div
+    [ngStyle]="{'marginTop': userDataService.statusCommunicationService && !userDataService.hideCommunicationService ? '4rem' : '0'}">
+    <span class="box-title">Ti diamo il benvenuto, {{nomeUtente}}</span>
+
+    <div class="box hero">
+        <h1 class="title">Per accedere ai servizi digitali Smart di Banca Cesare Ponti crea ora la tua nuova utenza. Ti accompagniamo noi.</h1>
+        <div class="sub-title-description">
+            Potrai consultare e gestire gli investimenti collegati al tuo conto corrente. <br><br>
+
+            Nei prossimi passi verificheremo insieme i tuoi contatti certificati, email e cellulare, su cui riceverai i tuoi codici temporanei. <br><br>
+
+            In seguito dovrai effettuare il primo accesso e scegliere le tue credenziali.
+        </div>
+        <div class="button-wrapper">
+            <button (click)="goToNextStep()" class="button__container">
+                <span>Continua</span>
+            </button>
+        </div>
+
+    </div>
+</div>

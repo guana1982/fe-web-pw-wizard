@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Tracciato_396" data-name="Tracciato 396" d="M.171,12.749a12,12,0,1,0,12-12,12,12,0,0,0-12,12" transform="translate(-0.171 -0.749)" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Cile" transform="translate(-0.171 -0.749)">
+    <g id="Raggruppa_30" data-name="Raggruppa 30" transform="translate(0.171 0.749)" clip-path="url(#clip-path)">
+      <rect id="Rettangolo_64" data-name="Rettangolo 64" width="35.968" height="24" transform="translate(-1.84 0)" fill="#fff"/>
+      <rect id="Rettangolo_65" data-name="Rettangolo 65" width="35.968" height="12.022" transform="translate(-1.84 11.978)" fill="#d42e00"/>
+      <rect id="Rettangolo_66" data-name="Rettangolo 66" width="11.957" height="11.978" transform="translate(-1.84 0.011)" fill="#0029ad"/>
+      <path id="Tracciato_395" data-name="Tracciato 395" d="M3.173,1.032l.678,2.1H6.057L4.27,4.422l.689,2.1-1.787-1.3L1.4,6.52l.678-2.1L.288,3.13H2.495Z" transform="translate(0.975 2.01)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

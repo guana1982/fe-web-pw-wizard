@@ -1,0 +1,105 @@
+<mat-form-field
+    class="matField"
+    fxFlex="100%"
+    [appearance]="appearance"
+    [floatLabel]="floatLabelNever ? 'never' : 'always'"
+    [class.left-icon]="showLeftIcon"
+    [class.right-icon]="showRightIcon"
+    [class.custom-background]="!!backgroundColor"
+    [style.--custom-background-color]="backgroundColor"
+    [class.double-right-icon]="showRightIcon && showDoubleRightIcon"
+    [hideRequiredMarker]="true"
+>
+    <mat-label>{{ label }}</mat-label>
+    <i
+        class="left"
+        *ngIf="showLeftIcon"
+        [class]="'icon-ic-' + iconLeft"
+    ></i>
+    <input
+        class="text"
+        #inputText
+        matInput
+        type="text"
+        (focus)="control.patchValue(inputText.value, { emitEvent: false, onlySelf: true })"
+        (blur)="onBlur(inputText)"
+        (change)="validateInput($event)"
+        [placeholder]="placeholder"
+        [formControl]="control"
+        [maxLength]="maxLength"
+        [minLength]="minLength"
+        [required]="required"
+        [pattern]="pattern"
+        [id]="inputId"
+        [title]="!!inputText.value && inputText.value.length > 20 ? inputText.value : ''"
+        [name]="name"
+        (keydown)="preventSpaces ? preventSpacesFn($event) : ''"
+        [readonly]="readOnly"
+        autocomplete="off"
+        [attr.inputmode]="inputmode"
+    />
+    <i
+        class="double"
+        *ngIf="showDoubleRightIcon"
+        [class]="'icon-ic-' + iconDoubleRight"
+    ></i>
+    <i
+        class="right"
+        *ngIf="showRightIcon"
+        [class]="'icon-ic-' + iconRight"
+    ></i>
+    <!-- <mat-hint *ngIf="msgHint"><i class="bper-ic-40px-circle_exclamation_point"></i>{{ msgHint }}</mat-hint> -->
+
+    <mat-hint *ngIf="msgHint">{{ msgHint }}</mat-hint>
+
+    <mat-error
+            fxLayout="row"
+            fxLayoutAlign="start center"
+            *ngIf="control.hasError('required')"
+        >
+        <i [class]="errorIcon"></i>
+        <span>{{ 'INVALIDATIONS.CAMPO_OBBLIG' | translate }}</span>
+    </mat-error>
+
+    <mat-error
+            fxLayout="row"
+            fxLayoutAlign="start center"
+            *ngIf="!control.hasError('required') && control.hasError('minlength')"
+    >
+        <i [class]="errorIcon"></i>
+        <span>{{ msgMinLength }}</span>
+    </mat-error>
+
+    <mat-error
+            fxLayout="row"
+            fxLayoutAlign="start center"
+            *ngIf="!control.hasError('required') && control.hasError('maxlength')"
+    >
+        <i [class]="errorIcon"></i>
+        <span>{{ msgMaxLength }}</span>
+    </mat-error>
+
+    <mat-error
+            fxLayout="row"
+            fxLayoutAlign="start center"
+            *ngIf="!control.hasError('required') && control.hasError('pattern')"
+    >
+        <i [class]="errorIcon"></i>
+        <span>{{ 'INVALIDATIONS.FORMATO_NON_VALIDO' | translate }}</span>
+    </mat-error>
+
+    <mat-error
+            fxLayout="row"
+            fxLayoutAlign="start center"
+            *ngIf="
+            !control.hasError('required') &&
+            !control.hasError('minlength') &&
+            !control.hasError('maxlength') &&
+            !control.hasError('pattern') &&
+            control.hasError('generic')
+        "
+    >
+        <i [class]="errorIcon"></i>
+        <span>Campo non valido</span>
+    </mat-error>
+</mat-form-field>

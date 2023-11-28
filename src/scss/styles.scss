@@ -1,0 +1,94 @@
+@charset "UTF-8";
+
+@import "mixins";
+@import "variables";
+
+@import "fonts/bper-fonts";
+
+@import "ark/fonts/all";
+
+@import "ark/basic/all";
+
+@import "ark/components/all";
+
+@import "ark/ark-custom/all";
+
+.button__container {
+    background: transparent linear-gradient(180deg, #f06400 0%, #d04900 100%) 0% 0% no-repeat padding-box;
+    box-shadow: 0 8px 16px #e3722214;
+    text-shadow: 0px 3px 6px rgba(7, 29, 31, 0.2392156863);
+    font-size: 16px;
+    font-family: Kievit Pro Bold;
+    height: 42px;
+    border: none;
+    border-radius: 24px;
+    opacity: 1;
+    color: #fff;
+    padding: 0 36px;
+    line-height: 45px;
+    margin: 0;
+    cursor: pointer;
+
+    &:hover:not([disabled]) {
+        background: #d04900 !important;
+    }
+
+    &:disabled {
+        background: map-get($bper-palette, neutral, --neutral-40) 0 0 no-repeat padding-box;
+        box-shadow: none;
+        text-shadow: none;
+    }
+}
+
+.secondary-buttom {
+    cursor: pointer;
+    width: -moz-fit-content;
+    width: fit-content;
+    border: 2px solid #e37222;
+    color: #e37222;
+    font-size: 16px;
+    font-family: Kievit Pro Bold;
+    height: 42px;
+    border-radius: 24px;
+    opacity: 1;
+    transition: 0.3s background-color ease-out;
+    padding: 0 36px;
+    line-height: 43px;
+    margin: 0;
+
+    &:hover {
+        border: 2px solid #d04900;
+        box-shadow: 0 8px 16px #e3722214;
+        background-color: #fff !important;
+    }
+}
+
+.ghost-accent {
+    color: map-get($bper-palette, accent, --accent-90);
+    font-weight: bold;
+
+    &:hover {
+        cursor: pointer;
+        color: map-get($bper-palette, accent, --accent-100);
+    }
+}
+
+.info {
+    color: map-get($bper-palette, primary, --primary-500);
+    font-weight: bold;
+    margin-right: 5px;
+    font-size: 16px;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.info__icon {
+    display: flex;
+    zoom: 80%;
+
+    &:hover {
+        cursor: pointer;
+    }
+}

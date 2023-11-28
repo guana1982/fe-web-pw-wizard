@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Tracciato_6820" data-name="Tracciato 6820" d="M.38,12.749a12,12,0,1,0,12-12,12,12,0,0,0-12,12" transform="translate(-0.38 -0.749)" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Principato_di_Monaco" data-name="Principato di Monaco" transform="translate(-0.38 -0.749)">
+    <g id="Raggruppa_211" data-name="Raggruppa 211" transform="translate(0.38 0.749)" clip-path="url(#clip-path)">
+      <rect id="Rettangolo_514" data-name="Rettangolo 514" width="32.179" height="24" transform="translate(-4.09 0)" fill="#ce111c"/>
+      <rect id="Rettangolo_515" data-name="Rettangolo 515" width="32.179" height="11.128" transform="translate(-4.09 12.872)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

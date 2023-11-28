@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Tracciato_4729" data-name="Tracciato 4729" d="M1.133,12.749a12,12,0,1,0,12-12,12,12,0,0,0-12,12" transform="translate(-1.133 -0.749)" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Lettonia" transform="translate(-1.133 -0.749)">
+    <g id="Raggruppa_180" data-name="Raggruppa 180" transform="translate(1.133 0.749)" clip-path="url(#clip-path)">
+      <rect id="Rettangolo_398" data-name="Rettangolo 398" width="48.387" height="24.194" transform="translate(-12.194 -0.097)" fill="#991636"/>
+      <rect id="Rettangolo_399" data-name="Rettangolo 399" width="48.387" height="4.832" transform="translate(-12.194 9.589)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

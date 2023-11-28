@@ -1,0 +1,115 @@
+<message-handler *ngIf="userDataService.statusCommunicationService && !userDataService.hideCommunicationService"
+  [title]="userDataService.communicationService">
+</message-handler>
+
+<div class="box hero" *ngIf="dataProfilazione">
+
+  <ng-container *ngIf="!showModalScopriDiPiu; else modalInfoProfilo">
+    <ng-container>
+      <div class="container head">
+        <h1 class="title" style="margin-top: 5px; font-family: 'Kievit Pro Medium';">Verifica i tuoi rapporti</h1>
+        <span class="sub-title-description">Ecco l'elenco dei rapporti bancari che saranno collegati alla tua nuova utenza di Banca Cesare Ponti.
+        </span>
+      </div>
+    </ng-container>
+
+    <ng-container>
+      <div class="container profilo">
+        <h3 class="anagrafica">Il tuo profilo</h3>
+        <div class="rows header"></div>
+        <div class="rows">
+          <div class="col-4 item">
+            <span class="label">Conto di Regolamento</span>
+            <span class="value">{{ 'Conto 987654321 - BPER' }}</span>
+          </div>
+        </div>
+        <div class="rows header"></div>
+        <div class="rows">
+          <div class="col-4 item">
+            <span class="label">CONVENZIONE</span>
+            <span class="value">{{ 'Listino Standard' }}</span>
+          </div>
+        </div>
+        <div class="rows header"></div>
+        <div class="rows profile grid__custom">
+          <div class="col-3 item">
+            <span class="label">PROFILO</span>
+            <span class="value">{{ 'DISPO +' }}</span>
+          </div>
+          <div class="col-3 item double__item">
+            <span class="label"></span>
+            <ng-container>
+              <div (click)="openModalInfo()" class="container__info">
+                <span class="info">Più informazioni</span>
+                <div class="info__icon">
+                  <img src="../../../../../../assets/bper-svg/Icon-24pt-Arrow Right.svg">
+                </div>
+              </div>
+            </ng-container>
+          </div>
+        </div>
+        <div class="rows header"></div>
+        <div class="rows" style="margin: 24px 0 10px 0;">
+          <div class="col-4 item">
+            <span class="label">CANONE MENSILE</span>
+            <span class="value">{{ '1,00' }}€</span>
+          </div>
+        </div>
+      </div>
+    </ng-container>
+    <ng-container>
+      <div class="container rapporti">
+        <div class="rows header"></div>
+        <div class="rows" style="margin: 42px 0 0px 0">
+          <div class="col-4 item">
+            <h3 class="contatti" style="font-weight: bold">I tuoi rapporti</h3>
+          </div>
+        </div>
+        <div class="rows header"></div>
+        <div class="rows grid__custom">
+          <div class="col-3 item">
+            <span class="label">TIPO E NUMERO RAPPORTO 1</span>
+            <span class="value">{{ 'Descrizione/nome commerciale' }}</span>
+          </div>
+          <div class="col-3 item double__item">
+            <span class="label">INTESTATARIO</span>
+            <span class="value">{{ 'Giulia Rossi' }}</span>
+          </div>
+        </div>
+        <div class="rows header"></div>
+        <div class="rows grid__custom">
+          <div class="col-3 item">
+            <span class="label">TIPO E NUMERO RAPPORTO 2</span>
+            <span class="value">{{ 'Descrizione/nome commerciale' }}</span>
+          </div>
+          <div class="col-3 item double__item">
+            <span class="label">INTESTATARIO</span>
+            <span class="value">{{ 'Giulia Rossi' }}</span>
+          </div>
+        </div>
+        <div class="rows header"></div>
+        <div class="container footer">
+          <div class="description__footer">Le comunicazioni periodiche che riguardano gli strumenti finanziari collegati al tuo conto corrente verranno inviate con le modalità che ci hai indicato in precedenza. <br>
+          </div>
+          <div (click)="scopriDiPiu()">
+            <span class="ghost-accent">Scopri di più</span>
+          </div>
+
+          <div class="rows"></div>
+
+        </div>
+        <div class="button-wrapper">
+          <button (click)="goToNextStep()" class="button__container">
+            <span>Continua</span>
+          </button>
+        </div>
+      </div>
+    </ng-container>
+  </ng-container>
+
+  <ng-template #modalInfoProfilo>
+    <modal-info-profilo-component (returnBack)="closeModal()"
+      [dataInformazioni]="dataProfilazione.informazioni"></modal-info-profilo-component>
+  </ng-template>
+
+</div>

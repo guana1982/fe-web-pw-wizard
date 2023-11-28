@@ -1,0 +1,20 @@
+
+// Classes for style tooltip
+.bper-tooltip.mat-tooltip {
+    font-size: 12px;
+    line-height: 18px;
+}
+
+.light-blue {
+    background-color: #CDf0f5;
+    color: #43425D!important;
+    max-width: 16em!important;
+    font-size: $font-size-sm;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+}
+
+
+.customClassTooltip {
+    white-space: pre-line;
+}

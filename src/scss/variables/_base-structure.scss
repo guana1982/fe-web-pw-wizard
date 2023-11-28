@@ -1,0 +1,27 @@
+$z-index-error: 4900;
+$root-font-size: 16px;
+$root-font-family: 'Kievit Pro';
+$spacer: 1em; 
+
+// sidebar width to Add
+$aside-width-plus: 0em; // 1em; // 4.5em
+
+$display-upper-breakpoints: (
+  mobile: 767px,
+  tablet: 1023px,
+  desktop: 1279px,
+  desktop-large: 1365px
+);
+
+$bp-desktop-large: map-get($map: $display-upper-breakpoints, $key: 'desktop-large');
+$bp-desktop: map-get($map: $display-upper-breakpoints, $key: 'desktop');
+$bp-tablet: map-get($map: $display-upper-breakpoints, $key: 'tablet');
+$bp-mobile: map-get($map: $display-upper-breakpoints, $key: 'mobile');
+
+// CORE
+$sidebar-width: 220px;
+$sidebar-width-reduced: 74px;
+$sidebar-secondary-width: 264px;
+$header-heigth: 70px;
+$footer-heigth: 69px;
+$footer-heigth-tablet: 104px;

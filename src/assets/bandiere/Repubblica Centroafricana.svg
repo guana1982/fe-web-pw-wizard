@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Tracciato_6826" data-name="Tracciato 6826" d="M.034,12.749a12,12,0,1,0,12-12,12,12,0,0,0-12,12" transform="translate(-0.034 -0.749)" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Repubblica_Centroafricana" data-name="Repubblica Centroafricana" transform="translate(-0.034 -0.749)">
+    <g id="Raggruppa_214" data-name="Raggruppa 214" transform="translate(0.034 0.749)" clip-path="url(#clip-path)">
+      <rect id="Rettangolo_519" data-name="Rettangolo 519" width="36.344" height="24.226" transform="translate(-0.366 -0.108)" fill="#002482"/>
+      <rect id="Rettangolo_520" data-name="Rettangolo 520" width="36.344" height="18.167" transform="translate(-0.366 5.952)" fill="#fff"/>
+      <rect id="Rettangolo_521" data-name="Rettangolo 521" width="36.344" height="12.118" transform="translate(-0.366 12)" fill="#289714"/>
+      <rect id="Rettangolo_522" data-name="Rettangolo 522" width="36.344" height="6.07" transform="translate(-0.366 18.048)" fill="#ffd800"/>
+      <path id="Tracciato_6825" data-name="Tracciato 6825" d="M2.838.8,3.43,2.618H5.346L3.8,3.748l.592,1.83-1.55-1.13-1.55,1.13.592-1.83L.331,2.618H2.246Z" transform="translate(2.861 -0.264)" fill="#ffdb00"/>
+      <rect id="Rettangolo_523" data-name="Rettangolo 523" width="6.07" height="24.226" transform="translate(14.766 -0.108)" fill="#d20034"/>
+    </g>
+  </g>
+</svg>

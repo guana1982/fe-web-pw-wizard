@@ -1,0 +1,64 @@
+<mat-form-field
+    class="matField"
+    fxFlex="100%"
+    [appearance]="appearance"
+    [floatLabel]="floatLabelNever ? 'never' : 'always'"
+    [class.filled]="!leftIcon && inputNumber.value"
+    [class.with-icon]="leftIcon || rightIcon"
+    [hideRequiredMarker]="true"
+>
+    <mat-label>{{ label }}</mat-label>
+    <i class="icon" *ngIf="showIcon && !(leftIcon || rightIcon)" [class]="'icon-ic-' + icon"></i>
+    <i *ngIf="leftIcon" [class]="'input-currency-icon left bper-ic-' + leftIcon" (click)="decrease()"></i>
+    <input
+        [class.show-icon]="showIcon"
+        class="text"
+        #inputNumber
+        matInput
+        [placeholder]="placeholder"
+        [required]="required"
+        type="text"
+        [formControl]="control"
+        (blur)="validateInput($event)"
+        (change)="validateInput($event)"
+        (focusin)="onFocusIn()"
+        pattern="^[+-]?(([\.,]\d+)|d*(\d+([\.,]\d+)?)*)\s?[€]?$"
+        [id]="id"
+        [name]="name"
+        validateInput="currency"
+        autocomplete="off"
+    />
+    <i *ngIf="rightIcon" [class]="'input-currency-icon right bper-ic-' + rightIcon" (click)="increase()"></i>
+
+    <mat-hint *ngIf="msgHint">{{ msgHint }}</mat-hint>
+
+    <mat-error fxLayout="row" fxLayoutAlign="start center" *ngIf="control.hasError('pattern')">
+        <i [class]="errorIcon"></i>
+        <span>{{ 'INVALIDATIONS.INSERISCI_CIFRA' | translate }}</span>
+    </mat-error>
+
+    <mat-error fxLayout="row" fxLayoutAlign="start center" *ngIf="control.hasError('importoForbidden')">
+        <i [class]="errorIcon"></i>
+        <span>{{ 'INVALIDATIONS.IMPORTO_NOT_ALLOWED' | translate: '{currency: "€", step: ' + step +'}' }}</span>
+    </mat-error>
+
+    <mat-error fxLayout="row" fxLayoutAlign="start center" *ngIf="control.hasError('required')">
+        <i [class]="errorIcon"></i>
+        <span>{{ 'INVALIDATIONS.IMPORTO_OBBLIG' | translate }}</span>
+    </mat-error>
+
+    <mat-error fxLayout="row" fxLayoutAlign="start center" *ngIf="!control.hasError('required') && control.hasError('min') && !control.hasError('max')">
+        <i [class]="errorIcon"></i>
+        <span>{{ msgErrorMin }}</span>
+    </mat-error>
+
+    <mat-error fxLayout="row" fxLayoutAlign="start center" *ngIf="!control.hasError('required') && !control.hasError('min') && control.hasError('max')">
+        <i [class]="errorIcon"></i>
+        <span>{{ msgErrorMax }}</span>
+    </mat-error>
+
+    <mat-error fxLayout="row" fxLayoutAlign="start center" *ngIf="!control.hasError('required') && !control.hasError('max') && !control.hasError('min') && control.hasError('generic')">
+        <i [class]="errorIcon"></i>
+        <span>Campo non valido</span>
+    </mat-error>
+</mat-form-field>

@@ -1,0 +1,27 @@
+<ul class="nav-container">
+
+    <ng-container *ngFor="let navItem of sortedNavItems; trackBy: trackNavItems">
+        
+        <li class="nav-item">
+            <!-- <ark-sidenav-item [navItem]="navItem" (toggle)="onToggle($event)"></ark-sidenav-item> -->
+
+            <ng-container [ngTemplateOutlet]="navItemTmpl" [ngTemplateOutletContext]="{$implicit: navItem}"></ng-container>
+
+        </li>
+
+    </ng-container>
+
+</ul>
+
+<ng-template #navItemTmpl let-navItem>
+    <a class="nav-item"  [class.nav-disabled]="navItem.disabled"
+        routerLinkActive="nav-active" (click)="onItemClicked($event, navItem)"
+    >
+
+        <div class="icon">
+            <i class="icon-{{navItem.icon}}"></i>
+        </div>
+        <div class="label">{{navItem.label?.toUpperCase()}}</div>
+    
+    </a>
+</ng-template>

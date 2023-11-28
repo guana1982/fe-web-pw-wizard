@@ -1,0 +1,186 @@
+@import "src/scss/variables";
+
+
+div.box {
+    &.hero {
+        background: #ffffff;
+        padding: 0;
+        font-family: 'Kievit Pro';
+        max-height: 352px;
+        height: 330px;
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.modal-container {
+    padding: 40px;
+    .modal-header {
+        display: flex;
+        justify-content: space-between;
+        h2 {
+            font-size: 1.5em;
+        }
+        i {
+            font-size: 2em;
+            cursor: pointer;
+        }
+    }
+    p {
+        font-size: 1.4em;
+    }
+}
+
+.sub-title-description, .description__item {
+    color: #5d6f70;
+}
+
+.modal-header {
+    display: none !important;
+}
+
+.description {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 30px !important;
+    color: $table-text-color;
+}
+
+.email-label {
+    margin-bottom: -20px;
+    margin-top: 30px;
+    font-weight: bold;
+}
+
+.container-button {
+    display: flex;
+    justify-content: space-between;
+}
+
+::ng-deep bper-modal div .modal-header h2 {
+    font-size: 27px !important;
+}
+
+.master__container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    margin-left: -32px;
+    margin-top: 62px;
+}
+
+.item {
+    width: 91%;
+    margin: 0 auto;
+}
+
+bper-button {
+    position: absolute;
+    bottom: 28px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-left: -32px;
+    z-index: 1000;
+}
+
+bper-modal {
+    display: flex;
+    width: auto;
+    max-width: 755px;
+    height: 614px;
+}
+
+.container__items {
+    display: flex;
+    justify-content: start;
+    height: 45px;
+    align-items: center;
+}
+
+.green {
+    background-color: #e1eded;
+}
+
+.label__item {
+    font-size: 16px;
+    font-weight: bold;
+    color: map-get($bper-palette, primary --primary-500);
+}
+
+.container__email__verify {
+    display: flex;
+    margin-top: 15rem;
+    margin-bottom: 2rem;
+    width: 100%;
+    height: auto;
+}
+
+.button-wrapper {
+    display: flex;
+    justify-content: center;
+}
+
+.email__verify {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: space-around;
+    background-color: map-get($bper-palette, primary, --primary-20);
+    border-radius: 12px;
+    align-items: center;
+    padding: 8px 8px;
+}
+
+.label__description__email__verify {
+    color: map-get($bper-palette, primary, --primary-500);
+    padding-left: 15px;
+}
+
+.label__verifica {
+    font-size: 15px;
+}
+
+// MOBILE
+@media screen and (max-width: $bp-mobile) {
+    .container-button {
+        flex-wrap: wrap;
+    }
+
+    bper-modal {
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    div.box.hero {
+        width: 100%;
+    }
+
+    ::ng-deep bper-modal div .modal-header {
+        margin-top: 0px !important;
+    }
+
+    ::ng-deep bper-modal div .modal-header h2 {
+        font-size: 18px !important;
+    }
+
+    .master__container {
+        position: inherit;
+        margin-left: 0px;
+    }
+    
+    .container__items {
+        min-height: 45px;
+        height: auto !important;
+    }
+
+    .container__email__verify {
+        margin: 10px 0 30px 0;
+    }
+
+    bper-button {
+        position: inherit;
+        margin-left: 0px;
+    }
+}

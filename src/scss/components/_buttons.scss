@@ -1,0 +1,207 @@
+// $btnSecondary: (
+//     bg: $secondaryColor,
+//     color: map-get($bper-palette, --white)
+// ) !default;
+
+// $btnAccent: (
+//     bg: $accentColor,
+//     color: map-get($bper-palette, --white)
+// ) !default;
+
+// $buttons: (
+//     "secondary": $btnSecondary
+// ) !default;
+
+// .btn{
+//     display: inline-block;
+//     // padding: 0;
+
+//     font-family: inherit;
+//     font-size: 1em;
+//     text-align: center;
+//     vertical-align: middle;
+//     zoom: 1;
+//     //box-shadow: 0px 1px 4px  rgba(206, 207, 208, 0.7);
+
+//     // @extend .mat-elemat-elevation-z4;
+
+//     &:hover{
+//         filter: alpha(opacity=90);
+//         background-image: -webkit-linear-gradient(transparent,rgba(0,0,0,.05) 40%,rgba(0,0,0,.1));
+//         background-image: linear-gradient(transparent,rgba(0,0,0,.05) 40%,rgba(0,0,0,.1));
+//         &.btn--clear{
+//             box-shadow: none;
+//             background-image: none;
+//         }
+        
+//     }
+
+//     &:disabled,
+//     .disabled{
+//         border: none;
+//         background-image: none;
+//         filter: alpha(opacity=40);
+//         opacity: .4;
+//         cursor: not-allowed;
+//         box-shadow: none;
+//         pointer-events: none;
+//     }
+
+//     &:not(:disabled):not(.disabled) {
+//         cursor: pointer;
+//     }
+
+//     &.btn--white{
+//         color: $primaryColor;
+//         background-color: #ffffff;
+//         border: 0.05em solid $primaryColor;
+//     }
+//     &.btn--bordernone{
+//         color: $primaryColor;
+//         background-color: #ffffff;
+//         border: none;
+//     }
+
+//     &.btn--rad{
+//         border-radius: 50%;
+//     }
+
+//     &.btn--block{
+//         display: block;
+//         width: 100%;
+//     }
+    
+//     &.btn--xs{
+//         height: $button-xs;
+//         width: $button-xs;
+//         line-height: $button-xs;
+//         &.btn--oval{
+//             width: auto;
+//             border-radius: $button-xs;
+//         }
+//         &.btn--clear{
+//             box-shadow: none;
+//         }
+//         & i,
+//         & mat-icon{
+//             font-size: $button-xs-font;
+//         }
+//     }
+
+//     &.btn--sm{
+//         @include btn-size($button-sm);
+//         // height: $button-sm;
+//         // width: $button-sm;
+//         line-height: $button-sm;
+//         &.btn--oval{
+//             width: auto !important;
+//             height: auto !important;
+//             border-radius: $button-sm;
+//         }
+//         &.btn--clear{
+//             box-shadow: none;
+//         }
+//         & i,
+//         & mat-icon{
+//             font-size: $button-sm-font;
+//         }
+//     }
+
+//     &.btn--md{
+//         @include btn-size($button-md);
+//         // height: $button-md;
+//         // width: $button-md;
+//         line-height: $button-md;
+//         &.btn--oval{
+//             width: auto !important;
+//             height: auto !important;            
+//             border-radius: $button-md;
+//         }
+//         &.btn--clear{
+//             box-shadow: none;
+//         }
+//         // & i,
+//         // & mat-icon{
+//         //     font-size: $button-md-font;
+//         // }
+//     }
+
+//     &.btn--lg{
+//         height: $button-lg;
+//         width: $button-lg;
+//         line-height: $button-lg;
+//         &.btn--oval{
+//             width: auto;
+//             border-radius: $button-lg;
+//         }
+//         & i,
+//         & mat-icon{
+//             font-size: $button-lg-font;
+//         }
+//     }
+// }
+
+
+// @include createButton($buttons);
+
+// .mat-raised-button,
+// .mat-flat-button,
+// .mat-stroked-button,
+// .mat-icon-button,
+// .mat-fab,
+// .mat-mini-fab
+// {
+//     &.btn{
+//         @extend .btn;
+//     }
+//     &.mat-secondary{
+//         background-color: map-get($btnSecondary, bg);
+//         color: map-get($btnSecondary, color); 
+//     }
+// }
+
+
+// .mat-button.mat-secondary{ 
+//     color: inherit;
+//     background: transparent;
+//     .mat-button-focus-overlay {
+//         background-color: rgba($secondaryColor, 0.12);
+//     }
+// }
+
+
+// button.mat-icon-button,
+// button.mat-fab,
+// button.mat-mini-fab{
+//     &.btn{
+//         box-shadow: none !important;
+//         & .mat-button-wrapper{
+//             @extend %v-middle;
+//             padding: 0;
+//             line-height: 1;
+//         }
+//     }
+// }
+
+
+// a.mat-icon-button,
+// a.mat-fab,
+// a.mat-mini-fab{
+//     &.btn{
+//         // To Be define
+//         // & .mat-button-wrapper{
+//         //     display: inline-block;
+//         //     padding: 0;
+//         //     line-height: 1;
+//         // }
+//         & .mat-button-wrapper{
+//             @extend %v-middle;
+//             padding: 0;
+//             line-height: 1;
+//             // padding-top: 0.4em;
+//             // padding-left: 0.15em;
+//             // font-size: 0.75em;
+//         }
+//     }
+// }
+

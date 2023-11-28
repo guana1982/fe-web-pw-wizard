@@ -1,0 +1,127 @@
+
+
+
+// 
+@mixin font-size($size, $important: '') {
+    @media (max-width: 1024px) {
+        @if($size == $font-size-lg) {
+            @if($important != ''){
+               font-size: $font-size-md $important;
+            } @else {
+                font-size: $font-size-md;
+            } 
+        }@else if($size == $font-size-xxxl) {
+            @if($important != ''){
+                font-size: $font-size-xxl $important;
+            } @else {
+                font-size: $font-size-xxl;
+            } 
+        }  
+        @else if($size == $font-size-xxl) {
+            @if($important != ''){
+                font-size: $font-size-xl $important;
+            } @else {
+                font-size: $font-size-xl;
+            } 
+        }  
+        @else if($size == $font-size-xl) {
+            @if($important != ''){
+               font-size: $font-size-lg $important;
+            } @else {
+                font-size: $font-size-lg;
+            } 
+        }
+        @else if($size == $font-size-xs) {
+            @if($important != ''){
+               font-size: $font-size-xxs $important;
+            } @else {
+                font-size: $font-size-xxs;
+            } 
+        } 
+        @else if($size == $font-size-xxs) {
+            @if($important != ''){
+               font-size: $font-size-exxs $important;
+            } @else {
+                font-size: $font-size-exxs;
+            } 
+        }  
+        @else if($size == $font-size-md) {
+            @if($important != ''){
+                font-size: $font-size-sm $important;
+            } @else {
+                font-size: $font-size-sm;
+            } 
+        }
+        @else if($size == $font-size-md2) {
+            @if($important != ''){
+                font-size: $font-size-sm $important;
+            } @else {
+                font-size: $font-size-sm;
+            } 
+        }
+        @else if($size == $font-size-sm) {
+            @if($important != ''){
+                font-size: $font-size-xs $important;
+            } @else {
+                font-size: $font-size-xs;
+            } 
+        }
+        @else if($size == $font-size-base) {
+            @if($important != ''){
+                font-size: $font-size-sm $important;
+            } @else {
+                font-size: $font-size-sm;
+            } 
+        }@else if($size == $h1-font-size) {
+            @if($important != ''){
+                font-size: $h2-font-size $important;
+            } @else {
+                font-size: $h2-font-size;
+            } 
+        }@else if($size == $h2-font-size) {
+            @if($important != ''){
+                font-size: $h3-font-size $important;
+            } @else {
+                font-size: $h3-font-size;
+            } 
+        }@else if($size == $h3-font-size) {
+            @if($important != ''){
+                font-size: $h4-font-size $important;
+            } @else {
+                font-size: $h4-font-size;
+            } 
+        }@else if($size == $h4-font-size) {
+            @if($important != ''){
+                font-size: $h5-font-size $important;
+            } @else {
+                font-size: $h5-font-size;
+            } 
+        }@else if($size == $h5-font-size) {
+            @if($important != ''){
+                font-size: $h6-font-size $important;
+            } @else {
+                font-size: $h6-font-size;
+            } 
+        }@else {
+            // @if($important != ''){
+            //     font-size: calc(#{$size} - 0.02em) #{$important};
+            // } @else {
+            //     font-size: calc(#{$size} - 0.02em);
+            // }  
+        }
+    }
+    @if($important != ''){
+        font-size: $size $important;
+    } @else {
+        font-size: $size;
+    } 
+  }
+
+
+
+
+
+
+
+
+

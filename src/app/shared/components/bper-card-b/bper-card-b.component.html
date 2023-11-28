@@ -1,0 +1,46 @@
+<div [class]="width + '-width card-wrapper'" >
+    <div class="favourite-icon" *ngIf="favourite">
+        <i class="bper-ic-24px-favourite-full"></i>
+    </div>
+
+    <div
+            class="bper-card-b"
+            (click)="onClickCard()"
+            [class.card-pointer]="pointerZone === 'full'"
+    >
+        <div class="tag" *ngIf="tag">
+            <bper-tag
+                    [color]="tag.color"
+                    [label]="tag.label"
+            ></bper-tag>
+        </div>
+
+        <div class="title" [class.favourite]="favourite">{{ cardTitle }}</div>
+
+        <div class="subtitle">{{ cardSubtitle }}</div>
+
+        <div class="content">
+            <div class="description">
+                {{ amountDescription }}
+            </div>
+
+            <div class="value" *ngIf="!isLoading">
+                {{ amountValue ? (amountValue | currency : 'EUR') : 'N.a.' }}
+            </div>
+
+            <div class="value" *ngIf="isLoading">
+                <bper-line-skeleton [lines]="1"></bper-line-skeleton>
+            </div>
+        </div>
+
+        <div class="cta">
+            <bper-button
+                    buttonType="fab"
+                    (clickBtn)="onClickCta()"
+                    icon="24px-arrow-right"
+                    iconSize="24px"
+                    order="ghost-accent"
+            ></bper-button>
+        </div>
+    </div>
+</div>

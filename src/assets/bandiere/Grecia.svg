@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="23.989" viewBox="0 0 24 23.989">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Tracciato_2848" data-name="Tracciato 2848" d="M.239,12.744A12,12,0,1,0,12.244.749,11.994,11.994,0,0,0,.239,12.744" transform="translate(-0.239 -0.749)" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Grecia" transform="translate(-0.239 -0.749)">
+    <g id="Raggruppa_63" data-name="Raggruppa 63" transform="translate(0.239 0.749)" clip-path="url(#clip-path)">
+      <rect id="Rettangolo_260" data-name="Rettangolo 260" width="35.758" height="23.86" transform="translate(-2.571 0.065)" fill="#000087"/>
+      <rect id="Rettangolo_261" data-name="Rettangolo 261" width="35.758" height="2.689" transform="translate(-2.571 18.589)" fill="#fff"/>
+      <rect id="Rettangolo_262" data-name="Rettangolo 262" width="35.758" height="2.689" transform="translate(-2.571 13.296)" fill="#fff"/>
+      <rect id="Rettangolo_263" data-name="Rettangolo 263" width="35.758" height="2.689" transform="translate(-2.571 8.004)" fill="#fff"/>
+      <rect id="Rettangolo_264" data-name="Rettangolo 264" width="35.758" height="2.689" transform="translate(-2.571 2.7)" fill="#fff"/>
+      <path id="Tracciato_2847" data-name="Tracciato 2847" d="M13.264,6.059H7.939V.755H5.314v5.3H0V8.684H5.314v5.3H7.939v-5.3h5.325Z" transform="translate(-2.573 -0.687)" fill="#fff"/>
+      <rect id="Rettangolo_265" data-name="Rettangolo 265" width="5.314" height="5.271" transform="translate(-2.571 0.065)" fill="#000087"/>
+      <rect id="Rettangolo_266" data-name="Rettangolo 266" width="5.314" height="5.271" transform="translate(-2.571 8.025)" fill="#000087"/>
+      <rect id="Rettangolo_267" data-name="Rettangolo 267" width="5.314" height="5.271" transform="translate(5.368 0.065)" fill="#000087"/>
+      <rect id="Rettangolo_268" data-name="Rettangolo 268" width="5.314" height="5.271" transform="translate(5.368 8.025)" fill="#000087"/>
+    </g>
+  </g>
+</svg>

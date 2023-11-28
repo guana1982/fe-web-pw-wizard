@@ -1,0 +1,159 @@
+@use "sass:math";
+
+$column-number: null;
+$column-width: null;
+$column-vgutter: null;
+$column-hgutter: null;
+$body-content-width:null;
+
+@include grid-definitions();
+.row {
+    // width: $body-content-width;
+    width: 100%;
+    display: grid;
+    align-items: baseline;
+    grid-template-columns: repeat($column-number, $column-width);
+    column-gap: $column-vgutter;
+    row-gap: $column-hgutter;
+
+    @for $i from 1 through $column-number {
+        & > .col-#{$i} {
+            grid-column: span $i;
+
+            @for $j from 1 through $column-number - 1 {
+                &.col-shift-#{$j} {
+                    $shiftValue: $j + 1;
+                    grid-column-end: span $i;
+
+                    @if ( $i + $shiftValue <= $column-number + 1 ) {
+                        grid-column-start: $shiftValue;
+                    } @else {
+                        grid-column-start: $column-number - $i;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// CSS applicato a schermi con larghezza <= $bp-tablet (cca 1024px)
+@media screen and (max-width: $bp-tablet) {
+    @include grid-definitions($bp-tablet);
+
+    .row {
+        width: 100%;
+        grid-template-columns: repeat($column-number, minmax(0, $column-width));
+        column-gap: $column-vgutter;
+        row-gap: $column-hgutter;
+
+        @for $i from 1 through 12 {
+            & > .col-#{$i} {
+                $value: math.min($i, $column-number);
+                grid-column: span $value;
+                
+                @for $j from 1 through 11 {
+                    &.col-shift-#{$j} {
+                        $shiftValue: $j + 1;
+                        grid-column-end: span $value;
+
+                        @if ( $value + $shiftValue <= $column-number + 1 ) {
+                            grid-column-start: $shiftValue;
+                        } @else {
+                            grid-column-start: $column-number - $value + 1;
+                        }
+                    }
+                }
+            }
+        }
+
+        @for $i from 1 through $column-number {
+            & > .col-md-#{$i} {
+                grid-column: span $i;
+
+                @for $j from 1 through $column-number - 1 {
+                    &.col-md-shift-#{$j}, &.col-shift-#{$j} {
+                        $shiftValue: $j + 1;
+                        grid-column-end: span $i;
+
+                        @if ( $i + $shiftValue <= $column-number + 1 ) {
+                            grid-column-start: $shiftValue;
+                        } @else {
+                            grid-column-start: $column-number - $i;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// CSS applicato a schermi con larghezza <= $bp-mobile (cca 768px)
+@media screen and (max-width: $bp-mobile) {
+    @include grid-definitions($bp-mobile);
+
+    .row {
+        width: 100%;
+        grid-template-columns: repeat($column-number, minmax(0, $column-width));
+        column-gap: $column-vgutter;
+        row-gap: $column-hgutter;
+        
+        @for $i from 1 through 12 {
+            & > .col-#{$i} {
+                $value: math.min($i, $column-number);
+                grid-column: span $value;
+                
+                @for $j from 1 through 11 {
+                    &.col-shift-#{$j} {
+                        $shiftValue: $j + 1;
+                        grid-column-end: span $value;
+
+                        @if ( $value + $shiftValue <= $column-number + 1 ) {
+                            grid-column-start: $shiftValue;
+                        } @else {
+                            grid-column-start: $column-number - $value + 1;
+                        }
+                    }
+                }
+            }
+        }
+
+        @for $i from 1 through 8 {
+            & > .col-md-#{$i} {
+                $value: math.min($i, $column-number);
+                grid-column: span $value;
+                
+                @for $j from 1 through 7 {
+                    &.col-md-shift-#{$j}, &.col-shift-#{$j} {
+                        $shiftValue: $j + 1;
+                        grid-column-end: span $value;
+
+                        @if ( $value + $shiftValue <= $column-number + 1 ) {
+                            grid-column-start: $shiftValue;
+                        } @else {
+                            grid-column-start: $column-number - $value + 1;
+                        }
+                    }
+                }
+            }
+        }
+
+        @for $i from 1 through $column-number {
+            & > .col-sm-#{$i} {
+                grid-column: span $i;
+
+                @for $j from 1 through $column-number - 1 {
+                    &.col-sm-shift-#{$j}, &.col-md-shift-#{$j}, &.col-shift-#{$j} {
+                        $shiftValue: $j + 1;
+                        grid-column-end: span $i;
+
+                        @if ( $i + $shiftValue <= $column-number + 1 ) {
+                            grid-column-start: $shiftValue;
+                        } @else {
+                            grid-column-start: $column-number - $i;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

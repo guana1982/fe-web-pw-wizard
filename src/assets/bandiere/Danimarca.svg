@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Tracciato_1143" data-name="Tracciato 1143" d="M.547,12.628a12,12,0,1,0,12-12,12.011,12.011,0,0,0-12,12" transform="translate(-0.547 -0.628)" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Danimarca" transform="translate(-0.547 -0.628)">
+    <g id="Raggruppa_43" data-name="Raggruppa 43" transform="translate(0.547 0.628)" clip-path="url(#clip-path)">
+      <rect id="Rettangolo_107" data-name="Rettangolo 107" width="35.785" height="27.067" transform="translate(-5.887 -1.539)" fill="#c03"/>
+      <path id="Tracciato_1142" data-name="Tracciato 1142" d="M35.784,12.034H15.519V.486H11.558V12.034H0v3.961H11.558V27.542h3.961V15.994H35.784Z" transform="translate(-5.89 -2.016)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

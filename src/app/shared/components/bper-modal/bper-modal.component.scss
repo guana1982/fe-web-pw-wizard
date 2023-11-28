@@ -1,0 +1,248 @@
+@import "src/scss/variables";
+
+.modal-container {
+    display: grid;
+    column-gap: 0;
+    grid-template-areas: "Header Header Header"
+        "Image Content Content"
+        "Image Fade Fade"
+        "Image Footer Footer";
+    height: 100%;
+    grid-template-columns: minmax(190px, auto) auto auto;
+    grid-template-rows: minmax(74px, auto) minmax(0, auto) 0 minmax(74px, auto);
+    position: relative;
+    box-sizing: border-box;
+
+    --padding-x: 32px;
+    --scrollbar-padding: 12px;
+
+    @media screen and (max-width: $bp-mobile) {
+        --padding-x: 16px;
+        --scrollbar-padding: 4px;
+    }
+
+    &.no-leftImage {
+        grid-template-areas: "Header Header Header"
+        "Content Content Content"
+        "Fade Fade Fade"
+        "Footer Footer Footer";
+        grid-template-columns: auto auto auto;
+
+        @media screen and (max-width: $bp-mobile) {
+            grid-template-areas: "Header" "Content" "Fade" "Footer";
+            grid-template-columns: 1fr;
+        }
+    }
+
+    &.no-title {
+        grid-template-rows: 48px auto 0 minmax(74px, auto);
+        // per modale accesso negato
+
+        .modal-header {
+            padding-bottom: 4px;
+        }
+    }
+
+    &.no-action {
+        grid-template-rows: minmax(74px, auto) auto 0 24px;
+        // per modale accesso negato
+    }
+
+    .bper-modal-image {
+        grid-area: Image;
+        align-self: flex-end;
+        display: flex;
+    }
+
+    .modal-header {
+        grid-area: Header;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-self: baseline;
+        align-items: center;
+        padding: 24px var(--padding-x);
+        column-gap: 16px;
+
+        h2 {
+            font-size: 20px;
+            font-family: 'Kievit Pro Bold';
+            color: map-get($bper-palette, primary, --primary-500);
+            -moz-osx-font-smoothing: grayscale;
+            line-height: 26px;
+        }
+
+        i {
+            font-size: 24px;
+            cursor: pointer;
+            color: map-get($bper-palette, primary, --primary-500);
+        }
+    }
+
+    mat-dialog-content {
+        display: flex;
+        flex-direction: column;
+        grid-area: Content;
+        height: 100%;
+        overflow-y: auto;
+
+        // Gestione padding - posizionamento scrollbar
+        padding: 0 var(--scrollbar-padding) 0 0 !important;
+
+        > * {
+            padding-left: var(--padding-x) !important;
+            padding-right: calc(var(--padding-x) - var(--scrollbar-padding)) !important;
+        }
+        // FINE - Gestione padding - posizionamento scrollbar
+
+        &::-webkit-scrollbar {
+            width: 32px;
+        }
+
+        &::-webkit-scrollbar-thumb {
+            border: 12px solid rgba(0, 0, 0, 0);
+            background-clip: padding-box;
+            border-radius: 9999px;
+            background-color: #D7DBDB;
+        }
+    }
+
+    .fade-container {
+        grid-area: Fade;
+        position: relative;
+
+        &::before {
+            background: transparent linear-gradient(180deg, #FFFFFF00 0%, #FFFFFF 100%) 0 0 no-repeat padding-box;
+            bottom: 0;
+            content: '';
+            height: 75px;
+            left: 0;
+            opacity: 0;
+            pointer-events: none;
+            position: absolute;
+            transition: .3s ease;
+            width: 100%;
+            z-index: 1;
+        }
+
+        &.fade {
+            &::before {
+                opacity: 1;
+            }
+        }
+    }
+
+    .mat-typography {
+        font-size: 16px;
+        color: map-get($bper-palette, primary, --primary-500);
+        text-align: left;
+    }
+
+    .modal-footer {
+        grid-area: Footer;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        padding: 24px var(--padding-x);
+        position: relative;
+        box-sizing: border-box;
+
+        // .mat-dialog-actions {
+        //     display: flex;
+        //     justify-content: space-between;
+        // }
+
+        [footer] {
+            display: flex;
+            justify-content: center;
+            width: 100%;
+
+            :not(:nth-child(1)) {
+               margin-left: auto;
+            }
+        }
+
+        // &::before {
+        //     content: '';
+        //     pointer-events: none;
+        //     position: absolute;
+        //     width: calc(100% - 64px);
+        //     height: 78px;
+        //     background: transparent linear-gradient(180deg, #FFFFFF00 0%, #FFFFFF 100%) 0% 0% no-repeat padding-box;
+        //     left: 50%;
+        //     bottom: 100%;
+        //     transform: translateX(-50%);
+        // }
+
+        // GRADIENTE SOPRA IL FOOTER
+        // &::before {
+        //     content: '';
+        //     pointer-events: none;
+        //     position: absolute;
+        //     width: calc(100% - 64px);
+        //     height: 78px;
+        //     background: transparent linear-gradient(180deg, #FFFFFF00 0%, #FFFFFF 100%) 0% 0% no-repeat padding-box;
+        //     left: 50%;
+        //     bottom: 100%;
+        //     transform: translateX(-50%);
+        // }
+    }
+}
+
+@media screen and (max-width: $bp-tablet) {
+    .bper-modal-image {
+        display: none !important;
+    }
+
+    .modal-container {
+        width: 100%;
+        grid-template-areas: "Header Header Header"
+            "Content Content Content"
+            "Fade Fade Fade"
+            "Footer Footer Footer";
+
+        .modal-footer::before {
+                height: 50px;
+        }
+    }
+
+}
+
+@media screen and (max-width: $bp-mobile) {
+    ::ng-deep.dialog-override {
+        max-width: 92vw !important;
+    }
+
+    .modal-container {
+        // // per modale accesso negato
+        // &.no-title {
+
+        //     .modal-footer {
+        //         padding: 0;
+        //     }
+        // }
+
+        // // per modale informativa
+        // &.no-leftImage {
+
+        //     .modal-footer {
+        //         padding: 0;
+        //     }
+        // }
+
+        .modal-header {
+            align-items: center;
+        }
+    }
+
+    [footer] {
+        flex-direction: column;
+        gap: 24px;
+        align-items: center;
+
+        :not(:nth-child(1)) {
+           margin-right: auto;
+        }
+    }
+
+}

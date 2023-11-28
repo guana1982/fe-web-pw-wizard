@@ -1,0 +1,10 @@
+<div class="bper-qrcode-wrapper">
+  <div class="corners">
+    <qrcode *ngIf="encriptedData else imageskeleton" [qrdata]="encriptedData" [width]="165"
+      [errorCorrectionLevel]="'M'"></qrcode>
+  </div>
+</div>
+<ng-template #imageskeleton>
+  <bper-image-skeleton height="164" width="164" radius="0" position="auto"></bper-image-skeleton>
+</ng-template>
+

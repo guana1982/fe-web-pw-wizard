@@ -1,0 +1,545 @@
+@import "src/scss/variables";
+
+$snap: cubic-bezier(.18, .89, .45, 1.36);
+
+@mixin smallSize() {
+    --height: 136px;
+    --width: 216px;
+    height: var(--height);
+    width: var(--width);
+}
+
+@mixin largeSize() {
+    --height: 175px;
+    --width: 277px;
+    height: var(--height);
+    width: var(--width);
+}
+
+@mixin small() {
+    @include smallSize();
+
+    cursor: pointer;
+
+    .bper-logo {
+        left: 21px;
+        top: 19px;
+        width: 52px;
+
+        .bper-card-text {
+            font-size: 9px;
+            line-height: 10px;
+        }
+    }
+
+    .card-content {
+        min-width: 145px;
+        padding: 6px 8px;
+
+        .content {
+            position: relative;
+
+            .card-category {
+                font-size: 12px;
+                line-height: 14px;
+            }
+
+            .card-name {
+                font-size: 14px;
+                font-family: "Kievit Pro Bold";
+                line-height: 17px;
+                text-shadow: 0 3px 6px #0000004D;
+                max-width: 130px;
+            }
+
+            .availabilty {
+                font-size: 12px;
+                line-height: 14px;
+                margin-top: 6px;
+
+                .bold {
+                    font-family: "Kievit Pro Bold";
+                    font-size: 18px;
+                    line-height: 22px;
+                }
+            }
+
+            i {
+                &.favourite-icon {
+                    font-size: 18px;
+                }
+
+                &.arrow {
+                    width: 0;
+                    opacity: 0;
+                }
+            }
+        }
+    }
+
+    &:hover {
+        .card-content {
+            .content {
+                .left {
+                    .card-category {
+                        font-size: 14px;
+                    }
+
+                    .card-name {
+                        font-size: 16px;
+                    }
+
+                    .availabilty {
+                        .availability-label {
+                            font-size: 14px;
+                        }
+
+                        .availability-value {
+                            font-size: 20px;
+                        }
+                    }
+                }
+
+                .right i.arrow {
+                    bottom: 0;
+                    display: block !important;
+                    left: 0;
+                    opacity: 1;
+                    position: absolute;
+                    transform: translateX(calc(var(--width) - 50px));
+                    width: unset;
+                }
+            }
+        }
+
+    }
+}
+
+@mixin large() {
+    @include largeSize();
+
+    cursor: pointer;
+
+    .bper-logo {
+        left: 28px;
+        top: 25px;
+        width: 65px;
+
+        .bper-card-text {
+            font-size: 11px;
+            line-height: 13px;
+        }
+    }
+
+    .card-content {
+        padding: 10px 12px;
+        width: 190px;
+
+        .content {
+            .card-category {
+                font-size: 14px;
+                line-height: 17px;
+            }
+
+            .card-name {
+                font-family: "Kievit Pro Bold";
+                font-size: 16px;
+                line-height: 19px;
+                text-shadow: 0 3px 6px #0000004D;
+            }
+
+            .availabilty {
+                font-size: 12px;
+                line-height: 14px;
+                margin-top: 9px;
+
+                .bold {
+                    font-family: "Kievit Pro Bold";
+                    font-size: 20px;
+                    line-height: 25px;
+                }
+            }
+        }
+    }
+
+    &:hover .arrow {
+        display: block !important;
+        transform: translateX(64px);
+    }
+}
+
+@mixin detail() {
+    @include largeSize();
+
+    .bper-logo {
+        left: 28px;
+        top: 25px;
+        width: 65px;
+
+        .bper-card-text {
+            font-size: 11px;
+            line-height: 13px;
+        }
+    }
+
+    .card-content {
+        padding: 10px 12px;
+        width: 190px;
+
+        .content {
+            .card-category {
+                font-size: 16px;
+                line-height: 19px;
+            }
+
+            .card-name {
+                display: none !important;
+            }
+
+            .availabilty {
+                font-size: 12px;
+                line-height: 14px;
+                margin-top: 16px;
+
+                .bold {
+                    font-size: 24px;
+                    line-height: 30px;
+                    font-family: "Kievit Pro Bold";
+                    margin-top: 8px;
+                }
+            }
+        }
+    }
+}
+
+@mixin homepage() {
+    @media screen and (max-width: $bp-tablet) {
+        --height: 181px;
+        --width: 287px;
+    }
+
+    @media screen and (max-width: $bp-mobile) {
+        --height: 224px;
+        --width: 355px;
+
+        &:hover .arrow {
+            transform: translateX(130px);
+        }
+    }
+}
+
+@mixin scaleEffect() {
+    transform: .4s $snap;
+    transform-origin: bottom left;
+
+    &:hover {
+        transform: scale(1.05);
+    }
+}
+
+@mixin hover() {
+    @include scaleEffect();
+
+    .card {
+        &::before {
+            background: transparent linear-gradient(251deg, #13878F 0%, #1C5055 100%) 0 0 no-repeat padding-box;
+            content: '';
+            height: 100%;
+            left: 0;
+            position: absolute;
+            top: 0;
+            transform: scaleX(0);
+            transform-origin: bottom left;
+            transition: .4s $snap;
+            width: 100%;
+        }
+
+        &:hover {
+            .bper-logo {
+                display: block;
+            }
+
+            &::before {
+                transform: scaleX(1);
+            }
+
+            .card-content .background {
+                opacity: 0;
+                transform: scaleX(0);
+                transform-origin: left 8px;
+                transition: .4s $snap;
+            }
+        }
+    }
+}
+
+.new-card {
+    background: map-get($bper-palette, primary, --primary-20);
+    border-radius: 12px;
+    box-shadow: 0 12px 24px #00515729;
+    color: map-get($bper-palette, primary, --primary-600);
+    cursor: pointer;
+    font-family: Kievit Pro;
+    position: relative;
+    overflow: hidden;
+
+    &.blocked .card {
+        filter: grayscale(1);
+    }
+
+    @include scaleEffect();
+
+    &.detail {
+        @include largeSize();
+    }
+
+    &.large {
+        @include largeSize();
+    }
+
+    &.small {
+        @include smallSize();
+    }
+
+    &.homepage {
+        @include homepage();
+    }
+
+    .content {
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        justify-content: center;
+
+        .icon i {
+            font-size: 50px;
+        }
+
+        .label {
+            font-family: "Kievit Pro Medium";
+            font-size: 16px;
+            line-height: 19px;
+        }
+    }
+}
+
+.card-container {
+    position: relative;
+    z-index: 0;
+
+    &.blocked .card {
+        filter: grayscale(1);
+    }
+
+    &.detail .card {
+        @include detail();
+    }
+
+    &.large .card {
+        @include large();
+    }
+
+    &.homepage .card {
+        @include homepage();
+    }
+
+    @media screen and (min-width: $bp-mobile) {
+        &.small .card {
+            @include small();
+        }
+
+        &.large,
+        &.small {
+            @include hover();
+        }
+    }
+
+    @media screen and (max-width: $bp-mobile) {
+        &.small .card {
+            @include large();
+
+            .card-content .right .arrow {
+                display: none !important;
+            }
+        }
+
+        &.large:hover .card-content .right .arrow {
+            transform: unset;
+        }
+    }
+
+    &.selection {
+        background-color: white;
+        border-radius: 12px;
+        cursor: pointer;
+        padding: 0;
+        transition: .3s ease;
+
+        .card .card-content .content .left .card-name {
+            display: -webkit-box !important;
+            font-family: "Kievit Pro Bold";
+        }
+
+        .selection-info {
+            padding: 16px 20px;
+            position: relative;
+
+            span {
+                color: map-get($bper-palette, neutral, --neutral-300);
+                font: normal normal normal 16px/10px Kievit Pro;
+
+                .number {
+                    left: 0;
+                    position: absolute;
+                    transition: .3s ease;
+                    top: 19px;
+                }
+
+                i {
+                    opacity: 0;
+                    transition: .3s ease;
+                    transform: translateX(-20px);
+                }
+            }
+        }
+
+        .no-selection {
+            display: none;
+        }
+
+        &.is-selected {
+            border: 2px solid map-get($bper-palette, secondary, --secondary-10);
+            box-shadow: 0 16px 24px #00515752;
+            padding: 4px;
+
+            .card {
+                box-shadow: none;
+            }
+
+            .selection-info {
+                span {
+                    align-items: center;
+                    color: map-get($bper-palette, primary, --primary-500);
+                    display: flex;
+                    font-family: "Kievit Pro Bold";
+                    gap: 16px;
+                    transition: .3s ease;
+
+                    .number {
+                        left: 54px;
+                        top: unset;
+                    }
+
+                    i {
+                        color: map-get($bper-palette, secondary, --secondary-90);
+                        opacity: 1;
+                        transform: translateX(0);
+                    }
+                }
+            }
+        }
+    }
+
+    .card-tag {
+        position: absolute;
+        left: 8px;
+        top: -11px;
+        z-index: 1;
+    }
+
+    .card {
+        background: url("~src/assets/default-templates/bper-card.jpg");
+        background-size: cover;
+        border-radius: 12px;
+        box-shadow: 0 12px 24px #00515729;
+        color: map-get($bper-palette, --white);
+        font-family: Kievit Pro;
+        position: relative;
+        overflow: hidden;
+
+        .bper-logo {
+            display: none;
+            position: absolute;
+            z-index: 1;
+
+            .bper-card-text {
+                font-family: "Kievit Pro Bold";
+                margin-top: -2px;
+            }
+        }
+
+        .card-content {
+            bottom: 8px;
+            left: 8px;
+            position: absolute;
+            z-index: 0;
+
+            .background {
+                backdrop-filter: blur(3px);
+                background-color: rgba(0, 0, 0, 0.6);
+                border-radius: 10px;
+                height: 100%;
+                left: 0;
+                position: absolute;
+                top: 0;
+                width: 100%;
+                z-index: -1;
+            }
+
+            @-moz-document url-prefix() {
+                .background {
+                    background-color: rgba(0, 0, 0, 0.75) !important;
+                }
+            }
+
+            .content {
+                display: flex;
+                justify-content: space-between;
+
+                .left {
+                    width: fit-content;
+
+                    div {
+                        display: -webkit-box;
+                        overflow: hidden;
+                        -webkit-box-orient: vertical;
+                        -webkit-line-clamp: 1;
+                        width: fit-content;
+
+                        &.card-category {
+                            text-shadow: 0 3px 6px #00000029;
+                        }
+                    }
+                }
+
+                .right {
+                    align-items: center;
+                    display: flex;
+                    flex-direction: column;
+
+                    i {
+                        &.pointer {
+                            cursor: pointer;
+                        }
+
+                        &.bper-ic-24px-favourite-full {
+                            color: map-get($bper-palette, --white);
+                        }
+
+                        &.bper-ic-24px-favourite {
+                            color: map-get($bper-palette, --white);
+                            margin-bottom: auto;
+                        }
+
+                        &.arrow {
+                            font-size: 24px;
+                            margin-top: auto;
+                            transition: .4s $snap;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

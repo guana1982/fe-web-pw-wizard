@@ -1,0 +1,338 @@
+$text-shadow-primary: 0 3px 6px #{map-get($bper-palette, --black)}3d;
+$primary-box-shadow: 0 8px 16px #{map-get($bper-palette, accent, --accent-90)}24;
+$secondary-accent-box-shadow: 0 8px 16px #{map-get($bper-palette, accent, --accent-90)}14;
+$fab-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+
+@mixin primary($box-shadow) {
+    background: transparent $accent-gradient 0 0 no-repeat padding-box;
+    box-shadow: $box-shadow;
+    text-shadow: $text-shadow-primary;
+
+    &:hover:not([disabled]) {
+        animation: hoverBtnPrimary 0.3s forwards;
+    }
+
+    .mat-button-wrapper {
+        color: map-get($bper-palette, --white);
+    }
+
+    &:disabled {
+        background: map-get($bper-palette, neutral, --neutral-40) 0 0 no-repeat padding-box;
+        box-shadow: none;
+        text-shadow: none;
+    }
+}
+
+@mixin secondary-accent() {
+    border: 2px solid map-get($bper-palette, accent, --accent-90);
+    color: map-get($bper-palette, accent, --accent-90);
+
+    .mat-button-wrapper {
+        color: map-get($bper-palette, accent, --accent-90);
+    }
+
+    &:hover:not([disabled]) {
+        border: 2px solid map-get($bper-palette, accent, --accent-100);
+        box-shadow: $secondary-accent-box-shadow;
+        background-color: white !important;
+
+        .mat-button-wrapper {
+            color: map-get($bper-palette, accent, --accent-100);
+        }
+    }
+
+    &:disabled {
+        border: 2px solid map-get($bper-palette, neutral, --neutral-40);
+        box-shadow: $secondary-accent-box-shadow;
+
+        .mat-button-wrapper {
+            color: map-get($bper-palette, neutral, --neutral-40) !important;
+        }
+
+        i::before {
+            color: map-get($bper-palette, neutral, --neutral-40);
+        }
+    }
+}
+
+@mixin secondary-white() {
+    border: 2px solid map-get($bper-palette, --white);
+
+    .mat-button-wrapper {
+        color: map-get($bper-palette, --white);
+    }
+
+    &:hover:not([disabled]) {
+        background: transparent $accent-gradient 0 0 no-repeat padding-box;
+        border-color: transparent;
+        text-shadow: $text-shadow-primary;
+    }
+
+    &:disabled {
+        background: map-get($bper-palette, neutral, --neutral-40) 0 0 no-repeat padding-box;
+        border: none;
+
+        i::before {
+            color: map-get($bper-palette, neutral, --neutral-40);
+        }
+    }
+
+}
+
+@mixin ghost() {
+    background-color: transparent;
+    height: fit-content !important;
+    line-height: unset;
+    padding: 0;
+    width: fit-content !important;
+
+    .mat-button-wrapper {
+        margin: 0;
+    }
+
+    .mat-ripple {
+        line-height: unset;
+    }
+
+    .mat-button-focus-overlay {
+        background-color: transparent;
+        line-height: unset;
+    }
+
+    &:disabled {
+        .mat-button-wrapper {
+            color: map-get($bper-palette, neutral, --neutral-40);
+        }
+
+        i::before {
+            color: map-get($bper-palette, neutral, --neutral-40);
+        }
+    }
+}
+
+@mixin ghost-accent() {
+    @include ghost();
+
+    .mat-button-wrapper {
+        color: map-get($bper-palette, accent, --accent-90);
+    }
+
+    &:active:not([disabled]) {
+        .mat-button-wrapper {
+            color: map-get($bper-palette, accent, --accent-100);
+        }
+    }
+}
+
+@mixin ghost-white() {
+    @include ghost();
+
+    .mat-button-wrapper {
+        color: map-get($bper-palette, --white);
+    }
+
+    &:active:not([disabled]) {
+        .mat-button-wrapper {
+            color: map-get($bper-palette, accent, --accent-90);
+        }
+    }
+}
+
+@mixin ghost-green() {
+    @include ghost();
+    font-family: "Kievit Pro Medium";
+    font-size: 18px;
+
+    .mat-button-wrapper {
+        color: map-get($bper-palette, primary, --primary-500);
+    }
+
+    &:active:not([disabled]) {
+        .mat-button-wrapper {
+            color: map-get($bper-palette, primary, --primary-500);
+        }
+    }
+
+    &:not([disabled]) i::before {
+        color: map-get($bper-palette, accent, --accent-90);
+    }
+}
+
+bper-button {
+    width: fit-content;
+
+    @media screen and (max-width: $bp-mobile) {
+        &:not(.wrapper-inline) {
+            &.wrapper- {
+                &primary, &secondary-accent, &secondary-white {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    button {
+        height: 42px !important;
+
+        &.break-line {
+            height: unset !important;
+            min-height: 42px !important;
+
+            .mat-button-wrapper {
+                display: block;
+                white-space: break-spaces;
+            }
+        }
+
+        &.mat-button {
+            padding: 0;
+            transition: 0.3s background-color ease-out;
+
+            .mat-button-focus-overlay {
+                background-color: transparent;
+            }
+        }
+
+        &.mat-icon-button {
+            transition: 3s background-color ease-out;
+
+            .mat-button-wrapper {
+                i.bper-btn--icon {
+                    font-size: 20px;
+
+                    &-left, &-fab {
+                        margin-right: 12px !important;
+                    }
+
+                    &-right, &-fab {
+                        margin-left: 12px !important;
+                    }
+
+                    &::before {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+
+        &.mat-fab {
+            height: var(--fab-size) !important;
+            transition: 0.3s all ease-out;
+            width: var(--fab-size) !important;
+
+            .mat-button-wrapper {
+                padding: 0;
+            }
+
+            &.primary {
+                @include primary($fab-box-shadow)
+            }
+
+            &.secondary-accent,
+            &.secondary-white,
+            &.ghost-accent,
+            &.ghost-accent:active:not([disabled]),
+            &.ghost-white,
+            &.ghost-white:active:not([disabled]) {
+                background-color: transparent;
+                box-shadow: none;
+            }
+        }
+
+        &.mat-button, &.mat-icon-button {
+            border-radius: 24px;
+            width: fit-content;
+
+            .mat-button-wrapper {
+                margin: 0 32px;
+            }
+
+            &.primary {
+                @include primary($primary-box-shadow)
+            }
+
+
+            @media screen and (max-width: $bp-mobile) {
+                &:not(.inline) {
+                    &.primary, &.secondary-accent, &.secondary-white {
+                        display: block;
+                        width: 100%;
+
+                        // Da valutare inserimento [inline]="true" dove necessario + controllo su footer modali
+                        //.mat-button-wrapper {
+                        //    margin: 0 auto;
+                        //}
+                    }
+                }
+            }
+        }
+
+        &.mat-button, &.mat-icon-button, &.mat-fab {
+            font-family: 'Kievit Pro Bold';
+            font-size: 16px;
+
+            i {
+                font-size: var(--icon-size);
+
+                &::before {
+                    font-size: var(--icon-size);
+                }
+            }
+
+            &.secondary-accent {
+                @include secondary-accent()
+            }
+
+            &.secondary-white {
+                @include secondary-white()
+            }
+
+            &.ghost-accent {
+                @include ghost-accent()
+            }
+
+            &.ghost-white {
+                @include ghost-white()
+            }
+
+            &.ghost-green {
+                @include ghost-green()
+            }
+        }
+    }
+}
+
+
+@keyframes hoverBtnPrimary {
+    0% {
+        background: transparent linear-gradient(180deg, #f06400 0%, map-get($bper-palette, accent, --accent-100) 100%) 0 0 no-repeat padding-box;
+    }
+
+    100% {
+        background: transparent linear-gradient(180deg, map-get($bper-palette, accent, --accent-100) 0%, map-get($bper-palette, accent, --accent-100) 100%) 0 0 no-repeat padding-box;
+    }
+}
+
+pagamenti-step-esito {
+    [console] {
+        .buttons-container {
+            column-gap: 32px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            row-gap: 24px;
+
+            @media screen and (max-width: $bp-mobile) {
+                flex-direction: column;
+            }
+        }
+    }
+}
+
+bper-button {
+    cursor: pointer;
+    
+    & button.withIcon .mat-button-wrapper i {
+        display: inline-block !important;
+    }
+}

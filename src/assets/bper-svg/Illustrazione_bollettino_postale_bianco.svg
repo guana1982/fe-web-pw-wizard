@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="476" height="304" viewBox="0 0 476 304">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #f7fafa;
+      }
+
+      .cls-2 {
+        fill: #b0cfd1;
+      }
+
+      .cls-11, .cls-14, .cls-3 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        font-size: 15px;
+        font-family: KievitPro-Bold, Kievit Pro;
+        font-weight: 700;
+      }
+
+      .cls-10, .cls-13, .cls-4, .cls-6 {
+        fill: #005157;
+      }
+
+      .cls-4 {
+        font-size: 10px;
+      }
+
+      .cls-10, .cls-4, .cls-6 {
+        font-family: KievitPro-Medium, Kievit Pro;
+        font-weight: 500;
+      }
+
+      .cls-5, .cls-6 {
+        font-size: 13px;
+      }
+
+      .cls-7 {
+        font-size: 11px;
+      }
+
+      .cls-10, .cls-8 {
+        font-size: 14px;
+      }
+
+      .cls-9 {
+        fill: #e1eded;
+      }
+
+      .cls-11, .cls-12 {
+        stroke: #e6e8e8;
+      }
+
+      .cls-11 {
+        stroke-dasharray: 4;
+      }
+
+      .cls-12, .cls-16 {
+        fill: none;
+      }
+
+      .cls-12 {
+        stroke-width: 0.5px;
+      }
+
+      .cls-13 {
+        font-size: 12px;
+        font-family: KievitPro-Regular, Kievit Pro;
+      }
+
+      .cls-15 {
+        stroke: none;
+      }
+    </style>
+  </defs>
+  <g id="Raggruppa_29698" data-name="Raggruppa 29698" transform="translate(21257.824 15391.686)">
+    <path id="Tracciato_86557" data-name="Tracciato 86557" class="cls-1" d="M0,0H476V304H0Z" transform="translate(-21257.824 -15391.686)"/>
+    <g id="Raggruppa_29678" data-name="Raggruppa 29678" transform="translate(-21238.324 -15369.432)">
+      <rect id="Rettangolo_10966" data-name="Rettangolo 10966" class="cls-2" width="21" height="21" rx="2" transform="translate(0.5 -0.254)"/>
+      <text id="_" data-name="€" class="cls-3" transform="translate(10.5 14.746)"><tspan x="-4.402" y="0">€</tspan></text>
+    </g>
+    <text id="su_C_C_n._12345678" data-name="su C/C n. 12345678" class="cls-4" transform="translate(-21206.824 -15352.686)"><tspan x="0" y="0">su C/C n.</tspan><tspan class="cls-5" y="0" xml:space="preserve"> 12345678</tspan></text>
+    <text id="Causale" class="cls-6" transform="translate(-21216.824 -15250.686)"><tspan x="0" y="0">Causale</tspan></text>
+    <text id="Intestato_a" data-name="Intestato a" class="cls-6" transform="translate(-21235.824 -15305.686)"><tspan x="0" y="0">Intestato a</tspan></text>
+    <text id="di_Euro_123_45_" data-name="di Euro 123,45 €" class="cls-4" transform="translate(-20845.824 -15352.686)"><tspan x="-79.25" y="0">di Euro</tspan><tspan class="cls-7" y="0"> </tspan><tspan class="cls-8" y="0">123,45 €</tspan></text>
+    <rect id="Rettangolo_12146" data-name="Rettangolo 12146" class="cls-9" width="476" height="12" transform="translate(-21257.824 -15391.686)"/>
+    <text id="_896_" data-name="&lt; 896 &gt;" class="cls-10" transform="translate(-20810.824 -15132.686)"><tspan x="-38.598" y="0">&lt; 896 &gt;</tspan></text>
+    <g id="Rettangolo_12152" data-name="Rettangolo 12152" class="cls-11" transform="translate(-21257.824 -15217.686)">
+      <rect class="cls-15" width="150" height="70"/>
+      <rect class="cls-16" x="0.5" y="0.5" width="149" height="69"/>
+    </g>
+    <path id="Tracciato_86556" data-name="Tracciato 86556" class="cls-12" d="M-20803.289-15573h-475.734" transform="translate(21.2 425.314)"/>
+    <g id="Raggruppa_29687" data-name="Raggruppa 29687" transform="translate(-6 5)">
+      <rect id="Rettangolo_12142" data-name="Rettangolo 12142" class="cls-9" width="94" height="22" rx="11" transform="translate(-21202.824 -15345.686)"/>
+      <text id="N_C_C_Postale" data-name="N° C/C Postale" class="cls-13" transform="translate(-21155.824 -15330.686)"><tspan x="-36.948" y="0">N° C/C Postale</tspan></text>
+    </g>
+    <g id="Raggruppa_29700" data-name="Raggruppa 29700" transform="translate(-57 47)">
+      <rect id="Rettangolo_12142-2" data-name="Rettangolo 12142" class="cls-9" width="78" height="22" rx="11" transform="translate(-21194.824 -15345.686)"/>
+      <text id="Intestatario" class="cls-13" transform="translate(-21155.824 -15330.686)"><tspan x="-28.944" y="0">Intestatario</tspan></text>
+    </g>
+    <g id="Raggruppa_29701" data-name="Raggruppa 29701" transform="translate(-45 102)">
+      <rect id="Rettangolo_12142-3" data-name="Rettangolo 12142" class="cls-9" width="58" height="22" rx="11" transform="translate(-21184.824 -15345.686)"/>
+      <text id="Causale-2" data-name="Causale" class="cls-13" transform="translate(-21155.824 -15330.686)"><tspan x="-19.374" y="0">Causale</tspan></text>
+    </g>
+    <g id="Raggruppa_29690" data-name="Raggruppa 29690" transform="translate(326 228)">
+      <rect id="Rettangolo_12142-4" data-name="Rettangolo 12142" class="cls-9" width="88" height="22" rx="11" transform="translate(-21199.824 -15345.686)"/>
+      <text id="Tipo_di_codice" data-name="Tipo di codice" class="cls-13" transform="translate(-21155.824 -15330.686)"><tspan x="-34.068" y="0">Tipo di codice</tspan></text>
+    </g>
+    <g id="Raggruppa_29688" data-name="Raggruppa 29688" transform="translate(285 5)">
+      <rect id="Rettangolo_12142-5" data-name="Rettangolo 12142" class="cls-9" width="60" height="22" rx="11" transform="translate(-21185.824 -15345.686)"/>
+      <text id="Importo" class="cls-13" transform="translate(-21155.824 -15330.686)"><tspan x="-20.208" y="0">Importo</tspan></text>
+    </g>
+    <rect id="Rettangolo_12163" data-name="Rettangolo 12163" class="cls-14" width="340" height="9" transform="translate(-21161.824 -15309.686)"/>
+    <rect id="Rettangolo_12164" data-name="Rettangolo 12164" class="cls-14" width="340" height="9" transform="translate(-21161.824 -15297.686)"/>
+    <rect id="Rettangolo_12165" data-name="Rettangolo 12165" class="cls-14" width="340" height="27" transform="translate(-21161.824 -15266.686)"/>
+    <rect id="Rettangolo_12166" data-name="Rettangolo 12166" class="cls-14" width="242" height="24" transform="translate(-21066.824 -15217.686)"/>
+    <rect id="Rettangolo_12167" data-name="Rettangolo 12167" class="cls-14" width="242" height="12" transform="translate(-21066.824 -15181.686)"/>
+    <rect id="Rettangolo_12168" data-name="Rettangolo 12168" class="cls-14" width="53" height="12" transform="translate(-21066.824 -15161.686)"/>
+    <rect id="Rettangolo_12169" data-name="Rettangolo 12169" class="cls-14" width="180" height="12" transform="translate(-21004.824 -15161.686)"/>
+  </g>
+</svg>

@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Tracciato_9054" data-name="Tracciato 9054" d="M.557,12.749a12,12,0,1,0,12-12,12,12,0,0,0-12,12" transform="translate(-0.557 -0.749)" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Tanzania" transform="translate(-0.557 -0.749)">
+    <g id="Raggruppa_250" data-name="Raggruppa 250" transform="translate(0.557 0.749)" clip-path="url(#clip-path)">
+      <rect id="Rettangolo_795" data-name="Rettangolo 795" width="36" height="24" transform="translate(-5.995 0)" fill="#1eb530"/>
+      <path id="Tracciato_9050" data-name="Tracciato 9050" d="M36,24.749H0l36-24Z" transform="translate(-5.994 -0.745)" fill="#00b2dd"/>
+      <path id="Tracciato_9051" data-name="Tracciato 9051" d="M0,24.749v-5.7L27.444.749H36v5.7L8.556,24.749Z" transform="translate(-5.995 -0.745)"/>
+      <path id="Tracciato_9052" data-name="Tracciato 9052" d="M.546,21.225,30.67,1.11V2.929L3.226,21.225Z" transform="translate(-0.664 2.779)" fill="#fcd10f"/>
+      <path id="Tracciato_9053" data-name="Tracciato 9053" d="M0,20.842v-1.8L27.444.749h2.68Z" transform="translate(-5.995 -0.748)" fill="#fcd10f"/>
+    </g>
+  </g>
+</svg>

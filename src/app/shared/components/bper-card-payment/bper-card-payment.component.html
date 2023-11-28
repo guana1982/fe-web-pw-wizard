@@ -1,0 +1,133 @@
+<ng-container [ngSwitch]="!!isNew">
+    <!-- Nuova carta -->
+    <div
+        class="new-card"
+        [ngClass]="cardClasses"
+        (click)="onClickCard($event)"
+        *ngSwitchCase="true"
+    >
+        <div class="content">
+            <div class="icon"><i class="bper-ic-24px-plus"></i></div>
+            <div class="label">Richiedi nuova carta</div>
+        </div>
+    </div>
+
+    <!-- Carta base -->
+    <div
+        [style.cursor]="cursor"
+        [class.selection]="size === 'selection'"
+        [class.is-selected]="isSelected"
+        [class.blocked]="isBlocked()"
+        class="card-container"
+        [ngClass]="cardClasses"
+        *ngSwitchDefault
+    >
+        <bper-tag
+            *ngIf="cardState"
+            [label]="cardState.label"
+            [color]="cardState.color"
+            class="card-tag"
+        >
+        </bper-tag>
+
+        <div
+            class="card"
+            (click)="onClickCard($event)"
+            [style.background-image]="'url(' + getCardArt(circuit, productCode)?.url + '), url(' + getCardArt()?.url + ')'"
+        >
+            <div class="bper-logo">
+                <img
+                    *ngIf="size !== 'detail'"
+                    src="assets/bper-svg/bper-text-only-white.svg"
+                    alt=""
+                />
+                <div class="bper-card-text">Card</div>
+            </div>
+
+            <div class="card-content">
+                <div class="background"></div>
+                <div class="content">
+                    <div class="left">
+                        <div
+                            *ngIf="size !== 'selection'"
+                            class="card-category"
+                        >
+                            {{ category ? ('CARTE.CATEGORIE.' + category | translate) : 'Carta' }}
+                        </div>
+                        <div
+                            *ngIf="name"
+                            class="card-name"
+                        >
+                            {{ name }}
+                        </div>
+
+                        <div
+                            *ngIf="category !== 'DEBIT' && !hideAvailability"
+                            class="availabilty"
+                        >
+                            <div class="availability-label">
+                                Disponibilità {{ ['IBAN', 'PREPAID'].includes(category) ? 'attuale' : '' }}
+                            </div>
+
+                            <div
+                                *ngIf="!isLoading"
+                                class="availability-value bold"
+                            >
+                                {{
+                                availability === 'N.a.'
+                                    ? 'N.a.'
+                                    : ((availability | currency: currency:'symbol':'1.2') || ('N.a.'))
+                                }}
+                            </div>
+
+                            <div
+                                *ngIf="!!isLoading"
+                                class="bold"
+                            >
+                                <bper-line-skeleton [lines]="1" width="100px"></bper-line-skeleton>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="right">
+                        <ng-container [ngSwitch]="size === 'detail'">
+                            <!-- detail -->
+                            <i
+                                *ngSwitchCase="true"
+                                (click)="onClickFavourite($event)"
+                                class="favourite-icon"
+                                [class]="preferred ? 'bper-ic-24px-favourite-full prevent-click' : 'bper-ic-24px-favourite'"
+                                matTooltip="Imposta come preferito"
+                                [matTooltipDisabled]="preferred"
+                            ></i>
+
+                            <!-- large and small -->
+                            <ng-container *ngSwitchCase="false">
+                                <i
+                                    *ngIf="preferred"
+                                    class="bper-ic-24px-favourite-full favourite-icon"
+                                ></i>
+                            </ng-container>
+                        </ng-container>
+
+                        <i
+                            *ngIf="!['detail', 'selection'].includes(size)"
+                            (click)="onClickArrow($event)"
+                            class="bper-ic-24px-arrow-right arrow pointer"
+                        ></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div
+            *ngIf="size === 'selection'"
+            class="selection-info" [class.no-selection]="noSelection"
+        >
+            <span>
+                <i class="bper-ic-24px-checkmark"></i>
+                <span class="number">{{ number }}</span>
+            </span>
+        </div>
+    </div>
+</ng-container>

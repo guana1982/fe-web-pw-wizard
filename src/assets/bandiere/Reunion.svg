@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="clip-path">
+      <circle id="Ellisse_1" data-name="Ellisse 1" cx="12" cy="12" r="12" fill="#fff" stroke="#707070" stroke-width="1"/>
+    </clipPath>
+  </defs>
+  <g id="Reunion" clip-path="url(#clip-path)">
+    <g id="Raggruppa_295" data-name="Raggruppa 295" transform="translate(777 -2607)">
+      <g id="Raggruppa_294" data-name="Raggruppa 294" transform="translate(-783 2607)">
+        <rect id="Rettangolo_923" data-name="Rettangolo 923" width="36" height="24" fill="#426ab3"/>
+        <path id="Tracciato_10855" data-name="Tracciato 10855" d="M0,265.334H36l-18-12Z" transform="translate(0 -241.334)" fill="#ed1c24"/>
+        <path id="Tracciato_10856" data-name="Tracciato 10856" d="M0,236.134l18-.9-18-.9Zm18-.9,18,.9v-1.8Z" transform="translate(0 -223.234)" fill="#fff200"/>
+        <path id="Tracciato_10857" data-name="Tracciato 10857" d="M361,0l.9,12,.9-12Z" transform="translate(-343.9 0)" fill="#fff200"/>
+        <path id="Tracciato_10858" data-name="Tracciato 10858" d="M0,0V1.5L18,12,1.5,0Z" transform="translate(0 0)" fill="#fff200"/>
+        <path id="Tracciato_10859" data-name="Tracciato 10859" d="M396.5,0,380,12,398,1.5V0Z" transform="translate(-362 0)" fill="#fff200"/>
+      </g>
+    </g>
+  </g>
+</svg>

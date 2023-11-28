@@ -1,0 +1,30 @@
+.mat-radio-button:not(:last-child) {
+    margin-right: var(--column-gap, 20px);
+    margin-bottom: var(--row-gap, 5px);
+}
+
+.radio-style {
+    font-size: 14px; // 18px da design
+}
+
+@mixin vertical() {
+    display: flex;
+    flex-direction: column;
+
+    mat-radio-button:not(:last-child) {
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+}
+
+@mixin large() {
+    mat-radio-button {
+        margin: 0 !important;
+        padding: 22px 14px;
+    }
+}
+
+mat-radio-group {
+    &.vertical { @include vertical() }
+    &.large { @include large() }
+}

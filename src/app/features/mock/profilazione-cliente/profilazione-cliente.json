@@ -1,0 +1,56 @@
+{
+  "il_tuo_profilo": {
+    "id": "1",
+    "ndg": "123445",
+    "abi": "58729",
+    "conto_di_regolamento": "987643210",
+    "convenzione": "Listino Standard",
+    "profilo": "DISPO +",
+    "canone_mensile": "1.00",
+    "valuta": "euro"
+  },
+  "i_tuoi_rapporti": [
+    {
+      "tipo-rapporto": "Rap. 002263430",
+      "numero": "IR-001",
+      "nome-intestatario": "Mario Rossi"
+    },
+    {
+      "tipo-rapporto": "Rap. 00223542350",
+      "numero": "IR-002",
+      "nome-intestatario": "Mario Bianchi"
+    },
+    {
+      "tipo-rapporto": "Rap. 002342230",
+      "numero": "DR-001",
+      "nome-intestatario": "Laura Rossi"
+    },
+    {
+      "tipo-rapporto": "Rap. 002364328630",
+      "numero": "DR-002",
+      "nome-intestatario": "Laura Bianchi"
+    }
+  ],
+  "scopri_di_piu": [
+    {
+      "nome": "Utenza Smart Web:",
+      "value": "Cartacee"
+    },
+    {
+      "nome": "Descrizione/nome commerciale rapporto 1:",
+      "value": "Online"
+    },
+    {
+      "nome": "Descrizione/nome commerciale rapporto 2:",
+      "value": "Cartacee"
+    },
+    {
+      "nome": "Conto corrente wealth:",
+      "value": "Online"
+    }
+  ],
+  "informazioni": {
+    "title": "DISPO+BUSINESS",
+    "description": "Il profilo Dispo+Business consente di utilizzare oltre tutte le 'Funzioni informative', anche le cosidette 'Funzioni Dispositive' di Smart Web, Smart Mobile e Smart Contract. In particolare attraverso la consegna ecc....."
+  }
+}

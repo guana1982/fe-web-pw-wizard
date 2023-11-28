@@ -1,0 +1,34 @@
+<mat-form-field
+    class="matField"
+    fxFlex="100%"
+    [appearance]="appearance"
+    [floatLabel]="floatLabelNever ? 'never' : 'always'"
+    [hideRequiredMarker]="true"
+>
+    <mat-label>{{ label }}</mat-label>
+    <input
+        #inputCfpi
+        matInput
+        type="text"
+        [placeholder]="placeholder"
+        [formControl]="control"
+        [required]="required"
+        [id]="id"
+        [name]="name"
+        [maxLength]="maxLength"
+        [minLength]="minLength"
+        autocomplete="off"
+        (input)="validateInput($event)"
+        (change)="validateInput($event)"
+    />
+    <mat-error
+        fxLayout="row"
+        fxLayoutAlign="start center"
+        *ngIf="control.invalid"
+    >
+        <i [class]="errorIcon"></i>
+        <span>{{ getErrorMessages() }}</span>
+    </mat-error>
+
+    <mat-hint *ngIf="msgHint">{{ msgHint }}</mat-hint>
+</mat-form-field>

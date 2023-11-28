@@ -1,0 +1,127 @@
+@import "src/scss/variables";
+
+bper-input-generics {
+    .mat-form-field {
+        width: 100% !important;
+
+        &-wrapper {
+            padding-bottom: 0 !important;
+            padding-top: 0 !important;
+        }
+        
+        .mat-form-field-wrapper .mat-form-field-flex .mat-form-field-infix { 
+            height: 42px;
+            background: map-get($bper-palette, neutral, --neutral-5) 0% 0% no-repeat padding-box;
+            border: 1px solid map-get($bper-palette, primary, --primary-40);
+            border-radius: 8px;
+            opacity: 1;
+            display: flex;
+            align-items: center;
+
+            /* INPUT ON HOVER */
+            &:hover {
+                border-color: map-get($bper-palette, secondary, --secondary-90);
+            }
+
+            input {
+                margin: 0 15px;
+                color: map-get($bper-palette, primary, --primary-500);
+                &::placeholder {
+                    text-overflow: ellipsis;
+                    color: map-get($bper-palette, neutral, --neutral-300) !important;
+                    font-size: 16px;
+                    font-weight: 200 !important;
+                }
+            }
+
+            /* posizione floatlabel="always" */
+            .mat-form-field-label-wrapper {
+                top: -24px;
+
+                label.mat-form-field-label {
+                    font-size: 14px;
+                    font-family: 'Kievit Pro Bold';
+                    letter-spacing: 0px;
+                    color: map-get($bper-palette, primary, --primary-500);
+                    -moz-osx-font-smoothing: grayscale;
+                    transform: translateY(-1.28125em) scale(1) perspective(100px) translateZ(0.001px);
+
+                    display: block;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    width: 100%;
+                }
+            }
+            
+        }
+    }
+}
+
+bper-input-generics {
+    .mat-form-field.mat-form-field-disabled {
+        .mat-form-field-wrapper .mat-form-field-flex .mat-form-field-infix {
+            border: none;
+            input {
+                color: map-get($bper-palette, neutral, --neutral-50);
+            }
+            label.mat-form-field-label mat-label {
+                color: map-get($bper-palette, neutral, --neutral-50) !important;
+            }
+            input::placeholder,
+            textarea::placeholder {
+                color: map-get($bper-palette, neutral, --neutral-50) !important;
+            }
+            i {
+                color: map-get($bper-palette, neutral, --neutral-50) !important;
+            }
+        }
+        .mat-hint {
+            color: map-get($bper-palette, neutral, --neutral-50) !important;
+        }
+    }
+}
+
+bper-input-generics {
+    .mat-form-field.mat-form-field-invalid {
+        .mat-form-field-wrapper .mat-form-field-flex .mat-form-field-infix {
+            border: 1px solid map-get($bper-palette, error, --error-700);
+        }
+    }
+    /* ERROR MESSAGE */
+    .mat-form-field-subscript-wrapper .mat-error {
+        color: map-get($bper-palette, error, --error-700);
+    }
+    /* HINT MESSAGE */
+    .mat-form-field-hint-wrapper .mat-hint{
+        color: map-get($bper-palette, primary, --primary-500) !important;
+    }
+}
+
+bper-input-generics {
+    .mat-form-field-underline {
+        display: none;
+    }
+}
+
+bper-input-generics[floatlabel="never"] {
+    .mat-form-field-wrapper .mat-form-field-flex .mat-form-field-infix {
+        label.mat-form-field-label {
+            top: 31px;
+            margin-left: 15px !important;
+            label {
+                color: map-get($bper-palette, neutral, --neutral-300) !important;
+                font-family: 'Kievit Pro';
+                font-size: 16px !important;
+            }
+        }
+    }
+}
+
+.mat-error {
+    i {
+        font-size: 24px;
+    }
+    span {
+        line-height: 1;
+    }
+}

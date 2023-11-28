@@ -1,0 +1,25 @@
+<bper-modal [hasLeftImage]="false">
+  <div>
+    <div id="cobrowseModalOverlay" class="cobrowse-modal-overlay"></div>
+    <div id="cobrowseModal" class="cobrowse-modal">
+      <div class="cobrowse-modal-content">
+        <div class="cobrowse-modal-content-internal">
+          <span class="Indietro">&lt; <a id="{{cobrowsingService.cobrowseModalCloseLinkId}}" href="javascript:void(0)"
+              (click)="closeModal()">Indietro</a></span>
+          <div *ngIf="cobrowsingService.cobrowseElementsHTML">
+            <div [innerHtml]="cobrowsingService.cobrowseElementsHTML"></div>
+          </div>
+
+          <div id="cobrowse-security-form" *ngIf="iframeSrc">
+            <iframe allow="display-capture *;"
+              src="https://apps.mypurecloud.de/webchat/security-key-prompt/#?locale=it&amp;webchatAppUrl=https://apps.mypurecloud.de/webchat&amp;webchatServiceUrl=https://realtime.mypurecloud.de:443&amp;logLevel=DEBUG&amp;orgId=1234&amp;orgGuid=c4548cab-4124-498d-aa9d-40888b87757e&amp;orgName=genesys&amp;cssClass=webchat-frame&amp;css.width=100%25&amp;css.height=100%25&amp;contentCssUrl=https%3A%2F%2Fdocs.bper.it%2Fgruppobper%2Fliveperson%2Fstyle%2Fbper-cobrowsing.css"
+              class="webchat-frame" style="width: 100%; height: 100%;">
+            </iframe>
+
+            <!-- <iframe allow="display-capture *;" [src]="iframeSrc | safe:'resourceUrl'" class="webchat-frame" style="width: 100%; height: 100%;"></iframe>       -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</bper-modal>

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Tracciato_7844" data-name="Tracciato 7844" d="M.557,12.749a12,12,0,1,0,12-12,12,12,0,0,0-12,12" transform="translate(-0.557 -0.749)" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Sierra_leone" data-name="Sierra leone" transform="translate(-0.557 -0.749)">
+    <g id="Raggruppa_234" data-name="Raggruppa 234" transform="translate(0.557 0.749)" clip-path="url(#clip-path)">
+      <rect id="Rettangolo_590" data-name="Rettangolo 590" width="36" height="24" transform="translate(-5.995 0)" fill="#1eb538"/>
+      <rect id="Rettangolo_591" data-name="Rettangolo 591" width="36" height="15.993" transform="translate(-5.995 8.007)" fill="#fff"/>
+      <rect id="Rettangolo_592" data-name="Rettangolo 592" width="36" height="7.996" transform="translate(-5.995 16.004)" fill="#0072d0"/>
+    </g>
+  </g>
+</svg>

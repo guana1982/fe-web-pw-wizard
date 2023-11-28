@@ -1,0 +1,144 @@
+.mat-form-field {
+    mat-datepicker-toggle mat-icon {
+        // calendar icon toggle
+        i {
+            &.bper-ic-24px-calendar {
+                color: map-get($bper-palette, secondary, --secondary-90);
+                font-weight: 400;
+            }
+        }
+    }
+}
+
+.mat-datepicker-content {
+    border-radius: 16px !important;
+
+    // Calendario
+    .mat-calendar {
+        width: 278px !important;
+        height: fit-content !important;
+        border: 1px solid map-get($bper-palette, secondary, --secondary-10);
+        border-radius: 16px !important;
+        box-shadow: 0px 2px 5px #dddddd;
+        padding: 30px 20px;
+
+        .mat-calendar-content {
+            padding: 0 !important;
+        }
+
+        // calendar header
+        .mat-calendar-header {
+            padding: 0 !important;
+
+            .mat-calendar-previous-button,
+            .mat-calendar-next-button {
+                color: map-get($bper-palette, secondary, --secondary-90);
+            }
+
+            .mat-calendar-period-button {
+                color: map-get($bper-palette, primary, --primary-500);
+                font-family: 'Kievit Pro Medium';
+                font-size: 16px;
+                text-align: left;
+
+                .mat-calendar-arrow {
+                    display: none;
+                }
+            }
+
+            .mat-calendar-spacer {
+                display: none !important;
+            }
+
+            .mat-calendar-controls {
+                display: flex;
+                justify-content: space-between;
+                margin-top: 0;
+                margin-bottom: 0;
+                padding-bottom: 25px;
+
+                .mat-calendar-period-button {
+                    order: 2;
+                }
+
+                .mat-calendar-next-button {
+                    order: 3;
+                }
+            }
+        }
+
+        .mat-calendar-table-header {
+            padding-bottom: 0 !important;
+            color: map-get($bper-palette, primary, --primary-600);
+        }
+
+        .mat-calendar-table-header th {
+            font-family: 'Kievit Pro';
+            font-size: 12px;
+            text-transform: uppercase;
+        }
+
+        // divider
+        .mat-calendar-table-header-divider::after,
+        tr:not([role='row']) > .mat-calendar-body-label {
+            display: none;
+        }
+
+        .mat-calendar-body-label {
+            opacity: 0;
+        }
+
+        // data corrente
+        .mat-calendar-body-today:not(.mat-calendar-body-selected):not(.mat-calendar-body-comparison-identical) {
+            font-family: 'Kievit Pro Bold';
+            font-size: 12px;
+            border: 2px solid map-get($bper-palette, primary, --primary-600);
+            border-radius: 8px;
+            background-color: transparent;
+            letter-spacing: 1px;
+        }
+
+        .mat-calendar-body-today:not(.mat-calendar-body-selected):not(.mat-calendar-body-comparison-identical):hover {
+            background-color: transparent;
+        }
+
+        .mat-calendar-body-cell.ng-star-inserted:hover {
+            background-color: transparent !important;
+        }
+
+        // data selezionata
+        .mat-calendar-body-selected {
+            font-family: 'Kievit Pro Bold';
+            font-size: 12px;
+            border-radius: 8px !important;
+            color: #ffffff;
+            background: transparent $accent-gradient 0% 0% no-repeat padding-box !important;
+            letter-spacing: 1px;
+        }
+
+        .mat-calendar-body-cell-content {
+            width: 35px;
+            height: 35px;
+            border-radius: 2px;
+        }
+
+        .mat-calendar-body-cell-content:not(.mat-calendar-body-selected) {
+            font-family: 'Kievit Pro';
+            font-size: 12px;
+            text-align: center;
+            color: map-get($bper-palette, primary, --primary-600);
+            letter-spacing: 1px;
+        }
+
+        .mat-calendar-body-cell-content:not(.mat-calendar-body-selected):hover {
+            background-color: transparent !important;
+        }
+
+        // giorni disabilitati
+        .mat-calendar-body-cell.mat-calendar-body-disabled {
+            .mat-calendar-body-cell-content.mat-focus-indicator {
+                color: map-get($bper-palette, primary, --primary-60) !important;
+            }
+        }
+    }
+}

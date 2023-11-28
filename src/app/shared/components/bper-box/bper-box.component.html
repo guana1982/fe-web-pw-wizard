@@ -1,0 +1,7 @@
+<div class="box" [class.hero]="dimension === 'hero'" [class.image]="dimension === 'image'" [class.large]="dimension === 'large'">
+    <h2 class="title" *ngIf="title">{{ title }}</h2>
+
+    <ng-content selector="content"></ng-content>
+
+    <bper-button *ngIf="cta" buttonType="icon-center" [order]="cta" [label]="ctaLabel" [icon]="ctaIcon"></bper-button>
+</div>

@@ -1,0 +1,41 @@
+<svg id="Icon_40pt_Circle_Exclamation_Point" data-name="Icon/40pt/Circle+Exclamation Point" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="120" height="120" viewBox="0 0 120 120">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#60cc9f"/>
+      <stop offset="1" stop-color="#3a888c"/>
+    </linearGradient>
+    <filter id="Tracciato_504" x="18" y="20.001" width="84" height="84" filterUnits="userSpaceOnUse">
+      <feOffset dy="2" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feFlood flood-color="#05696f" flood-opacity="0.239"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Tracciato_505" x="50.87" y="33.307" width="18.26" height="44.867" filterUnits="userSpaceOnUse">
+      <feOffset dy="2" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="2" result="blur-2"/>
+      <feFlood flood-color="#05696f" flood-opacity="0.239"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Tracciato_506" x="50.87" y="72.452" width="18.26" height="18.243" filterUnits="userSpaceOnUse">
+      <feOffset dy="2" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="2" result="blur-3"/>
+      <feFlood flood-color="#05696f" flood-opacity="0.239"/>
+      <feComposite operator="in" in2="blur-3"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <rect id="Rettangolo_645" data-name="Rettangolo 645" width="120" height="120" fill="none"/>
+  <g id="Raggruppa_7943" data-name="Raggruppa 7943" transform="translate(24 24.001)">
+    <g transform="matrix(1, 0, 0, 1, -24, -24)" filter="url(#Tracciato_504)">
+      <path id="Tracciato_504-2" data-name="Tracciato 504" d="M44.5,8.5a36,36,0,1,0,36,36A36.039,36.039,0,0,0,44.5,8.5Zm0,65.74A29.74,29.74,0,1,1,74.239,44.5,29.773,29.773,0,0,1,44.5,74.239Z" transform="translate(15.5 15.5)" fill="url(#linear-gradient)"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, -24, -24)" filter="url(#Tracciato_505)">
+      <path id="Tracciato_505-2" data-name="Tracciato 505" d="M22.13,12.75A3.129,3.129,0,0,0,19,15.88V42.487a3.13,3.13,0,0,0,6.26,0V15.88A3.129,3.129,0,0,0,22.13,12.75Z" transform="translate(37.87 24.56)" fill="url(#linear-gradient)"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, -24, -24)" filter="url(#Tracciato_506)">
+      <path id="Tracciato_506-2" data-name="Tracciato 506" d="M24.353,26.146a3.231,3.231,0,0,0-1.033-.657,3.2,3.2,0,0,0-3.412.657,3.231,3.231,0,0,0-.657,1.033,3.13,3.13,0,1,0,5.759,0A3.231,3.231,0,0,0,24.353,26.146Z" transform="translate(37.87 51.2)" fill="url(#linear-gradient)"/>
+    </g>
+  </g>
+</svg>

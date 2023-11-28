@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24.011" viewBox="0 0 24 24.011">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Tracciato_195" data-name="Tracciato 195" d="M.558,12.754A12,12,0,1,0,12.553.749,12,12,0,0,0,.558,12.754" transform="translate(-0.558 -0.749)" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Benin" transform="translate(-0.558 -0.749)">
+    <g id="Raggruppa_16" data-name="Raggruppa 16" transform="translate(0.558 0.749)" clip-path="url(#clip-path)">
+      <rect id="Rettangolo_34" data-name="Rettangolo 34" width="36.016" height="24.011" transform="translate(-6.008 0)" fill="#00874c"/>
+      <rect id="Rettangolo_35" data-name="Rettangolo 35" width="21.674" height="24.011" transform="translate(8.334 0)" fill="#fcd11e"/>
+      <rect id="Rettangolo_36" data-name="Rettangolo 36" width="21.674" height="12.005" transform="translate(8.334 12.005)" fill="#e8002d"/>
+    </g>
+  </g>
+</svg>

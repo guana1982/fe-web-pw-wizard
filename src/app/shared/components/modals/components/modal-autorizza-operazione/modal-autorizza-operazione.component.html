@@ -1,0 +1,18 @@
+<swb-loader></swb-loader>
+
+<bper-modal modal-title="Autorizza l'operazione" imageSrc="assets/bper-svg/Illustrazione_autorizza_operazione.svg"
+    [hasLeftImage]="true" class="autorizza-operazione">
+    <div>
+        <p>Abbiamo inviato una notifica sul tuo cellulare associato tramite Smart Banking.</p>
+        <p class="sublabel">Visualizza e autorizza per procedere.</p>
+    </div>
+
+    <div footer>
+        <bper-button order="ghost-accent" [label]="'Non ti è arrivata la notifica?'"
+            (clickBtn)="onNotificaNonArrivata()"></bper-button>
+        <div class="img-counter-container">
+            <i class="bper-ic-24px-notification img-counter"></i>
+            <div><span>Scade tra <br /><span class="counter">{{expireIn}}</span> sec.</span></div>
+        </div>
+    </div>
+</bper-modal>

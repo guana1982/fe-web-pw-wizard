@@ -1,0 +1,227 @@
+//Default styles
+
+*,
+*:before, *:after {
+    box-sizing: border-box;
+}
+
+// html {
+//     box-sizing: border-box;
+// }
+
+body {
+    font-size: $root-font-size;
+    font-family : $root-font-family;
+
+    &.is-ark-zoom {
+        zoom: 80%;
+    }
+}
+
+// html, 
+// body, 
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dd,
+dl,
+dt,
+li,
+ol,
+ul,
+fieldset,
+form,
+label,
+legend,
+caption {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font-weight: inherit;
+    font-style: inherit;
+    font-family: inherit;
+    font-feature-settings: "lnum"1;
+    text-align: left;
+    vertical-align: baseline;
+}
+.content--html > .content-body--html {
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+dd,
+dl,
+dt,
+li,
+ol,
+ul,
+fieldset,
+form,
+label,
+legend,
+caption {
+   margin: 0;
+   padding: revert;
+   border: revert;
+   font-size: 100%;
+   font-weight: revert;
+   font-style: revert;
+   font-family: "Kievit pro";
+   font-feature-settings: "lnum"1;
+   text-align: revert;
+   vertical-align: revert;
+}
+a {
+    color: #e37222;
+}
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: $headings-margin;
+  font-family: $headings-family;
+  font-weight: $headings-weight;
+  line-height: $headings-line-height;
+  color: $headings-color;
+}
+
+h1 { @include font-size($h1-font-size); }
+h2 { @include font-size($h2-font-size); }
+h3 { @include font-size($h3-font-size); }
+h4 { @include font-size($h4-font-size); }
+h5 { @include font-size($h5-font-size); }
+h6 { @include font-size($h6-font-size); }
+
+/*
+h2 {
+    margin: 0.83em 0;
+}
+
+h3 {
+    margin: 1em 0;
+}
+
+h4 {
+    margin: 1.33em 0;
+}
+
+h5 {
+    margin: 1.67em 0;
+}
+
+h6 {
+    margin: 2.33em;
+}
+*/
+
+hr{
+    display: block;
+    margin-top: 0.5em auto;
+    border: 0;
+    border: 1px solid $hr-color;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 0.667em;
+}
+
+a,
+a:active,
+a:focus,
+a:hover,
+a:visited
+{
+    color: $accentColor;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+// TODO: DA CAPIRE
+// img{
+//     box-sizing: content-box;
+// }
+
+img.responsive-img,
+video.responsive-video {
+  max-width: 100%;
+  height: auto;
+}
+
+.ark-hide{
+    display: none !important;
+}
+
+.full-dimension {
+    width: 100%; 
+    height: 100%;
+}

@@ -1,0 +1,12 @@
+@import "src/scss/variables";
+
+
+.mat-card {  
+   
+    .sfumatura-icona {
+        background-image: $background-green-gradient;
+        color: transparent;
+        -webkit-background-clip: text;
+        background-clip: text;
+    }
+}

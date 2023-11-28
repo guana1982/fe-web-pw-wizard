@@ -1,0 +1,50 @@
+// alignment
+$text-align: ( right, left, center ) !default;
+@each $align in $text-align {
+    .text-#{$align} {
+        text-align: $align;
+    }
+}
+
+// sizing
+$text-size: ( capitalize, lowercase, uppercase ) !default;
+@each $size in $text-size {
+    .text-#{$size} {
+        text-transform: $size;
+    }
+}
+
+// decoration
+$text-decoration: ( underline, overline, line-through ) !default;
+@each $decoration in $text-decoration {
+    .text-#{$decoration} {
+        text-decoration: $decoration;
+    }
+}
+
+%ellipsis{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+}
+
+// Problema con i testi molto lunghi, quando vengono sforati i 65em l'ellipsis non funziona più
+// per questo è stato agigunto max-width: 60em
+.text-ellipsis {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    max-width: 65em;
+    &-nowrap{
+        @extend .text-ellipsis;
+        white-space: nowrap;
+    }
+}
+
+.text-nowrap {
+        white-space: nowrap;
+}
+
+.v-middle {
+    @extend %v-middle;
+}

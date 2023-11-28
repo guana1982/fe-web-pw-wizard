@@ -1,0 +1,116 @@
+@import "src/scss/variables";
+
+.pin-code-wrapper {
+    width: 216px;
+    height: 48px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #E3F4EC;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 6px;
+    margin: auto;
+
+    &.error-wrap {
+        border: 1px solid #9d0000;
+    }
+
+    .container-pin {
+        display: contents;
+    }
+
+    input[type="password"] {
+        font-size: 28px;
+    }
+
+    input,
+    input:focus {
+        box-sizing: border-box;
+        border: solid #4cc693;
+        border-width: 0 0px 2px 0;
+        text-align: center;
+        font-size: 28px;
+        color: #005157;
+        height: 30px;
+        width: 23px;
+        line-height: normal;
+        border-radius: 0;
+        -webkit-text-security: circle;
+        -moz-text-security: circle;
+    }
+
+    input:focus-visible {
+        outline: none;
+    }
+}
+
+.error-lab {
+    font-size: 14px;
+    color: #9D0000;
+    margin: auto;
+    display: inline-flex;
+    flex-direction: row;
+    align-items: center;
+    width: 215px;
+    padding-top: 6px;
+}
+
+.error-lab-wide {
+    display: flex;
+    justify-content: center;
+    width: unset;
+}
+
+.error-desc {
+    margin-left: 15px;
+}
+
+// TABLET
+@media screen and (max-width: $bp-desktop) {
+    .pin-code-wrapper {
+
+        input,
+        input:focus {
+            font-size: 16px !important;
+            -webkit-text-security: circle;
+            -moz-text-security: circle;
+            margin: 0px !important;
+            padding: 0px !important;
+        }
+    }
+}
+
+// TABLET
+@media screen and (max-width: $bp-tablet) {
+    .pin-code-wrapper {
+
+        input,
+        input:focus {
+            font-size: 16px !important;
+            -webkit-text-security: circle;
+            -moz-text-security: circle;
+            margin: 0px !important;
+            padding: 0px !important;
+        }
+
+        // input,
+        // input:focus {
+        //     font-size: 15px !important;
+        // }
+    }
+}
+
+// MOBILE
+@media screen and (max-width: $bp-mobile) {
+    .pin-code-wrapper {
+
+        input,
+        input:focus {
+            font-size: 16px !important;
+            -webkit-text-security: circle;
+            -moz-text-security: circle;
+            margin: 0px !important;
+            padding: 0px !important;
+        }
+    }
+}

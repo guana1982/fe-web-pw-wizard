@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Tracciato_2509" data-name="Tracciato 2509" d="M.553,12.749a12,12,0,1,0,12-12,12,12,0,0,0-12,12" transform="translate(-0.553 -0.749)" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Federazione_russa" data-name="Federazione russa" transform="translate(-0.553 -0.749)">
+    <g id="Raggruppa_49" data-name="Raggruppa 49" transform="translate(0.553 0.749)" clip-path="url(#clip-path)">
+      <rect id="Rettangolo_209" data-name="Rettangolo 209" width="35.903" height="23.957" transform="translate(-5.952 0.022)" fill="#fff"/>
+      <rect id="Rettangolo_210" data-name="Rettangolo 210" width="35.903" height="16.004" transform="translate(-5.952 7.975)" fill="#0a00ff"/>
+      <rect id="Rettangolo_211" data-name="Rettangolo 211" width="35.903" height="7.964" transform="translate(-5.952 16.014)" fill="#ff0012"/>
+    </g>
+  </g>
+</svg>

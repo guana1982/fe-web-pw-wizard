@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Tracciato_9678" data-name="Tracciato 9678" d="M1.136,12.749a12,12,0,1,0,12-12,12,12,0,0,0-12,12" transform="translate(-1.136 -0.749)" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Ungheria" transform="translate(-1.136 -0.749)">
+    <g id="Raggruppa_265" data-name="Raggruppa 265" transform="translate(1.136 0.749)" clip-path="url(#clip-path)">
+      <rect id="Rettangolo_851" data-name="Rettangolo 851" width="48.452" height="24.226" transform="translate(-12.226 -0.108)" fill="#d2172c"/>
+      <rect id="Rettangolo_852" data-name="Rettangolo 852" width="48.452" height="16.122" transform="translate(-12.226 7.996)" fill="#fff"/>
+      <rect id="Rettangolo_853" data-name="Rettangolo 853" width="48.452" height="8.05" transform="translate(-12.226 16.068)" fill="#008d3a"/>
+    </g>
+  </g>
+</svg>

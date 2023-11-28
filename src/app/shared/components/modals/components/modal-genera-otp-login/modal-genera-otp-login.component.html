@@ -1,0 +1,19 @@
+<swb-loader></swb-loader>
+<bper-modal modal-title="Genera OTP login" imageSrc="assets/bper-svg/Illustrazione_autorizza_operazione.svg"
+    [hasLeftImage]="true" class="otp-login">
+    <div class="description">
+        <p>Apri Smart Banking sul tuo cellulare e genera OTP Login.</p>
+        <p class="sublabel">Per confermare inserisci il codice PIN che hai generato</p>
+    </div>
+    <div class="pin">
+        <bper-input-pincode [nInputs]="6" (pin)="setPin($event)" (isValid)="setValidity($event)" [setError]="setError">
+        </bper-input-pincode>
+    </div>
+
+    <div footer>
+        <bper-button class="ghost" order="ghost-accent" [label]="'Se non sai come fare clicca qui'"
+            (clickBtn)="onNonSaiComeFare()"></bper-button>
+        <bper-button class="primary" order="primary" [label]="'Continua'" [disabled]="getValidity()"
+            (clickBtn)="onContinua()"></bper-button>
+    </div>
+</bper-modal>

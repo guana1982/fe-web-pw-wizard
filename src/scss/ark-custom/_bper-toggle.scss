@@ -1,0 +1,61 @@
+bper-toggle .mat-slide-toggle.mat-accent {
+    .mat-slide-toggle-bar {
+        width: 36px !important;
+        height: 20px !important;
+        border-radius: 15px !important;
+        background-color: map-get($bper-palette, neutral, --neutral-60) !important;
+        .mat-slide-toggle-thumb-container {
+            left: 4px !important;
+            top: 4px !important;
+            z-index: initial;
+            .mat-slide-toggle-thumb {
+                height: 12px !important;
+                width: 12px !important;
+                background-color: map-get($bper-palette, --white) !important;
+                box-shadow: none;
+            }
+        }
+    };
+}
+
+bper-toggle .mat-slide-toggle .mat-slide-toggle-ripple {
+    top: -9px;
+    left: -9px;
+    height: 30px;
+    width: 30px;
+}
+
+bper-toggle .mat-slide-toggle .mat-slide-toggle-label {
+    position: relative;
+    font-size: 16px;
+    font-weight: 100 !important;
+    color: map-get($bper-palette, primary, --primary-500);
+    .mat-slide-toggle-content {
+        position: absolute;
+        top: 1.5px;
+        left: 44px;
+    }
+}
+
+/* CHECKED */
+bper-toggle .mat-slide-toggle.mat-accent.mat-checked {
+    .mat-slide-toggle-bar {
+        background-color: map-get($bper-palette, secondary, --secondary-90) !important;
+        .mat-slide-toggle-thumb {
+            background-color: map-get($bper-palette, --white) !important;
+        }
+    };
+}
+
+/* DISABLED */
+bper-toggle .mat-slide-toggle.mat-accent.mat-disabled {
+    .mat-slide-toggle-label {
+        color: map-get($bper-palette, neutral, --neutral-50) !important;
+    }
+    .mat-slide-toggle-bar {
+        background-color: map-get($bper-palette, neutral, --neutral-40) !important;
+        .mat-slide-toggle-thumb {
+            background-color: map-get($bper-palette, neutral, --neutral-20) !important;
+        }
+    };
+}

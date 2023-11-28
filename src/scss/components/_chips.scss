@@ -1,0 +1,38 @@
+.chip {
+    background-color: map-get($map: $bper-palette, $key: --white); 
+    height: 2em;
+    padding-left: 0.75em;
+    padding-right: 0.75em;
+    margin-right: 0.5em;
+    border-radius: 1em;
+    cursor: pointer;
+
+    line-height: 32px;
+
+
+    &--bottom-spacer {
+        margin-bottom: 1em;
+    }
+
+
+    &-text {
+        vertical-align: middle;
+        font-size: $font-size-sm;
+        color: $accentColor;
+    }
+    &-icon {
+      margin-left: 1em;
+      font-size: 10px;
+      color: $primaryColor;
+    }
+    &--reset {
+        color: $accentColor;
+        font-size: $font-size-sm;
+        text-transform: uppercase;
+        font-weight: bold;
+        border: 0;
+        background: transparent;
+        outline: 0;
+        cursor: pointer;
+    }
+}

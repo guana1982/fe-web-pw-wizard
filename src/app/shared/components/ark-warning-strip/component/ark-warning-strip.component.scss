@@ -1,0 +1,65 @@
+$warning-background: #ff9900;
+$text-color: #fff;
+$icon-color: #fff;
+$paddind-container: 5px 15px;
+$text-padding-right: 25px;
+
+.warning-strip-container {
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    bottom: 0;
+    width: 100%;
+    background-color: $warning-background;
+    color: $text-color;
+    padding: $paddind-container;
+    backface-visibility: hidden;
+    z-index: 9999;
+
+    .warning-strip-text-container {
+        opacity: 0.9;
+        font-size: 1em;
+        padding-right: $text-padding-right;
+
+        .warning-strip-text {
+            margin: 0;
+            padding: 0;
+
+            strong {
+                font-weight: bold;
+            }
+        }
+    }
+
+    .warning-strip-button-container {
+        .warning-strip-button {
+            display: inline-block;
+            cursor: pointer;
+            background: none;
+            transition: opacity 0.2s ease;
+            opacity: 0.5;
+            margin: {
+                right: -9px;
+                left: 9px;
+            }
+            vertical-align: top;
+            outline: none;
+            border: none;
+            padding: 4px;
+            width: 32px;
+            height: 32px;
+
+            svg[class$='icon'] {
+                fill: $icon-color;
+            }
+
+            &:hover,
+            &:focus,
+            &:active {
+                opacity: 0.7;
+            }
+        }
+    }
+}

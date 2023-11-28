@@ -1,0 +1,312 @@
+@mixin arrow-icon($direction) {
+    .mat-select-arrow-wrapper {
+        display: block;
+        height: auto;
+
+        .mat-select-arrow {
+            // removing default arrow
+            position: relative;
+            height: 24px;
+            width: 24px;
+            border-left: 0;
+            border-right: 0;
+            border-top: 0;
+            transform-origin: center;
+            transition: transform 0.2s ease-in-out;
+            @if $direction == down {
+                transform: rotate(-270deg);
+            } @else {
+                transform: rotate(-90deg);
+            }
+
+            &::before {
+                content: '\e949';
+                font-family: bper-icons;
+            }
+        }
+    }
+}
+
+bper-selectbox .mat-form-field {
+    width: 100% !important;
+    // max-width: 248px !important;
+    .mat-form-field-wrapper .mat-form-field-flex .mat-form-field-infix {
+        min-height: 42px;
+        background: map-get($bper-palette, neutral, --neutral-5) 0 0 no-repeat padding-box;
+        border: 1px solid map-get($bper-palette, primary, --primary-40);
+        border-radius: 24px;
+        opacity: 1;
+        display: flex;
+        align-items: center;
+        padding: 0 16px;
+        i {
+            display: none;
+        }
+        /* INPUT ON HOVER */
+        &:hover {
+            border-color: map-get($bper-palette, secondary, --secondary-90);
+        }
+        mat-select {
+            margin: 0;
+            display: inline-flex;
+            align-items: center;
+            max-width: 100%;
+            > * {
+                width: 100%;
+                line-height: 16px;
+            }
+
+            .mat-select-value {
+                color: map-get($bper-palette, primary, --primary-500) !important;
+
+                .mat-select-value-text {
+                    max-width: 85%;
+                    line-height: 16px;
+                }
+            }
+            .mat-select-placeholder {
+                text-overflow: ellipsis;
+                color: map-get($bper-palette, neutral, --neutral-300) !important;
+                font-size: 16px !important;
+                line-height: 16px !important;
+                font-weight: 200 !important;
+            }
+        }
+        /* posizione floatlabel="always" */
+        .mat-form-field-label-wrapper {
+            top: -1.5em;
+            mat-label {
+                font-size: 14px;
+                font-family: 'Kievit Pro Bold';
+                letter-spacing: 0;
+                color: map-get($bper-palette, primary, --primary-500);
+                opacity: 1;
+            }
+        }
+    }
+}
+bper-selectbox .mat-form-field-underline {
+    display: none;
+}
+
+bper-selectbox:not([ng-reflected-search='true']) .mat-form-field-hint-wrapper .mat-hint {
+    color: map-get($bper-palette, primary, --primary-500);
+    display: flex;
+    align-items: center;
+
+    i {
+        color: map-get($bper-palette, accent, --accent-90);
+        margin-left: 5px;
+    }
+}
+
+bper-selectbox {
+    @include arrow-icon(down);
+    .mat-form-field.mat-form-field-type-mat-select {
+        &.mat-focused {
+            // il chevron resta giù se il pannello non è aperto
+            @include arrow-icon(down);
+
+            &.is-panel-open {
+                @include arrow-icon(up);
+            }
+        }
+    }
+}
+
+bper-selectbox .mat-select-arrow {
+    color: map-get($bper-palette, secondary, --secondary-90) !important;
+    font-size: 24px;
+}
+.mat-select-panel {
+    position: absolute;
+    left: 0;
+    top: 46px !important;
+    padding: 8px 8px !important;
+    // min-width: 248px !important;
+    // max-width: fit-content !important;
+    border-radius: 16px !important;
+    box-shadow: 0 8px 16px #7e8c8d14 !important;
+    mat-option {
+        height: 43px !important;
+        padding: 0 8px !important;
+
+        .options {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            color: map-get($bper-palette, primary, --primary-500) !important;
+
+            img {
+                margin-right: 10px;
+            }
+        }
+
+        &:hover,
+        &:hover.mat-active {
+            background-color: map-get($bper-palette, primary, --primary-20) !important;
+            border-radius: 8px !important;
+        }
+        &.mat-selected,
+        &.mat-active {
+            background-color: transparent !important;
+            color: #005157 !important;
+        }
+        &.mat-selected:not(.mat-option-multiple) {
+            .options-container {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                .checkMark {
+                    content: url('../../../assets/bper-svg/Icon-Checkmark.svg');
+                }
+            }
+        }
+
+        .mat-pseudo-checkbox {
+            position: absolute !important;
+            right: 0 !important;
+            border: none !important;
+            &.mat-pseudo-checkbox-checked {
+                background-color: transparent !important;
+                &:after {
+                    color: #00ae65 !important;
+                    top: 1.3px !important;
+                    width: 12px !important;
+                    height: 5px !important;
+                }
+            }
+        }
+
+        .options-container {
+            .options {
+                display: flex;
+                align-items: center;
+                p {
+                    text-overflow: ellipsis;
+                    display: block;
+                    overflow: hidden;
+                    white-space: nowrap;
+                }
+                img {
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+
+    .mat-optgroup-label {
+        font-family: 'Kievit Pro Medium';
+        font-size: 14px !important;
+        color: map-get($bper-palette, neutral, --neutral-300);
+    }
+}
+
+// no pointer events = no border
+bper-selectbox.noPointerEvent .mat-form-field .mat-form-field-wrapper .mat-form-field-flex .mat-form-field-infix {
+    border: none;
+
+    .mat-select-trigger {
+        display: inline;
+    }
+    .mat-select-arrow {
+        display: none;
+    }
+}
+
+// no padding-bottom - pagina richiesta informazioni
+bper-selectbox.callmebackSelectbox .mat-form-field:not(.mat-form-field-invalid) .mat-form-field-wrapper {
+    padding-bottom: 0;
+}
+
+/* SELECTBOX ERROR */
+.mat-form-field.mat-form-field-invalid {
+    .mat-form-field-wrapper .mat-form-field-flex .mat-form-field-infix {
+        border: 1px solid map-get($bper-palette, error, --error-700);
+    }
+}
+/* ERROR MESSAGE */
+.mat-form-field-subscript-wrapper .mat-error {
+    color: map-get($bper-palette, error, --error-700);
+    font-size: 14px;
+    i {
+        font-weight: unset;
+        margin-right: 8px;
+    }
+}
+
+/* SELECTBOX DISABLED */
+
+bper-selectbox {
+    .mat-form-field {
+        width: 100% !important;
+    }
+
+    &.read-only {
+        .mat-form-field > .mat-form-field-wrapper > .mat-form-field-flex > {
+            .mat-form-field-infix {
+                background-color: map-get($bper-palette, neutral, --neutral-5);
+                border: none;
+
+                input {
+                    color: map-get($bper-palette, primary, --primary-500);
+                    cursor: default;
+                    pointer-events: none;
+                }
+
+                .mat-form-field-label-wrapper label mat-label {
+                    color: map-get($bper-palette, primary, --primary-500) !important;
+                }
+            }
+
+            .mat-form-field-suffix {
+                mat-datepicker-toggle,
+                mat-datepicker {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    &:not(.read-only) .mat-form-field.mat-form-field-disabled {
+        .mat-form-field-wrapper .mat-form-field-flex .mat-form-field-infix {
+            border: none;
+            mat-select .mat-select-value {
+                color: map-get($bper-palette, neutral, --neutral-50) !important;
+            }
+            mat-label {
+                color: #bcc4c4 !important;
+            }
+            .mat-select-arrow {
+                color: #bcc4c4 !important;
+            }
+            i {
+                color: #bcc4c4 !important;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: $bp-mobile) {
+    .mat-select-panel {
+        max-width: 0 !important;
+
+        mat-option {
+            .options-container {
+                .options {
+                    display: flex;
+                    align-items: center;
+                    p {
+                        text-overflow: ellipsis;
+                        display: block;
+                        overflow: hidden;
+                        white-space: nowrap;
+                    }
+                    img {
+                        margin-right: 10px;
+                    }
+                }
+            }
+        }
+    }
+}

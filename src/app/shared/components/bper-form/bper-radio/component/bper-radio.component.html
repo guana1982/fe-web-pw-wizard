@@ -1,0 +1,27 @@
+<mat-radio-group
+    class="ark-radio"
+    [class.vertical]="vertical"
+    [ngClass]="type"
+    [name]="groupName + '-' + idName"
+    [formControl]="control"
+    [labelPosition]="labelPosition"
+    (change)="onRadioChange($event)"
+    required
+>
+    <mat-radio-button
+        *ngFor="let item of items"
+        class="radio-style"
+        [value]="item.value"
+        [checked]="item.checked"
+        id="id-{{ item.label }}-{{ idName }}"
+        name="name-{{ item.label }}-{{ idName }}"
+        [class.custom-size]="!!sizeLabel"
+        [style.--custom-font-size]="sizeLabel"
+        [style.--column-gap]="columnGap"
+        [style.--row-gap]="rowGap"
+    >
+        {{ (item.label | translate) ? (item.label | translate) : item.label }}
+    </mat-radio-button>
+</mat-radio-group>
+
+<!-- [ngClass]="skin ? skin : ''" -->

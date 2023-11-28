@@ -1,0 +1,20 @@
+<div>
+    <form class="pin-code-wrapper" [class.error-wrap]="(setError === 'INVALID_PIN')" (keyup)="update()"
+        [formGroup]="fieldForm">
+        <div class="container-pin" formArrayName="pin">
+            <div *ngFor="let fg of PinCodeDigitsForm.controls; let i = index" [formGroup]="fg">
+                <ng-container *ngFor="let fc of fg.controls | keyvalue">
+                    <input type="password" name="pin_digit_{{i+1}}" id="pin_input_{{i+1}}" maxlength="1"
+                        (keydown)="validateInput($event)" (keyup)="onKeyInput($event, i + 1)" inputmode="numeric"
+                        digitOnly [formControl]="fc.value" tabindex="{{i}}" [readonly]="disabled" required>
+                </ng-container>
+            </div>
+        </div>
+    </form>
+    <div>
+        <mat-error fxLayout="row" fxLayoutAlign="start center" *ngIf="(setError === 'INVALID_PIN') "><span
+                class="error-lab"><i class="bper-ic-24px-alert-circle"></i> <span class="error-desc">Codice
+                    OTP non valido. Tentativi rimasti: <span
+                        *ngIf="remainingAttempts">{{remainingAttempts}}</span></span></span></mat-error>
+    </div>
+</div>

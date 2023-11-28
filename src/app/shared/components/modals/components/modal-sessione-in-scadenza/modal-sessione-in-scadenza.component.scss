@@ -1,0 +1,122 @@
+@import "src/scss/variables";
+
+.scadenza-sessione {
+    position: relative;
+
+    .counter-section {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        margin-top: 28px;
+
+        .bper-ic-24px-notification {
+            margin-right: 12px;
+            width: 32px;
+            height: 32px;
+
+            &::before {
+                font-size: 29.5px;
+            }
+        }
+
+        img {
+            &.img-counter {
+                margin-right: 10px;
+            }
+        }
+
+        span {
+            font-family: 'Kievit Pro';
+            font-size: 16px;
+            color: map-get($bper-palette, primary, --primary-500);
+
+            &.counter {
+                font-family: 'Kievit Pro Bold';
+                font-size: 24px;
+            }
+        }
+    }
+
+    [footer] {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    bper-button {
+        &.smart-web {
+            position: relative;
+        }
+    }
+}
+
+// TABLET
+@media screen and (max-width: $bp-tablet) {
+    .scadenza-sessione {
+        .counter-section {
+            justify-content: center;
+        }
+
+        [footer] {
+            justify-content: space-between;
+            width: 100%;
+        }
+    }
+}
+
+// MOBILE
+@media screen and (max-width: $bp-mobile) {
+
+    .scadenza-sessione {
+        .modal-container {
+
+            display: flex;
+            flex-direction: column;
+
+            .modal-header {
+                width: 100%;
+            }
+
+            mat-dialog-content {
+
+                div {
+                    p {
+                        margin-left: 0px;
+                    }
+
+                    &.counter-section {
+                        justify-content: center;
+
+                        span.scadenza {
+                            display: flex;
+                            flex-direction: column;
+                        }
+                    }
+                }
+            }
+
+            .modal-footer {
+                padding: 0 0 22px 0;
+            }
+        }
+
+        [footer] {
+            justify-content: space-around;
+            flex-direction: column-reverse;
+
+            bper-button.smart-web {
+                padding-right: 0;
+                margin-right: -20px;
+            }
+
+            @media screen and (max-width: $bp-tablet) {
+                bper-button.smart-web {
+                    padding-right: 0;
+                    margin-right: 0;
+            }
+                
+            }
+        }
+    }
+}

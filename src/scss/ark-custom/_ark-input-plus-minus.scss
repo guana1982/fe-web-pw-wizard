@@ -1,0 +1,74 @@
+$circle-diameter: 1.5rem;
+$circle-spacing: .5rem;
+
+ark-input-plus-minus { 
+
+    .error-container {
+        animation: enter forwards .5s;
+        display: flex;
+        align-items: flex-end;
+        color: #f44336;
+        font-size: 12px;
+        position: absolute;
+        white-space: nowrap;
+    }
+    
+    
+    @keyframes enter {
+        from {
+            opacity:0;
+            transform: translateY(-100%);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0%);
+        }
+    }
+
+    input {
+        max-width: 4rem;
+        margin: 0 $circle-spacing;
+        padding: .4rem .5rem;
+        text-align: center;
+        border: 1px solid #ccc;
+        outline: none;
+        border-radius: 2px;
+        color: $lightBlue;
+        transition: border-color .5s;
+
+        &.error {
+            border-color: #f44336aa;
+        }
+    }
+    
+    button.circle {
+        background: none;
+        border-radius: 100%;
+        border: 1px solid $lightBlue;
+        height: $circle-diameter;
+        width: $circle-diameter;
+        display: inline-block;
+        text-align: center;
+        cursor: pointer;
+        user-select: none;
+        outline: none;
+    
+        > span {
+            display: block;
+            text-align: center;
+            color: $lightBlue;
+    
+            &.minus {
+                transform: scaleX(3);
+                line-height: $circle-diameter - .1rem;
+                font-weight: bold;
+            }
+    
+            &.plus {
+                transform: scale(2);
+                line-height: $circle-diameter - .2rem;
+                font-weight: normal;
+            }
+        }
+    }
+}

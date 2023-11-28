@@ -1,0 +1,80 @@
+@import "src/scss/variables";
+@import "node_modules/swiper/swiper";
+@import "node_modules/swiper/components/navigation/navigation";
+@import "node_modules/swiper/components/pagination/pagination";
+
+bper-modal {
+
+    // MODALE FULLSCREEN TUTORIAL IN HOMEPAGE
+    &.bper-m-tutorial-full {
+        .modal-container.no-title.no-leftImage {
+            width: 820px;
+            margin: auto;
+
+            @media screen and (max-width: $bp-tablet) {
+                width: 614px;
+            }
+
+            @media screen and (max-width: $bp-mobile) {
+                width: 100%;
+            }
+
+            @media screen and (max-width: 540px) {
+                position: relative;
+                bottom: 38px;
+            }
+
+            @media screen and (max-width: 375px) {
+                position: relative;
+                bottom: 60px;
+            }
+
+
+            .swiper-pagination-bullet {
+                width: 8px;
+                height: 8px;
+                display: inline-block;
+                border-radius: 50%;
+
+
+            }
+
+            .swiper-pagination-bullet.swiper-pagination-bullet-active {
+                background-color: #00ae65;
+                border-radius: 8px;
+                width: 24px;
+            }
+
+            .modal-header {
+                i {
+                    display: none;
+                }
+            }
+        }
+    }
+
+    &.F24-fac-simile {
+
+        .modal-container {
+
+            &.no-leftImage {
+                display: contents;
+            }
+        }
+    }
+
+    // AVVISATURA ELETTRONICA FILTRI
+    &.filtri-avvisatura-elettronica {
+
+        .modal-container {
+
+            &.no-leftImage {
+
+                // MOBILE
+                @media screen and (max-width: $bp-mobile) {
+                    height: 83vh;
+                }
+            }
+        }
+    }
+}

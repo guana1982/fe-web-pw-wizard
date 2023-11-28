@@ -1,0 +1,122 @@
+@import "src/scss/variables";
+@import "node_modules/swiper/swiper";
+@import "node_modules/swiper/components/navigation/navigation";
+@import "node_modules/swiper/components/pagination/pagination";
+
+
+.bper-c-carousel {
+    position: relative;
+
+    & swiper {
+        padding: 0 5%;
+        box-sizing: border-box;
+        height: 210px;
+        z-index: 0;
+
+        & .swiper-wrapper {
+            & .swiper-slide {
+                opacity: 0;
+                transition: opacity .3s;
+            }
+            
+            & .swiper-slide-visible {
+                opacity: 1;
+            }
+        }
+
+        & .swiper-pagination {
+            bottom: 0;
+            
+            & .swiper-pagination-bullet-active {
+                background-color: map-get($bper-palette, secondary, --secondary-90);
+                border-radius: 8px;
+                width: 24px;
+            }
+        }
+    }
+
+    &__btnPrev, &__btnNext {
+        position: absolute;
+        top: 84.5px;
+        transform: translateY(-50%);
+        cursor: pointer;
+
+        @media screen and (max-width: $bp-mobile) {
+            display: none;
+        }
+
+        &::before {
+            color: map-get($bper-palette, secondary, --secondary-90);
+        }
+
+        &.swiper-button-disabled {
+            &::before {
+                color: map-get($bper-palette, neutral, --neutral-40);
+            }
+        }
+
+        &.-remove {
+            display: none;
+        }
+    }
+
+    &__btnPrev {
+        left: 0;
+    }
+
+    &__btnNext {
+        right: 0;
+    }
+
+    &.amazon-carousel {
+        
+        // AMAZON SWIPER
+        & swiper {
+            height: 500px;
+
+            .swiper-wrapper {
+                justify-content: center;
+
+                .swiper-slide {
+                    width: 200px !important;
+                    margin-left: 33px !important;
+                }
+
+            }
+            
+            & .swiper-pagination {
+                height: 45px;
+                bottom: -24px;
+            }
+
+            .fadingOverlay {
+                position: relative;
+                bottom: 0;
+                left: 0;
+                height: 100%;
+                width: 50px;
+                background: transparent linear-gradient(180deg, #ffffff00 0%, red 100%) 0% 0% no-repeat padding-box;
+            }
+        }
+
+        .bper-c-carousel__nav {
+            width: 100%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            display: flex;
+            justify-content: space-between;
+    
+            &.-remove {
+                display: none;
+            }
+    
+            @media screen and (max-width: $bp-mobile) {
+                display: none;
+            }
+        }
+
+    }
+}
+

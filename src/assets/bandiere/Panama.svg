@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Tracciato_369" data-name="Tracciato 369" d="M.573,12.749a12,12,0,1,0,12-12,12,12,0,0,0-12,12" transform="translate(-0.573 -0.749)" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Panamà" transform="translate(-0.573 -0.749)">
+    <g id="Raggruppa_24" data-name="Raggruppa 24" transform="translate(0.573 0.749)" clip-path="url(#clip-path)">
+      <rect id="Rettangolo_50" data-name="Rettangolo 50" width="36.172" height="24.226" transform="translate(-6.167 -0.108)" fill="#fff"/>
+      <rect id="Rettangolo_51" data-name="Rettangolo 51" width="12.172" height="12.108" transform="translate(-0.172 12)" fill="#082257"/>
+      <rect id="Rettangolo_885" data-name="Rettangolo 885" width="12" height="12.108" transform="translate(12 -0.102)" fill="#d9141b"/>
+      <path id="Tracciato_368" data-name="Tracciato 368" d="M4.265,1.5l.694,2.13H7.2L5.387,4.938l.685,2.13L4.265,5.756,2.456,7.069l.694-2.13L1.333,3.625H3.571Z" transform="translate(1.667 1.505)" fill="#082257"/>
+      <path id="Tracciato_10072" data-name="Tracciato 10072" d="M4.265,1.5l.694,2.13H7.2L5.387,4.938l.685,2.13L4.265,5.756,2.456,7.069l.694-2.13L1.333,3.625H3.571Z" transform="translate(13.667 13.505)" fill="#d9141b"/>
+    </g>
+  </g>
+</svg>

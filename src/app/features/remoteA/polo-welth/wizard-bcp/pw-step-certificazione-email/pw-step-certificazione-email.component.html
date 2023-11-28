@@ -1,0 +1,36 @@
+<div class="box hero" *ngIf="datoIdentificazioneCliente">
+    <h1 class="title">Inserisci il codice ricevuto via email</h1>
+    <div class="sub-title-description container__posta">
+        Lo abbiamo inviato al tuo indirizzo di posta: <br>
+        <div style="font-weight: bold;">
+            {{(datoIdentificazioneCliente.contatti.email).slice(0, 3) + 'xxx' + '@' + 'xx' + '.' + 'xx' }}
+        </div>
+    </div>
+
+    <bper-button class="pointer" order="ghost-accent" [label]="'La tua email non è corretta?'"
+        (clickBtn)="openModalEmail()"></bper-button>
+
+    <div style="margin-top: 2.5rem;">
+        <div class="codiceSMSText">Codice ricevuto via email</div>
+    </div>
+
+    <div class="otpCellInputWrapper-ob-off" style="display: flex; justify-content: center; width: 100%;"
+        [ngClass]="invalidOtp ? 'otpBorderRed' : ''">
+        <bper-input-pincode input-format="otp" name="otpName1" id="otpId1" enable-tooltip="false"
+            enable-error-tooltip="false" live-validation="true" class="otpCellBlock-ob-off"
+            [attempts]="remainingAttempts" [setError]="setError" (pin)="onPinChange($event)">
+        </bper-input-pincode>
+    </div>
+
+    <div class="container-new-code" (click)="resendCode()">
+        <a ng-click="resendOtp()" class="receive-new-code-link-sms" style="cursor: pointer">Richiedi un nuovo codice</a>
+        <img class="arrowClass" src="./../../../../../../assets/bper-svg/Icon-24pt-Arrow Right.svg">
+    </div>
+
+    <div class="button-wrapper">
+        <bper-button [disabled]="pinValue?.length !== 6" button-type="button" order="primary" [label]="'Continua'"
+            (clickBtn)="goToNextStep()">
+        </bper-button>
+    </div>
+
+</div>

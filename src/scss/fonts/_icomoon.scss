@@ -1,0 +1,897 @@
+@import "global-env";
+
+@font-face {
+  font-family: 'icomoon';
+  src:  url(#{$absolute-assets-path} +'/fonts/ark-iconfont.eot?zeq1rj');
+  src:  url(#{$absolute-assets-path} +'/fonts/ark-iconfont.eot?zeq1rj#iefix') format('embedded-opentype'),
+    url(#{$absolute-assets-path} +'/fonts/ark-iconfont.ttf?zeq1rj') format('truetype'),
+    url(#{$absolute-assets-path} +'/fonts/ark-iconfont.woff?zeq1rj') format('woff'),
+    url(#{$absolute-assets-path} +'/fonts/ark-iconfont.svg?zeq1rj#ark-iconfont') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  font-size: 20px;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-ic-aggiungi-nota-out:before {
+  content: "\e900";
+  
+}
+.icon-ic-aggiungi-nota:before {
+  content: "\e901";
+  
+}
+.icon-ic-aggiungi:before {
+  content: "\e902";
+  
+}
+.icon-ic-alert-commerciale-out:before {
+  content: "\e903";
+  
+}
+.icon-ic-alert-commerciale:before {
+  content: "\e904";
+  
+}
+.icon-ic-andamentale-out:before {
+  content: "\e905";
+  
+}
+.icon-ic-andamentale:before {
+  content: "\e906";
+  
+}
+.icon-ic-andamento-negativo-out:before {
+  content: "\e907";
+  
+}
+.icon-ic-andamento-negativo:before {
+  content: "\e908";
+  
+}
+.icon-ic-andamento-positivo-out:before {
+  content: "\e909";
+  
+}
+.icon-ic-andamento-positivo:before {
+  content: "\e90a";
+  
+}
+.icon-ic-anzianita-rapporto-out:before {
+  content: "\e90b";
+  
+}
+.icon-ic-anzianita-rapporto:before {
+  content: "\e90c";
+  
+}
+.icon-ic-archivia-out:before {
+  content: "\e90d";
+  
+}
+.icon-ic-archivia:before {
+  content: "\e90e";
+  
+}
+.icon-ic-arrivo-out:before {
+  content: "\e90f";
+  
+}
+.icon-ic-arrivo:before {
+  content: "\e910";
+  
+}
+.icon-ic-assenza-rete-out:before {
+  content: "\e911";
+  
+}
+.icon-ic-assenza-rete:before {
+  content: "\e912";
+  
+}
+.bper-ic-circle-with-exclamation-point:before {
+  content: "\e913";
+  
+}
+.icon-ic-attenzione-simbolo:before {
+  content: "\e914";
+  
+}
+.icon-ic-attenzione:before {
+  content: "\e915";
+  
+}
+.icon-ic-azienda-out:before {
+  content: "\e916";
+  
+}
+.icon-ic-azienda:before {
+  content: "\e917";
+  
+}
+.icon-ic-calcolatrice-out:before {
+  content: "\e918";
+  
+}
+.icon-ic-calcolatrice:before {
+  content: "\e919";
+  
+}
+.icon-ic-calendario-out:before {
+  content: "\e91a";
+  
+}
+.icon-ic-calendario:before {
+  content: "\e91b";
+  
+}
+.icon-ic-carta-credito-out:before {
+  content: "\e91c";
+  
+}
+.icon-ic-carta-credito:before {
+  content: "\e91d";
+  
+}
+.icon-ic-cartella-documenti-out:before {
+  content: "\e91e";
+  
+}
+.icon-ic-cartella-documenti:before {
+  content: "\e91f";
+  
+}
+.icon-ic-casa-out:before {
+  content: "\e920";
+  
+}
+.icon-ic-casa:before {
+  content: "\e921";
+  
+}
+.icon-ic-cerca:before {
+  content: "\e922";
+  
+}
+.icon-ic-chat-out:before {
+  content: "\e923";
+  
+}
+.icon-ic-chat:before {
+  content: "\e924";
+  
+}
+.icon-ic-chiusura:before {
+  content: "\e925";
+  
+}
+.icon-ic-circolari-out:before {
+  content: "\e926";
+  
+}
+.icon-ic-circolari:before {
+  content: "\e927";
+  
+}
+.icon-ic-cliente-aggiorna-out:before {
+  content: "\e928";
+  
+}
+.icon-ic-cliente-aggiorna:before {
+  content: "\e929";
+  
+}
+.icon-ic-cliente-aggiungi-out:before {
+  content: "\e92a";
+  
+}
+.icon-ic-cliente-aggiungi:before {
+  content: "\e92b";
+  
+}
+.icon-ic-cliente-disponibilita-out:before {
+  content: "\e92c";
+  
+}
+.icon-ic-cliente-disponibilita:before {
+  content: "\e92d";
+  
+}
+.icon-ic-cliente-freccia-destra-out:before {
+  content: "\e92e";
+  
+}
+.icon-ic-cliente-freccia-destra:before {
+  content: "\e92f";
+  
+}
+.icon-ic-cliente-freccia-sinistra-out:before {
+  content: "\e930";
+  
+}
+.icon-ic-cliente-freccia-sinistra:before {
+  content: "\e931";
+  
+}
+.icon-ic-cliente-out:before {
+  content: "\e932";
+  
+}
+.icon-ic-cliente:before {
+  content: "\e933";
+  
+}
+.icon-ic-codice-fiscale-out:before {
+  content: "\e934";
+  
+}
+.icon-ic-codice-fiscale:before {
+  content: "\e935";
+  
+}
+.icon-ic-collegamenti-cliente-out:before {
+  content: "\e936";
+  
+}
+.icon-ic-collegamenti-cliente:before {
+  content: "\e937";
+  
+}
+.icon-ic-compleanno-out:before {
+  content: "\e938";
+  
+}
+.icon-ic-compleanno:before {
+  content: "\e939";
+  
+}
+.icon-ic-conferma:before {
+  content: "\e93a";
+  
+}
+.icon-ic-confronto:before {
+  content: "\e93b";
+  
+}
+.icon-ic-consulente-out:before {
+  content: "\e93c";
+  
+}
+.icon-ic-consulente:before {
+  content: "\e93d";
+  
+}
+.icon-ic-contrasto-alto:before {
+  content: "\e93e";
+  
+}
+.icon-ic-contrasto-basso:before {
+  content: "\e93f";
+  
+}
+.icon-ic-data-e-ora-out:before {
+  content: "\e940";
+  
+}
+.icon-ic-data-e-ora:before {
+  content: "\e941";
+  
+}
+.icon-ic-descrizione:before {
+  content: "\e942";
+  
+}
+.icon-ic-diario-di-bordo-out:before {
+  content: "\e943";
+  
+}
+.icon-ic-diario-di-bordo:before {
+  content: "\e944";
+  
+}
+.icon-ic-doc-piano-commerciale-out:before {
+  content: "\e945";
+  
+}
+.icon-ic-doc-piano-commerciale:before {
+  content: "\e946";
+  
+}
+.icon-ic-documento-out:before {
+  content: "\e947";
+  
+}
+.icon-ic-documento:before {
+  content: "\e948";
+  
+}
+.icon-ic-dollaro:before {
+  content: "\e949";
+  
+}
+.icon-ic-download:before {
+  content: "\e94a";
+  
+}
+.icon-ic-educazione-out:before {
+  content: "\e94b";
+  
+}
+.icon-ic-educazione:before {
+  content: "\e94c";
+  
+}
+.icon-ic-elimina-out:before {
+  content: "\e94d";
+  
+}
+.icon-ic-elimina:before {
+  content: "\e94e";
+  
+}
+.icon-ic-esito-negativo-out:before {
+  content: "\e94f";
+  
+}
+.icon-ic-esito-negativo:before {
+  content: "\e950";
+  
+}
+.icon-ic-esito-positivo-out:before {
+  content: "\e951";
+  
+}
+.icon-ic-esito-positivo:before {
+  content: "\e952";
+  
+}
+.icon-ic-espandi:before {
+  content: "\e953";
+  
+}
+.icon-ic-euro:before {
+  content: "\e954";
+  
+}
+.icon-ic-excel-out:before {
+  content: "\e955";
+  
+}
+.icon-ic-excel:before {
+  content: "\e956";
+  
+}
+.icon-ic-femmina:before {
+  content: "\e957";
+  
+}
+.icon-ic-filiale-out:before {
+  content: "\e958";
+  
+}
+.icon-ic-filiale:before {
+  content: "\e959";
+  
+}
+.icon-Ic-filtri-out:before {
+  content: "\e95a";
+  
+}
+.icon-Ic-filtri:before {
+  content: "\e95b";
+  
+}
+.icon-ic-firma-digitale-put:before {
+  content: "\e95c";
+  
+}
+.icon-ic-firma-digitale:before {
+  content: "\e95d";
+  
+}
+.icon-ic-freccia-destra:before {
+  content: "\e95e";
+  
+}
+.icon-ic-freccia-sinistra:before {
+  content: "\e95f";
+  
+}
+.icon-ic-gerarchia-out:before {
+  content: "\e960";
+  
+}
+.icon-ic-gerarchia:before {
+  content: "\e961";
+  
+}
+.icon-ic-gruppo-economico-out:before {
+  content: "\e962";
+  
+}
+.icon-ic-gruppo-economico:before {
+  content: "\e963";
+  
+}
+.icon-ic-home-out:before {
+  content: "\e964";
+  
+}
+.icon-ic-home:before {
+  content: "\e965";
+  
+}
+.icon-ic-impostazioni-out:before {
+  content: "\e966";
+  
+}
+.icon-ic-impostazioni:before {
+  content: "\e967";
+  
+}
+.icon-ic-inbound:before {
+  content: "\e968";
+  
+}
+.icon-ic-info-out:before {
+  content: "\e969";
+  
+}
+.icon-ic-info-simbolo:before {
+  content: "\e96a";
+  
+}
+.icon-ic-info:before {
+  content: "\e96b";
+  
+}
+.icon-ic-iniziativa-commerciale-out:before {
+  content: "\e96c";
+  
+}
+.icon-ic-iniziativa-commerciale:before {
+  content: "\e96d";
+  
+}
+.icon-ic-inoltro-out:before {
+  content: "\e96e";
+  
+}
+.icon-ic-inoltro:before {
+  content: "\e96f";
+  
+}
+.icon-ic-intestatari-out:before {
+  content: "\e970";
+  
+}
+.icon-ic-intestatari:before {
+  content: "\e971";
+  
+}
+.icon-ic-invia-out:before {
+  content: "\e972";
+  
+}
+.icon-ic-invia:before {
+  content: "\e973";
+  
+}
+.icon-ic-kpi-out:before {
+  content: "\e974";
+  
+}
+.icon-ic-kpi:before {
+  content: "\e975";
+  
+}
+.icon-ic-lampadina-out:before {
+  content: "\e976";
+  
+}
+.icon-ic-lampadina:before {
+  content: "\e977";
+  
+}
+.icon-ic-libro-out:before {
+  content: "\e978";
+  
+}
+.icon-ic-libro:before {
+  content: "\e979";
+  
+}
+.icon-ic-link-out:before {
+  content: "\e97a";
+  
+}
+.icon-ic-link:before {
+  content: "\e97b";
+  
+}
+.icon-ic-lista-attivita-out:before {
+  content: "\e97c";
+  
+}
+.icon-ic-lista-attivita:before {
+  content: "\e97d";
+  
+}
+.icon-ic-localita-out:before {
+  content: "\e97e";
+  
+}
+.icon-ic-localita:before {
+  content: "\e97f";
+  
+}
+.icon-ic-mail-out:before {
+  content: "\e980";
+  
+}
+.icon-ic-mail:before {
+  content: "\e981";
+  
+}
+.icon-ic-maschio:before {
+  content: "\e982";
+  
+}
+.icon-ic-menu-contestuale:before {
+  content: "\e983";
+}
+.icon-ic-menu:before {
+  content: "\e984";
+  
+}
+.icon-ic-modifica-nota-out:before {
+  content: "\e985";
+  
+}
+.icon-ic-modifica-nota:before {
+  content: "\e986";
+  
+}
+.icon-ic-modifica-out:before {
+  content: "\e987";
+  
+}
+.icon-ic-modifica:before {
+  content: "\e988";
+  
+}
+.icon-ic-nessun-risultato:before {
+  content: "\e989";
+  
+}
+.icon-ic-news-out:before {
+  content: "\e98a";
+  
+}
+.icon-ic-news:before {
+  content: "\e98b";
+  
+}
+.icon-ic-next-product-out:before {
+  content: "\e98c";
+  
+}
+.icon-ic-next-product:before {
+  content: "\e98d";
+  
+}
+.icon-ic-nota-out:before {
+  content: "\e98e";
+  
+}
+.icon-ic-nota:before {
+  content: "\e98f";
+  
+}
+.icon-ic-notifiche-out:before {
+  content: "\e990";
+  
+}
+.icon-ic-notifiche:before {
+  content: "\e991";
+  
+}
+.icon-ic-operativita:before {
+  content: "\e992";
+  
+}
+.icon-ic-ora-out:before {
+  content: "\e993";
+  
+}
+.icon-ic-ora:before {
+  content: "\e994";
+  
+}
+.icon-ic-outbound:before {
+  content: "\e995";
+  
+}
+.icon-ic-pdf-out:before {
+  content: "\e996";
+  
+}
+.icon-ic-pdf:before {
+  content: "\e997";
+  
+}
+.icon-ic-pin-out:before {
+  content: "\e998";
+  
+}
+.icon-ic-pin:before {
+  content: "\e999";
+  
+}
+.icon-ic-portafoglio-out:before {
+  content: "\e99a";
+  
+}
+.icon-ic-portafoglio:before {
+  content: "\e99b";
+  
+}
+.icon-ic-portale-credito-out:before {
+  content: "\e99c";
+  
+}
+.icon-ic-portale-credito:before {
+  content: "\e99d";
+  
+}
+.icon-ic-pos-out:before {
+  content: "\e99e";
+  
+}
+.icon-ic-pos:before {
+  content: "\e99f";
+  
+}
+.icon-ic-post-it-out:before {
+  content: "\e9a0";
+  
+}
+.icon-ic-post-it:before {
+  content: "\e9a1";
+  
+}
+.icon-ic-preferito-out:before {
+  content: "\e9a2";
+  
+}
+.icon-ic-preferito:before {
+  content: "\e9a3";
+  
+}
+.icon-ic-presa-in-carico-out:before {
+  content: "\e9a4";
+  
+}
+.icon-ic-presa-in-carico:before {
+  content: "\e9a5";
+  
+}
+.icon-ic-prevalutato-out:before {
+  content: "\e9a6";
+  
+}
+.icon-ic-prevalutato:before {
+  content: "\e9a7";
+  
+}
+.icon-ic-priorita-commerciali-out:before {
+  content: "\e9a8";
+  
+}
+.icon-ic-priorita-commerciali:before {
+  content: "\e9a9";
+  
+}
+.icon-ic-professione-out:before {
+  content: "\e9aa";
+  
+}
+.icon-ic-professione:before {
+  content: "\e9ab";
+  
+}
+.icon-ic-profilo-commerciale-out:before {
+  content: "\e9ac";
+  
+}
+.icon-ic-profilo-commerciale:before {
+  content: "\e9ad";
+  
+}
+.icon-ic-qui-ark-out:before {
+  content: "\e9ae";
+  
+}
+.icon-ic-rapporti-out:before {
+  content: "\e9b0";
+  
+}
+.icon-ic-rapporti:before {
+  content: "\e9b1";
+  
+}
+.icon-ic-remind-out:before {
+  content: "\e9b2";
+  
+}
+.icon-ic-remind:before {
+  content: "\e9b3";
+  
+}
+.icon-ic-report-out:before {
+  content: "\e9b4";
+  
+}
+.icon-ic-report:before {
+  content: "\e9b5";
+  
+}
+.icon-ic-rete-out:before {
+  content: "\e9b6";
+  
+}
+.icon-ic-rete:before {
+  content: "\e9b7";
+  
+}
+.icon-ic-richiama:before {
+  content: "\e9b8";
+  
+}
+.icon-ic-riduci:before {
+  content: "\e9b9";
+  
+}
+.icon-ic-rubrica-out:before {
+  content: "\e9ba";
+  
+}
+.icon-ic-rubrica:before {
+  content: "\e9bb";
+  
+}
+.icon-ic-ruolo-out:before {
+  content: "\e9bc";
+  
+}
+.icon-ic-ruolo:before {
+  content: "\e9bd";
+  
+}
+.icon-ic-scadenza-out:before {
+  content: "\e9be";
+  
+}
+.icon-ic-scadenza:before {
+  content: "\e9bf";
+  
+}
+.icon-ic-sito-web-out:before {
+  content: "\e9c0";
+  
+}
+.icon-ic-sito-web:before {
+  content: "\e9c1";
+  
+}
+.icon-ic-stampa-out:before {
+  content: "\e9c2";
+  
+}
+.icon-ic-stampa:before {
+  content: "\e9c3";
+  
+}
+.icon-ic-start-out:before {
+  content: "\e9c4";
+  
+}
+.icon-ic-start:before {
+  content: "\e9c5";
+  
+}
+.icon-ic-target:before {
+  content: "\e9c6";
+  
+}
+.icon-ic-team-out:before {
+  content: "\e9c7";
+  
+}
+.icon-ic-team:before {
+  content: "\e9c8";
+  
+}
+.icon-ic-telefono-out:before {
+  content: "\e9c9";
+  
+}
+.icon-ic-telefono:before {
+  content: "\e9ca";
+  
+}
+.icon-ic-vendita:before {
+  content: "\e9cb";
+  
+}
+.icon-ic-scheda-rischio-out:before {
+  content: "\e9cc";
+}
+.icon-ic-scheda-rischio:before {
+  content: "\e9cd";
+}
+.icon-ic-benchmark-out:before {
+  content: "\e9ce";
+}
+.icon-ic-benchmark:before {
+  content: "\e9d0";
+}
+.icon-ic-torta-out:before {
+  content: "\e9cf";
+}
+.icon-ic-torta:before {
+  content: "\e9d1";
+}
+.icon-ic-portafoglio-pieno-out:before {
+  content: "\e9d2";
+}
+.icon-ic-portafoglio-pieno:before {
+  content: "\e9d3";
+}
+.icon-ic-info2-out:before {
+  content: "\e9d4";
+}
+.icon-ic-info2:before {
+  content: "\e9d5";
+}
+.icon-ic-aggiornamento-dati-rt-out:before {
+  content: "\e9d6";
+}
+.icon-ic-lista-movimenti-out:before {
+  content: "\e9d7";
+}
+.icon-ic-lista-movimenti:before {
+  content: "\e9d8";
+}
+.icon-ic-scheda-check-up-out:before {
+  content: "\e9d9";
+}
+.icon-ic-scheda-check-up:before {
+  content: "\e9da";
+}
+.icon-ic-upload:before {
+  content: "\e9db";
+}
+.icon-ic-upload-documento-out:before {
+  content: "\e9dc";
+}
+.icon-ic-upload-documento:before {
+  content: "\e9dd";
+}
+.icon-ic-aggiorna:before {
+  content: "\e9de";
+}

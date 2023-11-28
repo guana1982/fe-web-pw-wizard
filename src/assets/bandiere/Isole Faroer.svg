@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Tracciato_3939" data-name="Tracciato 3939" d="M.419,12.749a12,12,0,1,0,12-12,11.99,11.99,0,0,0-12,12" transform="translate(-0.419 -0.749)" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Isole_Faroe" data-name="Isole Faroe" transform="translate(-0.419 -0.749)">
+    <g id="Raggruppa_166" data-name="Raggruppa 166" transform="translate(0.419 0.749)" clip-path="url(#clip-path)">
+      <rect id="Rettangolo_370" data-name="Rettangolo 370" width="32.997" height="24" transform="translate(-4.509 0)" fill="#fff"/>
+      <path id="Tracciato_3937" data-name="Tracciato 3937" d="M33,9.768H14.971V.749H9.009V9.768H0V15.73H9.009v9.019h5.962V15.73H33Z" transform="translate(-4.505 -0.749)" fill="#0063c6"/>
+      <path id="Tracciato_3938" data-name="Tracciato 3938" d="M33,11.254H13.486V.75H10.494v10.5H0v2.992H10.494v10.5h2.992v-10.5H33Z" transform="translate(-4.505 -0.744)" fill="#ef2b21"/>
+    </g>
+  </g>
+</svg>

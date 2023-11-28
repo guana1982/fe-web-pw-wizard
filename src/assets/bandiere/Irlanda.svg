@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Tracciato_394" data-name="Tracciato 394" d="M.556,12.749a12,12,0,1,0,12-12,12,12,0,0,0-12,12" transform="translate(-0.556 -0.749)" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Irlanda" transform="translate(-0.556 -0.749)">
+    <g id="Raggruppa_29" data-name="Raggruppa 29" transform="translate(0.556 0.749)" clip-path="url(#clip-path)">
+      <rect id="Rettangolo_61" data-name="Rettangolo 61" width="35.968" height="24" transform="translate(-5.984 0)" fill="#f93"/>
+      <rect id="Rettangolo_62" data-name="Rettangolo 62" width="23.989" height="24" transform="translate(-5.984 0)" fill="#fff"/>
+      <rect id="Rettangolo_63" data-name="Rettangolo 63" width="11.989" height="24" transform="translate(-5.984 0)" fill="#096"/>
+    </g>
+  </g>
+</svg>

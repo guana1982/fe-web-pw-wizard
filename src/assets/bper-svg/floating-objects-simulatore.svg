@@ -1,0 +1,140 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="263.947" height="98.027" viewBox="0 0 263.947 98.027">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#29696f"/>
+      <stop offset="1" stop-color="#183f42"/>
+    </linearGradient>
+    <filter id="Rettangolo_257" x="85.694" y="0" width="83.016" height="96.86" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="_" x="190.816" y="57.475" width="47.554" height="40.553" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-2"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rettangolo_274" x="0" y="10.616" width="62.503" height="43.352" filterUnits="userSpaceOnUse">
+      <feOffset dy="2" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="2" result="blur-3"/>
+      <feFlood flood-color="#1a2222" flood-opacity="0.239"/>
+      <feComposite operator="in" in2="blur-3"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Ellisse_107" x="216.186" y="14.068" width="47.761" height="47.761" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-4"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-4"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Ellisse_107-2" x="175.095" y="5.426" width="36.118" height="36.118" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-5"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-5"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Ellisse_107-3" x="191.637" y="29.365" width="31.957" height="31.957" filterUnits="userSpaceOnUse">
+      <feOffset dy="3" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur-6"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-6"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rettangolo_274-2" x="27.641" y="49.271" width="50.904" height="38.321" filterUnits="userSpaceOnUse">
+      <feOffset dy="2" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="2" result="blur-7"/>
+      <feFlood flood-color="#1a2222" flood-opacity="0.239"/>
+      <feComposite operator="in" in2="blur-7"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Elements_Illustration" data-name="Elements Illustration" transform="translate(6.723 -0.994)">
+    <g id="calcolatrice" transform="matrix(0.966, -0.259, 0.259, 0.966, 87.971, 19.663)">
+      <g transform="matrix(0.97, 0.26, -0.26, 0.97, -86.64, -42.54)" filter="url(#Rettangolo_257)">
+        <rect id="Rettangolo_257-2" data-name="Rettangolo 257" width="48.947" height="68.526" rx="3" transform="matrix(0.97, -0.26, 0.26, 0.97, 94.69, 18.67)" fill="url(#linear-gradient)"/>
+      </g>
+      <line id="Linea_7" data-name="Linea 7" x2="48.091" transform="translate(0.245 18.379)" fill="none" stroke="#fff" stroke-width="2"/>
+      <g id="Rettangolo_258" data-name="Rettangolo 258" transform="translate(6.118 23.25)" fill="none" stroke="#fff" stroke-width="2">
+        <rect width="9.789" height="9.789" rx="2" stroke="none"/>
+        <rect x="1" y="1" width="7.789" height="7.789" rx="1" fill="none"/>
+      </g>
+      <g id="Rettangolo_269" data-name="Rettangolo 269" transform="translate(6.118 37.933)" fill="none" stroke="#fff" stroke-width="2">
+        <rect width="9.789" height="9.789" rx="2" stroke="none"/>
+        <rect x="1" y="1" width="7.789" height="7.789" rx="1" fill="none"/>
+      </g>
+      <g id="Rettangolo_271" data-name="Rettangolo 271" transform="translate(6.118 52.617)" fill="none" stroke="#fff" stroke-width="2">
+        <rect width="9.789" height="9.789" rx="2" stroke="none"/>
+        <rect x="1" y="1" width="7.789" height="7.789" rx="1" fill="none"/>
+      </g>
+      <g id="Rettangolo_259" data-name="Rettangolo 259" transform="translate(19.579 23.25)" fill="none" stroke="#fff" stroke-width="2">
+        <rect width="9.789" height="9.789" rx="2" stroke="none"/>
+        <rect x="1" y="1" width="7.789" height="7.789" rx="1" fill="none"/>
+      </g>
+      <g id="Rettangolo_268" data-name="Rettangolo 268" transform="translate(19.579 37.933)" fill="none" stroke="#fff" stroke-width="2">
+        <rect width="9.789" height="9.789" rx="2" stroke="none"/>
+        <rect x="1" y="1" width="7.789" height="7.789" rx="1" fill="none"/>
+      </g>
+      <g id="Rettangolo_270" data-name="Rettangolo 270" transform="translate(19.579 52.617)" fill="none" stroke="#fff" stroke-width="2">
+        <rect width="9.789" height="9.789" rx="2" stroke="none"/>
+        <rect x="1" y="1" width="7.789" height="7.789" rx="1" fill="none"/>
+      </g>
+      <g id="Rettangolo_260" data-name="Rettangolo 260" transform="translate(33.039 23.25)" fill="none" stroke="#fff" stroke-width="2">
+        <rect width="9.789" height="9.789" rx="2" stroke="none"/>
+        <rect x="1" y="1" width="7.789" height="7.789" rx="1" fill="none"/>
+      </g>
+      <g id="Rettangolo_267" data-name="Rettangolo 267" transform="translate(33.039 37.933)" fill="none" stroke="#fff" stroke-width="2">
+        <rect width="9.789" height="9.789" rx="2" stroke="none"/>
+        <rect x="1" y="1" width="7.789" height="7.789" rx="1" fill="none"/>
+      </g>
+      <rect id="Rettangolo_272" data-name="Rettangolo 272" width="9.789" height="9.789" rx="2" transform="translate(33.039 52.617)" fill="#00ae65"/>
+      <circle id="Ellisse_102" data-name="Ellisse 102" cx="2.447" cy="2.447" r="2.447" transform="translate(6.118 7.342)" fill="#00ae65"/>
+      <circle id="Ellisse_103" data-name="Ellisse 103" cx="2.447" cy="2.447" r="2.447" transform="translate(14.684 7.342)" fill="#00ae65"/>
+      <circle id="Ellisse_104" data-name="Ellisse 104" cx="2.447" cy="2.447" r="2.447" transform="translate(37.934 7.342)" fill="#00ae65"/>
+      <circle id="Ellisse_105" data-name="Ellisse 105" cx="2.447" cy="2.447" r="2.447" transform="translate(30.592 7.342)" fill="#00ae65"/>
+      <circle id="Ellisse_106" data-name="Ellisse 106" cx="2.447" cy="2.447" r="2.447" transform="translate(22.026 7.342)" fill="#00ae65"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, -6.72, 0.99)" filter="url(#_)">
+      <path id="_2" data-name="%" d="M5.43,9.966c3.641,0,5.494-2.491,5.494-5.079C10.924,2.268,9.135,0,5.494,0S0,2.459,0,5.015C0,7.6,1.789,9.966,5.43,9.966Zm.064-2.587c-1.373,0-1.885-1.214-1.885-2.491,0-1.31.479-2.3,1.853-2.3,1.342,0,1.853,1.15,1.853,2.427S6.9,7.378,5.494,7.378Zm15.268,8.943c3.609,0,5.462-2.491,5.462-5.047,0-2.651-1.789-4.919-5.4-4.919-3.641,0-5.494,2.459-5.494,5.015C15.332,13.99,17.12,16.322,20.761,16.322Zm.064-2.587c-1.373,0-1.916-1.214-1.916-2.459,0-1.31.479-2.332,1.853-2.332,1.342,0,1.853,1.15,1.853,2.427S22.231,13.735,20.825,13.735Zm-14.118,2.2h3.545L19.58.351H16.066Z" transform="matrix(0.97, 0.26, -0.26, 0.97, 204.04, 63.47)" fill="#00ae65"/>
+    </g>
+    <g id="banconota" transform="translate(3.362 15.61) rotate(10)">
+      <g id="Raggruppa_14" data-name="Raggruppa 14" transform="translate(0 0)">
+        <g transform="matrix(0.98, -0.17, 0.17, 0.98, -12.47, -12.64)" filter="url(#Rettangolo_274)">
+          <rect id="Rettangolo_274-3" data-name="Rettangolo 274" width="47.134" height="23.525" rx="1" transform="translate(10.09 14.62) rotate(10)" fill="url(#linear-gradient)"/>
+        </g>
+        <path id="Tracciato_43" data-name="Tracciato 43" d="M5.924,7.681a3.282,3.282,0,0,1-1.815.512A3.194,3.194,0,0,1,1.634,7.107a3.761,3.761,0,0,1-.878-2.1H0v-.6H.7V4.231c0-.2.011-.378.023-.549H0v-.61H.8a3.873,3.873,0,0,1,1-2.059A3.217,3.217,0,0,1,4.217,0,3.462,3.462,0,0,1,5.84.39l-.244.8A2.821,2.821,0,0,0,4.23.854a2.123,2.123,0,0,0-1.609.67,2.9,2.9,0,0,0-.732,1.548h3.4v.61H1.78c-.012.159-.024.342-.024.512v.22H5.291v.6H1.841a2.926,2.926,0,0,0,.671,1.6,2.315,2.315,0,0,0,1.718.707,3.162,3.162,0,0,0,1.488-.4Z" transform="translate(20.62 7.705)" fill="#f9fbfb"/>
+      </g>
+    </g>
+    <g id="moneta" transform="matrix(0.951, 0.309, -0.309, 0.951, 225.761, 21.062)">
+      <g transform="matrix(0.95, -0.31, 0.31, 0.95, -227.31, 52.76)" filter="url(#Ellisse_107)">
+        <circle id="Ellisse_107-4" data-name="Ellisse 107" cx="11.809" cy="11.809" r="11.809" transform="matrix(0.95, 0.31, -0.31, 0.95, 232.48, 20.07)" fill="url(#linear-gradient)"/>
+      </g>
+      <path id="Tracciato_136" data-name="Tracciato 136" d="M5.924,7.681a3.282,3.282,0,0,1-1.815.512A3.194,3.194,0,0,1,1.634,7.107a3.761,3.761,0,0,1-.878-2.1H0v-.6H.7V4.231c0-.2.011-.378.023-.549H0v-.61H.8a3.873,3.873,0,0,1,1-2.059A3.217,3.217,0,0,1,4.217,0,3.462,3.462,0,0,1,5.84.39l-.244.8A2.821,2.821,0,0,0,4.23.854a2.123,2.123,0,0,0-1.609.67,2.9,2.9,0,0,0-.732,1.548h3.4v.61H1.78c-.012.159-.024.342-.024.512v.22H5.291v.6H1.841a2.926,2.926,0,0,0,.671,1.6,2.315,2.315,0,0,0,1.718.707,3.162,3.162,0,0,0,1.488-.4Z" transform="translate(8.333 7.712)" fill="#f9fbfb"/>
+    </g>
+    <g id="moneta-2" data-name="moneta" transform="matrix(0.951, 0.309, -0.309, 0.951, 181.814, 12.42)">
+      <g transform="matrix(0.95, -0.31, 0.31, 0.95, -182.84, 47.39)" filter="url(#Ellisse_107-2)">
+        <circle id="Ellisse_107-5" data-name="Ellisse 107" cx="7.189" cy="7.189" r="7.189" transform="matrix(0.95, 0.31, -0.31, 0.95, 188.54, 11.43)" fill="url(#linear-gradient)"/>
+      </g>
+      <path id="Tracciato_136-2" data-name="Tracciato 136" d="M3.607,4.676A2,2,0,0,1,2.5,4.988,1.944,1.944,0,0,1,.994,4.327,2.289,2.289,0,0,1,.46,3.05H0V2.687H.423V2.576c0-.119.007-.23.014-.334H0V1.87H.49A2.358,2.358,0,0,1,1.1.616,1.959,1.959,0,0,1,2.568,0a2.108,2.108,0,0,1,.988.238l-.149.49A1.717,1.717,0,0,0,2.575.52,1.292,1.292,0,0,0,1.6.928a1.764,1.764,0,0,0-.446.943H3.221v.371H1.084c-.007.1-.015.208-.015.312v.134H3.221V3.05h-2.1a1.781,1.781,0,0,0,.408.972,1.409,1.409,0,0,0,1.046.431,1.925,1.925,0,0,0,.906-.245Z" transform="translate(5.073 4.695)" fill="#f9fbfb"/>
+    </g>
+    <g id="moneta-3" data-name="moneta" transform="matrix(0.951, 0.309, -0.309, 0.951, 197.336, 36.36)">
+      <g transform="matrix(0.95, -0.31, 0.31, 0.95, -205, 29.42)" filter="url(#Ellisse_107-3)">
+        <circle id="Ellisse_107-6" data-name="Ellisse 107" cx="5.538" cy="5.538" r="5.538" transform="matrix(0.95, 0.31, -0.31, 0.95, 204.06, 35.37)" fill="url(#linear-gradient)"/>
+      </g>
+      <path id="Tracciato_136-3" data-name="Tracciato 136" d="M2.778,3.6a1.539,1.539,0,0,1-.851.24A1.5,1.5,0,0,1,.766,3.333,1.764,1.764,0,0,1,.354,2.35H0V2.07H.326V1.984c0-.092.005-.177.011-.257H0V1.441H.377A1.816,1.816,0,0,1,.846.475,1.509,1.509,0,0,1,1.978,0a1.624,1.624,0,0,1,.761.183L2.624.56A1.323,1.323,0,0,0,1.984.4a1,1,0,0,0-.755.314,1.359,1.359,0,0,0-.343.726h1.6v.286H.835c-.006.074-.011.16-.011.24v.1H2.481v.28H.863a1.372,1.372,0,0,0,.315.749,1.086,1.086,0,0,0,.806.332,1.483,1.483,0,0,0,.7-.189Z" transform="translate(3.908 3.617)" fill="#f9fbfb"/>
+    </g>
+    <g id="banconota-2" data-name="banconota" transform="translate(26.917 63.46) rotate(-15)">
+      <g id="Raggruppa_14-2" data-name="Raggruppa 14" transform="translate(0 0)">
+        <g transform="matrix(0.97, 0.26, -0.26, 0.97, -16.33, -69.04)" filter="url(#Rettangolo_274-2)">
+          <rect id="Rettangolo_274-4" data-name="Rettangolo 274" width="35.525" height="17.731" rx="1" transform="translate(33.64 62.47) rotate(-15)" fill="url(#linear-gradient)"/>
+        </g>
+        <path id="Tracciato_43-2" data-name="Tracciato 43" d="M4.465,5.789A2.474,2.474,0,0,1,3.1,6.175a2.407,2.407,0,0,1-1.866-.818A2.834,2.834,0,0,1,.569,3.776H0v-.45H.524V3.189c0-.147.008-.285.018-.414H0v-.46H.606A2.919,2.919,0,0,1,1.359.763,2.425,2.425,0,0,1,3.179,0,2.61,2.61,0,0,1,4.4.294L4.218.9A2.126,2.126,0,0,0,3.188.644a1.6,1.6,0,0,0-1.213.5,2.184,2.184,0,0,0-.552,1.167H3.988v.46H1.342c-.009.12-.018.257-.018.386v.165H3.988v.45h-2.6a2.205,2.205,0,0,0,.506,1.2,1.745,1.745,0,0,0,1.295.533,2.383,2.383,0,0,0,1.122-.3Z" transform="translate(15.541 5.807)" fill="#f9fbfb"/>
+      </g>
+    </g>
+  </g>
+</svg>

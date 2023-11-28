@@ -1,0 +1,108 @@
+@import 'global-env';
+
+/*** Init Fonts ***/
+@font-face {
+    font-family: 'Kievit Pro';
+    src: url(#{$absolute-assets-path} + ('/fonts/kievit-pro/KievitPro-Regular.otf'));
+    src: url(#{$absolute-assets-path} + ('/fonts/kievit-pro/KievitPro-Regular.otf')) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-feature-settings: "lnum" 1;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+@font-face {
+    font-family: 'Kievit Pro Italic';
+    src: url(#{$absolute-assets-path} + ('/fonts/kievit-pro/KievitPro-Italic.otf'));
+    src: url(#{$absolute-assets-path} + ('/fonts/kievit-pro/KievitPro-Italic.otf')) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-feature-settings: "lnum" 1;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+@font-face {
+    font-family: 'Kievit Pro Light';
+    src: url(#{$absolute-assets-path} + ('/fonts/kievit-pro/KievitPro-Light.otf'));
+    src: url(#{$absolute-assets-path} + ('/fonts/kievit-pro/KievitPro-Light.otf')) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-feature-settings: "lnum" 1;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+@font-face {
+    font-family: 'Kievit Pro Bold';
+    src: url(#{$absolute-assets-path} + ('/fonts/kievit-pro/KievitPro-Bold.otf'));
+    src: url(#{$absolute-assets-path} + ('/fonts/kievit-pro/KievitPro-Bold.otf')) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-feature-settings: "lnum" 1;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+@font-face {
+    font-family: 'Kievit Pro Medium';
+    src: url(#{$absolute-assets-path} + ('/fonts/kievit-pro/KievitPro-Medium.otf'));
+    src: url(#{$absolute-assets-path} + ('/fonts/kievit-pro/KievitPro-Medium.otf')) format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-feature-settings: "lnum" 1;
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/*** Font & Text values ***/
+$bper-uppercase: (
+    --unnamed-text-transform-uppercase: uppercase
+);
+
+$bper-font: (
+    --unnamed-font-family-kievit-pro: 'Kievit Pro',
+    --unnamed-font-style-normal: normal,
+    --unnamed-font-weight-bold: bold,
+    --unnamed-font-weight-normal: normal
+);
+
+$bper-font-size: (
+    --unnamed-font-size-12: 12px,
+    --unnamed-font-size-14: 14px,
+    --unnamed-font-size-16: 16px,
+    --unnamed-font-size-18: 18px,
+    --unnamed-font-size-20: 20px,
+    --unnamed-font-size-24: 24px,
+    --unnamed-font-size-28: 28px,
+    --unnamed-font-size-34: 34px,
+    --unnamed-font-size-36: 36px,
+    --unnamed-font-size-48: 48px
+);
+
+$bper-char-spacing: (
+    --unnamed-character-spacing-0: 0px,
+    --unnamed-character-spacing-0-14: 0.14px,
+    --unnamed-character-spacing--0-03: -0.03px,
+    --unnamed-character-spacing--0-07: -0.07px,
+    --unnamed-character-spacing--0-19: -0.19px
+);
+
+$bper-line-spacing: (
+    --unnamed-line-spacing-16: 16px,
+    --unnamed-line-spacing-20: 20px,
+    --unnamed-line-spacing-24: 24px,
+    --unnamed-line-spacing-26: 26px,
+    --unnamed-line-spacing-28: 28px,
+    --unnamed-line-spacing-32: 32px,
+    --unnamed-line-spacing-36: 36px,
+    --unnamed-line-spacing-40: 40px,
+    --unnamed-line-spacing-48: 48px,
+    --unnamed-line-spacing-56: 56px
+);

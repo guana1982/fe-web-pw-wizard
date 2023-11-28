@@ -1,0 +1,91 @@
+@import "src/scss/variables";
+.sidenav {
+    &-structure,
+    &-primary,
+    &-secondary,
+    &-overlay {
+        width: 100%;
+        height: 100%;
+
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 10;
+    }
+
+    &-structure {
+        position: relative;
+    }
+
+    &-primary {        
+        background: $background-green-gradient;
+        overflow-x: hidden;
+        transition: width .3s ease-in-out;
+
+        &-expand {
+            display: none;
+        }
+    }
+
+    &-secondary {
+        width: $sidebar-secondary-width;
+        left: -$sidebar-secondary-width;
+        background-color: #FFF;
+        z-index: 9;
+        transition: left .4s ease-in-out;
+
+        &.is-open {
+            left: 100%;
+
+            & + .sidenav-overlay {
+                display: block;
+            }
+        }
+    }
+
+    &-overlay {
+        display: none;
+        width: 100vw;
+        background-color: #000;
+        opacity: .3;
+        left: 100%;
+        z-index: 1;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    
+    .sidenav {
+        &-primary {
+
+            &-logo {
+                display: none;
+            }
+
+            &-expand {
+                display: block;
+            }
+
+            &.is-open {
+                width: $sidebar-width;
+
+                &-logo {
+                    display: block;
+                }
+
+                &-expand {
+                    display: none;
+                }
+
+                & + .sidenav-secondary.is-open {
+                    left: $sidebar-width;
+                }
+
+                & + .sidenav-overlay {
+                    display: block;
+                }
+            }     
+        }
+    }
+    
+}

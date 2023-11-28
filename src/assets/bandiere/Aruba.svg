@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Tracciato_174" data-name="Tracciato 174" d="M.062,12.749a12,12,0,1,0,12-12,12,12,0,0,0-12,12" transform="translate(-0.062 -0.749)" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Aruba" transform="translate(-0.062 -0.749)">
+    <g id="Raggruppa_7" data-name="Raggruppa 7" transform="translate(0.062 0.749)" clip-path="url(#clip-path)">
+      <rect id="Rettangolo_17" data-name="Rettangolo 17" width="39.29" height="25.526" transform="translate(-2.667 -0.763)" fill="#3282be"/>
+      <path id="Tracciato_172" data-name="Tracciato 172" d="M4.017.9l-1,2.863L.121,4.813l2.884,1L4.017,8.752,5.05,5.793l2.863-.979L5.05,3.78Z" transform="translate(0.517 0.683)" fill="#fff"/>
+      <path id="Tracciato_173" data-name="Tracciato 173" d="M3.451.955l-.829,2.4L.179,4.237,2.6,5.077l.85,2.465.861-2.486,2.4-.818-2.4-.861Z" transform="translate(1.083 1.261)" fill="#ff282a"/>
+      <rect id="Rettangolo_18" data-name="Rettangolo 18" width="35.29" height="1.313" transform="translate(-0.667 15.885)" fill="#ffdc00"/>
+      <rect id="Rettangolo_19" data-name="Rettangolo 19" width="35.29" height="1.313" transform="translate(-0.667 18.533)" fill="#ffdc00"/>
+    </g>
+  </g>
+</svg>

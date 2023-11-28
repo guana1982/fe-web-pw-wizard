@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Tracciato_6824" data-name="Tracciato 6824" d="M.556,12.749a12,12,0,1,0,12-12,12,12,0,0,0-12,12" transform="translate(-0.556 -0.749)" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Repubblica_Ceca" data-name="Repubblica Ceca" transform="translate(-0.556 -0.749)">
+    <g id="Raggruppa_213" data-name="Raggruppa 213" transform="translate(0.556 0.749)" clip-path="url(#clip-path)">
+      <rect id="Rettangolo_517" data-name="Rettangolo 517" width="35.968" height="24" transform="translate(-5.984 0)" fill="#fff"/>
+      <rect id="Rettangolo_518" data-name="Rettangolo 518" width="35.968" height="12" transform="translate(-5.984 12)" fill="#d7081a"/>
+      <path id="Tracciato_6823" data-name="Tracciato 6823" d="M0,24.749v-24l17.984,12Z" transform="translate(-5.984 -0.746)" fill="#112c7e"/>
+    </g>
+  </g>
+</svg>

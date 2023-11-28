@@ -1,0 +1,57 @@
+@import "src/scss/variables";
+
+.modal-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  .modal-header {
+    display: flex;
+    padding: 24px 24px 0;
+
+    &.no-title {
+      padding: 24px 32px 0px;
+    }
+
+    h2 {
+      color: map-get($bper-palette, primary, --primary-500);
+      font-family: 'Kievit Pro';
+      font-size: 20px;
+      font-weight: bold;
+      line-height: 25px;
+      margin-right: 12px;
+      -moz-osx-font-smoothing: grayscale;
+    }
+
+    i {
+      cursor: pointer;
+      color: map-get($bper-palette, primary, --primary-500);
+      font-size: 24px;
+      margin-left: auto;
+      padding: 0;
+    }
+  }
+
+  mat-dialog-content {
+    flex: 1;
+  }
+
+  .modal-footer {
+    align-items: center;
+    display: flex;
+    gap: 24px;
+    padding: 32px 32px 24px;
+
+    &.center {
+      justify-content: center;
+    }
+
+    &.space-between {
+      justify-content: space-between;
+    }
+
+    &.vertical {
+      flex-direction: column;
+    }
+  }
+}

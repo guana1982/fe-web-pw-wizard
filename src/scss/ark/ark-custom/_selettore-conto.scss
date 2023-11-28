@@ -1,0 +1,448 @@
+@mixin labelMieiConti() {
+    font-size: 14px;
+    font-family: 'Kievit Pro Medium';
+    line-height: 20px;
+}
+
+@mixin arrow-icon($direction) {
+    .mat-select-arrow-wrapper {
+        // display: block;
+        position: relative;
+        top: 15px;
+        .mat-select-arrow {
+            // removing default arrow
+            margin: 0 !important;
+            position: relative;
+            height: 24px;
+            width: 24px;
+            border: 0;
+            transform-origin: center;
+            transition: transform 0.2s ease-in-out;
+            @if $direction == down {
+                transform: rotate(0deg);
+            } @else {
+                transform: rotate(-180deg);
+            }
+
+            &::before {
+                content: '\e947';
+                font-family: bper-icons;
+                color: map-get($bper-palette, accent, --accent-90);
+                font-size: 24px;
+            }
+        }
+    }
+}
+
+// Gestione dell'icona
+selettore-conto {
+    @include arrow-icon(down);
+    .mat-form-field.mat-form-field-type-mat-select {
+        &.mat-focused {
+            @include arrow-icon(up);
+        }
+
+        .mat-form-field-wrapper .mat-form-field-flex .mat-form-field-infix {
+            mat-select[aria-expanded='false'] {
+                @include arrow-icon(down);
+            }
+        }
+    }
+    .mat-select-arrow {
+        font-size: 24px;
+    }
+}
+
+// Rimozione underline
+selettore-conto .mat-form-field-underline {
+    display: none;
+    height: 0 !important;
+}
+
+// Rimozione bordo al focus
+selettore-conto .mat-form-field.mat-focused .mat-form-field-wrapper .mat-form-field-flex .mat-form-field-infix {
+    border-style: hidden !important;
+}
+
+// Rimozione padding al mat-form-field
+selettore-conto .mat-form-field-appearance-legacy .mat-form-field-wrapper {
+    padding-bottom: 0 !important;
+    padding-top: 0 !important;
+}
+
+// Gestione del mat-form-field
+selettore-conto .mat-form-field {
+    width: 278px;
+
+    .mat-form-field-wrapper .mat-form-field-flex .mat-form-field-infix {
+        background: map-get($bper-palette, --white) 0 0 no-repeat padding-box;
+        box-shadow: 0 12px 24px #00515729;
+        border: 1px solid map-get($bper-palette, secondary, --secondary-10);
+        border-radius: 16px;
+        // display: flex;
+        display: block;
+        padding: 13px 12px 13px 24px;
+        align-items: center;
+        height: 82px;
+        mat-select {
+            display: grid;
+            // margin: 0 15px; //RIMOSSO PER AGGIUSTARE CONTENUTO DEL TRIGGER
+            .mat-select-value {
+                color: map-get($bper-palette, primary, --primary-500) !important;
+                .mat-select-value-text {
+                    position: absolute;
+                    top: 0 !important;
+                    max-width: 85%;
+                    font-family: 'Kievit Pro Bold';
+                }
+            }
+        }
+    }
+}
+
+// Gestione del name se mat-form-field disabilitato
+selettore-conto
+    .mat-form-field.mat-form-field-disabled
+    .mat-form-field-wrapper
+    .mat-form-field-flex
+    .mat-form-field-infix
+    mat-select
+    .mat-select-value {
+    color: map-get($bper-palette, primary, --primary-500) !important;
+}
+
+// Gestione del border se mat-form-field disabilitato
+selettore-conto .mat-form-field.mat-form-field-disabled .mat-form-field-wrapper .mat-form-field-flex {
+    border-radius: 16px;
+    border: 1px solid map-get($bper-palette, secondary, --secondary-10);
+}
+
+// Gestione dell'arrow se mat-form-field disabilitato
+selettore-conto
+    .mat-form-field.mat-form-field-disabled
+    .mat-form-field-wrapper
+    .mat-form-field-flex
+    .mat-form-field-infix
+    mat-select
+    .mat-select-arrow {
+    display: none;
+}
+
+// Gestione del pannello con le varie opzioni
+.mat-select-panel.selettore-conto-panel {
+    position: absolute;
+    top: 70px !important;
+    left: -7px !important;
+    // min-width: 278px !important;
+    max-width: 278px !important;
+    box-shadow: 0 3px 6px #00000029 !important;
+
+    mat-option {
+        height: 70px !important;
+        margin: 7px 0;
+
+        &.mat-selected:not(.mat-option-multiple) {
+            background-color: map-get($bper-palette, primary, --primary-20) !important;
+            border-radius: 8px !important;
+
+            .selected-option {
+                .checkMark {
+                    font-size: 24px;
+                    color: map-get($bper-palette, secondary, --secondary-90);
+                }
+            }
+        }
+
+        &:hover,
+        &:hover.mat-active {
+            background-color: map-get($bper-palette, primary, --primary-20);
+            border-radius: 8px !important;
+        }
+
+        .mat-option-text {
+            font-family: 'Kievit Pro Medium';
+            color: map-get($bper-palette, primary, --primary-500);
+        }
+
+        .selected-option {
+            display: flex;
+            flex-direction: row;
+            align-content: center;
+            justify-content: space-between;
+            align-items: center;
+            padding: 0 8px;
+
+            .options {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                overflow: hidden;
+
+                span {
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+
+                span.account-name {
+                    display: flex;
+                    align-items: center;
+                    width: 100%;
+                }
+
+                span:not([holder]) {
+                    line-height: normal;
+                    // margin-bottom: 6px;
+                }
+
+                span.holder {
+                    font-family: 'Kievit Pro';
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+}
+
+selettore-conto mat-select-trigger {
+    .trigger-container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        span.holder {
+            font-family: 'Kievit Pro';
+            font-size: 12px;
+        }
+
+        .placeholder-text {
+            &.labelMieiConti { @include labelMieiConti() }
+        }
+    }
+
+    .selected {
+        display: flex;
+        align-items: baseline;
+        margin-bottom: 8px;
+        -moz-osx-font-smoothing: grayscale;
+        span {
+            overflow: hidden;
+            text-overflow: ellipsis;
+            margin-bottom: 0 !important;
+        }
+    }
+}
+
+// Gestione del name se mat-form-field disabilitato
+selettore-conto {
+    .mat-form-field.mat-form-field-disabled .mat-form-field-wrapper .mat-form-field-flex .mat-form-field-infix mat-select {
+        .mat-select-value {
+            color: map-get($bper-palette, primary, --primary-500) !important;
+        }
+    }
+}
+
+// Gestione del border se mat-form-field disabilitato
+selettore-conto .mat-form-field.mat-form-field-disabled .mat-form-field-wrapper .mat-form-field-flex {
+    border-radius: 16px;
+    border: 1px solid map-get($bper-palette, secondary, --secondary-10);
+}
+
+// Gestione dell'arrow se mat-form-field disabilitato
+selettore-conto {
+    .mat-form-field.mat-form-field-disabled .mat-form-field-wrapper .mat-form-field-flex .mat-form-field-infix mat-select {
+        .mat-select-arrow {
+            display: none;
+        }
+    }
+}
+
+.mat-select-disabled .mat-select-trigger {
+    width: 100%;
+}
+
+// Gestione del pannello con le varie opzioni
+.mat-select-panel.selettore-conto-panel {
+    position: absolute;
+    top: 70px !important;
+    left: -7px !important;
+}
+
+.holder {
+    font-family: 'Kievit Pro';
+    font-size: 12px;
+    color: map-get($bper-palette, neutral, --neutral-300);
+    width: 100%;
+    overflow: hidden;
+    text-overflow: clip;
+    display: -webkit-box;
+    white-space: break-spaces;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+selettore-conto {
+    .mat-form-field.is-miei-conti .mat-form-field-wrapper .mat-form-field-flex .mat-form-field-infix {
+        // z-index: 1 !important;
+    }
+
+    div.selettore-conto-miei-conti {
+        .less-info-conto {
+            .info-container.less-info {
+                display: none;
+            }
+        }
+    }
+}
+
+// MEDIA QUERIES
+
+// TABLET
+@media screen and (max-width: $bp-tablet) {
+    selettore-conto .row {
+        row-gap: 0;
+        column-gap: 0;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    div.info-conto {
+        position: relative;
+        right: 5%;
+
+        .info-container:nth-child(3) {
+            display: none;
+        }
+    }
+
+    // SELETTORE CONTO BONIFICO VERSO I MIEI CONTI
+    selettore-conto-miei-conti {
+        .container .selettore-miei-conti {
+            flex-direction: column;
+        }
+
+        .selettore-miei-conti {
+            selettore-conto {
+                .mat-form-field {
+                    width: 100%;
+                }
+
+                .custom-width {
+                    width: 100% !important;
+                    display: unset;
+
+                    .selettore-conto-miei-conti {
+                        flex-direction: column-reverse;
+
+                        .less-info-conto {
+                            height: 130px;
+                            border-radius: 16px 16px 0 0;
+                            right: 0;
+                            bottom: 27px;
+                            background: transparent linear-gradient(180deg, rgba(200, 223, 225, 0.5) 10%, #ffffff 100%) 0 0 no-repeat
+                                padding-box !important;
+
+                            .info-container.less-info {
+                                display: block;
+                            }
+                        }
+                    }
+                }
+            }
+
+            i {
+                transform: rotate(90deg);
+            }
+        }
+    }
+}
+
+// MOBILE
+@media screen and (max-width: $bp-mobile) {
+    selettore-conto .row {
+        row-gap: 0;
+        display: unset;
+    }
+
+    selettore-conto .row.selettore-container {
+        display: block;
+        position: relative;
+        bottom: 0;
+    }
+
+    selettore-conto .mat-form-field {
+        width: 100% !important;
+    }
+
+    .mat-select-panel.selettore-conto-panel {
+        max-width: none !important;
+        min-width: calc(100% + 32px) !important;
+    }
+
+    selettore-conto .row {
+        $info-conto: 102%;
+
+        .cardSelezione {
+            width: 100%;
+            position: absolute;
+            top: 0;
+        }
+
+        div.info-conto {
+            width: $info-conto;
+            height: 130px !important;
+            background: transparent linear-gradient(180deg, rgba(200, 223, 225, 0.5) 10%, #ffffff 100%) 0 0 no-repeat padding-box;
+            position: relative;
+            top: 50px;
+            right: calc((#{$info-conto} - 100%) / 2);
+            margin-bottom: 74px;
+
+            .info-container {
+                position: relative;
+                top: 17px;
+            }
+
+            .info-container:nth-child(3) {
+                display: none;
+            }
+        }
+
+        p.update {
+            position: absolute;
+            right: 24px;
+        }
+    }
+
+    // SELETTORE CONTO BONIFICO VERSO I MIEI CONTI
+    selettore-conto-miei-conti {
+        .selettore-miei-conti {
+            selettore-conto .custom-width {
+                width: 100% !important;
+                display: unset;
+
+                .selettore-conto-miei-conti {
+                    flex-direction: column-reverse;
+
+                    .less-info-conto {
+                        height: 130px;
+                        border-radius: 16px 16px 0 0;
+                        right: 4px;
+                        bottom: 27px;
+                        background: transparent linear-gradient(180deg, rgba(200, 223, 225, 0.5) 10%, #ffffff 100%) 0 0 no-repeat
+                            padding-box !important;
+
+                        .info-container.less-info {
+                            display: block;
+                        }
+                    }
+                }
+            }
+
+            i {
+                height: 0 !important;
+                position: relative !important;
+                bottom: 24px !important;
+                margin: 8px 0 10px 0 !important;
+            }
+        }
+    }
+}

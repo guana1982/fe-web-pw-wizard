@@ -1,0 +1,27 @@
+<svg id="Icon_40pt_Mail" data-name="Icon/40pt/Mail" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="96" height="96" viewBox="0 0 96 96">
+  <defs>
+    <filter id="Tracciato_431" x="9.523" y="30.094" width="76.954" height="60" filterUnits="userSpaceOnUse">
+      <feOffset dy="2" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feFlood flood-color="#05696f" flood-opacity="0.239"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Tracciato_85845" x="21.598" y="9.906" width="52.808" height="26.796" filterUnits="userSpaceOnUse">
+      <feOffset dy="2" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="2" result="blur-2"/>
+      <feFlood flood-color="#05696f" flood-opacity="0.239"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <rect id="Rettangolo_568" data-name="Rettangolo 568" width="96" height="96" fill="none"/>
+  <g id="Raggruppa_7826" data-name="Raggruppa 7826" transform="translate(15.523 13.906)">
+    <g transform="matrix(1, 0, 0, 1, -15.52, -13.91)" filter="url(#Tracciato_431)">
+      <path id="Tracciato_431-2" data-name="Tracciato 431" d="M63.744,10h-49.6a7.677,7.677,0,0,0-7.678,7.678V50.322A7.677,7.677,0,0,0,14.146,58h49.6a7.677,7.677,0,0,0,7.678-7.678V17.678A7.677,7.677,0,0,0,63.744,10Zm-49.6,4.8h49.6a2.8,2.8,0,0,1,1.332.37L41.75,36.671a4.387,4.387,0,0,1-5.611,0L12.814,15.17A2.8,2.8,0,0,1,14.146,14.8ZM66.622,50.322A2.881,2.881,0,0,1,63.744,53.2h-49.6a2.881,2.881,0,0,1-2.878-2.878V20.272L32.887,40.2A9.216,9.216,0,0,0,45,40.2L66.622,20.272Z" transform="translate(9.06 24.09)" fill="#005157"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, -15.52, -13.91)" filter="url(#Tracciato_85845)">
+      <path id="Tracciato_85845-2" data-name="Tracciato 85845" d="M5.032,17.372c3.5,0,5.49-1.694,5.49-4.568,0-2.53-1.48-3.474-3.367-4.31C5.611,7.808,4.5,7.658,4.5,6.8c0-.708.472-.965,1.437-.965a6.182,6.182,0,0,1,2.659.815L10.115,3.82a7.263,7.263,0,0,0-4.5-1.244C2.759,2.576.658,4.249.658,6.8A4.493,4.493,0,0,0,3.51,11.239c1.694.858,3.109.922,3.109,1.823,0,.665-.558,1.051-1.758,1.051a5.617,5.617,0,0,1-2.916-.944L.336,16A7.894,7.894,0,0,0,5.032,17.372Zm6.776-.257h3.645l.729-5.811c.107-.922.172-1.994.172-2.144H16.4c.021.129.279,1.222.515,2.1l1.608,5.854h4.053l1.651-5.876c.279-.986.515-1.93.536-2.08H24.8c0,.15.107,1.072.236,2.144l.665,5.811h4.182L27.913,2.833H23.925l-2.509,8.106c-.279.9-.6,2.23-.622,2.316h-.043c-.021-.086-.322-1.415-.579-2.316l-2.38-8.106H13.8Zm23.846.257c3.5,0,5.49-1.694,5.49-4.568,0-2.53-1.48-3.474-3.367-4.31-1.544-.686-2.659-.836-2.659-1.694,0-.708.472-.965,1.437-.965a6.182,6.182,0,0,1,2.659.815L40.737,3.82a7.263,7.263,0,0,0-4.5-1.244c-2.852,0-4.954,1.673-4.954,4.224a4.493,4.493,0,0,0,2.852,4.439c1.694.858,3.109.922,3.109,1.823,0,.665-.558,1.051-1.758,1.051a5.617,5.617,0,0,1-2.916-.944L30.958,16A7.894,7.894,0,0,0,35.654,17.372Z" transform="translate(27.26 11.33)" fill="#005157"/>
+    </g>
+  </g>
+</svg>

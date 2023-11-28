@@ -1,0 +1,71 @@
+<svg id="Icon_40px_Document" data-name="Icon/40px/Document" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="40" height="43.022" viewBox="0 0 40 43.022">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#60cc9f"/>
+      <stop offset="1" stop-color="#3a888c"/>
+    </linearGradient>
+    <filter id="Tracciato_585" x="0.629" y="0.978" width="38.742" height="42.044" filterUnits="userSpaceOnUse">
+      <feOffset dy="2" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feFlood flood-color="#05696f" flood-opacity="0.239"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Tracciato_586" x="4.882" y="15.938" width="30.081" height="14" filterUnits="userSpaceOnUse">
+      <feOffset dy="2" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="2" result="blur-2"/>
+      <feFlood flood-color="#05696f" flood-opacity="0.239"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Tracciato_587" x="4.96" y="11.244" width="30.081" height="14" filterUnits="userSpaceOnUse">
+      <feOffset dy="2" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="2" result="blur-3"/>
+      <feFlood flood-color="#05696f" flood-opacity="0.239"/>
+      <feComposite operator="in" in2="blur-3"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Tracciato_588" x="4.96" y="6.55" width="30.081" height="14" filterUnits="userSpaceOnUse">
+      <feOffset dy="2" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="2" result="blur-4"/>
+      <feFlood flood-color="#05696f" flood-opacity="0.239"/>
+      <feComposite operator="in" in2="blur-4"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Tracciato_589" x="4.882" y="20.634" width="20.95" height="14" filterUnits="userSpaceOnUse">
+      <feOffset dy="2" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="2" result="blur-5"/>
+      <feFlood flood-color="#05696f" flood-opacity="0.239"/>
+      <feComposite operator="in" in2="blur-5"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Tracciato_590" x="4.882" y="25.328" width="20.95" height="14" filterUnits="userSpaceOnUse">
+      <feOffset dy="2" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="2" result="blur-6"/>
+      <feFlood flood-color="#05696f" flood-opacity="0.239"/>
+      <feComposite operator="in" in2="blur-6"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <rect id="Rettangolo_599" data-name="Rettangolo 599" width="40" height="40" fill="none"/>
+  <g id="Raggruppa_7856" data-name="Raggruppa 7856">
+    <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Tracciato_585)">
+      <path id="Tracciato_585-2" data-name="Tracciato 585" d="M30.24,4.978H9.76A2.916,2.916,0,0,0,6.629,7.616V32.384A2.916,2.916,0,0,0,9.76,35.022H24.4l.054-.051,8.855-8.4.059-.056V7.616A2.916,2.916,0,0,0,30.24,4.978ZM24.457,32.144V27.333a.843.843,0,0,1,.9-.761h4.971Zm6.686-7.449H25.36a2.916,2.916,0,0,0-3.131,2.638v5.812H9.76a.843.843,0,0,1-.9-.761V7.616a.843.843,0,0,1,.9-.761H30.24a.843.843,0,0,1,.9.761Z" fill="url(#linear-gradient)"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Tracciato_586)">
+      <path id="Tracciato_586-2" data-name="Tracciato 586" d="M27.963,19.938H11.882a1,1,0,1,0,0,2H27.963a1,1,0,0,0,0-2Z" fill="url(#linear-gradient)"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Tracciato_587)">
+      <path id="Tracciato_587-2" data-name="Tracciato 587" d="M28.041,15.244H11.96a1,1,0,1,0,0,2H28.041a1,1,0,1,0,0-2Z" fill="url(#linear-gradient)"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Tracciato_588)">
+      <path id="Tracciato_588-2" data-name="Tracciato 588" d="M28.041,10.55H11.96a1,1,0,1,0,0,2H28.041a1,1,0,0,0,0-2Z" fill="url(#linear-gradient)"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Tracciato_589)">
+      <path id="Tracciato_589-2" data-name="Tracciato 589" d="M18.832,24.634h-6.95a1,1,0,1,0,0,2h6.95a1,1,0,0,0,0-2Z" fill="url(#linear-gradient)"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Tracciato_590)">
+      <path id="Tracciato_590-2" data-name="Tracciato 590" d="M18.832,29.328h-6.95a1,1,0,1,0,0,2h6.95a1,1,0,0,0,0-2Z" fill="url(#linear-gradient)"/>
+    </g>
+  </g>
+</svg>

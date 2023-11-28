@@ -1,0 +1,52 @@
+bper-tag {
+    width: 100% !important;
+
+    .tag-content {
+        display: inline-block;
+        opacity: 1;
+        white-space: nowrap;
+        color: map-get($bper-palette, primary, --primary-500);
+        height: 22px;
+        padding: 4px 12px;
+        border-radius: 8px;
+        font-size: 12px;
+        line-height: 14px;
+
+        &.neutral {
+            background-color: map-get($bper-palette, primary, --primary-20);
+        }
+
+        &.green,
+        &.success {
+            background-color: map-get($bper-palette, secondary, --secondary-10);
+        }
+
+        &.red,
+        &.error {
+            background-color: map-get($bper-palette, error, --error-20);
+        }
+
+        &.orange {
+            background-color: map-get($bper-palette, accent, --accent-20);
+        }
+
+        &.yellow,
+        &.warning {
+            background-color: map-get($bper-palette, warning, --warning-20);
+        }
+
+        &.grey {
+            background-color: map-get($bper-palette, neutral, --neutral-10);
+        }
+
+        &.pill {
+            height: 20px;
+            border-radius: 10px;
+            padding: 4px 7px;
+        }
+
+        &.new {
+            background: transparent linear-gradient(180deg, #f06400 0%, #d04900 100%) 0% 0% no-repeat padding-box;
+        }
+    }
+}

@@ -1,0 +1,80 @@
+.vis-ink {
+  font-family: $root-font-family;
+  color: $primaryColor;
+  // font-size: $font-size-lg;
+  @include font-size($font-size-lg);
+  span {
+    line-height: 1.5 !important;
+    margin-right: 1.3em !important;
+  }
+  // i{
+  // }
+}
+
+.vis-ink-prossapp {
+  font-family: $root-font-family;
+  color: $primaryColor;
+  @include font-size($font-size-lg);
+  margin-bottom: inherit !important;
+  span {
+    line-height: 0.5em !important;
+    // margin-right: 1.3em !important;
+    margin-left: 1.3em !important;
+  }
+  i {
+    left: 0em;
+  }
+  // i{
+  // }
+}
+
+$colorBlue: $primaryColor;
+$colorBlueLight: $accentColor;
+$colorGreen: $success-ubi;
+$colorRed: $error-bper;
+$colorGray: map-get($bper-palette, --grey);
+
+.vis-ink-legend {
+  font-family: $root-font-family;
+  color: $primaryColor;
+  @include font-size($font-size-lg);
+  // font-size: $font-size-lg;
+  margin-bottom: inherit !important;
+  span {
+    line-height: 0.5em !important;
+    // margin-right: 1.3em !important;
+    margin-left: 1.3em !important;
+  }
+  i {
+    left: 0em;
+    &:before {
+      font-size: 24px;
+      content: "\25CF";
+    }
+  }
+  // Si definiscono i colori delle icone 
+  &--blue i:before {
+    color: $colorBlue;
+  }
+  &--blueAccent i:before {
+    color: $colorBlueLight;
+  }
+  &--green i:before {
+    color: $colorGreen;
+  } 
+  &--red i:before {
+    color: $colorRed;
+  }
+  &--gray i:before {
+    color: $colorGray;
+  }
+}
+
+.vis-info {
+  div {
+    display: block;
+    width: 10em;
+    font-size: $font-size-sm;
+    color: $primaryColor
+  }
+}

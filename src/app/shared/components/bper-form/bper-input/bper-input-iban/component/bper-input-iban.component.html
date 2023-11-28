@@ -1,0 +1,45 @@
+<mat-form-field
+    class="matField"
+    [appearance]="appearance"
+    [floatLabel]="floatLabelNever ? 'never' : 'always'"
+    [hideRequiredMarker]="true"
+>
+    <mat-label>{{ label }}</mat-label>
+    <input
+        #inputIban
+        matInput
+        type="text"
+        [placeholder]="placeholder"
+        [formControl]="control"
+        [required]="required"
+        [maxLength]="maxLength"
+        [minLength]="minLength"
+        [id]="id"
+        [name]="name"
+        (change)="validateInput($event)"
+        validateInput="specialChar"
+        autocomplete="off"
+    />
+
+    <mat-error
+            fxLayout="row"
+            fxLayoutAlign="start center"
+            *ngIf="control.invalid"
+    >
+        <i [class]="errorIcon"></i>
+        <span>{{ getError() | translate }}</span>
+    </mat-error>
+</mat-form-field>
+
+<div
+    class="col-12 redIban"
+    *ngIf="(isRedIban$ | async) && control.valid"
+>
+    Iban non aggiornato
+    <bper-tool-tip
+        descrizione="Questo IBAN non è aggiornato.
+          Potrai comunque portare a termine il bonifico ma ti consigliamo di contattare il beneficiario, che ti fornirà
+          il nuovo IBAN da utilizzare per i prossimi pagamenti."
+    >
+    </bper-tool-tip>
+</div>

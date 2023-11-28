@@ -1,0 +1,46 @@
+
+bper-chip {
+
+  @mixin medium-size {
+
+    &.mediumSize {
+      height: 40px;
+      font-size: 16px;
+    }
+  }
+
+  @mixin large-size {
+    
+    &.largeSize {
+      height: 48px;
+      font-size: 18px;
+    }
+  }
+
+  mat-chip {
+
+    width: 100%;
+    background: map-get($bper-palette, primary, --primary-20) 0% 0% no-repeat padding-box !important;
+    color: map-get($bper-palette, primary, --primary-500) !important;
+    padding: 13px 24px !important;
+    border-radius: 12px;
+    text-align: left;
+    opacity: 1 !important;
+    transition: .3s all ease-out !important;
+
+    &:hover:not([disabled]) {
+      background: transparent linear-gradient(180deg, #29696F 0%, #183F42 100%) 0% 0% no-repeat padding-box !important;
+      color: map-get($bper-palette, --white) !important;
+    }
+
+    &:focus {
+      background: transparent linear-gradient(180deg, #29696F 0%, #183F42 100%) 0% 0% no-repeat padding-box !important;
+      color: map-get($bper-palette, --white) !important;
+    }
+
+
+    @include medium-size();
+
+    @include large-size();
+  }
+}

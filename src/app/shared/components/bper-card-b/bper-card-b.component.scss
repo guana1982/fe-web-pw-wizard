@@ -1,0 +1,124 @@
+@import "src/scss/variables";
+
+@mixin hover() {
+
+    .title {
+        font-size: 20px;
+    }
+
+    .subtitle {
+        font-size: 16px;
+    }
+
+    .content {
+        .value {
+            font-size: 20px;
+        }
+    }
+}
+
+div.card-wrapper {
+    position: relative;
+    z-index: 0;
+
+    &.full-width {
+        width: 100%;
+    }
+
+    &.large-width {
+        width: 278px;
+    }
+
+    &.small-width {
+        width: 216px;
+    }
+
+    .favourite-icon {
+        position: absolute;
+        height: 22px;
+        right: 14px;
+        top: 16px;
+        width: 22px;
+        z-index: 1;
+
+
+        i, i::before {
+            color: #45AE64;
+            font-size: 22px;
+        }
+    }
+
+    div.bper-card-b {
+        background-color: map-get($bper-palette, --white);
+        border: 1px solid map-get($bper-palette, secondary, --secondary-20);
+        border-radius: 18px;
+        box-shadow: 0px 12px 24px #00515729;
+        padding: 16px 14px 12px 16px;
+
+        .tag {
+            position: absolute;
+            left: 14px;
+            top: -10px;
+            z-index: 1;
+        }
+
+        &:hover { @include hover() }
+
+        &.card-pointer {
+            cursor: pointer;
+        }
+
+        &, .title, .subtitle, .content .description, .content .value {
+
+            transform-origin: left;
+            transition: .3s all ease-out;
+        }
+
+        .title {
+            align-items: center;
+            color: map-get($bper-palette, primary, --primary-500);
+            font-family: "Kievit Pro Medium";
+            font-size: 18px;
+            line-height: 22px;
+            margin-bottom: 2px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+
+            &.favourite {
+                max-width: calc(100% - 22px - 6px); // 6px di margine fra titolo ed eventuale stella
+            }
+        }
+
+        .subtitle {
+            color: map-get($bper-palette, primary, --primary-500);
+            font-size: 14px;
+            line-height: 17px;
+        }
+
+        .content {
+            margin-top: 11px;
+
+            .description {
+                color: map-get($bper-palette, neutral, --neutral-300);
+                font-size: 12px;
+                line-height: 14px;
+            }
+
+            .value {
+                color: map-get($bper-palette, primary, --primary-500);
+                font-family: "Kievit Pro Bold";
+                font-size: 18px;
+                line-height: 22px;
+            }
+        }
+
+        .cta {
+            bper-button {
+                display: block;
+                width: fit-content;
+                margin-left: auto;
+            }
+        }
+    }
+}

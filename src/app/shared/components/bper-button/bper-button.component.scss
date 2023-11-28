@@ -1,0 +1,23 @@
+@import "src/scss/variables";
+
+.secondary-color {
+    color: map-get($bper-palette, secondary, --secondary-90);
+}
+
+.prevent-click {
+    cursor: default;
+}
+
+i {
+    &.primary, &.primary:before {
+        color: map-get($bper-palette, primary, --primary-500) !important;
+    }
+
+    &.accent, &.accent:before {
+        color: map-get($bper-palette, accent, --accent-90) !important;
+    }
+
+    &.white, &.white:before {
+        color: map-get($bper-palette, --white) !important;
+    }
+}

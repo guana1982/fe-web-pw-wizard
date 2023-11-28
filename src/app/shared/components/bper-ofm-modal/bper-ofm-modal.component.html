@@ -1,0 +1,18 @@
+<div class="modal-container" [id]="id" [class.no-title]="noTitle" [class.no-action]="noActions" [class.has-border]="hasBorder" [class.no-footer]="hasFooter" 
+    role="alertdialog">
+    <div class="modal-header">
+        <div>
+            <h3 class="--primary-500">{{modalTitle}}</h3>
+        </div>
+        <div *ngIf="!notClosable">
+            <img src="assets/bper-svg/Icon_Exit_accet_90.svg" (click)="closeModal()">
+        </div>
+    </div>
+    <mat-dialog-content [id]="id" class="mat-typography">
+        <ng-content></ng-content>
+    </mat-dialog-content>
+
+    <div class="modal-footer">
+        <ng-content select="[footer]"></ng-content>
+    </div>
+</div>

@@ -1,0 +1,121 @@
+$thumb-border-width: 2px;
+$thumb-size: 16px; // material default is 20
+$thumb-scale: 1; // material default is 0.7
+
+// dlimpreseWeb skin
+$dlImpreseWebHeight: 7px;
+$dlImpreseWebColor: #004a8b;
+$dlImpreseWebThumbSize: 20px;
+
+ark-slider {
+    .mat-slider {
+        &.mat-slider-horizontal {
+            height: 30px;
+            padding: 0;
+
+            .mat-slider-wrapper {
+                top: 14px;
+            }
+        }
+        &:not(.mat-slider-disabled).cdk-mouse-focused .mat-slider-thumb {
+            border-width: $thumb-border-width;
+        }
+        &.mat-accent {
+            .mat-slider-track-fill,
+            .mat-slider-thumb-label {
+                background-color: map-get($colors-default, 'accent-color'); // $accentColor;
+            }
+            .mat-slider-thumb {
+                border-color: map-get($colors-default, 'accent-color'); // $accentColor;
+            }
+            &.mat-slider-disabled {
+                .mat-slider-track-fill,
+                .mat-slider-thumb-label {
+                    background-color: map-get($colors-default, 'disable-grey'); // $disable-grey;
+                }
+                .mat-slider-thumb {
+                    border-color: map-get($colors-default, 'disable-grey'); // $disable-grey;
+                }
+            }
+        }
+        &.mat-primary {
+            .mat-slider-track-fill,
+            .mat-slider-thumb-label {
+                background-color: map-get($colors-default, 'primary-color'); // $primaryColor;
+            }
+            .mat-slider-thumb {
+                border-color: map-get($colors-default, 'primary-color'); // $primaryColor;
+            }
+            &.mat-slider-disabled {
+                .mat-slider-track-fill,
+                .mat-slider-thumb-label {
+                    background-color: map-get($colors-default, 'disable-grey'); // $disable-grey;
+                }
+                .mat-slider-thumb {
+                    border-color: map-get($colors-default, 'disable-grey'); // $disable-grey;
+                }
+            }
+        }
+        &.mat-warn {
+            .mat-slider-track-fill,
+            .mat-slider-thumb-label {
+                background-color: map-get($colors-default, 'warn-color'); // $primaryColor;
+            }
+            .mat-slider-thumb {
+                border-color: map-get($colors-default, 'warn-color'); // $primaryColor;
+            }
+        }
+        .mat-slider-thumb {
+            background-color: map-get($bper-palette, --white);
+            border-width: $thumb-border-width;
+            border-style: solid;
+            width: $thumb-size;
+            height: $thumb-size;
+            right: -($thumb-size / 2);
+            bottom: -($thumb-size / 2);
+            transform: scale($thumb-scale);
+        }
+    }
+
+    // dlImpreseWeb skin
+    .dlImpreseWeb {
+        .mat-slider {
+            .mat-slider-wrapper,
+            .mat-slider-track-wrapper,
+            .mat-slider-track-background,
+            .mat-slider-track-fill,
+            .mat-slider-ticks-container,
+            .mat-slider-ticks {
+                height: $dlImpreseWebHeight;
+            }
+            .mat-slider-wrapper {
+                .mat-slider-track-wrapper {
+                    border-radius: $dlImpreseWebHeight;
+                }
+                .mat-slider-thumb {
+                    width: $dlImpreseWebThumbSize;
+                    height: $dlImpreseWebThumbSize;
+                    right: -($dlImpreseWebThumbSize / 2);
+                    bottom: -($dlImpreseWebThumbSize / 2);
+                }
+            }
+        }
+        &:not(.invalid) {
+            .mat-slider .mat-slider-wrapper {
+                .mat-slider-track-fill,
+                .mat-slider-thumb-label {
+                    background-color: $dlImpreseWebColor;
+                }
+
+                .mat-slider-thumb {
+                    border-color: $dlImpreseWebColor;
+                }
+            }
+        }
+        .range-limit {
+            color: $dlImpreseWebColor;
+            font-size: 14px;
+            font-family: 'ubuntumedium';
+        }
+    }
+}

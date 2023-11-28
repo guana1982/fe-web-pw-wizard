@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Tracciato_3443" data-name="Tracciato 3443" d="M.424,12.749a12,12,0,1,0,12-12,12,12,0,0,0-12,12" transform="translate(-0.424 -0.749)" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Isola_Bouvet" data-name="Isola Bouvet" transform="translate(-0.424 -0.749)">
+    <g id="Raggruppa_76" data-name="Raggruppa 76" transform="translate(0.424 0.749)" clip-path="url(#clip-path)">
+      <rect id="Rettangolo_335" data-name="Rettangolo 335" width="33.126" height="24.086" transform="translate(-4.563 -0.043)" fill="#ff2029"/>
+      <path id="Tracciato_3441" data-name="Tracciato 3441" d="M33.126,9.775H15.067V.746H9.04v9.03H0V15.8H9.04v9.03h6.027V15.8H33.126Z" transform="translate(-4.565 -0.782)" fill="#fff"/>
+      <path id="Tracciato_3442" data-name="Tracciato 3442" d="M33.126,11.282H13.56V.746H10.547V11.282H0V14.3H10.547V24.832H13.56V14.3H33.126Z" transform="translate(-4.565 -0.783)" fill="#002372"/>
+    </g>
+  </g>
+</svg>

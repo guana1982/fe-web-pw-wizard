@@ -1,0 +1,74 @@
+
+bper-banner {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  div {
+    width: 100% !important;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 19px 40px 19px 40px;
+
+    p {
+      margin: 0;
+    }
+
+    i {
+      width: 24px;
+      height: 24px;
+      margin-right: 10px;
+    }
+
+    &.inline {
+      padding: 16px 16px 14px 16px;
+      border-radius: 16px;
+      width: 100%;
+
+      i {
+        font-weight: bold !important;
+      }
+    }
+
+    &.desktop {
+      width: 100%;
+    }
+
+    .mobile {
+      width: 375px;
+    }
+
+    &.darkColor {
+      background-color: map-get($bper-palette, primary, --primary-500);
+      color: map-get($bper-palette, --white);
+
+      a {
+        color: map-get($bper-palette, --white);
+        text-decoration: underline;
+      }
+    }
+
+    &.lightColor {
+      background-color: map-get($bper-palette, secondary, --secondary-90);
+      color: map-get($bper-palette, --black);
+    }
+
+    &.redColor {
+      background-color: map-get($bper-palette, error, --error-20);
+      color: map-get($bper-palette, error, --error-700);
+    }
+
+    &.greyColor {
+      background-color: map-get($bper-palette, neutral, --neutral-90);
+    }
+
+    &.lightColor a,
+    &.greyColor a {
+      color: map-get($bper-palette, --black);
+      text-decoration: underline;
+    }
+  }
+
+}

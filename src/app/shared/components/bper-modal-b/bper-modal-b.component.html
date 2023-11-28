@@ -1,0 +1,15 @@
+<div class="modal-container" role="alertdialog">
+    <div class="modal-header" [class.no-title]="noTitle">
+        <h2 mat-dialog-title *ngIf="modalTitle">{{ modalTitle }}</h2>
+        <i (click)="closeModal()" class="bper-ic-24px-close icon-bold" aria-label="Chiudi Finestra" role="button"></i>
+    </div>
+
+    <mat-dialog-content>
+        <ng-content></ng-content>
+    </mat-dialog-content>
+
+    <div *ngIf="!hideFooter" mat-dialog-actions class="modal-footer" [class]="footerDirection">
+        <ng-content select="[footer]"></ng-content>
+    </div>
+</div>
+

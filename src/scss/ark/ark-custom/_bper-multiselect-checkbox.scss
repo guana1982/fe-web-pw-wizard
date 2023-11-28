@@ -1,0 +1,194 @@
+
+@mixin arrow-icon($direction) {
+  .mat-select-arrow-wrapper {
+      display: block;
+      .mat-select-arrow {
+          // removing default arrow
+          position: relative;
+          height: 24px;
+          width: 24px;
+          border-left: 0;
+          border-right: 0;
+          border-top: 0;
+          transform-origin: center;
+          transition: transform .2s ease-in-out;
+          @if $direction == down {
+              transform: rotate(-270deg);
+          } @else {
+              transform: rotate(-90deg);
+          }
+
+          &::before {
+            content: "\e949";
+            font-family: bper-icons;
+          }
+      }
+  }
+}
+
+bper-multiselect-checkbox .mat-form-field {
+  width: 100% !important;
+  // max-width: 248px !important;
+  .mat-form-field-wrapper .mat-form-field-flex .mat-form-field-infix { 
+      min-height: 42px;
+      background: map-get($bper-palette, neutral, --neutral-5) 0% 0% no-repeat padding-box;
+      border: 1px solid map-get($bper-palette, primary, --primary-40);
+      border-radius: 24px;
+      opacity: 1;
+      display: flex;
+      align-items: center;
+      i {
+          display: none;
+      }
+      /* INPUT ON HOVER */
+      &:hover {
+        border-color: map-get($bper-palette, secondary, --secondary-90);
+      }
+      mat-select {
+          margin: 0 16px;
+          display: inline-flex;
+            align-items: center;
+
+            > * {
+                width: 100%;
+                line-height: 24px;
+            }
+
+          .mat-select-value {
+            color: map-get($bper-palette, primary, --primary-500) !important;
+
+              .mat-select-value-text {
+                position: absolute;
+                top: 0 !important;
+                max-width: 85%;
+                line-height: 24px;
+              }
+          }
+          .mat-select-placeholder {
+              position: absolute;
+              top: 0 !important;
+              text-overflow: ellipsis;
+              color: map-get($bper-palette, neutral, --neutral-300) !important;
+              font-size: 16px !important;
+              font-weight: 200 !important;
+          }
+      }
+      /* posizione floatlabel="always" */
+          .mat-form-field-label-wrapper {
+              top: -1.5em;
+              mat-label {
+                  font-size: 18px;
+                  font-weight: 700;
+                  letter-spacing: 0px;
+                  color: map-get($bper-palette, primary, --primary-500);
+                  opacity: 1;
+              }
+          }
+      
+  }
+}
+bper-multiselect-checkbox .mat-form-field-underline {
+  display: none;
+}
+
+bper-multiselect-checkbox:not([ng-reflected-search = true]) .mat-form-field-hint-wrapper .mat-hint {
+  color: map-get($bper-palette, primary, --primary-500);
+  display: flex;
+  align-items: center;
+
+  i {
+      color: map-get($bper-palette, accent, --accent-90);
+      margin-left: 5px
+  }
+}
+
+bper-multiselect-checkbox {
+  @include arrow-icon(down);
+  .mat-form-field.mat-form-field-type-mat-select {
+      &.mat-focused {
+          @include arrow-icon(up);
+      }
+  }
+}
+bper-multiselect-checkbox .mat-select-arrow {
+    color: map-get($bper-palette, secondary, --secondary-90) !important;
+    font-size: 24px;
+}
+
+.mat-select-panel#checkbox-panel  {
+  position: absolute;
+  left: 24px !important;
+  top: 48px;
+  padding: 8px 8px !important;
+  min-width: calc(100% + 32px) !important;
+  max-width: calc(100% + 32px) !important;
+  border-radius: 16px !important;
+  box-shadow: 0px 8px 16px #7E8C8D14 !important;
+  mat-option {
+      height: 43px !important;
+      padding: 0 8px !important;
+      display: flex;
+      align-items: center;
+      &:hover,
+      &:hover.mat-active {
+          background-color: map-get($bper-palette, primary, --primary-20) !important;
+          border-radius: 8px !important;
+      }
+      &.mat-selected,
+      &.mat-active {
+          background-color: transparent !important;
+          color: #005157 !important;
+      }
+      .mat-pseudo-checkbox {
+          width: 18px;
+          height: 18px;
+          left: 5px !important;
+          border: 2px solid #00AE65 !important;
+          &.mat-pseudo-checkbox-checked {
+              background-color: transparent !important;
+              &:after {
+                  color: #00AE65 !important;
+                  top: 3px !important;
+                  left: 2px !important;
+                  width: 8px !important;
+                  height: 3px !important;
+              }
+          }
+      }
+      .mat-option-text {
+        margin-left: 30px;
+      }
+  }
+}
+
+/* SELECTBOX ERROR */
+.mat-form-field.mat-form-field-invalid {
+  .mat-form-field-wrapper .mat-form-field-flex .mat-form-field-infix {
+      border: 1px solid #9D0000;
+  }
+}
+/* ERROR MESSAGE */
+.mat-form-field-subscript-wrapper .mat-error {
+  color: #9D0000;
+  font-size: 14px;
+  i {
+    font-weight: unset;
+    margin-right: 8px;
+}
+}
+
+/* SELECTBOX DISABLED */
+.mat-form-field.mat-form-field-disabled {
+  .mat-form-field-wrapper .mat-form-field-flex .mat-form-field-infix {
+      border: none;
+      mat-label {
+          color: #BCC4C4 !important;
+      }
+      .mat-select-arrow {
+          color: #BCC4C4 !important;
+      }
+      i {
+          color: #BCC4C4 !important;
+      }
+  }
+}

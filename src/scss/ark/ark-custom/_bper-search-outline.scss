@@ -1,0 +1,78 @@
+bper-search-outline .mat-form-field {
+    width: 100% !important;
+    /* INPUT ON HOVER */
+    &:hover {
+        .mat-form-field-underline {
+            background-color: #00AE65 !important;
+        }
+    }
+    .mat-form-field-wrapper .mat-form-field-flex .mat-form-field-infix {
+        height: 37px;
+        padding: 1px 16px 2px 16px;
+        display: flex;
+        justify-content: space-between;
+        input {
+            position: absolute;
+            bottom: 10px !important;
+            width: 80%;
+        }
+        i {
+            position: absolute;
+            right: 16px;
+            bottom: 14px;
+            color: #00AE65;
+        }
+        .mat-form-field-label-wrapper {
+            top: unset;
+            left: 16px;
+            bottom: 11px;
+        }
+    }
+    &.mat-focused {
+        .mat-form-field-infix {
+            border: none !important;
+        }
+        .mat-form-field-label-wrapper {
+            left: 16px;
+            bottom: -1px !important;
+            .mat-form-field-label {
+                color: rgba(0, 0, 0, 0.54);;
+            }
+        }
+        i {
+            position: absolute;
+            right: 16px;
+            bottom: 14px !important;
+        }
+        /* INPUT ON FOCUS */
+        .mat-form-field-underline {
+            background-color: #00AE65 !important;
+        }
+    }
+    
+}
+bper-search-outline .mat-form-field-underline {
+    .mat-form-field-ripple {
+        display: none;
+    }
+    background-color: #B0CFD1 !important;
+}
+
+/* INPUT DISABLED */
+.mat-form-field.mat-form-field-disabled .mat-form-field-wrapper .mat-form-field-flex .mat-form-field-infix,
+.mat-form-field-appearance-legacy.mat-form-field-disabled {
+    &:hover {
+        .mat-form-field-underline {
+            background-color: #B0CFD1 !important;
+        } 
+    }
+    .mat-form-field-label, 
+    i, 
+    .mat-form-field-underline {
+        color: #BCC4C4;
+        background-image: none !important;
+    }
+    .mat-form-field-label-wrapper {
+       bottom: 0;
+    }
+}

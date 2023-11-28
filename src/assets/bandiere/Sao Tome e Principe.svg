@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Tracciato_7841" data-name="Tracciato 7841" d="M.547,12.749a12,12,0,1,0,12-12,12,12,0,0,0-12,12" transform="translate(-0.547 -0.749)" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Sao_Tome_e_Principe" data-name="Sao Tome e Principe" transform="translate(-0.547 -0.749)">
+    <g id="Raggruppa_231" data-name="Raggruppa 231" transform="translate(0.547 0.749)" clip-path="url(#clip-path)">
+      <rect id="Rettangolo_585" data-name="Rettangolo 585" width="48.022" height="24.011" transform="translate(-5.887 0)" fill="#12ad2b"/>
+      <rect id="Rettangolo_586" data-name="Rettangolo 586" width="48.022" height="10.278" transform="translate(-5.887 6.866)" fill="#ffce00"/>
+      <path id="Tracciato_7838" data-name="Tracciato 7838" d="M0,24.759V.749L12,12.759Z" transform="translate(-5.887 -0.752)" fill="#d2102f"/>
+      <path id="Tracciato_7839" data-name="Tracciato 7839" d="M4.59,1.56l.732,2.26H7.7L5.774,5.22l.743,2.26L4.59,6.081,2.664,7.48l.743-2.26L1.48,3.821H3.858Z" transform="translate(8.558 7.173)"/>
+      <path id="Tracciato_7840" data-name="Tracciato 7840" d="M5.472,1.56,6.2,3.821H8.583L6.656,5.22l.732,2.26-1.916-1.4L3.546,7.48l.732-2.26-1.916-1.4H4.74Z" transform="translate(17.172 7.173)"/>
+    </g>
+  </g>
+</svg>

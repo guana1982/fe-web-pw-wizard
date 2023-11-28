@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60" height="60" viewBox="0 0 60 60">
+  <defs>
+    <filter id="Tracciato_504" x="0" y="0" width="60" height="60" filterUnits="userSpaceOnUse">
+      <feOffset dy="2" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feFlood flood-color="#05696f" flood-opacity="0.239"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Tracciato_505" x="21.913" y="17.218" width="16.174" height="33.911" filterUnits="userSpaceOnUse">
+      <feOffset dy="2" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="2" result="blur-2"/>
+      <feFlood flood-color="#05696f" flood-opacity="0.239"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Tracciato_506" x="21.913" y="8.871" width="16.174" height="16.162" filterUnits="userSpaceOnUse">
+      <feOffset dy="2" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="2" result="blur-3"/>
+      <feFlood flood-color="#05696f" flood-opacity="0.239"/>
+      <feComposite operator="in" in2="blur-3"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Raggruppa_26972" data-name="Raggruppa 26972" transform="translate(-200 -30)">
+    <rect id="Rettangolo_645" data-name="Rettangolo 645" width="48" height="48" transform="translate(206 34)" fill="none"/>
+    <g id="Raggruppa_7943" data-name="Raggruppa 7943" transform="translate(254 82) rotate(180)">
+      <g transform="matrix(-1, 0, 0, -1, 54, 52)" filter="url(#Tracciato_504)">
+        <path id="Tracciato_504-2" data-name="Tracciato 504" d="M32.5,8.5a24,24,0,1,0,24,24A24.026,24.026,0,0,0,32.5,8.5Zm0,43.826A19.826,19.826,0,1,1,52.325,32.5,19.849,19.849,0,0,1,32.5,52.325Z" transform="translate(62.5 60.5) rotate(180)" fill="#005157"/>
+      </g>
+      <path id="Tracciato_503" data-name="Tracciato 503" d="M30.325,10.5A19.826,19.826,0,1,0,50.152,30.325,19.849,19.849,0,0,0,30.325,10.5Zm1.482,34.35a2.082,2.082,0,0,1-3.4-2.275,2.154,2.154,0,0,1,.438-.689,2.131,2.131,0,0,1,2.275-.438,1.881,1.881,0,0,1,1.127,1.127,2.066,2.066,0,0,1-.438,2.275Zm.605-9.829a2.087,2.087,0,0,1-4.174,0V17.283a2.087,2.087,0,0,1,4.174,0Z" transform="translate(-6.325 -6.325)" fill="#f7fafa"/>
+      <g transform="matrix(-1, 0, 0, -1, 54, 52)" filter="url(#Tracciato_505)">
+        <path id="Tracciato_505-2" data-name="Tracciato 505" d="M21.087,12.75A2.086,2.086,0,0,0,19,14.837V32.574a2.087,2.087,0,1,0,4.174,0V14.837A2.086,2.086,0,0,0,21.087,12.75Z" transform="translate(51.09 55.88) rotate(180)" fill="#005157"/>
+      </g>
+      <g transform="matrix(-1, 0, 0, -1, 54, 52)" filter="url(#Tracciato_506)">
+        <path id="Tracciato_506-2" data-name="Tracciato 506" d="M22.568,25.849a2.154,2.154,0,0,0-.689-.438,2.131,2.131,0,0,0-2.275.438,2.154,2.154,0,0,0-.438.689,2.087,2.087,0,1,0,3.84,0A2.154,2.154,0,0,0,22.568,25.849Z" transform="translate(51.09 42.29) rotate(180)" fill="#005157"/>
+      </g>
+    </g>
+  </g>
+</svg>

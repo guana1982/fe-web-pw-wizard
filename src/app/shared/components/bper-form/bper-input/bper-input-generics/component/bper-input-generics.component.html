@@ -1,0 +1,49 @@
+<mat-form-field
+    class="matField"
+    fxFlex="100%"
+    appearance="legacy"
+    floatLabel="always"
+    [hideRequiredMarker]="true"
+>
+    <mat-label *ngIf="label">{{ label }}</mat-label>
+    <input
+        matInput
+        class="text text-generics"
+        type="text"
+        autocomplete="off"
+        (focus)="onFocus($event)"
+        (blur)="onBlur($event)"
+        (input)="onInput($event)"
+        [placeholder]="placeholder"
+        [minLength]="minLength"
+        [maxLength]="maxLength"
+        [required]="required"
+        [title]="!!value ? value : ''"
+        [id]="name"
+        [name]="name"
+        [readonly]="readOnly"
+        [(ngModel)]="value"
+        [validateInput]="charsPermitted"
+        #inputText="ngModel"
+    />
+
+    <mat-hint *ngIf="msgHint">{{ msgHint }}</mat-hint>
+
+    <mat-error
+        fxLayout="row"
+        fxLayoutAlign="start center"
+        *ngIf="touched && inputText.hasError('required')"
+    >
+        <i [class]="errorIcon"></i>
+        <span>{{ 'INVALIDATIONS.CAMPO_OBBLIG' | translate }}</span>
+    </mat-error>
+    <!-- <mat-error fxLayout="row" fxLayoutAlign="start center"
+        *ngIf="!control.hasError('required') && control.hasError('minlength')"><i class="bper-ic-24px-alert-circle"></i>{{
+        msgMinLength }}</mat-error>
+    <mat-error fxLayout="row" fxLayoutAlign="start center"
+        *ngIf="!control.hasError('required') && control.hasError('maxlength')"><i class="bper-ic-24px-alert-circle"></i>{{
+        msgMaxLength }}</mat-error>
+    <mat-error fxLayout="row" fxLayoutAlign="start center"
+        *ngIf="!control.hasError('required') && control.hasError('pattern')"><i class="bper-ic-24px-alert-circle"></i>{{
+        'INVALIDATIONS.FORMATO_NON_VALIDO' | translate }}</mat-error> -->
+</mat-form-field>

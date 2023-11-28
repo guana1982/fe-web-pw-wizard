@@ -1,0 +1,43 @@
+@mixin loans() {
+    .mat-expansion-panel-header {
+        margin-bottom: 0 !important;
+    }
+
+    .mat-expansion-panel-body {
+        padding-bottom: 0 !important;
+    }
+
+    .mat-expansion-panel-content {
+        transition: margin-top .3s ease;
+    }
+
+    &.mat-expanded .mat-expansion-panel-content {
+        margin-top: 24px;
+    }
+}
+
+bper-collapsible-section {
+    .mat-expansion-panel-header {
+        height: unset !important;
+        padding-bottom: 12px;
+        margin-bottom: 24px !important;
+        border-radius: 0 !important;
+
+        .title {
+            line-height: 22px !important;
+        }
+
+        &.mat-expanded {
+            height: unset !important;
+        }
+    }
+
+    .mat-expansion-panel-body {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    mat-expansion-panel {
+        &.loans {@include loans()}
+    }
+}

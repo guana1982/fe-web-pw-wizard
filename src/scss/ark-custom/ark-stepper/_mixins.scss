@@ -1,0 +1,25 @@
+@mixin styleStepLine($index) {
+    .mat-step-header {
+        & + .mat-stepper-horizontal-line:nth-child(#{$index}) {
+            background-color: $lightBlue;
+            top: 40px;
+            height: 3px;
+        }
+    }
+    .mat-step-header:nth-child(#{$index - 1}) {
+        &::after {
+            background-color: $lightBlue;
+            top: 40px;
+            height: 3px;
+            width: calc(50% - 16px);
+        }
+    }
+    .mat-step-header:nth-child(#{$index + 1}) {
+        &::before {
+            background-color: $lightBlue;
+            top: 40px;
+            height: 3px;
+            width: calc(50% - 16px);
+        }
+    }
+}

@@ -1,0 +1,75 @@
+@import "src/scss/variables";
+
+@mixin boxed() {
+    min-height: 80px;
+    padding: 17px 24px;
+
+    box-shadow: 0 12px 24px #{map-get($bper-palette, accent, --accent-90)}29;
+    background: map-get($bper-palette, --white) no-repeat padding-box;
+    border: 1px solid map-get($bper-palette, accent, --accent-20);
+    border-left: 4px solid map-get($bper-palette, accent, --accent-90);
+    border-radius: 0 4px 4px 0;
+
+    &.checked {
+        border-color: map-get($bper-palette, secondary, --secondary-10);
+        border-left-color: map-get($bper-palette, secondary, --secondary-90);
+        box-shadow: none;
+    }
+}
+
+.box-informativa {
+    display: flex;
+
+    p {
+        text-align: left;
+        font-family: 'Kievit Pro';
+        font-size: 14px;
+        color: map-get($bper-palette, neutral, --neutral-300);
+    }
+
+    .check {
+        width: 20px;
+        margin-right: 24px;
+        > div {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+    }
+
+    .informativa {
+        align-self: center;
+        display: flex;
+        flex-direction: column;
+
+        .upper-line {
+            display: flex;
+            align-items: center;
+            margin-bottom: 5px;
+            color: map-get($bper-palette, accent, --accent-90);
+            cursor: pointer;
+
+            i {
+                margin-right: 12px;
+                font-size: 24px;
+            }
+
+            .label {
+                font-size: 16px;
+                line-height: 22px;
+                font-family: 'Kievit Pro Bold';
+            }
+        }
+        .lower-line {
+            font-size: 14px;
+            line-height: 20px;
+            color: map-get($bper-palette, neutral, --neutral-300);
+
+            p {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    &.boxed { @include boxed() };
+}

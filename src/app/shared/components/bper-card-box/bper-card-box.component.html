@@ -1,0 +1,24 @@
+<mat-card (click)="onCardClick($event)" [ngClass]="[cardType, customStyle || '']">
+    <div class="card-header" *ngIf="imageUrl">
+        <img src="{{imageUrl}}" alt="">
+    </div>
+
+    <mat-card-content [class.-topImage]="imageUrl">
+        <mat-card-title><i class="{{titleIcon? 'title-icon bper-' + titleIcon : ''}}"></i> {{cardTitle}}</mat-card-title>
+        <mat-card-subtitle [class.custom]="customContentWidth" [class.custom-margin-bottom]="!!marginBottom" [style.--custom-margin-bottom]="marginBottom" [innerHtml]="subtitle"></mat-card-subtitle>
+        <div class="btn-container">
+            <bper-button
+                    *ngIf="ctaIcon || ctaLabel"
+                    buttonType="icon-right"
+                    [label]="ctaLabel"
+                    [icon]="ctaIcon"
+                    order="ghost-accent"
+                    (clickBtn)="btnClick($event)"
+            ></bper-button>
+        </div>
+    </mat-card-content>
+
+    <div class="icon">
+        <ng-content select="[icon]"></ng-content>
+    </div>
+</mat-card>

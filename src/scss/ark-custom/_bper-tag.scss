@@ -1,0 +1,96 @@
+
+bper-tag {
+    // 2 mixin rounded(border-radius) e squared(border-radius) - colori/background - size(small medium)
+    width: 100% !important;
+
+    @mixin rounded {
+        height: 32px;
+        color: map-get($bper-palette, --white);
+        font-size: 14px;
+        text-align: center;
+        border-radius: 16px;
+        padding: 8px 16px 7px 16px;
+
+        &.roundedRight {
+            border-radius: 0px 16px 16px 0px;
+        }
+    }
+
+    @mixin square {
+        &.square {
+            border-radius: 12px;
+            color: map-get($bper-palette, primary, --primary-500);
+            text-align: left;
+        }
+
+        &.extraSmall {
+            height: 20px;
+            font-size: 12px;
+            padding: 4px 12px;
+        }
+
+        &.smallSize {
+            height: 32px;
+            padding: 8px 16px 7px 16px;
+            font-size: 14px;
+        }
+
+        &.mediumSize {
+            height: 40px;
+            padding: 9px 16px;
+            font-size: 18px;
+
+            &:hover {
+                background: transparent linear-gradient(180deg, #29696f 0%, #183f42 100%) 0% 0% no-repeat padding-box;
+                color: map-get($bper-palette, --white);
+            }
+        }
+    }
+
+    .tag-content {
+        display: inline;
+        opacity: 1;
+        white-space: nowrap;
+
+        &.primary {
+            background: map-get($bper-palette, primary, --primary-500) 0% 0% no-repeat padding-box;
+        }
+
+        &.secondary {
+            color: map-get($bper-palette, primary, --primary-500);
+            background: map-get($bper-palette, primary, --primary-20) 0% 0% no-repeat padding-box;
+        }
+
+        &.tertiary {
+            background: map-get($bper-palette, secondary, --secondary-10) 0% 0% no-repeat padding-box;
+        }
+
+        &.orange {
+            background: transparent $accent-gradient 0% 0% no-repeat padding-box;
+        }
+
+        &.yellow {
+            background: map-get($bper-palette, warning, --warning-20) 0% 0% no-repeat padding-box;
+            color: map-get($bper-palette, primary, --primary-500);
+        }
+
+        &.light {
+            color: map-get($bper-palette, primary, --primary-500);
+            background: map-get($bper-palette, secondary, --secondary-10) 0% 0% no-repeat padding-box;
+        }
+
+        &.warning {
+            background-color: map-get($bper-palette, error, --error-20);
+            color: map-get($bper-palette, primary, --primary-500);
+        }
+
+        &.white {
+            background-color: map-get($bper-palette, --white);
+            color: map-get($bper-palette, secondary, --secondary-90);
+        }
+
+        @include rounded();
+
+        @include square();
+    }
+}

@@ -1,0 +1,47 @@
+
+bper-importo-totale {
+  .content {
+    width: 100%;
+    display: flex;
+    align-items: inherit;
+    justify-content: flex-end;
+  
+    .total-residual {
+      width: 356px;
+    
+      .total-viewed {
+        display: flex;
+        justify-content: flex-end;
+        padding: 15px 32px;
+        color: map-get($bper-palette, primary, --primary-500);
+        background-color: map-get($bper-palette, secondary, --secondary-10);
+        border-radius: 12px;
+    
+        p.totale {
+          display: flex;
+          align-items: center;
+          margin-bottom: 0;
+    
+          span {
+            font-size: 24px;
+            font-family: 'Kievit Pro Bold';
+            margin-left: 6px;
+          }
+        }
+      }
+    
+      p.residuo {
+        display: flex;
+        justify-content: flex-end;
+        font-size: 14px;
+        padding: 10px 35px 0 0;
+        color: map-get($bper-palette, primary, --primary-500);
+        margin-bottom: 0;
+        span {
+          font-family: 'Kievit Pro Bold';
+          margin-left: 4px;
+        }
+      }
+    }
+  }
+}

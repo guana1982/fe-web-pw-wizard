@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Tracciato_7856" data-name="Tracciato 7856" d="M.258,12.749a12,12,0,1,0,12-12,12,12,0,0,0-12,12" transform="translate(-0.258 -0.749)" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Slovacchia" transform="translate(-0.258 -0.749)">
+    <g id="Raggruppa_237" data-name="Raggruppa 237" transform="translate(0.258 0.749)" clip-path="url(#clip-path)">
+      <rect id="Rettangolo_595" data-name="Rettangolo 595" width="36.194" height="24.129" transform="translate(-2.777 -0.054)" fill="#fff"/>
+      <rect id="Rettangolo_596" data-name="Rettangolo 596" width="36.194" height="16.079" transform="translate(-2.777 7.996)" fill="#0038ab"/>
+      <rect id="Rettangolo_597" data-name="Rettangolo 597" width="36.194" height="8.083" transform="translate(-2.777 15.993)" fill="#ce1126"/>
+      <path id="Tracciato_7852" data-name="Tracciato 7852" d="M5.556,13.7c4.5-1.873,5.629-6.361,4.714-12.409H.831c-.9,6.048.215,10.536,4.714,12.409Z" transform="translate(2.516 4.571)" fill="#ce1126"/>
+      <path id="Tracciato_7853" data-name="Tracciato 7853" d="M6.6,5.165a15.824,15.824,0,0,1-2.454.258c0-.42.011-.829.011-1.205a14.951,14.951,0,0,1,1.948.2,2.309,2.309,0,0,1,0-1.453,11.672,11.672,0,0,1-1.916.248,9.257,9.257,0,0,1,.226-1.873,2.107,2.107,0,0,1-1.5,0,8.282,8.282,0,0,1,.248,1.873,11.292,11.292,0,0,1-1.883-.248,2.171,2.171,0,0,1,0,1.453,14.468,14.468,0,0,1,1.916-.2c.011.377.011.786.011,1.205A16.1,16.1,0,0,1,.735,5.165a1.755,1.755,0,0,1,0,1.453,21.137,21.137,0,0,1,2.465-.2c0,.764-.011,1.571-.022,2.346h.979c0-.786-.011-1.582-.011-2.346a20.955,20.955,0,0,1,2.454.2,1.935,1.935,0,0,1,0-1.453" transform="translate(4.399 5.06)" fill="#fff"/>
+      <path id="Tracciato_7854" data-name="Tracciato 7854" d="M6.514,2.662a1.21,1.21,0,0,0-.872.377A1.532,1.532,0,0,0,4.19,1.973,1.508,1.508,0,0,0,2.747,3.038a1.2,1.2,0,0,0-2.066.818c0,.915,3,3.11,3.509,3.11s3.519-2.109,3.519-3.11A1.2,1.2,0,0,0,6.514,2.662" transform="translate(3.871 11.2)" fill="#0038b2"/>
+      <path id="Tracciato_7855" data-name="Tracciato 7855" d="M5.731,14H5.666l-.032-.011a7.985,7.985,0,0,1-2.82-1.916,7.826,7.826,0,0,1-1.657-2.82A16.581,16.581,0,0,1,.823,1.409L.844,1.28h9.708l.032.129a16.7,16.7,0,0,1-.344,7.846,7.826,7.826,0,0,1-1.657,2.82,7.985,7.985,0,0,1-2.82,1.916ZM1.113,1.592C.177,8.017,1.684,11.967,5.7,13.678c4.025-1.711,5.521-5.661,4.585-12.086Z" transform="translate(2.363 4.435)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

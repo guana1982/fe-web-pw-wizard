@@ -1,0 +1,18 @@
+{
+  "anagrafica": {
+    "id": "1",
+    "ndg": "123445",
+    "abi": "58729",
+    "nome": "Giulia",
+    "cognome": "Rossi",
+    "data_di_nascita": "18-05-1985",
+    "luogo_di_nascita": "Milano",
+    "tipologia-anagrafica": "Intestatario",
+    "alias": "Giulia10"
+  },
+  "contatti": {
+    "numero_di_cellulare": "3276745398",
+    "email": "giulia.rossi@example.com",
+    "certificazione_mail": false
+  }
+}

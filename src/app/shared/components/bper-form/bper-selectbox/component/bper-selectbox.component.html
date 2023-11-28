@@ -1,0 +1,134 @@
+<div fxLayout="row wrap">
+    <mat-form-field
+        #formField
+        fxFlex="100%"
+        [appearance]="getAppearance()"
+        floatLabel="always"
+        [hideRequiredMarker]="true"
+        [ngClass]="{ 'is-panel-open': isPanelOpen }"
+    >
+        <mat-label>{{ label }}</mat-label>
+        <mat-select
+            #select
+            [id]="id"
+            (openedChange)="onPanelOpened($event)"
+            [formControl]="control"
+            (selectionChange)="onSelectionChange($event)"
+            [multiple]="multiple"
+            panelClass="ark-selectbox-dropdown"
+            [required]="required"
+            [placeholder]="placeholder"
+            [disableOptionCentering]="true"
+            [compareWith]="compareFunction"
+        >
+            <mat-select-trigger *ngIf="multiple">
+                {{
+                    select.selected &&
+                        select.selected.length + ' ' + (select.selected.length === 1 ? 'opzione selezionata' : 'opzioni selezionate')
+                }}</mat-select-trigger
+            >
+
+            <!-- <ark-selectbox-search [formControl]="optionMultiFilterCtrl" *ngIf="enableSearch"></ark-selectbox-search> -->
+
+            <mat-option *ngIf="!multiple && !!emptyValue">{{ emptyValue }}</mat-option>
+            <ng-container *ngIf="!groups || groups.length === 0">
+                <mat-option
+                    *ngFor="let option of filteredOptionsMulti | async"
+                    [value]="option.value"
+                >
+                    <div class="options-container">
+                        <div
+                            class="options"
+                            [style.font-size]="fontSize"
+                            [title]="option.viewValue"
+                        >
+                            <img
+                                *ngIf="option.icon"
+                                src="{{ option.icon }}"
+                                alt="flag country"
+                            />
+                            <p>{{ (option.viewValue | translate) ? (option.viewValue | translate) : option.viewValue }}</p>
+                        </div>
+                        <span class="checkMark"></span>
+                    </div>
+                </mat-option>
+            </ng-container>
+            <!-- grouped options -->
+            <ng-container *ngIf="groups?.length > 0">
+                <mat-optgroup
+                    *ngFor="let group of groups"
+                    [label]="group.label"
+                >
+                    <mat-option
+                        *ngFor="let option of groupedOptions[group.id] | async"
+                        [value]="option.value"
+                    >
+                        <div class="options-container">
+                            <div
+                                class="options"
+                                [style.font-size]="fontSize"
+                                [title]="option.viewValue"
+                            >
+                                <img
+                                    *ngIf="option.icon"
+                                    src="{{ option.icon }}"
+                                    alt="flag country"
+                                />
+                                <p>{{ (option.viewValue | translate) ? (option.viewValue | translate) : option.viewValue }}</p>
+                            </div>
+                            <span class="checkMark"></span>
+                        </div>
+                    </mat-option>
+                </mat-optgroup>
+            </ng-container>
+        </mat-select>
+
+        <mat-hint *ngIf="msgHint"
+            >{{ msgHint
+            }}<!-- <i class="bper-ic-40px-circle_exclamation_point"></i> --></mat-hint
+        >
+
+        <mat-error
+            fxLayout="row wrap"
+            fxLayoutAlign="start center"
+            *ngIf="control.hasError('required')"
+        >
+            <i [class]="errorIcon"></i>
+            <span>{{ 'INVALIDATIONS.CAMPO_OBBLIG' | translate }}</span>
+        </mat-error>
+
+        <mat-error
+            fxLayout="row wrap"
+            fxLayoutAlign="start center"
+            *ngIf="!control.hasError('required') && control.hasError('maxAmountExceeded')"
+        >
+            <i [class]="errorIcon"></i>
+            <span>{{ 'INVALIDATIONS.LIMITE_SUPERATO_3' | translate }}</span>
+        </mat-error>
+
+        <mat-error
+            fxLayout="row"
+            fxLayoutAlign="start center"
+            *ngIf="!control.hasError('required') && !control.hasError('maxAmountExceeded') && control.hasError('generic')"
+        >
+            <i [class]="errorIcon"></i>
+            <span>Campo non valido</span>
+        </mat-error>
+    </mat-form-field>
+</div>
+<div
+    *ngIf="multiple"
+    class="multiple-selection-element-container"
+    [class.hasError]="control.hasError('maxAmountExceeded')"
+>
+    <div
+        *ngFor="let selectedOption of select.selected"
+        class="selected-element"
+    >
+        <span>{{ selectedOption.viewValue }}</span>
+        <i
+            (click)="unselectOption(selectedOption)"
+            class="icon-ic-chiusura"
+        ></i>
+    </div>
+</div>

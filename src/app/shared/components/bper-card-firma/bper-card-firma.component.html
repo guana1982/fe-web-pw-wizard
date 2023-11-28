@@ -1,0 +1,58 @@
+<ng-container>
+    <mat-card>
+        <div class="header">
+            <div class="values">
+                <div>
+                    <p class="label">Data attivazione</p>
+                    <p class="value">13/05/2022</p>
+                </div>
+                <div>
+                    <p class="label">Data scadenza</p>
+                    <p class="value">12/05/2025</p>
+                </div>
+            </div>
+            <div class="stato">
+                <bper-tag color="neutral" label="Attiva"></bper-tag>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="cta">
+                <div>
+                    <bper-button
+                        buttonType="icon-left"
+                        order="ghost-accent"
+                        textSize="16px"
+                        iconSize="24px"
+                        icon="24px-edit"
+                        label="Modifica codice di conferma"
+                        (clickBtn)="onClickBtn($event)"
+                    ></bper-button>
+                </div>
+
+                <div class="revoca-sospendi">
+                    <bper-button
+                        class="revoca"
+                        buttonType="icon-left"
+                        order="ghost-accent"
+                        textSize="16px"
+                        iconSize="24px"
+                        icon="24px-remove"
+                        label="Revoca"
+                        (clickBtn)="onClickBtn($event)"
+                    ></bper-button>
+
+                    <bper-button
+                        class="sospendi"
+                        buttonType="icon-left"
+                        order="ghost-accent"
+                        textSize="16px"
+                        iconSize="24px"
+                        icon="24px-clock"
+                        label="Sospendi"
+                        (clickBtn)="onClickBtn($event)"
+                    ></bper-button>
+                </div>
+            </div>
+        </div>
+    </mat-card>
+</ng-container>

@@ -1,0 +1,68 @@
+
+$panelMarginBottom: 20px;
+$panelPadding: 16px 24px;
+$fullPanelPadding: 16px 6px;
+$arrowSize: 6px;
+$disabledColor: rgba(0, 0, 0, 0.26);
+
+bper-accordion .bper-accordion {
+    .mat-accordion {
+        .mat-expansion-panel {
+            margin-bottom: $panelMarginBottom;
+        }
+
+        .mat-expansion-panel:not(.mat-expanded) .mat-expansion-panel-header:hover:not([aria-disabled=true]) {
+            background-color: map-get($bper-palette, --white);
+        }
+
+        .mat-expansion-panel-header {
+            background-color: map-get($bper-palette, --white );
+            height: 73px !important;
+            border-radius: 0;
+
+            .mat-expansion-panel-header-title {
+              font-family: 'ubuntumedium';
+            }
+            .mat-expansion-indicator::after {
+                padding: $arrowSize;
+            }
+
+            &:not([aria-disabled='true']) {
+              .mat-expansion-panel-header-title {
+                color: map-get($bper-palette, primary, --primary-500);
+
+                &:hover {
+                  color: map-get($bper-palette, accent, --accent-90) !important;
+                }
+              }
+            //   .mat-expansion-panel-header-description > .edit-btn {
+            //   }
+              .mat-expansion-indicator::after {
+                  border-color: map-get($bper-palette, secondary, --secondary-90);
+              }
+
+              i {
+                color: map-get($bper-palette, secondary, --secondary-90);
+                font-size: 26px;
+              }
+            }
+
+            &[aria-disabled='true'] {
+                .mat-expansion-panel-header-title {
+                    color: $disabledColor;
+                }
+                .mat-expansion-panel-header-description > .edit-btn {
+                    color: $disabledColor;
+                }
+                .mat-expansion-indicator::after {
+                    border-color: $disabledColor;
+                }
+            }
+        }
+        .mat-expansion-panel-body {
+            padding: $panelPadding;
+            background-color: map-get($bper-palette, --white);
+            color: map-get($bper-palette, neutral, --neutral-100);
+        }
+    }
+}

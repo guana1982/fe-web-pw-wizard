@@ -1,0 +1,13 @@
+<bper-modal modal-title="Inserisci PIN" [hasLeftImage]="false" class="inserisci-pin">
+    <div>
+        <p>Per effettuare l’accesso, inserisci il codice PIN che ti abbiamo inviato via SMS.</p>
+        <p class="conferma">Per confermare inserisci il codice PIN</p>
+    </div>
+    <div class="col-12">
+        <bper-input-pincode [nInputs]="6" (pin)="setPin($event)" (isValid)="setValidity($event)"
+            (setError)="isValidated"></bper-input-pincode>
+    </div>
+    <div class="col-3" footer>
+        <bper-button order="primary" [label]="'Continua'" [disabled]="!isValid" (clickBtn)="onContinua()"></bper-button>
+    </div>
+</bper-modal>

@@ -1,0 +1,57 @@
+@import "src/scss/variables";
+
+.inserisci-pin {
+
+    p {
+        text-align: left;
+        line-height: 20px;
+    }
+
+    .conferma {
+        font-family: 'Kievit Pro Bold';
+        margin-bottom: 24px;
+    }
+
+    .input {
+        width: 216px;
+        height: 48px;
+        align-self: center;
+        background-color: map-get($bper-palette, primary, --primary-500);
+    }
+
+    [footer] {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+// MOBILE
+@media screen and (max-width: $bp-mobile) {
+    .inserisci-pin {
+            .modal-container {
+             
+                .modal-header{
+                    padding: 24px 16px 0 16px;
+                }
+
+                mat-dialog-content {
+                    padding: 24px 16px 0 16px;
+                    margin-top: 0;
+                }
+
+                .modal-footer {
+                    padding: 0;
+                }
+            }
+        }
+
+        .conferma {
+            margin-bottom: 40px;
+        }
+
+        [footer] {
+            padding: 0;
+        }
+    }

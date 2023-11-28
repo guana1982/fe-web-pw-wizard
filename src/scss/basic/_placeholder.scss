@@ -1,0 +1,68 @@
+%fx{
+    @include flexbox();
+    
+    &Row{
+        @extend %fx;
+        @include flex-direction(row);
+        
+        &Wrap{
+            @extend %fxRow;
+            @include flex-flow(row wrap);
+            &Rev{
+                @extend %fxRowWrap;
+                @include flex-wrap(wrap-reverse);
+            } 
+        }
+    
+        &NoWrap{
+            @extend %fxRow;
+            @include flex-flow(row nowrap);
+        }
+    }
+    
+    &Col{
+        @extend %fx;
+        @include flex-direction(column);
+        &Wrap{
+            @extend %fxCol;
+            @include flex-flow(column wrap);
+            &Rev{
+                @extend %fxColWrap;
+                @include flex-wrap(wrap-reverse);
+            } 
+        }
+        
+        &NoWrap{
+            @extend %fxCol;
+            @include flex-flow(column nowrap);
+        }
+    }
+}
+
+%v-middle{
+    @extend %fx;
+    @include align-items(center);
+    @include justify-content(center);
+}
+
+%w-fill{
+    width: 100%;
+    max-width: 100%;
+}
+
+%w-half-fill{
+    width: 50%;
+    max-width: 50%;
+}
+
+%clear{
+    clear: both;
+}
+
+%row{
+    &::after{
+        content: "";
+        display: table;
+        @extend %clear;
+    }
+}

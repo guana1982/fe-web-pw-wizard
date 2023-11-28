@@ -1,0 +1,41 @@
+i {
+    font-size: 24px;
+    margin-right: 5px;
+}
+
+.multiple-selection-element-container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+
+    .selected-element {
+        display: flex;
+        align-items: center;
+        width: fit-content;
+        border: 1px solid #dff5ec;
+        border-radius: 24px;
+        background-color: #f7fafa;
+        color: #5d6f70;
+        font-size: 14px;
+        text-align: left;
+        padding: 10px;
+        span {
+            margin-right: 5px;
+        }
+        &:hover {
+            i {
+                color: #45ae64;
+            }
+        }
+    }
+}
+
+.mat-error {
+    i {
+        font-size: 24px;
+    }
+    span {
+        line-height: 1;
+    }
+}

@@ -1,0 +1,52 @@
+
+<div class="box hero" *ngIf="aliasUtente">
+    <span class="box-title">Bene! Autenticazione avvenuta con successo</span>
+    <h1 class="title">Crea le tue nuove credenziali</h1>
+    <div class="sub-title-description">
+        Accedere allo Smart Web Cesare Ponti è molto semplice! <br>
+        Imposta la tua password di accesso, varrà anche per la tua utenza BPER; ricorda che tutte le successive modifiche saranno valide per entrambe le utenze.
+    </div>
+
+    <div>
+        <div class="sub-title-description title-input">
+            Nuova password
+        </div>
+        <bper-input-password floatLabel="never" label="Inserisci password" [formControl]="passwordUtente">
+        </bper-input-password>
+        <div class="sub-title-description" style="padding-bottom: 8px;">
+            la nuova password dovrà essere solo numerica (no lettere o caratteri speciali), lunga almeno 8 caratteri, diversa dal codice utente.
+        </div>
+    </div>
+
+    <div>
+        <div class="sub-title-description title-input-psw ">
+            Conferma nuova password
+        </div>
+        <bper-input-password floatLabel="never" label="Conferma password" (keyup)="verificaConfermaPassword()"
+            [formControl]="confermaPasswordUtente">
+        </bper-input-password>
+    </div>
+
+    <hr>
+
+    <div>
+        <div class="sub-title-description title-input-alias" style="padding-bottom: 0;">
+            IL TUO ALIAS
+        </div>
+        <div class="title">
+            {{aliasUtente}}
+        </div>
+        <div class="sub-title-description">
+            In alternativa al Codice Utente, utilizza l'Alias BPER che già conosci per accedere più facilmente al tuo Internet Banking.
+        </div>
+    </div>
+
+    <div class="button-wrapper">
+        <bper-button button-type="button" order="primary" [label]="'Continua'"
+            [disabled]="isButtonDisabled()"
+            (clickBtn)="goToNextStep()">
+        </bper-button>
+      </div>
+      
+
+</div>

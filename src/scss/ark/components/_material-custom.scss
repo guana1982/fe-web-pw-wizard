@@ -1,0 +1,488 @@
+// Material-Custom Components
+
+$tabs-h-xs: 0;
+$tabs-fs-xs: 0;
+
+$tabs-h-sm: 2.5em;
+$tabs-fs-sm: 0.75em;
+
+$tabs-h-md: 3;
+$tabs-fs-md: 0.875;
+
+$tabs-h-lg: 3.5em;
+$tabs-fs-lg: 0;
+
+.tabs {
+
+    // &--xsmall{}
+    &--small {
+        .mat-tab-header {
+            & .mat-tab-label {
+                height: $tabs-h-sm;
+                // font-size: $tabs-fs-sm;
+                @include font-size($tabs-fs-sm);
+
+                &-active {
+                    color: $primaryColor;
+                }
+
+                &>.mat-tab-label-content {
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+
+    &--medium {
+        .mat-tab-header {
+            & .mat-tab-label {
+                height: $tabs-h-md;
+                // font-size: $tabs-fs-sm;
+                @include font-size($tabs-fs-md);
+
+                &-active {
+                    color: $primaryColor;
+                }
+
+                &>.mat-tab-label-content {
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+
+    // &--medium{}
+    &--large {
+        & .mat-tab-label {
+            height: $tabs-h-lg;
+            @include font-size($font-size-base);
+
+            // font-size: $font-size-base;
+            &-active {
+                color: $primaryColor;
+            }
+        }
+    }
+
+    &--fill {
+        .mat-tab-body-wrapper {
+            height: 100%;
+        }
+    }
+}
+
+// accordion
+.mat-accordion {
+    .mat-expansion-indicator::after {
+        color: inherit;
+    }
+
+    .mat-expansion-panel-body {
+        padding: 0;
+    }
+
+    .mat-expansion-panel-content {
+        font-size: 100%;
+    }
+}
+
+// form (select)
+
+.noTitle .mat-form-field.mat-form-field-type-mat-select .mat-form-field-infix {
+    border-top-width: 0.4em;
+}
+
+//wrapper for mat select in listaclienti
+// .mat-select-all{
+//   padding-left: 1em;
+//   padding-right: 1em;
+//   .mat-form-field.mat-form-field-type-mat-select{
+//     width: 100%;
+//     .mat-form-field-infix{
+//         width: auto;
+//         min-width: 5em;
+//         max-width: 100%;
+//     }
+//   }
+// }
+
+.toolbar {
+    .mat-form-field-infix {
+        border-top: 0.55375em solid transparent;
+    }
+}
+
+.cdk-overlay-pane .mat-select-panel {
+    min-width: 5em;
+    max-width: 100%;
+}
+
+// custom form (select)
+// .inherit-skin.mat-form-field.mat-focused,
+// .inherit-skin.mat-form-field{
+//     .mat-select{
+//         &-value{
+//         color: inherit;
+//         }
+//         &-arrow{
+//             color: inherit;
+//         }
+//     }
+//     .mat-form-field-underline{
+//         background-color: inherit;
+//     }
+// }
+
+.white-skin.mat-form-field.mat-focused,
+.white-skin.mat-form-field {
+    .mat-select {
+        &-value {
+            color: #fff;
+        }
+
+        &-arrow {
+            color: #fff;
+        }
+    }
+
+    .mat-form-field-underline {
+        background-color: #fff;
+
+        .mat-form-field-ripple {
+            background-color: #fff;
+        }
+    }
+}
+
+mat-checkbox.accent {
+    .mat-checkbox-frame {
+        border-color: $accentColor;
+    }
+}
+
+mat-checkbox.secondary {
+    .mat-checkbox-frame {
+        border-color: $secondaryColor;
+    }
+}
+
+// override material dialog
+.cdk-overlay-backdrop {
+    transition: unset;
+
+    &.fullscreen-background {
+        background: #FFFFFFe3 0 0 no-repeat padding-box;
+        opacity: 1;
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+    }
+
+    &.banner-homepage {
+        background: rgba(255, 255, 255, 0.01);
+        backdrop-filter: blur(6px);
+    }
+}
+
+// .cdk-overlay-pane{
+//     transform: unset !important;
+//     animation: none !important;
+// }
+.cdk-overlay-pane {
+    display: block;
+
+    &.modal-full-screen {
+        @media screen and (max-width: 1024px) {
+            max-height: 100% !important;
+        }
+
+        .mat-dialog-container {
+            box-shadow: none;
+            background: unset;
+        }
+    }
+}
+
+.dialog-override .mat-dialog-container {
+    padding: 0;
+    font-size: 1em;
+    border-radius: 16px;
+    overflow: hidden;
+    max-height: none;
+    height: 100%;
+    width: 100%;
+    position: relative;
+
+    // Mobile posto orizzontalmente
+    @media screen and (max-width: 915px) and (orientation: landscape) {
+        height: 349px;
+    }
+
+    & .mat-dialog-title {
+        margin-bottom: 0;
+        font-size: $font-size-base;
+    }
+
+    & .ark-dialog-head {
+        padding: 0.625em;
+        padding-left: $ark-head-l-p;
+        padding-right: $ark-head-r-p;
+        color: $primaryColor;
+
+        &>i {
+            display: inline-block;
+            width: $ark-head-icon-w;
+
+            &:first-child {
+                margin-left: -($ark-head-icon-w + $ark-head-spacer);
+                margin-right: $ark-head-spacer;
+            }
+
+            &:last-child {
+                cursor: pointer;
+                margin-left: $ark-head-spacer-r;
+                margin-right: -($ark-head-icon-w + $ark-head-spacer-r);
+            }
+        }
+
+        &>label {
+            display: inline-block;
+            width: 100%;
+        }
+    }
+
+    & .mat-dialog-content {
+        margin: 0;
+        padding: 0 $dialog-p;
+    }
+
+    & .mat-dialog-actions {
+        margin: 0;
+
+        &.aling--right {
+            justify-content: flex-end;
+        }
+    }
+}
+
+// sticky-COL
+.sticky {
+    position: relative;
+
+    &-scroll {
+        overflow-x: auto;
+    }
+
+    &-col {
+        position: absolute;
+        top: auto;
+        right: 0;
+
+        border-left: 1px solid #ddd;
+        min-height: 48px;
+        min-width: 30px;
+        background-color: #fff;
+
+        &--header {
+            height: 56px;
+        }
+    }
+}
+
+.cdk-overlay-container {
+    z-index: 10000;
+
+    // INIZIO MODALE TUTORIAL BENVENUTO ------------
+    .cdk-global-overlay-wrapper .modal-full-screen .mat-dialog-container modal-tutorial bper-modal .modal-container {
+
+        .mat-dialog-content .bper-m-fullscreenTutorial .bper-m-fullscreenTutorial__swiper {
+            .swiper-pagination-full.swiper-pagination-clickable.swiper-pagination-bullets .swiper-pagination-bullet {
+                margin-right: 8px;
+            }
+        }
+
+        .mat-dialog-actions .bper-m-fullscreenTutorial__header p:nth-child(2) {
+            height: 77px;
+            overflow-y: auto;
+        }
+    }
+
+    @media screen and (max-width: 1024px) {
+        .cdk-global-overlay-wrapper .modal-full-screen .mat-dialog-container modal-tutorial {
+            position: relative;
+            top: -65px;
+
+            bper-modal {
+                .modal-container {
+                    height: 680px;
+
+                    .mat-dialog-content {
+                        overflow: visible;
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width: 1024px) and (max-width: 1024px) {
+        .cdk-global-overlay-wrapper .modal-full-screen .mat-dialog-container modal-tutorial {
+            bper-modal {
+                .modal-container {
+                    .mat-dialog-content {
+                        min-height: 452px;
+                        overflow: auto;
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        .cdk-global-overlay-wrapper .modal-full-screen .mat-dialog-container modal-tutorial {
+            position: unset;
+
+            bper-modal .modal-container {
+                display: block;
+                height: unset;
+
+                .mat-dialog-content {
+                    overflow-x: auto;
+
+                    .bper-m-fullscreenTutorial {
+                        .bper-m-fullscreenTutorial__swiper {
+                            .swiper-wrapper .swiper-slide {
+                                width: 100% !important;
+                            }
+
+                            .swiper-pagination-full.swiper-pagination-clickable.swiper-pagination-bullets .swiper-pagination-bullet {
+                                margin-right: 8px;
+                            }
+                        }
+                    }
+                }
+
+                .mat-dialog-actions {
+                    padding: 24px 0px;
+
+                    .bper-m-fullscreenTutorial__header {
+                        width: 100%;
+                    }
+                }
+
+                .modal-footer [footer] {
+                    align-items: flex-start;
+                    height: 201.55px;
+                }
+            }
+        }
+    }
+
+    @media screen and (max-width: 375px) {
+        .cdk-global-overlay-wrapper .modal-full-screen .mat-dialog-container {
+            height: 93vh;
+
+            modal-tutorial {
+                bper-modal .modal-container {
+                    .mat-dialog-content {
+                        overflow-x: visible;
+                    }
+
+                    .mat-dialog-actions {
+                        position: relative;
+                        top: 76px;
+                    }
+                }
+            }
+        }
+    }
+
+    // FINE MODALE TUTORIAL BENVENUTO ------------
+}
+
+.slider--small {
+    .mat-slide-toggle-bar {
+        height: 10px;
+        width: 28px;
+    }
+
+    .mat-slide-toggle-thumb {
+        height: 15px;
+        width: 15px;
+    }
+
+    .mat-slide-toggle.mat-checker .mat-slide-toggle-thumb-container {
+        transform: translate3d(18px, 0, 0);
+    }
+
+    .mat-slide-toggle-thumb-container {
+        width: 12px;
+        height: 12px;
+    }
+}
+
+.slider--small-notOnOff {
+    .mat-slide-toggle-bar {
+        background-color: rgba(3, 155, 229, 0.54);
+    }
+
+    .mat-slide-toggle-thumb {
+        background-color: #039be5;
+    }
+}
+
+.custom-toggle {
+    .mat-slide-toggle-ripple {
+        display: none;
+    }
+}
+
+.mat-form-field-appearance-fill.mat-form-field-disabled .mat-form-field-underline::before {
+    background-color: rgba(0, 0, 0, 0.38);
+}
+
+.center-input .mat-form-field .mat-form-field-wrapper .mat-form-field-flex .mat-form-field-infix input {
+    text-align: center;
+}
+
+.mat-hint {
+    font-size: 14px;
+}
+
+// mat-tab-group
+.mat-tab-group {
+    @import "src/scss/variables";
+
+    .mat-tab-header {
+        margin-bottom: 42px;
+        border-bottom: 0px;
+
+        .mat-tab-label {
+            color: map-get($bper-palette, primary, --primary-500);
+            flex: 1;
+            font-size: 18px;
+            line-height: 40px;
+            opacity: 1;
+            border-bottom: 2px solid map-get($bper-palette, neutral, --neutral-40);
+
+            &.mat-tab-label-active {
+                font-family: "Kievit Pro Bold";
+            }
+        }
+    }
+
+    &.no-header-mb .mat-tab-header {
+        margin-bottom: 0;
+    }
+
+    .mat-ink-bar {
+        background-color: map-get($bper-palette, accent, --accent-90) !important;
+    }
+}
+
+tipologia-rapporto mat-tab-group.mat-tab-group .mat-tab-header {
+    margin-bottom: 0;
+}
+
+.force-tab-overflow {
+    overflow: visible !important;
+    overflow-y: auto !important;
+}

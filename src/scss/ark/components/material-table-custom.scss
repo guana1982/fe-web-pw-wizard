@@ -1,0 +1,104 @@
+
+table {
+    width: 100%;
+    tr {
+        &.mat-header-row {
+            height: 2.5em;
+            background-color: $gray-table-header-bg;
+            > th.mat-header-cell {
+                padding-left: 0.625em;
+                padding-right: 0em;
+                color: $table-text-color;
+                @include font-size($font-size-sm);
+                text-transform: uppercase;
+                > div {
+                    > button {
+                        text-transform: uppercase;
+                    }
+                }
+            }
+        }
+
+        &.mat-row {
+            height: 2.5em;
+            > td.mat-cell {
+                padding-left: 0.625em;
+                padding-right: 0em;
+            }
+            .row-text--accent {
+                color: $accentColor;
+                font-size: $font-size-sm;
+                    font-weight: bold;
+            }
+            .row-text--primary {
+                color: $primaryColor;
+                font-size: $font-size-sm;
+                font-weight: bold;
+            }
+            .row-text--primary-big {
+                color: $primaryColor;
+                font-size: $font-size-md;
+                font-weight: bold;
+            }
+            .row-text--mid {
+                font-size: $font-size-md;
+                color: $table-text-color;
+            }
+            .row-text--base {
+                font-size: $font-size-sm;
+                color: $table-text-color;
+            }
+            .row-text--secondary {
+                color: $table-text-color;
+                font-size: $font-size-xs;
+            }
+            .row-text--gray {
+                color: map-get($bper-palette, --grey);
+                font-size: $font-size-smxs;
+            }
+        }
+    }
+}   
+.table-row-max-heigth{
+    table {
+        width: 100%;
+        tr {
+            &.mat-header-row {
+                height: 2.5em;
+                background-color: $gray-table-header-bg;
+                > th.mat-header-cell {
+                    padding-left: 0.625em;
+                    padding-right: 0em;
+                    color: $table-text-color;
+                    @include font-size($font-size-sm);
+                    text-transform: uppercase;
+                    > div {
+                        > button {
+                            text-transform: uppercase;
+                        }
+                    }
+                }
+            }
+
+            &.mat-row {
+                height: 3em;
+                > td.mat-cell {
+                    padding-left: 0.625em;
+                    padding-right: 0em;
+                }
+                .row-text--accent {
+                    color: $accentColor;
+                    font-size: $font-size-sm;
+                }
+                .row-text--base {
+                    font-size: $font-size-sm;
+                    color: $table-text-color;
+                }
+                .row-text--secondary {
+                    color: $table-text-color;
+                    font-size: $font-size-xs;
+                }
+            }
+        }
+    }
+}

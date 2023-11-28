@@ -1,0 +1,54 @@
+<message-handler *ngIf="userDataService.statusCommunicationService && !userDataService.hideCommunicationService"
+  [title]="userDataService.communicationService">
+</message-handler>
+
+<div class="box hero" *ngIf="mockDoc">
+  <ng-container>
+    <div class="container head">
+      <h1 class="title" style="margin-bottom: 0; margin-top: 15px; font-family: 'Kievit Pro Medium';">Informativa
+        precontrattuale</h1>
+      <div class="description" style="margin-bottom: 1rem">Per poter proseguire consulta e salva i documenti relativi alla tua richiesta </div>
+    </div>
+  </ng-container>
+  <ng-container>
+    <div class="container documenti">
+      <div class="rows" *ngFor="let doc of mockDoc">
+        <div class="col-12 item">
+          <div>
+            <div class="icon-document" (click)="onClickDoc(doc)">
+              <i class="bper-ic-24px-document"></i>
+              <span class="value">{{ doc.docName }}</span>
+              <div class="rows header" style="margin-bottom: 0px"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </ng-container>
+  <ng-container>
+    <div class="container set-informativo-link" style="margin-top: -20px; margin-left: 10px;">
+      <div class="rows">
+        <div>
+          <span (click)="openModalInfo()" class="ghost-accent" style="font-size: 16px;">Vuoi ricevere il set
+            informativo?</span>
+        </div>
+      </div>
+      <div class="rows">
+        <div class="col-12 item" style="margin-top: 1rem">
+          <mat-checkbox [disabled]="docPrecontrattualeService.isDisabled" [(ngModel)]="isChecked"
+            (change)="toggleCheckbox()">
+            <span style="white-space: normal;" class="label__doc"
+              [ngClass]="{'disabled': docPrecontrattualeService.isDisabled}">Dichiaro di aver ricevuto la documentazione
+              precontrattuale</span>
+          </mat-checkbox>
+        </div>
+      </div>
+      <div class="button-wrapper">
+        <button (click)="goToNextStep()" [disabled]="!isChecked"
+          class="button__container">
+          <span>Continua</span>
+        </button>
+      </div>
+    </div>
+  </ng-container>
+</div>

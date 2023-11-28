@@ -1,0 +1,81 @@
+/* select-box mixins */
+
+@mixin arrow-icon($direction) {
+    .mat-select-arrow-wrapper {
+        display: block;
+        .mat-select-arrow {
+            // removing default arrow
+            position: relative;
+            height: 0;
+            width: 0;
+            border-left: 0;
+            border-right: 0;
+            border-top: 0;
+            @if $direction == down {
+                transform: rotate(-270deg);
+            } @else {
+                transform: rotate(-90deg);
+            }
+
+            &::before {
+                content: "\e949";
+                font-family: bper-icons;
+            }
+        }
+    }
+}
+
+@mixin underline($height, $color, $focus: false) {
+    @if $focus == true {
+        .mat-form-field-ripple {
+            height: $height;
+            background-color: $color;
+        }
+    } @else {
+        .mat-form-field-underline {
+            height: $height;
+            background-color: $color;
+        }
+    }
+    
+}
+
+@mixin box($bg-color, $padding: auto) {
+    .mat-form-field-wrapper {
+        .mat-form-field-infix{
+            background-color: $bg-color;
+            padding: $padding;
+        }
+    }
+}
+
+@mixin select-text($size, $color) { // size puo essere $font-size-md O $font-size-sm
+    .mat-select {
+        &-value-text, &-placeholder {
+        @include font-size($size);
+        color: $color;
+        }
+    }
+}
+
+@mixin label($color) {
+    .mat-form-field-label-wrapper {
+        .mat-form-field-label {
+            color: $color;
+            @include font-size($font-size-md);
+        }
+    }       
+}
+
+@mixin outline($color) { // solo per boxed
+    .mat-form-field-outline {
+        &-start, &-gap, &-end {
+            border-color: $color;
+        }
+        &-gap {
+            border-top-color: transparent;
+        }
+    }
+}
+
+/* dropdown panel mixins */

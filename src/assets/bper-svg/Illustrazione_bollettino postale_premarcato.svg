@@ -1,0 +1,174 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="476" height="304" viewBox="0 0 476 304">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #f7fafa;
+      }
+
+      .cls-2 {
+        fill: #b0cfd1;
+      }
+
+      .cls-11, .cls-3, .cls-9 {
+        fill: #fff;
+      }
+
+      .cls-3 {
+        font-size: 15px;
+        font-family: KievitPro-Bold, Kievit Pro;
+        font-weight: 700;
+      }
+
+      .cls-10, .cls-13, .cls-4 {
+        fill: #005157;
+      }
+
+      .cls-4 {
+        font-size: 10px;
+      }
+
+      .cls-10, .cls-4 {
+        font-family: KievitPro-Medium, Kievit Pro;
+        font-weight: 500;
+      }
+
+      .cls-5 {
+        font-size: 13px;
+      }
+
+      .cls-6 {
+        font-size: 11px;
+      }
+
+      .cls-10, .cls-7 {
+        font-size: 14px;
+      }
+
+      .cls-8 {
+        fill: #e1eded;
+      }
+
+      .cls-11, .cls-12 {
+        stroke: #e6e8e8;
+      }
+
+      .cls-11 {
+        stroke-dasharray: 4;
+      }
+
+      .cls-12, .cls-15 {
+        fill: none;
+      }
+
+      .cls-12 {
+        stroke-width: 0.5px;
+      }
+
+      .cls-13 {
+        font-size: 12px;
+        font-family: KievitPro-Regular, Kievit Pro;
+      }
+
+      .cls-14 {
+        stroke: none;
+      }
+    </style>
+  </defs>
+  <g id="Postale_premarcato" data-name="Postale premarcato" transform="translate(21257.824 15391.686)">
+    <path id="Tracciato_86557" data-name="Tracciato 86557" class="cls-1" d="M0,0H476V304H0Z" transform="translate(-21257.824 -15391.686)"/>
+    <g id="Raggruppa_29678" data-name="Raggruppa 29678" transform="translate(-21238.324 -15369.432)">
+      <rect id="Rettangolo_10966" data-name="Rettangolo 10966" class="cls-2" width="21" height="21" rx="2" transform="translate(0.5 -0.254)"/>
+      <text id="_" data-name="€" class="cls-3" transform="translate(10.5 14.746)"><tspan x="-4.402" y="0">€</tspan></text>
+    </g>
+    <text id="su_C_C_n._12345678" data-name="su C/C n. 12345678" class="cls-4" transform="translate(-21206.824 -15352.686)"><tspan x="0" y="0">su C/C n.</tspan><tspan class="cls-5" y="0" xml:space="preserve"> 12345678</tspan></text>
+    <text id="di_Euro_123_45_" data-name="di Euro 123,45 €" class="cls-4" transform="translate(-20845.824 -15352.686)"><tspan x="-79.25" y="0">di Euro</tspan><tspan class="cls-6" y="0"> </tspan><tspan class="cls-7" y="0">123,45 €</tspan></text>
+    <rect id="Rettangolo_12146" data-name="Rettangolo 12146" class="cls-8" width="476" height="12" transform="translate(-21257.824 -15391.686)"/>
+    <rect id="Rettangolo_12148" data-name="Rettangolo 12148" class="cls-9" width="130" height="9" transform="translate(-21237.824 -15275.686)"/>
+    <rect id="Rettangolo_12159" data-name="Rettangolo 12159" class="cls-9" width="284" height="9" transform="translate(-21237.824 -15316.686)"/>
+    <rect id="Rettangolo_12160" data-name="Rettangolo 12160" class="cls-9" width="284" height="9" transform="translate(-21237.824 -15304.686)"/>
+    <text id="_896_" data-name="&lt; 896 &gt;" class="cls-10" transform="translate(-20810.824 -15132.686)"><tspan x="-38.598" y="0">&lt; 896 &gt;</tspan></text>
+    <text id="_1234567890987_" data-name="&lt; 1234567890987 &gt;" class="cls-10" transform="translate(-21227.824 -15145.686)"><tspan x="0" y="11">&lt; 1234567890987 &gt;</tspan></text>
+    <rect id="Rettangolo_12151" data-name="Rettangolo 12151" class="cls-9" width="80" height="9" transform="translate(-21089.824 -15280.686)"/>
+    <rect id="Rettangolo_12155" data-name="Rettangolo 12155" class="cls-9" width="117" height="9" transform="translate(-20938.824 -15280.686)"/>
+    <rect id="Rettangolo_12153" data-name="Rettangolo 12153" class="cls-9" width="80" height="9" transform="translate(-21089.824 -15268.686)"/>
+    <rect id="Rettangolo_12156" data-name="Rettangolo 12156" class="cls-9" width="117" height="9" transform="translate(-20938.824 -15268.686)"/>
+    <rect id="Rettangolo_12154" data-name="Rettangolo 12154" class="cls-9" width="80" height="9" transform="translate(-21089.824 -15256.686)"/>
+    <rect id="Rettangolo_12157" data-name="Rettangolo 12157" class="cls-9" width="117" height="9" transform="translate(-20938.824 -15256.686)"/>
+    <rect id="Rettangolo_12158" data-name="Rettangolo 12158" class="cls-9" width="117" height="9" transform="translate(-20938.824 -15244.686)"/>
+    <g id="Rettangolo_12152" data-name="Rettangolo 12152" class="cls-11" transform="translate(-21257.824 -15245.686)">
+      <rect class="cls-14" width="150" height="85"/>
+      <rect class="cls-15" x="0.5" y="0.5" width="149" height="84"/>
+    </g>
+    <path id="Tracciato_86556" data-name="Tracciato 86556" class="cls-12" d="M-20803.289-15573h-475.734" transform="translate(21.2 412.314)"/>
+    <g id="Raggruppa_29683" data-name="Raggruppa 29683" transform="translate(-21198.473 -15595.686)">
+      <rect id="Rettangolo_10972" data-name="Rettangolo 10972" class="cls-9" width="4" height="30" transform="translate(108.648 390)"/>
+      <rect id="Rettangolo_10973" data-name="Rettangolo 10973" class="cls-9" width="2" height="30" transform="translate(116.648 390)"/>
+      <rect id="Rettangolo_10974" data-name="Rettangolo 10974" class="cls-9" width="2" height="30" transform="translate(120.648 390)"/>
+      <rect id="Rettangolo_10975" data-name="Rettangolo 10975" class="cls-9" width="2" height="30" transform="translate(124.648 390)"/>
+      <rect id="Rettangolo_10976" data-name="Rettangolo 10976" class="cls-9" width="2" height="30" transform="translate(128.648 390)"/>
+      <rect id="Rettangolo_10977" data-name="Rettangolo 10977" class="cls-9" width="4" height="30" transform="translate(134.648 390)"/>
+      <rect id="Rettangolo_10978" data-name="Rettangolo 10978" class="cls-9" width="2" height="30" transform="translate(142.648 390)"/>
+      <rect id="Rettangolo_10979" data-name="Rettangolo 10979" class="cls-9" width="2" height="30" transform="translate(146.648 390)"/>
+      <rect id="Rettangolo_10980" data-name="Rettangolo 10980" class="cls-9" width="2" height="30" transform="translate(150.648 390)"/>
+      <rect id="Rettangolo_10981" data-name="Rettangolo 10981" class="cls-9" width="2" height="30" transform="translate(163.648 390)"/>
+      <rect id="Rettangolo_10982" data-name="Rettangolo 10982" class="cls-9" width="4" height="30" transform="translate(164.648 390)"/>
+      <rect id="Rettangolo_10983" data-name="Rettangolo 10983" class="cls-9" width="2" height="30" transform="translate(172.648 390)"/>
+      <rect id="Rettangolo_10984" data-name="Rettangolo 10984" class="cls-9" width="2" height="30" transform="translate(177.648 390)"/>
+      <rect id="Rettangolo_10985" data-name="Rettangolo 10985" class="cls-9" width="2" height="30" transform="translate(182.648 390)"/>
+      <rect id="Rettangolo_10986" data-name="Rettangolo 10986" class="cls-9" width="2" height="30" transform="translate(185.648 390)"/>
+      <rect id="Rettangolo_10987" data-name="Rettangolo 10987" class="cls-9" width="4" height="30" transform="translate(192.648 390)"/>
+      <rect id="Rettangolo_10988" data-name="Rettangolo 10988" class="cls-9" width="2" height="30" transform="translate(215.648 390)"/>
+      <rect id="Rettangolo_10989" data-name="Rettangolo 10989" class="cls-9" width="2.3" height="30.663" transform="translate(219.163 390)"/>
+      <rect id="Rettangolo_10990" data-name="Rettangolo 10990" class="cls-9" width="1" height="30" transform="translate(223.648 390)"/>
+      <rect id="Rettangolo_10991" data-name="Rettangolo 10991" class="cls-9" width="2" height="30" transform="translate(227.648 390)"/>
+      <rect id="Rettangolo_10992" data-name="Rettangolo 10992" class="cls-9" width="2" height="30" transform="translate(234.648 390)"/>
+      <rect id="Rettangolo_10993" data-name="Rettangolo 10993" class="cls-9" width="2" height="30" transform="translate(242.648 390)"/>
+      <rect id="Rettangolo_10994" data-name="Rettangolo 10994" class="cls-9" width="2" height="30" transform="translate(209.648 390)"/>
+      <rect id="Rettangolo_10995" data-name="Rettangolo 10995" class="cls-9" width="2" height="30" transform="translate(199.648 390)"/>
+      <rect id="Rettangolo_10996" data-name="Rettangolo 10996" class="cls-9" width="2" height="30" transform="translate(204.648 390)"/>
+      <rect id="Rettangolo_10997" data-name="Rettangolo 10997" class="cls-9" width="4" height="30" transform="translate(247.648 390)"/>
+      <rect id="Rettangolo_10998" data-name="Rettangolo 10998" class="cls-9" width="2" height="30" transform="translate(256.648 390)"/>
+      <rect id="Rettangolo_10999" data-name="Rettangolo 10999" class="cls-9" width="2" height="30" transform="translate(260.648 390)"/>
+      <rect id="Rettangolo_11000" data-name="Rettangolo 11000" class="cls-9" width="2" height="30" transform="translate(265.648 390)"/>
+      <rect id="Rettangolo_11001" data-name="Rettangolo 11001" class="cls-9" width="2" height="30" transform="translate(270.648 390)"/>
+      <rect id="Rettangolo_11002" data-name="Rettangolo 11002" class="cls-9" width="4" height="30" transform="translate(276.648 390)"/>
+      <rect id="Rettangolo_11003" data-name="Rettangolo 11003" class="cls-9" width="2" height="30" transform="translate(284.648 390)"/>
+      <rect id="Rettangolo_11004" data-name="Rettangolo 11004" class="cls-9" width="2" height="30" transform="translate(289.648 390)"/>
+      <rect id="Rettangolo_11005" data-name="Rettangolo 11005" class="cls-9" width="2" height="30" transform="translate(292.648 390)"/>
+      <rect id="Rettangolo_11006" data-name="Rettangolo 11006" class="cls-9" width="2" height="30" transform="translate(297.648 390)"/>
+      <rect id="Rettangolo_11008" data-name="Rettangolo 11008" class="cls-9" width="2" height="30" transform="translate(312.648 390)"/>
+      <rect id="Rettangolo_11009" data-name="Rettangolo 11009" class="cls-9" width="2" height="30" transform="translate(316.648 390)"/>
+      <rect id="Rettangolo_11010" data-name="Rettangolo 11010" class="cls-9" width="2" height="30" transform="translate(321.648 390)"/>
+      <rect id="Rettangolo_11011" data-name="Rettangolo 11011" class="cls-9" width="2" height="30" transform="translate(319.648 390)"/>
+      <rect id="Rettangolo_11012" data-name="Rettangolo 11012" class="cls-9" width="4" height="30" transform="translate(334.648 390)"/>
+      <rect id="Rettangolo_11013" data-name="Rettangolo 11013" class="cls-9" width="2" height="30" transform="translate(342.648 390)"/>
+      <rect id="Rettangolo_11014" data-name="Rettangolo 11014" class="cls-9" width="2" height="30" transform="translate(346.648 390)"/>
+      <rect id="Rettangolo_11015" data-name="Rettangolo 11015" class="cls-9" width="2" height="30" transform="translate(350.648 390)"/>
+      <rect id="Rettangolo_11016" data-name="Rettangolo 11016" class="cls-9" width="2" height="30" transform="translate(354.648 390)"/>
+      <rect id="Rettangolo_11017" data-name="Rettangolo 11017" class="cls-9" width="4" height="30" transform="translate(372.648 390)"/>
+      <rect id="Rettangolo_11018" data-name="Rettangolo 11018" class="cls-9" width="2" height="30" transform="translate(358.648 390)"/>
+      <rect id="Rettangolo_11019" data-name="Rettangolo 11019" class="cls-9" width="2" height="30" transform="translate(362.648 390)"/>
+      <rect id="Rettangolo_11020" data-name="Rettangolo 11020" class="cls-9" width="2" height="30" transform="translate(366.648 390)"/>
+      <rect id="Rettangolo_11021" data-name="Rettangolo 11021" class="cls-9" width="2" height="30" transform="translate(369.648 390)"/>
+      <rect id="Rettangolo_11024" data-name="Rettangolo 11024" class="cls-9" width="4" height="30" transform="translate(303.648 390)"/>
+      <rect id="Rettangolo_11039" data-name="Rettangolo 11039" class="cls-9" width="1" height="30" transform="translate(230.648 390)"/>
+      <rect id="Rettangolo_11040" data-name="Rettangolo 11040" class="cls-9" width="2" height="30" transform="translate(237.648 390)"/>
+    </g>
+    <g id="Raggruppa_29687" data-name="Raggruppa 29687" transform="translate(16 5)">
+      <rect id="Rettangolo_12142" data-name="Rettangolo 12142" class="cls-8" width="94" height="22" rx="11" transform="translate(-21202.824 -15345.686)"/>
+      <text id="N_C_C_Postale" data-name="N° C/C Postale" class="cls-13" transform="translate(-21155.824 -15330.686)"><tspan x="-36.948" y="0">N° C/C Postale</tspan></text>
+    </g>
+    <g id="Raggruppa_29689" data-name="Raggruppa 29689" transform="translate(-18 228)">
+      <rect id="Rettangolo_12142-2" data-name="Rettangolo 12142" class="cls-8" width="158" height="22" rx="11" transform="translate(-21234.824 -15345.686)"/>
+      <text id="Codice_banconota_di_18_cifre" data-name="Codice banconota di 18 cifre" class="cls-13" transform="translate(-21155.824 -15330.686)"><tspan x="-69.222" y="0">Codice banconota di 18 cifre</tspan></text>
+    </g>
+    <g id="Raggruppa_29690" data-name="Raggruppa 29690" transform="translate(326 228)">
+      <rect id="Rettangolo_12142-3" data-name="Rettangolo 12142" class="cls-8" width="88" height="22" rx="11" transform="translate(-21199.824 -15345.686)"/>
+      <text id="Tipo_di_codice" data-name="Tipo di codice" class="cls-13" transform="translate(-21155.824 -15330.686)"><tspan x="-34.068" y="0">Tipo di codice</tspan></text>
+    </g>
+    <g id="Raggruppa_29688" data-name="Raggruppa 29688" transform="translate(285 5)">
+      <rect id="Rettangolo_12142-4" data-name="Rettangolo 12142" class="cls-8" width="60" height="22" rx="11" transform="translate(-21185.824 -15345.686)"/>
+      <text id="Importo" class="cls-13" transform="translate(-21155.824 -15330.686)"><tspan x="-20.208" y="0">Importo</tspan></text>
+    </g>
+  </g>
+</svg>

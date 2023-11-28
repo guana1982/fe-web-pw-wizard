@@ -1,0 +1,80 @@
+<message-handler *ngIf="userDataService.statusCommunicationService && !userDataService.hideCommunicationService"
+    [title]="userDataService.communicationService">
+</message-handler>
+
+<div [ngStyle]="{'marginTop': userDataService.statusCommunicationService && !userDataService.hideCommunicationService ? '4rem' : '0'}">
+    <span class="box-title">Giulia, siamo a buon punto!</span>
+    
+    <div class="box hero">
+        <ng-container>
+            <div class="container head">
+                <h1 class="title">Riepilogo informazioni anagrafiche e offerta</h1>
+                <span class="sub-title-description">Controlla le informazioni anagrafiche e il riepilogo della tua offerta
+                    prima di firmare la documentazione per la sottoscrizione di Smart Web
+                </span>
+                <div class="row"></div>
+            </div>
+        </ng-container>
+    
+        <ng-container>
+            <div class="container profilo">
+                <h3 class="anagrafica">Anagrafica</h3>
+                <div class="row header"></div>
+                <div class="row">
+                    <div class="col-4 item">
+                        <span class="label">NOME E COGNOME</span>
+                        <span class="value">{{ 'GIULIA ROSSI' }}</span>
+                    </div>
+                </div>
+                <div class="row header"></div>
+                <div class="row">
+                    <div class="col-4 item">
+                        <span class="label">LUOGO DI NASCITA</span>
+                        <span class="value">{{ 'FERRARA' }}</span>
+                    </div>
+                </div>
+                <div class="row header"></div>
+                <div class="row">
+                    <div class="col-4 item">
+                        <span class="label">DATA DI NASCITA</span>
+                        <span class="value">{{ '18-05-1985' }}</span>
+                    </div>
+                </div>
+                <div class="row header"></div>
+                <div class="row" style="margin-top: 2.5rem; margin-bottom: -0.5rem">
+                    <div class="col-4 item">
+                        <span class="label" style="font-weight: bold; font-size: 18px;">La tua nuova offerta</span>
+                    </div>
+                </div>
+                <div class="row header"></div>
+                <div class="row">
+                    <div class="col-4 item">
+                        <div style="display: flex; flex-direction: column;">
+                            <span class="label" style="font-size: 14px; text-transform: uppercase;">Conto di Regolamento</span>
+                            <span class="value">{{'Conto 987654321 - BPER'}}</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="row header"></div>
+                <div class="row">
+                    <div class="col-4 item">
+                        <span class="label">PROFILO</span>
+                        <span class="value">{{ 'DISPO +' }}</span>
+                    </div>
+                </div>
+                <div class="row header"></div>
+                <div class="row">
+                    <div class="col-4 item">
+                        <span class="label">CANONE MENSILE</span>
+                        <span class="value">{{ 'Gratuito' }}</span>
+                    </div>
+                </div>
+                <div class="button-wrapper">
+                    <button (click)="goToNextStep()" class="button__container">
+                      <span>Vai alla firma</span>
+                    </button>
+                  </div>
+            </div>
+        </ng-container>
+    </div>
+</div>

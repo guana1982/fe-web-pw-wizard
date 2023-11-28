@@ -1,0 +1,63 @@
+<ng-container *ngIf="mainNavLinks$ | async as mainNavLinks">
+    <ng-container [ngTemplateOutlet]="mainHeader"></ng-container>
+    <ng-container [ngTemplateOutlet]="mobileHeader"></ng-container>
+</ng-container>
+
+<ng-template #mobileHeader>
+    <ul class="list-container list-container-mobile">
+        <li *ngFor="let link of mainNavLinksList; index as i" class="list-item" (click)="onMainLinkClicked($event, i)">
+            <div class="description">
+                <i class="bper-ic-{{link.icon}}"></i>
+                <a href="#">{{ link.label }}</a>
+            </div>
+
+           <notification-badge [feature]="link"></notification-badge>
+        </li>
+
+        <li class="list-item user-list-item" [class.expanded]="isUserOpen" (click)="onUserItemClick($event)">
+            <div class="description">
+                <i class="bper-ic-24px-privato"></i>
+                <a href="#">{{userName}}</a>
+            </div>
+
+            <i role="button" class="bper-ic-24px-small-chevron-up list-opener"></i>
+        </li>
+
+        <ul class="user-list-container" *ngIf="isUserOpen">
+            <li *ngFor="let listItem of (userList$ | async)" class="list-item" (click)="onItemClicked($event, listItem)">
+                <div class="description">
+                    <a href="#">{{ listItem.label }}</a>
+                </div>
+
+                <i class="bper-ic-24px-small-chevron-right"></i>
+            </li>
+        </ul>
+
+        <li class="list-item" (click)="onLogout()">
+            <div class="description">
+                <i class="bper-ic-40px-logout"></i>
+                <a href="#" (click)="onLogout()">Esci</a>
+            </div>
+        </li>
+    </ul>
+</ng-template>
+
+<ng-template #mainHeader>
+    <ul class="list-container list-container-main">
+        <ng-container *ngFor="let listItem of (userList$ | async); let i = index">
+            <li *ngIf="listItem?.visible" class="list-item">
+                <div class="li-wrapper" (click)="onItemClicked($event, listItem)">
+                    <div class="li-content">
+                        <div class="description">
+                            <a href="#">{{ listItem.label }}</a>
+                        </div>
+
+                        <i class="bper-ic-24px-small-chevron-right"></i>
+                    </div>
+                </div>
+
+                <div class="separator"></div>
+            </li>
+        </ng-container>
+    </ul>
+</ng-template>

@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Tracciato_6547" data-name="Tracciato 6547" d="M.316,12.749a12,12,0,1,0,12-12,12,12,0,0,0-12,12" transform="translate(-0.316 -0.749)" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Porto_Rico" data-name="Porto Rico" transform="translate(-0.316 -0.749)">
+    <g id="Raggruppa_209" data-name="Raggruppa 209" transform="translate(0.316 0.749)" clip-path="url(#clip-path)">
+      <rect id="Rettangolo_483" data-name="Rettangolo 483" width="35.774" height="23.849" transform="translate(-3.401 0.075)" fill="#ed0000"/>
+      <rect id="Rettangolo_484" data-name="Rettangolo 484" width="35.774" height="19.092" transform="translate(-3.401 4.832)" fill="#fff"/>
+      <rect id="Rettangolo_485" data-name="Rettangolo 485" width="35.774" height="14.292" transform="translate(-3.401 9.632)" fill="#ed0000"/>
+      <rect id="Rettangolo_486" data-name="Rettangolo 486" width="35.774" height="9.535" transform="translate(-3.401 14.389)" fill="#fff"/>
+      <rect id="Rettangolo_487" data-name="Rettangolo 487" width="35.774" height="4.768" transform="translate(-3.401 19.157)" fill="#ed0000"/>
+      <path id="Tracciato_6545" data-name="Tracciato 6545" d="M0,.756,20.621,12.681,0,24.606Z" transform="translate(-3.401 -0.677)" fill="#0050f0"/>
+      <path id="Tracciato_6546" data-name="Tracciato 6546" d="M4.016,1.5,4.9,4.2H7.739l-2.3,1.668.883,2.7L4.016,6.9l-2.3,1.668.883-2.7L.292,4.2H3.133Z" transform="translate(-0.551 6.592)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

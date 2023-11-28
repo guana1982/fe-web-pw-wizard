@@ -1,0 +1,11 @@
+@media print {
+    body {
+        margin-left: -6em!important;
+        .title-mover {
+            margin-left: 1em!important;
+        }
+        .no-print {
+            display: none !important;
+        }
+    }
+}

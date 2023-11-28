@@ -1,0 +1,49 @@
+<div *ngIf="creditor === true">
+    <mat-expansion-panel
+            class="accordion col-6 col-md-8 col-sm-4"
+            (opened)="panelOpenState = true"
+            (closed)="panelOpenState = false" 
+            *ngIf="creditorLimitations$ | async as creditorLimitaions">
+        <mat-expansion-panel-header>
+            <mat-panel-title class="header">
+                {{title}}
+            </mat-panel-title>
+        </mat-expansion-panel-header>
+        <p>{{subTitle}}</p>
+        <div *ngFor="let item of obsItems">
+            <div class="header underline">
+                <h3>{{item.title}} {{item.creditorName ? item.creditorName : 'N.A.'}}</h3>
+            </div>             
+        </div>
+    </mat-expansion-panel>
+</div>
+
+<div *ngIf="details === true">
+    <mat-expansion-panel
+                    class="accordion col-6 col-md-8 col-sm-4"
+                    (opened)="panelOpenState = true"
+                    (closed)="panelOpenState = false" 
+                    *ngIf="observable">
+                <mat-expansion-panel-header>
+                    <mat-panel-title class="header">
+                        {{title}}
+                    </mat-panel-title>
+                </mat-expansion-panel-header>
+                
+                <div class="container">
+
+                    <div class="row">
+                        <div class="col-4 item" *ngFor="let item of obsItems">
+                            <span class="label">{{item.title}}</span>
+                            <span class="header">{{item.obs ? item.obs : 'N.A.'}}</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="download-zone">
+                    <bper-button buttonType="icon-right" order="ghost-accent" label="Scarica PDF" iconSize="24px"
+                    (clickBtn)="downloadPdf()" icon="24px-download"></bper-button>
+            
+                </div>
+    </mat-expansion-panel>
+</div>

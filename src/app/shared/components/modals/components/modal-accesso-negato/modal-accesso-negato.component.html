@@ -1,0 +1,15 @@
+<bper-modal [hasLeftImage]="false" [noTitle]="true">
+    <div class="container">
+        <div class="img-container">
+            <img src="assets/bper-svg/Icon-24pt-Error_Circle.svg" />
+        </div>
+
+        <h2 class="text-bold">L'accesso non è stato autorizzato!</h2>
+
+        <p>Torna alla login per autenticarti nuovamente.</p>
+    </div>
+
+    <div footer>
+        <bper-button buttonType="button" order="primary" label="Torna alla login" (clickBtn)="goToLogin()"></bper-button>
+    </div>
+</bper-modal>

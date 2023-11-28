@@ -1,0 +1,43 @@
+// set color class
+// @import "color-classes";
+
+// Normalize-reset
+@import 'normalize';
+
+// Dirty-reset
+@import 'reset';
+
+/* UI-Material our material design */
+// material-icons, ng-snotify
+@import 'material';
+@import 'material-custom';
+
+// material-table, ng-snotify
+// @import "material-table-custom";
+
+/* UI-components */
+// Base rule
+@import 'base';
+
+// Grid
+@import 'grid';
+
+// Typography
+@import 'typography';
+
+// Transitions
+@import 'transitions';
+
+// Spinner
+@import 'spinner';
+
+// info-box
+// @import "info-box";
+
+@import 'chips';
+
+@import 'tab-material-custom';
+
+@import 'tooltip';
+
+@import 'scrollbar';

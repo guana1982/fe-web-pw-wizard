@@ -1,0 +1,32 @@
+@import 'global-env';
+
+.snotifyToast__inner {
+    align-items: inherit;
+}
+
+.text-bold {
+    font-family: 'Kievit Pro Bold' !important;
+    // font-weight: bold !important;
+    -moz-osx-font-smoothing: grayscale;
+}
+.icon-bold {
+    font-weight: bold;
+}
+
+.line {
+    width: 100%;
+    border-bottom: 1px solid map-get($bper-palette, neutral, --neutral-40);
+}
+
+// PLACEHOLDER for missing images
+img[src=""]:empty {
+    content: url(#{$absolute-assets-path} + ' /bper-svg/Illustrazione_Empty_page.svg');
+    object-fit: contain;
+}
+
+.pre-line-block {
+    white-space: pre-line;
+} 
+.align-text-right {
+    text-align: left;
+}

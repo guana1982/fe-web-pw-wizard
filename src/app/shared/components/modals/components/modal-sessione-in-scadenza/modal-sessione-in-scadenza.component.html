@@ -1,0 +1,20 @@
+<bper-modal modal-title="La tua sessione sta per scadere"
+    imageSrc="assets/bper-svg/Illustrazione-Cronometro-Sfondo.svg" [hasLeftImage]="true"
+    class="scadenza-sessione">
+    <div>
+        <p>
+            Per la sicurezza dei tuoi dati il tempo massimo di inattività è di 5 minuti.<br />
+            Puoi scegliere se continuare la sessione o uscire subito.
+        </p>
+    </div>
+    <div class="counter-section">
+        <i class="bper-ic-24px-notification"></i>
+        <span class="scadenza">Scade tra <span class="counter">{{counter$ | async}}</span> sec.</span>
+    </div>
+    <div footer>
+        <bper-button class="smart-web" order="secondary-accent" [label]="'Esci da Smart Web'"
+            (clickBtn)="onExitSmartWeb()"></bper-button>
+        <bper-button class="continua" order="primary" [label]="'Continua a navigare'" (clickBtn)="onContinua()">
+        </bper-button>
+    </div>
+</bper-modal>

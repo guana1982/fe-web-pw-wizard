@@ -1,0 +1,24 @@
+<div class="box-informativa" [ngClass]="[checkStyle, valueCheck ? 'checked' : '']">
+    <div class="check">
+            <bper-checkbox 
+                [required]="required" 
+                [checked]="valueCheck"
+                [disable]="disabled"
+                [indeterminate]="disabled"
+                (click)="onCheckboxClick($event)"
+            ></bper-checkbox>
+    </div>
+
+    <div class="informativa">
+        <div class="upper-line" (click)="emitLinkClick($event)">
+            <i *ngIf="icon" [class]="icon"></i>
+            <span class="label">
+                {{linkLabel}}
+            </span>
+        </div>
+        <div class="lower-line">
+            <p>{{ description }}</p>
+        </div>
+
+    </div>
+</div>

@@ -1,0 +1,48 @@
+<div *ngIf="currentStepIndex === 0" class="items">
+  <pw-step-introduzione [nomeUtente]="allDataIdentifyUtente.anagrafica.nome"></pw-step-introduzione>
+</div>
+<div *ngIf="currentStepIndex === 1" class="items">
+  <pw-step-identificazione-cliente [allDataIdentifyUtente]="allDataIdentifyUtente"></pw-step-identificazione-cliente>
+</div>
+<div *ngIf="currentStepIndex === 2" class="items">
+  <pw-step-profilazione-cliente
+    (dataProfilazioneCliente)="dataProfilazioneCliente($event)"></pw-step-profilazione-cliente>
+</div>
+<div *ngIf="currentStepIndex === 3" class="items">
+  <pw-step-doc-precontrattuale [emailUtente]="allDataIdentifyUtente.contatti.email"></pw-step-doc-precontrattuale>
+</div>
+<div *ngIf="currentStepIndex === 4" class="items">
+  <pw-step-riepilogo [allDatiAnagraficaCliente]="allDataIdentifyUtente"
+    [allDatiProfilazioneCliente]="datoProfilazioneCliente"></pw-step-riepilogo>
+</div>
+<div *ngIf="currentStepIndex === 5" class="items">
+  <pw-step-firma></pw-step-firma>
+</div>
+<div *ngIf="currentStepIndex === 6" class="items">
+  <pw-step-buon-fine-firma-component></pw-step-buon-fine-firma-component>
+</div>
+<!-- <div *ngIf="currentStepIndex === 7" class="items">
+  <pw-step-primo-accesso-credenziali (codUtente)="setCodiceUtente($event)"></pw-step-primo-accesso-credenziali>
+</div>
+<div *ngIf="currentStepIndex === 8" class="items">
+  <pw-step-convalida-cellulare-component
+    [datoIdentificazioneCliente]="allDataIdentifyUtente"></pw-step-convalida-cellulare-component>
+</div>
+<div *ngIf="currentStepIndex === 9" class="items">
+  <pw-step-nuove-credenziali [aliasUtente]="allDataIdentifyUtente.anagrafica.alias"
+    [codiceUtente]="codiceUtente"></pw-step-nuove-credenziali>
+</div>
+<div *ngIf="currentStepIndex === 10" class="items">
+  <pw-step-certificazione-email-component
+    [datoIdentificazioneCliente]="allDataIdentifyUtente"></pw-step-certificazione-email-component>
+</div>
+<div *ngIf="currentStepIndex === 11" class="items">
+  <pw-step-download-busta-password></pw-step-download-busta-password>
+</div> -->
+<!-- <div *ngIf="currentStepIndex === 12" class="items">
+  <pw-step-thank-you-page></pw-step-thank-you-page>
+</div> -->
+
+<div *ngIf="currentStepIndex === 25" class="items">
+  <pw-step-utenti-migrati></pw-step-utenti-migrati>
+</div>

@@ -1,0 +1,57 @@
+
+// Ark colors
+
+
+// app Color
+$primaryColor  : #004C8A !default;
+$accentColor   : #039BE5 !default;
+$lightBlue : #0175b9!default;
+$secondaryMenuColor: #04426b;
+$secondaryColor: #FF9900 !default;
+$disableGrey: #CECFD0 !default;
+$dark-blue: #04426B !default;
+
+$ligthGreen: #5BB28F !default;
+$ligthBlue: #9ADCFA !default;
+
+// default-color
+$white-bper :#FFFFFF !default;
+$white-smoke-bper:whitesmoke !default;
+$error-bper :#9D0000 !default;
+$success-bper :#6AC259 !default;
+$warning-bper :#c19e00 !default;
+$black: #000 !default;
+
+$gray: #ccc !default;
+$gray-text: #9a9a9a !default;
+$grey-background:#F6F6F6 !default;
+$dark-grey:#777777;
+$grey-blue: #ccd9e1;
+$light-blue: #d1ecf9;
+$light-blue2: #99dcfd;
+$tableHeaderColorText : #888888;
+$mediumGrey : #888888;
+$antracite : #4d4f5c;
+
+
+
+$Emperor: #515151;
+$light-grey-bg-main:#f8f8f8 !default;
+
+// table colors
+$gray-table-header-bg: #F2F2F2;
+
+$table-text-color: #4d4F5C;
+
+
+
+$colors-default: (
+    "black": $black,
+    "primary-color": $primaryColor,
+    "secondary-color": $secondaryColor,
+    "accent-color": $accentColor,
+    "warn-color": $error-bper,
+    "disable-grey": $disableGrey
+) !default;
+
+$hr-color: rgba($black, .1) !default;

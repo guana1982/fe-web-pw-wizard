@@ -1,0 +1,30 @@
+// Utilizzato per impostare la griglia
+@mixin grid-definitions ($breakpoint: "") {    
+    $column-number: 12 !global;
+    $column-width: 46px !global;
+    $column-vgutter: 32px !global;
+    $column-hgutter: 24px !global;    
+    
+    $body-content-width: calc(#{$column-number} * #{$column-width} + (#{$column-number} - 1) * #{$column-vgutter}) !global;
+
+    @if  ($breakpoint == $bp-tablet ) {
+        $margin: 24px !global;
+        // max-width ... width è fluida
+        $body-content-width: calc(#{$bp-tablet} - #{$sidebar-width-reduced} - #{$margin}*2) !global;
+        $column-number: 8 !global;
+        // max-width
+        $column-vgutter: 24px !global;
+        $column-width: calc((#{$body-content-width} - #{$column-vgutter}*#{$column-number - 1}) / #{$column-number}) !global;
+        // $column-hgutter: $column-vgutter;
+        
+    } @else if  ($breakpoint == $bp-mobile ) {
+        // max-width ... width è fluida
+        $body-content-width: calc(#{$bp-mobile}) !global;
+        $column-number: 4 !global;
+        // max-width
+        $column-vgutter: 16px !global;
+        $column-width: calc((#{$body-content-width} - #{$column-vgutter}*#{$column-number - 1}) / #{$column-number}) !global;
+        // $column-hgutter: $column-vgutter;
+        
+    }    
+}

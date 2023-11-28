@@ -1,0 +1,423 @@
+
+$text-shadow-primary: 0px 3px 6px #071d1f3d;
+$primary-box-shadow: 0px 8px 16px #e3722214;
+$secondary-accent-box-shadow: 0px 8px 16px #e3722214;
+$fab-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.2);
+
+$btn-height: 42px;
+
+bper-button {
+    cursor: pointer;
+
+    & button.withIcon .mat-button-wrapper i {
+        display: inline-block !important;
+    }
+
+    button.hide {
+        display: none;
+    }
+
+    button.inline {
+        width: fit-content !important;
+        max-height: $btn-height !important;
+        margin: 0 !important;
+        padding: 0 !important;
+
+        .mat-button-wrapper {
+            span {
+                line-height: 26px !important;
+            }
+        }
+    }
+
+    @mixin primary($box-shadow) {
+        &.primary {
+            background: transparent $accent-gradient 0% 0% no-repeat padding-box;
+            box-shadow: $box-shadow;
+            text-shadow: $text-shadow-primary;
+            font-size: 16px;
+            font-family: 'Kievit Pro Bold';
+
+            &:hover:not([disabled]) {
+                animation: hoverBtnPrimary 0.3s forwards;
+            }
+
+            .mat-button-wrapper {
+                color: map-get($bper-palette, --white);
+                padding: 0 20px;
+            }
+
+            &:disabled {
+                background: #cbd1d1 0% 0% no-repeat padding-box;
+                text-shadow: none;
+                box-shadow: none;
+
+                & i::before {
+                    color: map-get($bper-palette, accent, --accent-90);
+                }
+            }
+        }
+    }
+
+    @mixin secondary-accent() {
+        &.secondaryAccent {
+            border: 2px solid map-get($bper-palette, accent, --accent-90);
+            color: map-get($bper-palette, accent, --accent-90);
+            font-size: 16px;
+            font-family: 'Kievit Pro Bold';
+            padding: 0;
+
+            .mat-button-wrapper {
+                color: map-get($bper-palette, accent, --accent-90);
+                padding: 0 20px;
+            }
+
+            &:hover:not([disabled]) {
+                border: 2px solid map-get($bper-palette, accent, --accent-100);
+                box-shadow: $secondary-accent-box-shadow;
+                background-color: white !important;
+
+                .mat-button-wrapper {
+                    color: map-get($bper-palette, accent, --accent-100);
+                    padding: 0 20px;
+                }
+            }
+
+            &:disabled {
+                border: 2px solid #cbd1d1;
+                box-shadow: $secondary-accent-box-shadow;
+
+                .mat-button-wrapper {
+                    color: #cbd1d1 !important;
+                }
+
+                & i::before {
+                    color: map-get($bper-palette, accent, --accent-90);
+                }
+            }
+        }
+    }
+
+    @mixin secondary-white {
+        &.secondaryWhite {
+            border: 2px solid #ffffff;
+            font-size: 16px;
+            font-family: 'Kievit Pro Bold';
+
+            .mat-button-wrapper {
+                color: map-get($bper-palette, --white);
+                padding: 0 20px;
+            }
+        }
+
+        &.secondaryWhite:hover:not([disabled]) {
+            background: transparent $accent-gradient 0% 0% no-repeat padding-box;
+            border-color: transparent;
+            text-shadow: $text-shadow-primary;
+        }
+
+        &.secondaryWhite:disabled {
+            background: #cbd1d1 0% 0% no-repeat padding-box;
+            border: none;
+
+            & i::before {
+                color: map-get($bper-palette, neutral, --neutral-40);
+            }
+        }
+    }
+
+    @mixin ghost-accent {
+        &.ghostAccent {
+            width: fit-content !important;
+            // height: $btn-height;
+            height: 26px;
+            background-color: transparent;
+            font-family: 'Kievit Pro Bold';
+            font-size: 16px;
+            line-height: 26px;
+            padding: 0 !important;
+
+            .mat-button-wrapper {
+                color: map-get($bper-palette, accent, --accent-90);
+                padding: 0;
+
+                &>i::before {
+                    line-height: 26px;
+                }
+            }
+
+            .mat-button-focus-overlay {
+                background-color: transparent;
+            }
+        }
+
+        &.ghostAccent:active:not([disabled]) {
+            .mat-button-wrapper {
+                color: map-get($bper-palette, accent, --accent-100);
+            }
+        }
+
+        &.ghostAccent:disabled {
+            .mat-button-wrapper {
+                color: #cbd1d1 !important;
+            }
+
+            & i::before {
+                color: map-get($bper-palette, neutral, --neutral-40);
+            }
+        }
+    }
+
+    @mixin ghost-white {
+        &.ghostWhite {
+            background-color: transparent;
+            height: $btn-height;
+            font-size: 16px;
+            font-family: 'Kievit Pro Bold';
+
+            .mat-button-wrapper {
+                color: #ffffff;
+            }
+        }
+
+        &.ghostWhite:active:not([disabled]) {
+            .mat-button-wrapper {
+                color: map-get($bper-palette, accent, --accent-90);
+                padding: 0;
+            }
+        }
+
+        &.ghostWhite:disabled {
+            .mat-button-wrapper {
+                color: #cbd1d1 !important;
+            }
+
+            & i::before {
+                color: map-get($bper-palette, neutral, --neutral-40);
+            }
+        }
+    }
+
+    @mixin ghost-green {
+        &.ghostGreen {
+            width: fit-content !important;
+            height: $btn-height;
+            background-color: transparent;
+            font-size: 16px;
+            font-family: 'Kievit Pro Bold';
+            padding: 0 !important;
+            text-align: start;
+
+            .mat-button-wrapper {
+                white-space: normal;
+                color: map-get($bper-palette, primary, --primary-500);
+                padding: 0;
+            }
+
+            .mat-button-focus-overlay {
+                background-color: transparent;
+            }
+
+            &:not([disabled]) i::before {
+                color: map-get($bper-palette, accent, --accent-90);
+            }
+        }
+
+        &.ghostGreen:active:not([disabled]) {
+            .mat-button-wrapper {
+                color: map-get($bper-palette, primary, --primary-500);
+            }
+        }
+
+        &.ghostGreen:disabled {
+            .mat-button-wrapper {
+                color: #cbd1d1 !important;
+            }
+
+            & i::before {
+                color: map-get($bper-palette, neutral, --neutral-40);
+            }
+        }
+    }
+
+    .mat-button {
+        width: 100% !important;
+        height: $btn-height;
+        padding: 0 20px;
+        border-radius: 24px;
+        opacity: 1;
+        transition: 0.3s background-color ease-out;
+
+        .mat-button-wrapper {
+            font-weight: 400 !important;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        .mat-button-focus-overlay {
+            background-color: transparent;
+        }
+
+        @include primary($primary-box-shadow);
+
+        @include secondary-accent();
+
+        @include secondary-white();
+
+        @include ghost-accent();
+
+        @include ghost-white();
+
+        @include ghost-green();
+
+        &.withIcon {
+            padding: 0 20px 0 16px;
+
+            & .mat-button-wrapper i {
+                font-size: 20px;
+                display: inline-block;
+
+                &.bper-btn--icon {
+                    &-left {
+                        margin-right: 12px;
+                    }
+
+                    &-right {
+                        margin-left: 12px;
+                    }
+
+                    &-fab {
+                        margin-left: 12px;
+                        margin-right: 12px;
+                    }
+
+                }
+
+                &::before {
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+
+    .mat-icon-button {
+        // min-width: 100% !important;
+        width: fit-content !important;
+        height: $btn-height;
+        border-radius: 24px;
+        opacity: 1;
+        transition: 3s background-color ease-out;
+
+        .mat-button-wrapper {
+            font-weight: 400 !important;
+            -moz-osx-font-smoothing: grayscale;
+        }
+
+        &.withIcon {
+            padding: 0 16px 0 16px;
+
+            & .mat-button-wrapper i {
+                font-size: 20px;
+                display: inline-block;
+
+                &.bper-btn--icon {
+                    &-left {
+                        margin-right: 12px;
+                    }
+
+                    &-right {
+                        margin-left: 12px;
+                    }
+
+                    &-fab {
+                        margin-left: 12px;
+                        margin-right: 12px;
+                    }
+                }
+
+                &::before {
+                    font-size: 20px;
+                }
+            }
+        }
+
+        i {
+            // padding: 0 5px;
+
+            &.-rotateIcon {
+                display: inline-block;
+                transform: rotate(90deg);
+            }
+        }
+
+        @include primary($primary-box-shadow);
+
+        @include secondary-accent();
+
+        @include secondary-white();
+
+        @include ghost-accent();
+
+        @include ghost-white();
+
+        @include ghost-green();
+    }
+
+    .mat-fab {
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+        width: $btn-height;
+        height: $btn-height;
+        opacity: 1;
+        transition: 0.3s all ease-out;
+
+        .mat-button-wrapper {
+            display: block;
+            padding: 0;
+        }
+
+        &.secondaryAccent {
+            background-color: transparent;
+            box-shadow: none;
+        }
+
+        &.secondaryWhite {
+            background-color: transparent;
+            box-shadow: none;
+        }
+
+        &.ghostAccent,
+        &.ghostAccent:active:not([disabled]) {
+            background-color: transparent !important;
+            box-shadow: none;
+        }
+
+        &.ghostWhite,
+        &.ghostWhite:active:not([disabled]) {
+            background-color: transparent;
+            box-shadow: none;
+        }
+
+        @include primary($fab-box-shadow);
+
+        @include secondary-accent();
+
+        @include secondary-white();
+
+        @include ghost-accent();
+
+        @include ghost-white();
+
+        @include ghost-green();
+    }
+}
+
+@keyframes hoverBtnPrimary {
+    0% {
+        background: transparent linear-gradient(180deg, #f06400 0%, map-get($bper-palette, accent, --accent-100) 100%) 0% 0% no-repeat padding-box;
+    }
+
+    100% {
+        background: transparent linear-gradient(180deg, map-get($bper-palette, accent, --accent-100) 0%, map-get($bper-palette, accent, --accent-100) 100%) 0% 0% no-repeat padding-box;
+    }
+}

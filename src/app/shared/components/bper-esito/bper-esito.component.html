@@ -1,0 +1,9 @@
+<div class="bper-c-esito">
+    <img *ngIf="type === 'image'" [src]="imageUrl" alt="Esci" />
+    <i *ngIf="type !== 'image'" class="{{ iconClass }} -{{ type }}"></i>
+    <p *ngIf="isError" class="bper-c-esito__title">...oops!</p>
+    <p class="bper-c-esito__title -{{ type }}" *ngIf="!titleHTML">{{ title }}</p>
+    <p class="bper-c-esito__title -{{ type }}" *ngIf="titleHTML" [innerHTML]="titleHTML"></p>
+    <p class="bper-c-esito__desc -{{ type }}" *ngIf="!descriptionHTML" [class.white-space]="whiteSpace">{{ description }}</p>
+    <p class="bper-c-esito__desc -{{ type }}" *ngIf="descriptionHTML" [innerHTML]="descriptionHTML"></p>
+</div>

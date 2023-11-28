@@ -1,0 +1,52 @@
+@import "src/scss/variables";
+
+.accordion {
+    width: 900px;
+    border: 1px solid map-get($bper-palette, primary, --primary-20);
+    border-radius: 12px;
+    opacity: 1;
+    box-shadow: none !important;
+
+}
+
+
+::ng-deep.mat-expansion-indicator::after {
+    width: 10px;
+    height: 10px;
+    color: map-get($bper-palette, accent, --accent-90);
+}
+
+.header {
+    color: #005157;
+    margin-bottom: 0;
+    font-weight: 600;
+}
+
+.underline {
+    padding: 20px 0;
+    border-bottom: 1px solid map-get($bper-palette, neutral, --neutral-40);
+
+    &:nth-last-of-type(1) {
+        border-bottom: none !important;
+    }
+}
+
+p {
+    margin-bottom: 25px;
+}
+
+.item {
+    display: flex;
+    flex-direction: column;
+}
+
+.download-zone {
+    margin: 18px 0 15px;
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+
+    bper-button {
+        margin-left: 42px;
+    }
+}

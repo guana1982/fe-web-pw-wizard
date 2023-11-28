@@ -1,0 +1,47 @@
+<div class="bper-steps row row-gap-stepper-title">
+    <div [class.hide]="hideTitle" class="bper-steps-title col-9 col-md-12">
+        <h1>{{ stepsTitle }}</h1>
+        <h2 *ngIf="selectedStep?.subtitle">{{ selectedStep?.subtitle }}</h2>
+    </div>
+
+    <ng-container *ngIf="initialized && steps.length">
+        <div class="bper-steps-indicator col-3" [class.hide]="hideStepsIndicator">
+            <div class="steps-indicator-header">
+                <span class="step-name">
+                    {{ selectedStep?.name }}
+                </span>
+                <span class="step-position"> {{ currentStepNumber }} <span>di</span> {{ stepsNumber }} </span>
+            </div>
+            <div class="steps-indicator-completion">
+                <div class="completion-background"></div>
+                <div class="completion-fill" [style.width.%]="completion"></div>
+            </div>
+        </div>
+
+        <div class="bper-steps-content col-12">
+            <ng-content></ng-content>
+        </div>
+
+        <div class="bper-steps-footer col-12">
+
+            <div class="left-step-buttons">
+                <bper-button *ngIf="!selectedStep?.hideBack" class="step-back-btn" order="secondary-accent"
+                    [label]="selectedStep?.backLabel" (clickBtn)="onBack($event)"
+                    [disabled]="selectedStep?.disabledBack">
+                </bper-button>
+                <ng-content select="[left-step-buttons]"></ng-content>
+            </div>
+
+
+            <div class="right-step-buttons" [style.column-gap]="columnGap" [class.riba]="riba">
+                <ng-content select="[step-buttons]"></ng-content>
+
+                <bper-button *ngIf="!selectedStep?.hideNext" class="step-next-btn" order="primary"
+                    [label]="selectedStep?.nextLabel" (clickBtn)="onNext($event)" [disabled]="selectedStep?.disabled"
+                    [isSubmit]="submit" matTooltip="" matTooltipPosition="above" matTooltipClass="bper-tooltip above"
+                    #nextTooltip="matTooltip">
+                </bper-button>
+            </div>
+        </div>
+    </ng-container>
+</div>

@@ -1,0 +1,11 @@
+{
+    "id": "1",
+    "name": "Alessandro Rabuffetti",
+    "email": "alessandro.rabuffetti@bpermail.com",
+    "conto": "12345678",
+    "commissioniBonifico": 0.00,
+    "notifications": {
+        "documenti": 832,
+        "comunicazioni": 2
+    }
+}

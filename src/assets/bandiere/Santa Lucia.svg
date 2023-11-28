@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Tracciato_7837" data-name="Tracciato 7837" d="M1.107,12.749a12,12,0,1,0,12-12,12,12,0,0,0-12,12" transform="translate(-1.107 -0.749)" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Santa_Lucia" data-name="Santa Lucia" transform="translate(-1.107 -0.749)">
+    <g id="Raggruppa_230" data-name="Raggruppa 230" transform="translate(1.107 0.749)" clip-path="url(#clip-path)">
+      <rect id="Rettangolo_584" data-name="Rettangolo 584" width="47.828" height="23.914" transform="translate(-11.914 0.043)" fill="#63d1ff"/>
+      <path id="Tracciato_7834" data-name="Tracciato 7834" d="M9.443.948,1.479,20.708H17.407Z" transform="translate(2.527 1.196)" fill="#fff"/>
+      <path id="Tracciato_7835" data-name="Tracciato 7835" d="M7.471,1.2,1.681,15.556h11.57Z" transform="translate(4.499 3.648)"/>
+      <path id="Tracciato_7836" data-name="Tracciato 7836" d="M9.443,1.866l-7.964,9.88H17.407Z" transform="translate(2.527 10.157)" fill="#fcd10f"/>
+    </g>
+  </g>
+</svg>

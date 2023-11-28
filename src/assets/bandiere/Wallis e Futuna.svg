@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Tracciato_9310" data-name="Tracciato 9310" d="M.6,12.749a12,12,0,1,0,12-12,12,12,0,0,0-12,12" transform="translate(-0.601 -0.749)" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Wallis_e_Futuna" data-name="Wallis e Futuna" transform="translate(-0.601 -0.749)">
+    <g id="Raggruppa_252" data-name="Raggruppa 252" transform="translate(0.601 0.749)" clip-path="url(#clip-path)">
+      <rect id="Rettangolo_800" data-name="Rettangolo 800" width="35.29" height="27.526" transform="translate(-6.468 -3.763)" fill="#f10c27"/>
+      <rect id="Rettangolo_801" data-name="Rettangolo 801" width="14.26" height="9.525" transform="translate(-2.325 0.248)" fill="#fff"/>
+      <rect id="Rettangolo_802" data-name="Rettangolo 802" width="13.937" height="9.277" transform="translate(-2.325 0.248)" fill="#f10c27"/>
+      <rect id="Rettangolo_803" data-name="Rettangolo 803" width="9.396" height="9.277" transform="translate(-2.325 0.248)" fill="#fff"/>
+      <rect id="Rettangolo_804" data-name="Rettangolo 804" width="4.682" height="9.277" transform="translate(-2.325 0.248)" fill="#00247d"/>
+      <g id="Raggruppa_292" data-name="Raggruppa 292" transform="translate(-1334 -8.5)">
+        <g id="Raggruppa_292-2" data-name="Raggruppa 292" transform="translate(1346.5 20.466)">
+          <path id="Poligono_11" data-name="Poligono 11" d="M3.284,0,6.568,3.381H0Z" transform="translate(3.381 0) rotate(90)" fill="#fff"/>
+          <path id="Poligono_12" data-name="Poligono 12" d="M3.284,0,6.568,3.381H0Z" transform="translate(5.119 6.568) rotate(-90)" fill="#fff"/>
+        </g>
+        <path id="Poligono_13" data-name="Poligono 13" d="M3.284,0,6.568,3.381H0Z" transform="translate(1347.466 24.619)" fill="#fff"/>
+        <path id="Poligono_14" data-name="Poligono 14" d="M3.284,0,6.568,3.381H0Z" transform="translate(1354.034 22.881) rotate(180)" fill="#fff"/>
+      </g>
+    </g>
+  </g>
+</svg>

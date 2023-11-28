@@ -1,0 +1,22 @@
+<div class="modal-container" [id]="id" [class.no-title]="noTitle" [class.no-action]="noActions"
+     [class.no-leftImage]="!hasLeftImage" role="alertdialog">
+    <div class="modal-header" [style.display]="noHeader">
+        <h2 mat-dialog-title>{{ modalTitle }}</h2>
+        <i *ngIf="!noCloseButton" (click)="closeModal()" class="bper-ic-24px-close icon-bold"
+            aria-label="Chiudi Finestra" role="button"></i>
+    </div>
+
+    <div *ngIf="imageSrc" class="bper-modal-image">
+        <img width="100%" [src]="imageSrc" />
+    </div>
+
+    <mat-dialog-content #matDialogContent class="mat-typography" [style.overflow]="overflow">
+        <ng-content></ng-content>
+    </mat-dialog-content>
+
+    <div class="fade-container" [class.fade]="enableFadeOverlay && (showFadeOverlay$ | async)"></div>
+
+    <mat-dialog-actions class="modal-footer">
+        <ng-content select="[footer]"></ng-content>
+    </mat-dialog-actions>
+</div>

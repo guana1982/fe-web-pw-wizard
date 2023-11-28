@@ -1,0 +1,66 @@
+@import "src/scss/variables";
+
+.bper-card-skeleton {
+  border-radius: 12px;
+  border: 1px solid #e3f4ec;
+  background-color: map-get($bper-palette, primary, --primary-20);
+  overflow: hidden;
+  margin: 15px 0;
+
+  &.--payment {
+    height: 175px;
+    width: 277px;
+  }
+
+  &.--payment-small {
+    height: 136px;
+    width: 216px;
+  }
+
+  &.--conto {
+    height: 152px;
+    width: 280px;
+  }
+
+  &.--icon {
+    height: 100px;
+    width: 276px;
+  }
+
+  .skeleton-animation {
+    content: '';
+    position: relative;
+    background: linear-gradient(128deg, rgba(255, 255, 255, 0), #f0fbf8, rgba(255, 255, 255, 0));
+    background: -moz-linear-gradient(128deg, rgba(255, 255, 255, 0), #f0fbf8, rgba(255, 255, 255, 0));
+    background: -webkit-linear-gradient(128deg, rgba(255, 255, 255, 0), #f0fbf8, rgba(255, 255, 255, 0));
+    width: 90%;
+    height: 100%;
+    animation: loading 0.6s infinite;
+  }
+}
+
+.bper-card-content {
+  border: 1px solid #c2cdcd;
+  background: #a9bcbc;
+  height: 107px;
+  width: 214px;
+  padding: 5px;
+  margin: 60px auto auto 5px;
+  border-radius: 12px;
+
+  &.--payment-small {
+    height: 85px;
+    width: 161px;
+    margin: 45px auto auto 5px;
+  }
+}
+
+@keyframes loading {
+  0% {
+    transform: skewX(-10deg) translateX(-100%);
+  }
+
+  100% {
+    transform: skewX(-10deg) translateX(200%);
+  }
+}

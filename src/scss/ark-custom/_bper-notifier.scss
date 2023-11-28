@@ -1,0 +1,164 @@
+
+
+$alert-background: map-get($bper-palette, error, --error-20);
+$success-background: #DFF5EC;
+$success-border-top: 8px solid #43733a;
+$warning-background: map-get($bper-palette, warning, --warning-70);
+$warning-border-top: 8px solid #886f00;
+$info-background: #5bc0de;
+$info-border-top: 8px solid #2f9bbb;
+$default-background: #444;
+$default-border-top: 8px solid #333;
+
+$white: map-get($bper-palette, --white);
+
+$notification-min-width: 300px;
+$notification-padding: 16px 16px 16px 16px;
+
+$text-padding-right: 25px;
+$button-scale-big: 1;
+$button-scale-small: 0.8;
+$button-border-width: 2px;
+$button-padding: 6px;
+$button-width: 40px;
+$button-scale-big: 1;
+// calc the icon width so that it's centered inside the button
+$icon-width: $button-width - 2 * $button-border-width - 2 * $button-padding;
+
+@mixin bper-notifier-button($size) {
+    display: inline-block;
+    cursor: pointer; // Make it obvious that the "button" (or, more honestly, icon) is clickable (#UX)
+    background: none;
+    transition: opacity 0.2s ease;
+    opacity: 0.5;
+    margin: 0;
+    vertical-align: top;
+    outline: none;
+    border: $button-border-width solid $white;
+    border-radius: 2em;
+    padding: $button-padding;
+    width: $button-width;
+    height: $button-width;
+
+    @if $size == big {
+        transform: scale($button-scale-big);
+    } @else if $size == small {
+        transform: scale($button-scale-small);
+    }
+
+    svg[class$='icon'] {
+        width: $icon-width;
+        height: $icon-width;
+        fill: $white;
+    }
+}
+
+@mixin default-material-button {
+    display: inline-block;
+    cursor: pointer;
+    background: none;
+    transition: opacity 0.2s ease;
+    opacity: 0.5;
+    margin: {
+        right: -10px;
+        left: 10px;
+    }
+    vertical-align: top;
+    outline: none;
+    border: none;
+    padding: 6px;
+    width: 32px;
+    height: 32px;
+
+    svg[class$='icon'] {
+        fill: $white;
+    }
+}
+
+.notifier__notification--bper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    min-width: $notification-min-width;
+    max-width: 250px !important;
+    border: none !important;
+    border-radius: 16px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
+    cursor: default; // Default cursor, even when hovering over text
+    padding: $notification-padding;
+    opacity: 1;
+
+    &.notifier__notification--error {
+        background: #F6E8E8 0% 0% no-repeat padding-box;
+        color: #9D0000;
+    }
+    &.notifier__notification--success {
+        background-color: $success-background;
+        color: #005157;
+    }
+
+    // same as the default material theme
+    .notifier__notification {
+        &-message {
+            margin: 0;
+            vertical-align: top;
+            line-height: 2em;
+            font-size: 1em;
+            padding-right: $text-padding-right;
+            opacity: 0.9;
+        }
+        &-button {
+            // @include bper-notifier-button(small);
+            @include default-material-button;
+        }
+    }
+
+    // template
+    .bper-notifier-template {
+        flex: 1 1 auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+
+        .bper-notifier-text-container {
+            display: flex;
+            justify-content: flex-start;
+            align-items: flex-start;
+            padding-right: $text-padding-right;
+            opacity: 0.9;
+
+            i {
+             &.bper-ic-40px-circle_exclamation_point:before {
+                 margin-right: 6px;
+             }
+            }
+
+            p {
+                margin-bottom: 0;
+            }
+
+        }
+        .bper-notifier-icon-close {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            cursor: pointer;
+        }
+        .bper-notifier-icon-container {
+            .bper-notifier-button {
+                @include bper-notifier-button(big);
+            }
+        }
+    }
+
+    &:hover,
+    &:focus,
+    &:active {
+        .bper-notifier-template .bper-notifier-icon-container .bper-notifier-button,
+        .notifier__notification-button {
+            opacity: 0.65;
+        }
+    }
+}

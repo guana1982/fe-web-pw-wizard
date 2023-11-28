@@ -1,0 +1,171 @@
+@import 'vars';
+@import 'mixins';
+
+ark-stepper .custom-stepper {
+    @for $step from 1 through $stepsTotal {
+        &.last-edited-step-#{$step} {
+            @for $completed-lines from 1 through $step {
+                @include styleStepLine(2 * $completed-lines);
+            }
+        }
+    }
+    // Step con bordo a sezioni per ogni sottostep
+    .pie {
+        width: $circle-diameter;
+        height: $circle-diameter;
+        display: block;
+        border-radius: 50%;
+        background-color: $circle-border-color-elapsed;
+        border: none;
+        margin: 0 auto;
+
+        @for $step from 1 through $stepsTotal {
+            &.pie-#{$step} {
+                &::after {
+                    content: '#{$step}';
+                    display: block;
+                    position: absolute;
+                    top: $circle-border-width;
+                    left: $circle-border-width;
+                    height: $circle-diameter - 2 * $circle-border-width;
+                    width: $circle-diameter - 2 * $circle-border-width;
+                    line-height: $circle-diameter - 2 * $circle-border-width;
+                    background: $circle-background-color;
+                    border-radius: 50%;
+                    text-align: center;
+                }
+            }
+        }
+
+        @for $j from 1 through 50 {
+            &.p#{$j} {
+                background-image: linear-gradient(90deg+ (360 * 0.01 * $j), transparent 50%, $circle-border-color-remaining 50%),
+                    linear-gradient(90deg, $circle-border-color-remaining 50%, transparent 50%);
+            }
+        }
+        @for $j from 51 through 100 {
+            &.p#{$j} {
+                background-image: linear-gradient(90deg, transparent 50%, $circle-border-color-elapsed 50%),
+                    linear-gradient(-90deg+ (360 * 0.01 * ($j - 50)), transparent 50%, $circle-border-color-remaining 50%);
+            }
+        }
+    }
+
+    .mat-step-header {
+        &:hover {
+            background-color: rgba(255, 255, 255, 0.04);
+        }
+
+        .mat-step-icon-state-edit,
+        .mat-step-icon-state-number,
+        .mat-step-icon-state-done {
+            width: 35px;
+            height: 35px;
+            background-color: map-get($bper-palette, --white);
+            color: map-get($bper-palette, --grey);
+
+            &.mat-step-icon-selected {
+                background-color: map-get($bper-palette, --white);
+                color: $lightBlue;
+            }
+        }
+
+        .mat-step-icon-state-number {
+            border: 1px solid;
+        }
+
+        .mat-step-icon-state-abort {
+            border: 1px solid;
+            width: 30px;
+            height: 30px;
+            background-color: map-get($bper-palette, --white);
+            color: $lightBlue;
+
+            &.mat-step-icon-selected {
+                background-color: map-get($bper-palette, --white);
+                color: $lightBlue;
+            }
+        }
+
+        .mat-step-label,
+        .mat-step-label-active {
+            color: map-get($bper-palette, --grey);
+            max-width: 110px;
+            white-space: normal;
+            &.mat-step-label-selected {
+                color: $lightBlue;
+                font-weight: bold;
+            }
+        }
+
+        &[ng-reflect-state='done'] .mat-step-label {
+            color: $lightBlue;
+            font-weight: bold;
+            max-width: 110px;
+            white-space: normal;
+        }
+
+        .mat-step-icon-state-done {
+            &.mat-step-icon {
+                background-color: $lightBlue;
+                color: map-get($bper-palette, --white);
+            }
+        }
+    }
+
+    .mat-stepper-vertical-line {
+        &::before {
+            top: -21px;
+            bottom: -21px;
+            border-color: $lightBlue;
+            left: 3px;
+        }
+    }
+
+    .mat-vertical-stepper-content {
+        visibility: visible !important;
+        height: auto !important;
+    }
+
+    .step-visibility {
+        &.incomplete {
+            visibility: hidden !important;
+            height: 0px !important;
+        }
+        &.aborted {
+            visibility: hidden !important;
+            height: 0px !important;
+        }
+        &.complete {
+            visibility: visible !important;
+            height: auto !important;
+        }
+        &.current {
+            visibility: visible !important;
+            height: auto !important;
+        }
+    }
+
+    .mat-stepper-horizontal-line {
+        top: 40px;
+        height: 3px;
+        border-top-width: 3px;
+    }
+
+    .mat-step-header {
+        &::after {
+            top: 40px !important;
+            height: 3px !important;
+            border-top-width: 3px !important;
+            width: calc(50% - 16px) !important;
+        }
+    }
+    .mat-step-header {
+        &::before {
+            top: 40px !important;
+            height: 3px !important;
+            border-top-width: 3px !important;
+            width: calc(50% - 16px) !important;
+        }
+    }
+}

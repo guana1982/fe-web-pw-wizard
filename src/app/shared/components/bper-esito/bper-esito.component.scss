@@ -1,0 +1,109 @@
+@import 'src/scss/variables';
+
+.bper-c-esito {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    & img {
+        margin: 0 auto 26px;
+    }
+
+    & i {
+        margin: 0 auto 16px;
+
+        &.-success,
+        &.-donazioni {
+            color: map-get($bper-palette, secondary, --secondary-90);
+            margin-bottom: 16px;
+        }
+
+        &.-error,
+        &.-error-generic {
+            color: map-get($bper-palette, error, --error-700);
+        }
+
+        &.-warning {
+            color: map-get($bper-palette, accent, --accent-100);
+        }
+
+        &.-info,
+        &.-polizze {
+            color: map-get($bper-palette, primary, --primary-500);
+        }
+
+        &.-success-primary-600 {
+            color: map-get($bper-palette, primary, --primary-600);
+        }
+
+        &.-info-green {
+            background-image: $background-green-gradient;
+            color: transparent;
+            -webkit-background-clip: text;
+            background-clip: text;
+        }
+
+        &.-waiting {
+            color: map-get($bper-palette, primary, --primary-400);
+        }
+
+        &.-warning-gradient {
+            background-image: $background-green-gradient;
+            color: transparent;
+            -webkit-background-clip: text;
+            background-clip: text;
+            font-size: 96px;
+        }
+    }
+
+    & p.bper-c-esito {
+        text-align: center;
+        color: map-get($bper-palette, primary, --primary-500);
+
+        &__title {
+            font-family: 'Kievit Pro Bold';
+            font-size: 20px;
+            line-height: 26px;
+            color: map-get($bper-palette, primary, --primary-500);
+            margin-bottom: 16px;
+            text-align: center;
+
+            &.-success {
+                color: map-get($bper-palette, primary, --primary-600);
+                text-align: center;
+            }
+
+            &.-success-primary-600 {
+                width: 218px;
+                text-align: center;
+                color: map-get($bper-palette, primary, --primary-600) !important;
+                margin-bottom: 42px !important;
+            }
+        }
+
+        &__desc {
+            max-width: 720px;
+            font-size: 16px;
+            margin-bottom: 0;
+            line-height: 22px;
+            color: map-get($bper-palette, neutral, --neutral-700);
+            text-align: center;
+
+            &.-success {
+                color: map-get($bper-palette, primary, --primary-600);
+            }
+
+            &.-warning-gradient {
+                text-align: center;
+            }
+
+            &.-info-green {
+                text-align: center;
+            }
+            
+            &.white-space {
+                white-space: pre-line;
+            }
+        }
+    }
+}

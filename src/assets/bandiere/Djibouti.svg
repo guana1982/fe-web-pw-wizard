@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24.011" viewBox="0 0 24 24.011">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Tracciato_2839" data-name="Tracciato 2839" d="M.332,12.754A12,12,0,1,0,12.327.749,12,12,0,0,0,.332,12.754" transform="translate(-0.332 -0.749)" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Djibouti" transform="translate(-0.332 -0.749)">
+    <g id="Raggruppa_61" data-name="Raggruppa 61" transform="translate(0.332 0.749)" clip-path="url(#clip-path)">
+      <rect id="Rettangolo_257" data-name="Rettangolo 257" width="36.124" height="24.086" transform="translate(-3.575 -0.032)" fill="#6ab2ef"/>
+      <rect id="Rettangolo_258" data-name="Rettangolo 258" width="36.124" height="12.048" transform="translate(-3.575 12.005)" fill="#12ad21"/>
+      <path id="Tracciato_2837" data-name="Tracciato 2837" d="M0,.746,20.931,12.783,0,24.832Z" transform="translate(-3.575 -0.78)" fill="#fff"/>
+      <path id="Tracciato_2838" data-name="Tracciato 2838" d="M2.668,1.646,3.2,3.272H4.907l-1.389,1L4.046,5.9,2.668,4.887,1.29,5.9l.528-1.626-1.378-1h1.7Z" transform="translate(0.713 8.015)" fill="#ff0003"/>
+    </g>
+  </g>
+</svg>

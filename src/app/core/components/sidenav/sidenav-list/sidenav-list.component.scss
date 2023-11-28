@@ -1,0 +1,13 @@
+
+.nav-container {
+    display: flex;
+    flex-flow: column;
+
+    & .nav-item {
+        display: flex;
+        flex-flow: column;
+
+        min-height: 50px;
+        padding: 10px 5px;
+    }
+}

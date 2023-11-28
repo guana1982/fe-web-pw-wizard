@@ -1,0 +1,13 @@
+<ng-template #template>
+    <div class="bper-notifier-template">
+        <div class="bper-notifier-text-container">
+            <i class="icon-ic-{{ iconLeft }}"></i>
+            <p class="bper-notifier-subTitle">{{ message }}</p>
+        </div>
+    </div>
+    <div class="bper-notifier-icon-close">
+        <div>
+            <i *ngIf="close == true" [class]="'icon-ic-chiusura'"></i>
+        </div>
+    </div>
+</ng-template>

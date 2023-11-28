@@ -1,0 +1,34 @@
+@import "src/scss/variables";
+
+i {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-right: 5px;
+
+    &.input-currency-icon {
+        color: map-get($bper-palette, accent, --accent-90) !important;
+        cursor: pointer;
+        font-size: 14px;
+        position: relative !important;
+        z-index: 1;
+
+        &.left {
+            left: 16px;
+            margin-right: 12px;
+        }
+
+        &.right {
+            margin-left: 12px;
+            right: 16px;
+        }
+    }
+}
+
+.mat-error {
+    i {
+        font-size: 24px;
+    }
+    span {
+        line-height: 1;
+    }
+}

@@ -1,0 +1,11 @@
+<footer class="bper-c-footer">
+    
+    <ul>
+        <p *ngIf="piva$ | async as piva">P.I. {{piva || '* 03830780361'}}</p>
+        
+        <li *ngFor="let link of (footerLinks$ | async)">
+            <a [class.prevent-mouse]="!link.url" [href]="link.url" target="_blank">{{ link.label }}</a>
+        </li>
+    </ul>
+
+</footer>

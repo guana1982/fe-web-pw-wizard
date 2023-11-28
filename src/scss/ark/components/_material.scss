@@ -1,0 +1,16 @@
+// Material-theme
+@use "@angular/material" as mat;
+// @import '~material-design-icons/iconfont/material-icons.css';
+
+// general-typography
+@include mat.core();
+$general-typography: mat.define-typography-config(
+    $font-family: "Kievit Pro"
+);
+@include mat.button-typography($general-typography);
+
+// .mat-theme {
+    @include mat.all-component-themes($ark-theme);
+// }
+
+// @include angular-material-theme-override($ark-theme);

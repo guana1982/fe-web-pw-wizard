@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Tracciato_2767" data-name="Tracciato 2767" d="M.547,12.749a12,12,0,1,0,12-12,12,12,0,0,0-12,12" transform="translate(-0.547 -0.749)" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Giappone" transform="translate(-0.547 -0.749)">
+    <g id="Raggruppa_59" data-name="Raggruppa 59" transform="translate(0.547 0.749)" clip-path="url(#clip-path)">
+      <rect id="Rettangolo_234" data-name="Rettangolo 234" width="35.774" height="23.871" transform="translate(-5.887 0.065)" fill="#fff"/>
+      <path id="Tracciato_2766" data-name="Tracciato 2766" d="M15.4,8.395A7.205,7.205,0,1,1,8.182,1.2a7.22,7.22,0,0,1,7.222,7.2" transform="translate(3.807 3.605)" fill="#be001f"/>
+    </g>
+  </g>
+</svg>

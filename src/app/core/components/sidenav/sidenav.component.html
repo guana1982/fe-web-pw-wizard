@@ -1,0 +1,23 @@
+<!-- States:
+    1. opened, apertura primaria
+    2. reduced, solo icona visibile
+    3. expanded, sidenav secondaria aperta
+    4. default, primaria sempre aperta
+-->
+<div class="sidenav-structure">
+    <div class="sidenav-primary" [ngClass]="primaryState$ | async">        
+        <div class="sidenav-primary-logo">
+            <i>LOGO</i>
+        </div>
+        <div class="sidenav-primary-expand">
+            <i class="icon-ic-menu" (click)="togglePrimary()"></i>
+        </div>
+        <div *ngIf="(navItems$ |async) as navItems" class="sidenav-primary-nav-list">
+            <ark-sidenav-list [navItems]="navItems"></ark-sidenav-list>
+        </div>
+    </div>    
+    <div class="sidenav-secondary" [ngClass]="secondaryState$ | async">
+        <router-outlet name="sidenav"></router-outlet>
+    </div>
+    <div class="sidenav-overlay" (click)="onOverlayClick($event)"></div>
+</div>

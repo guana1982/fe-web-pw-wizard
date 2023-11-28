@@ -1,0 +1,805 @@
+
+
+@mixin scaleLeft() {
+    transform: scale(1.05);
+    transform-origin: left;
+}
+
+@mixin radioCard() {
+    color: map-get($bper-palette, primary, --primary-500);
+    min-height: unset;
+    height: 100%;
+    width: 296px;
+
+    &:hover, &.bper-card-selected {
+        box-shadow: 0 10px 14px #0051573d !important;
+    }
+
+    .icon-title-container {
+        .icon i {
+            font-size: 86px;
+        }
+
+        .title {
+            margin-bottom: -13px; // Per compensare il margine interno
+            margin-top: 7px;
+
+            mat-radio-button label {
+                font: normal normal 600 18px/22px Kievit Pro;
+            }
+        }
+    }
+
+    p {
+        color: map-get($bper-palette, primary, --primary-500);
+    }
+}
+
+@mixin horizontalCard() {
+    height: 146px !important;
+    min-height: unset;
+    width: unset;
+    padding: 24px !important;
+    color: map-get($bper-palette, primary, --primary-500);
+
+    .header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        p:first-child {
+            font-size: 14px;
+            text-align: left;
+            color: map-get($bper-palette, neutral, --neutral-300);
+            margin-bottom: 6px;
+        }
+
+        p:nth-child(2) {
+            font-size: 16px;
+            margin-bottom: 24px;
+        }
+
+        .cta {
+            position: relative;
+            bottom: 18px;
+        }
+    }
+
+    .description {
+        p {
+            font-family: 'Kievit Pro';
+            font-size: 12px;
+            text-align: left;
+        }
+    }
+}
+
+@mixin iconCard {
+    &.-small {
+        padding: 0px 16px !important;
+        display: flex;
+        align-items: center;
+
+        & .content {
+            flex: 1;
+            margin-top: 0 !important; 
+
+            & p:first-child {
+                display: -webkit-box;
+                -webkit-line-clamp: 2;
+                -webkit-box-orient: vertical;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                font-family: 'Kievit Pro Medium' !important;
+                font-weight: unset;
+            }
+
+            & p:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    font-family: 'Kievit Pro' !important;
+    min-height: unset;
+    padding: 23px 16px 16px 23px !important;
+    width: 100%;
+    height: 100px;
+    overflow: hidden;
+    display: flex;
+
+    .icon-container {
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        i::before {
+            background: linear-gradient(0deg, #3a888b 0%, #64cca1 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+
+
+    .content {
+        margin: 6px 0 0 15px;
+    }
+
+    p:first-child {
+        color: map-get($bper-palette, primary, --primary-500);
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    p:nth-child(2) {
+        color: map-get($bper-palette, neutral, --neutral-100);
+        font-size: 14px;
+        margin-top: 4px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+    }
+
+    .icon-container {
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        i::before {
+            background: linear-gradient(0deg, #3a888b 0%, #64cca1 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+
+
+    .content {
+        margin: 6px 0 0 15px;
+    }
+
+    p:first-child {
+        color: map-get($bper-palette, primary, --primary-500);
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+    p:nth-child(2) {
+        color: map-get($bper-palette, neutral, --neutral-100);
+        font-size: 14px;
+        margin-top: 4px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+    }
+
+    &.-small {
+        height: 95px;
+        border: none !important;
+        box-shadow: 0 12px 24px #7E8C8D29 !important;
+
+        & .content {
+            margin: 10px 0 0 8px;
+        }
+
+        & i::before {
+            font-size: 36px;
+        }
+
+        & p:nth-child(1) {
+            margin-bottom: 4px;
+        }
+
+        & p:nth-child(2) {
+            -webkit-line-clamp: 1;
+        }
+    }
+}
+
+// <!-- BPER CARD GENERIC --->
+bper-card {
+    mat-card {
+        width: 310px;
+        min-height: 366px;
+        background-color: map-get($bper-palette, --white);
+        border: 1px solid map-get($bper-palette, secondary, --secondary-10);
+        border-radius: 16px !important;
+        box-shadow: 0 8px 4px #00515714 !important;
+        padding: 32px !important;
+        opacity: 1;
+        transition: 0.1s all ease-in-out !important;
+
+        &.pointer {
+            cursor: pointer;
+        }
+
+        &:hover {
+            box-shadow: 0 16px 24px #0051573D !important;
+        }
+
+        &.bper-card-selected {
+            box-shadow: 0 16px 24px #0051573d !important;
+            border: 2px solid map-get($bper-palette, secondary, --secondary-90) !important;
+        }
+
+        .icon {
+            text-align: center;
+        }
+
+        .title {
+            min-height: 50px;
+            font-family: 'Kievit Pro';
+            font-size: 18px;
+            text-align: center;
+            color: map-get($bper-palette, primary, --primary-500);
+            margin-top: 20px;
+
+            h2 {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-bottom: 5px;
+
+                span {
+                    font-family: 'Kievit Pro Medium';
+                }
+            }
+
+        }
+
+
+        h3 {
+            font-size: 14px;
+            color: map-get($bper-palette, primary, --primary-500);
+            padding-bottom: 20px;
+            text-align: center;
+        }
+
+
+        .mat-card-content {
+            margin-bottom: 0;
+
+            p {
+                font-family: 'Kievit Pro';
+                font-size: 14px;
+                text-align: left;
+                color: map-get($bper-palette, neutral, --neutral-300);
+                line-height: 20px;
+            }
+        }
+
+        // REMOVE
+        &.card-conti,
+        &.nuovo-conto {
+            width: auto !important;
+            height: 152px !important;
+            min-height: 0 !important;
+            padding: 16px !important;
+            border-radius: 18px !important;
+            box-shadow: 0 12px 24px #00515729 !important;
+            transition: all 0.15s ease-in-out !important;
+            margin-bottom: 24px;
+
+            &:hover {
+                transform: scale(1.05);
+                transform-origin: left;
+
+                .title {
+                    h2 {
+                        font-size: 20px !important;
+                    }
+                }
+            }
+        }
+
+        &.card-conti {
+            border: 1px solid map-get($bper-palette, secondary, --secondary-20);
+
+            &:hover {
+                h3 {
+                    font-size: 16px;
+                }
+
+                .description {
+                    font-size: 14px !important;
+                    line-height: 17px;
+                }
+
+                .saldo {
+                    font-size: 20px;
+                    line-height: 25px;
+                }
+            }
+
+            .icon-title-container {
+                display: flex;
+                align-items: center;
+
+                .icon {
+                    img {
+                        margin-top: 0;
+                        margin-right: 4px;
+                    }
+                }
+
+                .title {
+                    min-height: 0 !important;
+                    text-align: left;
+                    margin-top: 0;
+
+                    h2 {
+                        font-size: 18px;
+                        font-weight: 600 !important;
+                        margin-bottom: 0 !important;
+                        transition: all 0.1s ease-in-out !important;
+                    }
+                }
+            }
+
+            .subtitle {
+                h3 {
+                    padding-bottom: 0 !important;
+                    margin-bottom: 13px;
+                    text-align: left;
+                    margin-top: 2px;
+                    transition: all 0.1s ease-in-out !important;
+                }
+            }
+
+            p.description {
+                font-size: 12px !important;
+                line-height: 14px;
+                margin-bottom: 4px;
+                transition: all 0.1s ease-in-out !important;
+            }
+
+            p.saldo {
+                font-size: 18px;
+                line-height: 22px;
+                color: map-get($bper-palette, primary, --primary-500);
+                transition: all 0.1s ease-in-out !important;
+            }
+
+            .cta {
+                position: absolute;
+                bottom: 12px;
+                right: 14px;
+            }
+        }
+
+        &.nuovo-conto {
+            border: 1px solid map-get($bper-palette, primary, --primary-20);
+            background-color: map-get($bper-palette, primary, --primary-20);
+
+            .title {
+                margin-top: 0;
+
+                h2 {
+                    color: map-get($bper-palette, primary, --primary-600);
+                    font-weight: 600 !important;
+                    font-size: 16px !important;
+                    transition: all 0.1s ease-in-out !important;
+                }
+            }
+        }
+
+        // ------------------------------
+        &.hover-scale-left:hover {
+            @include scaleLeft();
+        }
+
+        &.horizontal-card {
+            @include horizontalCard();
+
+            &:hover {
+                box-shadow: 0 8px 16px #7E8C8D14 !important;
+            }
+        }
+
+        &.radio-card {
+            @include radioCard();
+        }
+
+        &.icon-card {
+            @include iconCard();
+        }
+
+    }
+
+    &.bollettini-cards, &.mav-rav-freccia-cards {
+        mat-card {
+            width: 278px;
+            min-height: 296px;
+            padding: 38px 32px 32px 32px !important;
+
+            .title {
+                h2 {
+                    font-size: 18px;
+                    margin-bottom: 0;
+                    span {
+                        font-family: 'Kievit Pro Bold';
+                    }
+                }
+            }
+
+            h3 {
+                display: none;
+            }
+
+            .mat-card-content {
+                margin-top: 11px;
+            }
+        }
+    }
+
+    &.mav-rav-freccia-cards {
+        mat-card {
+            min-height: 334px;
+            max-height: 334px;
+            padding: 32px !important;
+
+            .title {
+                margin-bottom: 2px;
+                min-height: unset;
+            }
+
+            h3 {
+                display: block;
+                padding-bottom: 0;
+                margin-bottom: 16px;
+            }
+        }
+    }
+}
+
+
+// ----------------------------------------
+bper-card-conto {
+    mat-card {
+        width: 310px;
+        min-height: 366px;
+        background-color: map-get($bper-palette, --white);
+        border: 1px solid map-get($bper-palette, secondary, --secondary-10);
+        border-radius: 16px !important;
+        box-shadow: 0 8px 4px #00515714 !important;
+        padding: 32px !important;
+        opacity: 1;
+        transition: 0.1s all ease-in-out !important;
+        cursor: pointer;
+
+        &:hover {
+            box-shadow: 0 16px 24px #0051573D !important;
+        }
+
+        .icon {
+            text-align: center;
+
+            img {
+                margin-top: 15px;
+            }
+        }
+
+        .title {
+            min-height: 50px;
+            font-family: 'Kievit Pro';
+            font-size: 18px;
+            text-align: center;
+            color: map-get($bper-palette, primary, --primary-500);
+            margin-top: 20px;
+
+            h2 {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin-bottom: 5px;
+
+                span {
+                    font-family: 'Kievit Pro Medium';
+                }
+            }
+
+        }
+
+        h3 {
+            font-size: 14px;
+            color: map-get($bper-palette, primary, --primary-500);
+            padding-bottom: 20px;
+            text-align: center;
+        }
+
+        .mat-card-content {
+            margin-bottom: 0;
+
+            p {
+                font-family: 'Kievit Pro';
+                font-size: 14px;
+                text-align: left;
+                color: map-get($bper-palette, neutral, --neutral-300);
+                line-height: 20px;
+            }
+        }
+
+        &.nuovo-conto {
+            height: 152px !important;
+        }
+
+        // REMOVE
+        &.card-conti,
+        &.nuovo-conto {
+            width: auto !important;
+            min-height: 0 !important;
+            padding: 16px !important;
+            border-radius: 18px !important;
+            box-shadow: 0 12px 24px #00515729 !important;
+            transition: all 0.15s ease-in-out !important;
+            margin-bottom: 24px;
+
+            &:not(.-XL):hover {
+                transform: scale(1.05);
+                transform-origin: left;
+
+                .title {
+                    h2 {
+                        font-size: 18px !important;
+                    }
+                }
+
+                h3 {
+                    font-size: 16px !important; 
+                }
+
+                .saldo {
+                    font-size: 22px !important;
+                }
+            }
+        }
+
+        &.card-conti {
+            border: 1px solid map-get($bper-palette, secondary, --secondary-20);
+
+            &.-XL {
+                .bper-card__XL .icon-title-container {
+                    .title {
+                        h2 {
+                            font-weight: 400 !important;
+                        }
+                    }
+                }
+
+                &:hover {
+                    transform: unset;
+
+                    .title {
+                        h2 {
+                            font-size: 16px !important;
+                        }
+                    }
+                }
+            }
+
+            &:not(.-XL) {
+                .icon-title-container {
+                    max-width: 100%;
+                    display: grid !important;
+                    justify-content: center !important;
+                    align-items: left !important;
+                    grid-template-columns: 100% !important;
+                    column-gap: 12px;
+
+                    & {
+                        .icon i {
+                            font-size: 18px;
+                            line-height: 19px;
+                        }
+                    }
+
+                    .title h2 {
+                        align-items: flex-start !important;
+                    }
+                    
+
+                    &.title-with-icon {
+                        grid-template-columns: calc(100% - 36px) 24px !important;
+
+                        h2 {
+                            font-size: 20px !important;
+                            max-width: 100%;
+                            display: block;
+                            overflow: hidden;
+                            white-space: nowrap;
+                            text-overflow: ellipsis;
+                        }
+                    }
+                }
+
+                &.-S {
+                    .title {
+                        h2 {
+                            font-size: 18px !important;
+                        }
+                    }
+                }
+
+                &:hover {
+                    .icon-title-container {    
+                        & {
+                            .icon i {
+                                font-size: 24px;
+                                line-height: 24px;
+                            }
+                        }
+                    }
+                    h3 {
+                        font-size: 16px;
+                    }
+
+                    .description {
+                        font-size: 14px !important;
+                        line-height: 17px;
+                    }
+
+                    .saldo {
+                        font-size: 20px;
+                        line-height: 25px;
+                    }
+                }
+            }
+
+            .icon-title-container {
+                display: flex;
+                align-items: center;
+
+                .icon {
+                    img {
+                        margin-top: 0;
+                        margin-right: 4px;
+                    }
+                }
+
+                .title {
+                    min-height: 0 !important;
+                    text-align: left;
+                    margin-top: 0;
+
+                    h2 {
+                        font-size: 18px;
+                        font-weight: 600 !important;
+                        margin-bottom: 0 !important;
+                        transition: all 0.1s ease-in-out !important;
+                    }
+                }
+            }
+
+            &.nuovo-conto {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border: 1px solid map-get($bper-palette, primary, --primary-20);
+                background-color: map-get($bper-palette, primary, --primary-20);
+
+                .icon-title-container {
+                    display: flex;
+                    flex-direction: column;
+                }
+
+                .title {
+                    margin-top: 0;
+
+                    h2 {
+                        color: map-get($bper-palette, primary, --primary-600);
+                        font-weight: 600 !important;
+                        font-size: 16px !important;
+                        transition: all 0.1s ease-in-out !important;
+                    }
+                }
+
+                .mat-card-actions {
+                    .cta {
+                        display: none;
+                    }
+                }
+            }
+
+            .subtitle {
+                h3 {
+                    padding-bottom: 0 !important;
+                    margin-bottom: 13px;
+                    text-align: left;
+                    margin-top: 2px;
+                    transition: all 0.1s ease-in-out !important;
+                }
+            }
+
+            p.description {
+                font-size: 12px !important;
+                line-height: 14px;
+                margin-bottom: 4px;
+                transition: all 0.1s ease-in-out !important;
+            }
+
+            p.saldo {
+                font-size: 18px;
+                line-height: 22px;
+                color: map-get($bper-palette, primary, --primary-500);
+                transition: all 0.1s ease-in-out !important;
+            }
+
+            .cta {
+                position: absolute;
+                bottom: 12px;
+                right: 14px;
+            }
+        }
+
+        &.nuovo-conto {
+            border: 1px solid map-get($bper-palette, primary, --primary-20);
+            background-color: map-get($bper-palette, primary, --primary-20);
+
+            .title {
+                margin-top: 0;
+
+                h2 {
+                    color: map-get($bper-palette, primary, --primary-600);
+                    font-weight: 600 !important;
+                    font-size: 16px !important;
+                    transition: all 0.1s ease-in-out !important;
+                }
+            }
+        }
+
+        &.hover-scale-left:hover {
+            @include scaleLeft();
+        }
+
+        .is-rata-conto {
+
+            .icon-title-container.no-pointer {
+
+                .title {
+
+                    h2 {
+                        font-size: 18px !important;
+                        font-family: 'Kievit Pro Medium' !important;
+                        line-height: 22px !important;
+                        font-weight: unset !important;
+                    }
+                }
+            }
+
+            .subtitle h3 {
+                margin-bottom: 13px !important;
+            }
+
+            .mat-card-actions {
+                padding: 0;
+                margin-bottom: 28px;
+            }
+        }
+
+    }
+}
+
+bper-card-conto.isPreferred {
+    mat-card {
+        .is-rata-conto {
+            .icon-title-container .title h2 {
+                width: 212px;
+                overflow-x: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                display: block;
+            }
+        }
+    }
+}
+
+bper-card mat-card.mat-focus-indicator:focus {
+    border: 2px solid map-get($bper-palette, secondary, --secondary-90) !important;
+}

@@ -1,0 +1,53 @@
+<div class="master__container__email" [ngStyle]="{'height': invalidOtp ? 'auto' : '408px'}">
+    <div class="icon__container">
+        <i (click)="closeModal()" class="bper-ic-24px-close icon-bold icon" aria-label="Chiudi Finestra"
+            role="button"></i>
+    </div>
+    <h2 class="title">Controlla la tua casella di posta</h2>
+    <div class="sub-title-description">
+        <span style="margin-bottom: 0.6rem">
+            <!-- slice(0, 3) + 'xxx' + '@' + 'xx' + '.' + 'xx'  -->
+            Ti abbiamo inviato un codice a
+            <span style="font-weight: bold;">
+                {{emailValue}}
+            </span>
+        </span>
+        <span>
+            Se la mail non è corretta,
+            <!-- <bper-button class="pointer" order="ghost-accent" [label]="'puoi modificarla'"
+                (clickBtn)="openModalEmail()"></bper-button> -->
+            <span class="ghost-accent" (click)="openModalEmail()">Puoi modificarla qui</span>
+        </span>
+    </div>
+
+    <div>
+        <div class="codiceSMSText">Inserisci il codice ricevuto via email</div>
+    </div>
+
+    <div class="otpCellInputWrapper-ob-off" style="display: flex; justify-content: center; width: 100%;"
+        [ngClass]="invalidOtp ? 'otpBorderRed' : ''">
+        <bper-input-pincode input-format="otp" name="otpName1" id="otpId1" enable-tooltip="false"
+            enable-error-tooltip="false" live-validation="true" class="otpCellBlock-ob-off"
+            [attempts]="remainingAttempts" [setError]="setError" (pin)="onPinChange($event)">
+        </bper-input-pincode>
+    </div>
+
+    <div class="container-new-code" (click)="resendCode()">
+        <div class="description__new__code" style="margin-bottom: 8px;">Non hai ricevuto il codice?</div>
+        <div style="display: flex; align-items: center;">
+            <div (click)="resendCode()" class="container__info">
+                <span class="info orange">Richiedi nuovo codice</span>
+                <div class="info__icon">
+                    <img src="../../../../../../../assets/bper-svg/Icon-24pt-Arrow Right accent.svg">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="button-wrapper">
+        <button (click)="goToNextStep()" [disabled]="pinValue.length !== 6" class="button__container">
+            <span>Continua</span>
+        </button>
+    </div>
+
+</div>

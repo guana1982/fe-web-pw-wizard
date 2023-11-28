@@ -1,0 +1,28 @@
+div.box {
+    &.hero {
+        width: 100%;
+        min-height: 392px;
+        padding: 52px 40px;
+        background: linear-gradient(#29696F, #183F42);
+        border-radius: 24px;
+        .title {
+            font-size: 28px;
+            color: #FFF;
+            font-weight: bold;
+            padding-bottom: 25px;
+        }
+        div[content] {
+            color: #FFF;
+            line-height: 150%;
+            padding-bottom: 40px;
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    div.box {
+        &.hero {
+            width: 325px;
+        }
+    }
+}

@@ -1,0 +1,34 @@
+{
+    "prices": [
+        {
+            "description": "TIM",
+            "operatorCode": "TIM",
+            "price": 0.15
+        },
+        {
+            "description": "VODAFONE",
+            "operatorCode": "VODAFONE",
+            "price": 0.16
+        },
+        {
+            "description": "WIND",
+            "operatorCode": "WIND",
+            "price": 0.15
+        },
+        {
+            "description": "3 ITALIA",
+            "operatorCode": "3 ITALIA",
+            "price": 0.15
+        },
+        {
+            "description": "TISCALI",
+            "operatorCode": "TISCALI",
+            "price": 0.15
+        },
+        {
+            "description": "COOP VOCE",
+            "operatorCode": "COOP VOCE",
+            "price": 0.15
+        }
+    ]
+}

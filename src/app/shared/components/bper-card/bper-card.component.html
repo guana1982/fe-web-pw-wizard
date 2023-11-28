@@ -1,0 +1,96 @@
+<ng-container [ngSwitch]="cardType">
+    <!-- Generica -->
+    <mat-card
+        class="bper-card"
+        [ngClass]="cardClass"
+        [class.pointer]="usePointer"
+        [class.bper-card-selected]="isSelected"
+        [style.padding]="paddingCard"
+        (click)="onCardClick($event)"
+        *ngSwitchDefault
+    >
+        <ng-container [ngSwitch]="cardType === 'radioCard'">
+            <div class="icon-title-container">
+                <!-- icon -->
+                <div class="icon sfumatura-icona" *ngIf="icon || image">
+                    <i *ngIf="icon" class="bper-ic-{{ icon }}"></i>
+                    <img *ngIf="image" src="{{ image }}" alt="" />
+                </div>
+
+                <div class="title radio" [formGroup]="radioFormGroup">
+                    <bper-radio
+                        *ngSwitchCase="true"
+                        [items]="[{ label: title, checked: isSelected, value: title }]"
+                        formControlName="radioFormControl"
+                        [sizeLabel]="sizeLabel"
+                    >
+                    <div>
+                        {{ title }} <span>{{ boldTitle }}</span>
+                    </div>
+                </bper-radio>
+
+                  
+                </div>
+            </div>
+
+            <div class="subtitle" *ngSwitchCase="false">
+                <!-- subtitle -->
+                <h3>{{ subtitle }}</h3>
+            </div>
+        </ng-container>
+
+        <!-- content -->
+        <mat-card-content>
+            <p [innerHtml]="description"></p>
+        </mat-card-content>
+
+        <!-- actions -->
+        <mat-card-actions> </mat-card-actions>
+    </mat-card>
+
+    <!-- Horizontal -->
+    <mat-card class="bper-card"
+              [ngClass]="cardClass"
+              [class.pointer]="usePointer"
+              *ngSwitchCase="'horizontalCard'"
+    >
+        <!-- TITOLO + CTA -->
+        <div class="header">
+            <div>
+                <p>{{ title }}</p>
+                <p>{{ subtitle }}</p>
+            </div>
+            <div class="cta">
+                <bper-button
+                    buttonType="icon-left"
+                    order="ghost-accent"
+                    [label]="ctaLabel"
+                    [icon]="ctaIcon"
+                    textSize="16px"
+                    iconSize="24px"
+                    (clickBtn)="onClickBtn($event)"
+                ></bper-button>
+            </div>
+        </div>
+        <!-- descrizione -->
+        <div class="description">
+            <p>{{ description }}</p>
+        </div>
+    </mat-card>
+
+    <!-- Icon -->
+    <mat-card class="bper-card -{{size}}" [ngClass]="cardClass" *ngSwitchCase="'iconCard'">
+        <div class="icon-container">
+             <div class="icon" *ngIf="icon || image">
+                 <i *ngIf="icon" class="bper-ic-{{ icon }}"></i>
+                 <img *ngIf="image" src="{{ image }}" alt="" />
+             </div>
+        </div>
+
+        <div class="content">
+            <p>{{ title }}</p>
+            <p>{{ subtitle }}</p>
+        </div>
+    </mat-card>
+</ng-container>
+<!-- -Skeleton- -->

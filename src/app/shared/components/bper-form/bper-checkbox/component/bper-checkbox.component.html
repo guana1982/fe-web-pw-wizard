@@ -1,0 +1,15 @@
+<mat-checkbox
+    [labelPosition]="labelPosition"
+    [formControl]="control"
+    [checked]="checked"
+    [indeterminate]="indeterminate"
+    (change)="onCheckboxChange($event)"
+    [id]="id"
+    [name]="name"
+    [class.isIE]="isIE"
+>
+    {{ label }}</mat-checkbox
+>
+<!-- <mat-error fxLayout="row" fxLayoutAlign="start center" *ngIf="control.hasError('required')"><i class="icon-ic-warning warning-triangle"></i>{{'INVALIDATIONS.CAMPO_OBBLIG'|translate}}</mat-error> -->
+
+<!-- [ngClass]="skin ? skin : ''"  -->

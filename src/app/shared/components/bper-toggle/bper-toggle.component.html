@@ -1,0 +1,12 @@
+<mat-slide-toggle
+    [id]="id"
+    [name]="name"
+    [formControl]="control"
+    [labelPosition]="labelPosition"
+    [checked]="checked"
+    [disabled]="disable"
+    [required]="required"
+    (change)="onSlideToggleChange($event)"
+>
+    {{ toggleLabel }}
+</mat-slide-toggle>

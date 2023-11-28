@@ -1,0 +1,29 @@
+<mat-form-field
+    class="matField"
+    fxFlex="100%"
+    [appearance]="appearance"
+    [floatLabel]="floatLabelNever ? 'never' : 'always'"
+    [hideRequiredMarker]="true"
+    [class.mat-form-field-invalid]="!hideError && control.invalid && control.touched"
+>
+    <mat-label>{{ label }}</mat-label>
+    <input
+        #inputEmail
+        matInput
+        type="email"
+        [placeholder]="placeholder"
+        [formControl]="control"
+        [required]="required"
+        [id]="id"
+        [name]="name"
+        autocomplete="off"
+    />
+    <mat-error
+        fxLayout="row"
+        fxLayoutAlign="start center"
+        *ngIf="!hideError && control.invalid"
+    >
+        <i [class]="errorIcon"></i>
+        <span>{{ getErrorMessages() }}</span>
+    </mat-error>
+</mat-form-field>

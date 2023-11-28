@@ -1,0 +1,43 @@
+<swb-loader></swb-loader>
+<bper-modal modal-title="Genera OTP dispositiva" [hasLeftImage]="false" class="genera-otp">
+    <div>
+        <p>
+            Apri Smart Banking sul tuo cellulare. <br />
+            Scegli OTP Dispositiva e inquadra il QR Code riportato qui sotto.
+        </p>
+    </div>
+
+    <div class="qrcode">
+        <ng-container *ngIf="!(qrCodeLoadError$ | async); else qrCodeError">
+            <bper-qrcode [encriptedData]="QRData"></bper-qrcode>
+        </ng-container>
+    </div>
+
+    <div>
+        <p class="conferma">Per confermare inserisci il codice PIN che hai generato</p>
+    </div>
+    <div class="col-12">
+        <bper-input-pincode
+            (isValid)="getStatusForm($event)"
+            [nInputs]="6"
+            (pin)="setPin($event)"
+            [setError]="setError"
+            [attempts]="remainingAttempts"
+        >
+        </bper-input-pincode>
+    </div>
+    <div footer>
+        <bper-button order="primary" [label]="'Continua'" (clickBtn)="onContinua()" [disabled]="!statusForm"> </bper-button>
+    </div>
+</bper-modal>
+
+<ng-template #qrCodeError>
+    <errore-caricamento-dati [label]="(qrCodeLoadError$ | async).message"></errore-caricamento-dati>
+    <bper-button
+        buttonType="icon-left"
+        order="ghost-primary"
+        icon="24px-repeat"
+        label="Ricarica"
+        (clickBtn)="refreshQrCode()"
+    ></bper-button>
+</ng-template>

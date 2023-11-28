@@ -1,0 +1,17 @@
+<div class="row bper-p-sessionExpired">
+    <div class="col-6">
+        <img class="bper-p-sessionExpired__img" src="assets/bper-svg/session-expired.jpg" alt="gelato">
+    </div>
+    <div class="col-6 text-cta-container">
+        <div class="bper-p-sessionExpired__content">
+            <h1 class="bper-p-sessionExpired__title">Ops…la tua sessione è scaduta!</h1>
+            <p class="bper-p-sessionExpired__paragraph">Per garantire la sicurezza dei tuoi dati il tempo di inattività massimo è di 5 minuti.</p>
+            <p class="bper-p-sessionExpired__paragraph">Vuoi tornare in Smart Web? È semplice! Vai alla Homepage della tua Banca e fai di nuovo il login.</p>
+        </div>
+        <div class="bper-p-sessionExpired__btn">
+            <a routerLink="/auth">
+                <bper-button [buttonType]="'button'" order="primary" [label]="'Torna alla login'"></bper-button>
+            </a>
+        </div>
+    </div>
+</div>

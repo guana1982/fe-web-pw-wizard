@@ -1,0 +1,37 @@
+
+
+.tab-monitoraggio {
+
+
+.mat-tab-list::after{
+  content: ' ';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 70%;
+  border: 1px solid white;
+  transform: translate(-50%,-50%)
+}
+
+    .mat-tab-header {
+      background-color: $accentColor !important;
+      color: white;
+      align-items: center;
+      height: 2em;
+      .mat-tab-label {
+        height: 2em;
+    
+      }
+      .mat-tab-label-content {
+        color: white;
+        font-size: 0.8em;
+        .mat-tab-label-active {
+          color: white;
+        }
+      }
+    }
+
+    .mat-ink-bar {
+      background-color: transparent!important
+    }
+  }

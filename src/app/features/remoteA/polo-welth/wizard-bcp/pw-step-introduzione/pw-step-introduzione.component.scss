@@ -1,0 +1,73 @@
+@import "src/scss/variables";
+
+div.box {
+  &.hero {
+    display: flex;
+    min-height: 392px;
+    padding: 35px 35px 35px 35px;
+    position: relative;
+    background: #ffffff;
+    border-radius: 24px;
+    width: 485px;
+    flex-direction: column;
+    .title {
+      font-size: 19px;
+      color: map-get($bper-palette, primary, --primary-500);
+      font-weight: bold;
+      padding-bottom: 25px;
+      display: flex;
+      justify-content: left;
+    }
+    .sub-title-description {
+      font-size: 16px;
+      color: map-get($bper-palette, neutral, --neutral-300);
+      padding-bottom: 25px;
+      display: flex;
+      justify-content: left;
+    }
+
+    div[content] {
+      font-size: 14px;
+      color: #005157;
+      line-height: 150%;
+      padding-bottom: 40px;
+
+      display: flex;
+      justify-content: center;
+    }
+    .button-wrapper {
+      display: flex;
+      justify-content: center;
+      position: absolute;
+      bottom: 37px;
+      width: 100%;
+      margin-left: -2.5rem;
+    }
+  }
+}
+
+span.box-title {
+  min-height: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: -35px;
+  margin-bottom: 5px;
+  color: map-get($bper-palette, primary, --primary-500);
+  font-weight: bold;
+  font-size: 25px;
+}
+
+// MOBILE
+@media screen and (max-width: $bp-mobile) {
+  div.box.hero {
+    width: 95%;
+    margin: 0 auto;
+    padding: 10px 15px;
+  }
+  .button-wrapper {
+    width: 95% !important;
+    margin-left: 0rem !important;
+    position: initial !important;
+  }
+}

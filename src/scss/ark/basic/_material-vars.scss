@@ -1,0 +1,91 @@
+// Material - Variables
+@use '@angular/material' as mat;
+@use 'sass:map';
+
+$bper-primary: map-get($map: $bper-palette, $key: primary);
+$mat-bper-palette-primary: (
+    50: map-get($map: $bper-primary, $key: --primary-20),
+    100: map-get($map: $bper-primary, $key: --primary-40),
+    200: map-get($map: $bper-primary, $key: --primary-60),
+    300: map-get($map: $bper-primary, $key: --primary-80),
+    400: map-get($map: $bper-primary, $key: --primary-100),
+    500: map-get($map: $bper-primary, $key: --primary-400),
+    600: map-get($map: $bper-primary, $key: --primary-500),
+    700: map-get($map: $bper-primary, $key: --primary-600),
+    800: map-get($map: $bper-primary, $key: --primary-600),
+    900: map-get($map: $bper-primary, $key: --primary-600),
+    contrast: (
+        50: map-get($map: $bper-palette, $key: --black),
+        100: map-get($map: $bper-palette, $key: --black),
+        200: map-get($map: $bper-palette, $key: --black),
+        300: map-get($map: $bper-palette, $key: --black),
+        400: map-get($map: $bper-palette, $key: --white),
+        500: map-get($map: $bper-palette, $key: --white),
+        600: map-get($map: $bper-palette, $key: --white),
+        700: map-get($map: $bper-palette, $key: --white),
+        800: map-get($map: $bper-palette, $key: --white),
+        900: map-get($map: $bper-palette, $key: --white),
+    )
+);
+
+$mat-bper-palette-warning: (
+  50: #fffbf2,
+  100: #fff5e6,
+  200: #ffeacc,
+  300: #ffddbf,
+  400: #ffd29e,
+  500: #ffbf80,
+  600: #ffae66,
+  700: #ff9c4d,
+  800: #ff8b33,
+  900: #ff7a1a,
+  contrast: (
+    50: map-get($map: $bper-palette, $key: --black),
+    100: map-get($map: $bper-palette, $key: --black),
+    200: map-get($map: $bper-palette, $key: --black),
+    300: map-get($map: $bper-palette, $key: --black),
+    400: map-get($map: $bper-palette, $key: --black),
+    500: map-get($map: $bper-palette, $key: --white),
+    600: map-get($map: $bper-palette, $key: --white),
+    700: map-get($map: $bper-palette, $key: --white),
+    800: map-get($map: $bper-palette, $key: --white),
+    900: map-get($map: $bper-palette, $key: --white),
+  )
+);
+
+$bper-accent: map-get($map: $bper-palette, $key: accent);
+$mat-bper-palette-accent: (
+    50: map-get($map: $bper-accent, $key: --accent-20),
+    100: map-get($map: $bper-accent, $key: --accent-20),
+    200: map-get($map: $bper-accent, $key: --accent-30),
+    300: map-get($map: $bper-accent, $key: --accent-50),
+    400: map-get($map: $bper-accent, $key: --accent-60),
+    500: map-get($map: $bper-accent, $key: --accent-70),
+    600: map-get($map: $bper-accent, $key: --accent-90),
+    700: map-get($map: $bper-accent, $key: --accent-100),
+    800: map-get($map: $bper-accent, $key: --accent-100),
+    900: map-get($map: $bper-accent, $key: --accent-100),
+    contrast: (
+        50: map-get($map: $bper-palette, $key: --black),
+        100: map-get($map: $bper-palette, $key: --black),
+        200: map-get($map: $bper-palette, $key: --black),
+        300: map-get($map: $bper-palette, $key: --black),
+        400: map-get($map: $bper-palette, $key: --black),
+        500: map-get($map: $bper-palette, $key: --black),
+        600: map-get($map: $bper-palette, $key: --white),
+        700: map-get($map: $bper-palette, $key: --white),
+        800: map-get($map: $bper-palette, $key: --white),
+        900: map-get($map: $bper-palette, $key: --white),
+    )
+);
+
+$palette-primary: mat.define-palette($mat-bper-palette-primary, 600, 300, 900);
+$palette-warning:  mat.define-palette($mat-bper-palette-warning, 600, 300, 900);
+$palette-accent:  mat.define-palette($mat-bper-palette-accent, 600, 300, 900);
+// $palette-warning:  mat-palette($bper-palette, warning, --warning-30);
+
+$ark-theme: mat.define-light-theme($palette-primary, $palette-accent, $palette-warning);
+
+// Use the theme variables as needed
+$ark-theme-bg: map-get($ark-theme, background);
+$ark-theme-fg: map-get($ark-theme, foreground);

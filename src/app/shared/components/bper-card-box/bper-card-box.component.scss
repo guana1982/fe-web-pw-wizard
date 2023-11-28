@@ -1,0 +1,24 @@
+@import "src/scss/variables";
+
+.mat-card-subtitle {
+    color: map-get($bper-palette, primary, --primary-500);
+}
+
+.custom {
+    width: 250px;
+
+    @media screen and (max-width: $bp-tablet) {
+        width: 400px;
+    }
+    @media screen and (max-width: $bp-mobile) {
+        width: 220px;
+    }
+}
+
+.btn-container:empty {
+    height: 17px;
+}
+
+.btn-container:not(:empty) {
+    height: unset;
+}

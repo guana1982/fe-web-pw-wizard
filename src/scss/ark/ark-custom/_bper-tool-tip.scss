@@ -1,0 +1,43 @@
+
+.bper-tooltip {
+  position: relative;
+  min-width: 78px !important;
+  padding: 10px 16px !important;
+  overflow: visible !important;
+  background-color: map-get($bper-palette, primary, --primary-600) !important;
+  &::before {
+    content: '';
+    position: absolute;
+    height: 9px;
+    width: 9px;
+    background-color: map-get($bper-palette, primary, --primary-600) !important;
+  }
+  &.left::before {
+    top: 50% !important;
+    right: -4.5px !important;
+    transform: translateY(-50%) rotate(-45deg) !important;
+  }
+  &.right::before {
+    top: 50% !important;
+    left: -4.5px !important;
+    transform: translateY(-50%) rotate(-45deg) !important;
+  }
+  &.above::before {
+    bottom: -4.5px !important;
+    left: 50% !important;
+    transform: translateX(-50%) rotate(-45deg) !important;
+  }
+  &.below::before {
+    top: -4.5px !important;
+    left: 50% !important;
+    transform: translateX(-50%) rotate(-45deg) !important;
+  }
+}
+
+.copyIban {
+  position: relative;
+  min-width: 78px !important;
+  padding: 10px 16px !important;
+  overflow: visible !important;
+  background-color: map-get($bper-palette, primary, --primary-600) !important;
+}

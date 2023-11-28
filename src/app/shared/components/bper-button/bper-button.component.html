@@ -1,0 +1,46 @@
+<ng-container [ngSwitch]="buttonType" >
+    <button [type]="isSubmit ? 'submit' : 'button'" [class.inline]="inline"
+        (click)="onButtonClick($event)" mat-button [disabled]="disabled" [ngClass]="buttonClass" *ngSwitchDefault>
+
+        <i [style.--icon-size]="iconSize" (click)="onElementClick($event)" *ngIf="icon !== ''"
+            [class]="icon + ' ' + (iconColor || '')+ ' bper-btn--icon-left'" [ngStyle]="{transform: 'rotate(' + rotateIcon + 'deg)'}"></i>
+
+        <span [style.font-size]="textSize" (click)="onElementClick($event)">{{
+            transformText === 'uppercase' ? (label | uppercase) : label
+            }}</span>
+
+    </button>
+
+    <button [type]="isSubmit ? 'submit' : 'button'" [class.inline]="inline"
+        (click)="onButtonClick($event)" mat-icon-button [disabled]="disabled" [ngClass]="buttonClass"
+        *ngSwitchCase="'icon-left'">
+
+        <i [style.--icon-size]="iconSize" [style.font-weight]="thin? 'normal': 'bold'" (click)="onElementClick($event)"
+            *ngIf="icon !== ''"
+            [class]="icon + ' ' + (iconColor || '')+ ' bper-btn--icon-left'" [ngStyle]="{transform: 'rotate(' + rotateIcon + 'deg)'}"></i>
+
+        <span [style.font-size]="textSize" [style.font-family]="fontFamily" (click)="onElementClick($event)">{{
+            transformText === 'uppercase' ? (label | uppercase) : label
+            }}</span>
+
+    </button>
+
+    <button [type]="isSubmit ? 'submit' : 'button'" [class.inline]="inline"
+        (click)="onButtonClick($event)" mat-icon-button [disabled]="disabled" [ngClass]="buttonClass"
+        *ngSwitchCase="'icon-right'">
+        <span [style.font-size]="textSize" (click)="onElementClick($event)">{{
+            transformText === 'uppercase' ? (label | uppercase) : label
+            }}</span>
+        <i [style.--icon-size]="iconSize" [style.font-weight]="thin? 'normal': 'bold'" (click)="onElementClick($event)"
+            [class]="icon + ' ' + (iconColor || '')+ ' bper-btn--icon-right'"
+            [ngStyle]="{transform: 'rotate(' + rotateIcon + 'deg)'}"></i>
+    </button>
+
+    <button [type]="isSubmit ? 'submit' : 'button'" [class.inline]="inline"
+        (click)="onButtonClick($event)" mat-fab [disabled]="disabled" [ngClass]="buttonClass" [style.--fab-size]="fabSize"
+        *ngSwitchCase="'fab'">
+        <i [style.--icon-size]="iconSize" [style.font-weight]="thin? 'normal': 'bold'" (click)=" onElementClick($event)"
+            *ngIf="icon !== ''"
+            [class]="icon + ' ' + (iconColor || '')+ ' bper-btn--icon-fab'" [ngStyle]="{transform: 'rotate(' + rotateIcon + 'deg)'}"></i>
+    </button>
+</ng-container>

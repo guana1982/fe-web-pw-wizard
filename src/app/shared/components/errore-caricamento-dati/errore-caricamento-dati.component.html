@@ -1,0 +1,7 @@
+<div class="data-error">
+    <div>
+        <i class="bper-ic-40px-circle_exclamation_point"></i>
+        <span [innerHTML]="getLabel()"></span>
+        <div *ngIf="errorCode">({{errorCode}})</div>
+    </div>
+</div>

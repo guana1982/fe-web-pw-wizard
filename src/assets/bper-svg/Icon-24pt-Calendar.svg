@@ -1,0 +1,9 @@
+<svg id="Icon_24pt_Calendar" data-name="Icon/24pt/Calendar" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="Rettangolo_4" data-name="Rettangolo 4" fill="none" stroke="#14142b" stroke-width="1" opacity="0">
+    <rect width="24" height="24" stroke="none"/>
+    <rect x="0.5" y="0.5" width="23" height="23" fill="none"/>
+  </g>
+  <g id="Calandar" transform="translate(2.177 1.737)">
+    <path id="Unione_28" data-name="Unione 28" d="M4,20.529a4,4,0,0,1-4-4V5.61a4.005,4.005,0,0,1,4-4h.412V1a1,1,0,0,1,2,0V1.61h6.823V1a1,1,0,0,1,2,0V1.61h.41a4.006,4.006,0,0,1,4,4V16.53a4,4,0,0,1-4,4Zm-2-4a2,2,0,0,0,2,2H15.647a2,2,0,0,0,2-2V8.175H2ZM2,5.61v.564H17.648V5.61a2,2,0,0,0-2-2H4A2,2,0,0,0,2,5.61ZM12.138,16.117a1,1,0,1,1,0-2h1.61a1,1,0,0,1,0,2Zm-6.236,0a1,1,0,1,1,0-2h1.61a1,1,0,0,1,0,2Zm6.236-3.53a1,1,0,1,1,0-2h1.61a1,1,0,0,1,0,2Zm-6.236,0a1,1,0,1,1,0-2h1.61a1,1,0,0,1,0,2Z" fill="#00ae65"/>
+  </g>
+</svg>

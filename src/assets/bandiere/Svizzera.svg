@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <clipPath id="clip-path">
+      <path id="Tracciato_8994" data-name="Tracciato 8994" d="M.139,12.625A12,12,0,1,0,12.144.63,12.01,12.01,0,0,0,.139,12.625" transform="translate(-0.139 -0.63)" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Svizzera" transform="translate(-0.139 -0.63)">
+    <g id="Raggruppa_247" data-name="Raggruppa 247" transform="translate(0.139 0.63)" clip-path="url(#clip-path)">
+      <rect id="Rettangolo_765" data-name="Rettangolo 765" width="26.991" height="26.991" transform="translate(-1.495 -1.495)" fill="#d12e00"/>
+      <path id="Tracciato_8993" data-name="Tracciato 8993" d="M18.282,7.144H12.053V.915h-5.4V7.144H.425v5.4H6.653v6.229h5.4V12.544h6.229Z" transform="translate(2.647 2.154)" fill="#fff"/>
+    </g>
+  </g>
+</svg>

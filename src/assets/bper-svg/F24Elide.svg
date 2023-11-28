@@ -1,0 +1,123 @@
+<svg id="Raggruppa_30418" data-name="Raggruppa 30418" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="86" height="86" viewBox="0 0 86 86">
+  <defs>
+    <clipPath id="clip-path">
+      <rect id="Rettangolo_12316" data-name="Rettangolo 12316" width="86" height="86" fill="none"/>
+    </clipPath>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#60cc9f"/>
+      <stop offset="1" stop-color="#3a888c"/>
+    </linearGradient>
+    <filter id="Tracciato_86857" x="16.251" y="49.691" width="29.604" height="16.275" filterUnits="userSpaceOnUse">
+      <feOffset dy="2" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feFlood flood-color="#05696f" flood-opacity="0.239"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Tracciato_86858" x="16.251" y="60.381" width="29.604" height="16.275" filterUnits="userSpaceOnUse">
+      <feOffset dy="2" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="2" result="blur-2"/>
+      <feFlood flood-color="#05696f" flood-opacity="0.239"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Tracciato_86859" x="15.907" y="15.841" width="23.995" height="28.756" filterUnits="userSpaceOnUse">
+      <feOffset dy="2" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="2" result="blur-3"/>
+      <feFlood flood-color="#05696f" flood-opacity="0.239"/>
+      <feComposite operator="in" in2="blur-3"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Tracciato_86860" x="27.482" y="15.759" width="24.027" height="28.584" filterUnits="userSpaceOnUse">
+      <feOffset dy="2" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="2" result="blur-4"/>
+      <feFlood flood-color="#05696f" flood-opacity="0.239"/>
+      <feComposite operator="in" in2="blur-4"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Tracciato_86861" x="38.375" y="15.646" width="25.346" height="28.947" filterUnits="userSpaceOnUse">
+      <feOffset dy="2" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="2" result="blur-5"/>
+      <feFlood flood-color="#05696f" flood-opacity="0.239"/>
+      <feComposite operator="in" in2="blur-5"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Tracciato_86862" x="8.306" y="4.801" width="63.297" height="80.398" filterUnits="userSpaceOnUse">
+      <feOffset dy="2" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="2" result="blur-6"/>
+      <feFlood flood-color="#05696f" flood-opacity="0.239"/>
+      <feComposite operator="in" in2="blur-6"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Tracciato_86863" x="17.042" y="36.029" width="16.676" height="19.327" filterUnits="userSpaceOnUse">
+      <feOffset dy="2" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="2" result="blur-7"/>
+      <feFlood flood-color="#05696f" flood-opacity="0.239"/>
+      <feComposite operator="in" in2="blur-7"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Rettangolo_12315" x="22.993" y="35.435" width="13.98" height="19.921" filterUnits="userSpaceOnUse">
+      <feOffset dy="2" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="2" result="blur-8"/>
+      <feFlood flood-color="#05696f" flood-opacity="0.239"/>
+      <feComposite operator="in" in2="blur-8"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Tracciato_86864" x="26.183" y="35.303" width="14.266" height="20.053" filterUnits="userSpaceOnUse">
+      <feOffset dy="2" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="2" result="blur-9"/>
+      <feFlood flood-color="#05696f" flood-opacity="0.239"/>
+      <feComposite operator="in" in2="blur-9"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Tracciato_86865" x="29.252" y="35.436" width="17.764" height="20.063" filterUnits="userSpaceOnUse">
+      <feOffset dy="2" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="2" result="blur-10"/>
+      <feFlood flood-color="#05696f" flood-opacity="0.239"/>
+      <feComposite operator="in" in2="blur-10"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Tracciato_86866" x="35.653" y="37.801" width="17.402" height="17.687" filterUnits="userSpaceOnUse">
+      <feOffset dy="2" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="2" result="blur-11"/>
+      <feFlood flood-color="#05696f" flood-opacity="0.239"/>
+      <feComposite operator="in" in2="blur-11"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Raggruppa_30413" data-name="Raggruppa 30413" clip-path="url(#clip-path)">
+    <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Tracciato_86857)">
+      <path id="Tracciato_86857-2" data-name="Tracciato 86857" d="M37.717,53.691H24.388a2.137,2.137,0,0,0,0,4.275H37.717a2.137,2.137,0,1,0,0-4.275" fill="url(#linear-gradient)"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Tracciato_86858)">
+      <path id="Tracciato_86858-2" data-name="Tracciato 86858" d="M37.717,64.381H24.388a2.138,2.138,0,0,0,0,4.275H37.717a2.138,2.138,0,1,0,0-4.275" fill="url(#linear-gradient)"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Tracciato_86859)">
+      <path id="Tracciato_86859-2" data-name="Tracciato 86859" d="M31.675,23.773a2.312,2.312,0,0,0,1.614-.524,1.993,1.993,0,0,0,0-2.876,2.314,2.314,0,0,0-1.612-.528H24.564a3.291,3.291,0,0,0-1.385.261,2,2,0,0,0-1,.99,3.266,3.266,0,0,0-.267,1.4V33.955a2.748,2.748,0,0,0,.633,1.926,2.326,2.326,0,0,0,3.349.009,2.75,2.75,0,0,0,.637-1.934v-4.1H30.7a2.275,2.275,0,0,0,1.556-.507,1.844,1.844,0,0,0,.616-1.424,1.869,1.869,0,0,0-.6-1.421,2.261,2.261,0,0,0-1.569-.517H26.535V23.773Z" fill="url(#linear-gradient)"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Tracciato_86860)">
+      <path id="Tracciato_86860-2" data-name="Tracciato 86860" d="M43.08,32.34H39.519q.53-.5,1.359-1.178,1.552-1.266,2.208-1.857a7.957,7.957,0,0,0,1.426-1.8,5.148,5.148,0,0,0,.742-2.7A5.01,5.01,0,0,0,43.9,21.387a4.842,4.842,0,0,0-1.507-1.075,8.009,8.009,0,0,0-5.521-.12,5.53,5.53,0,0,0-1.853,1.178A4.964,4.964,0,0,0,33.9,23.012a4.572,4.572,0,0,0-.378,1.77,2.034,2.034,0,0,0,.571,1.481,1.951,1.951,0,0,0,1.411.569,1.843,1.843,0,0,0,1.5-.658,4.2,4.2,0,0,0,.675-1.289,6.508,6.508,0,0,1,.254-.66,1.663,1.663,0,0,1,2.206-.617,1.366,1.366,0,0,1,.534.5,1.421,1.421,0,0,1,.195.75,2.1,2.1,0,0,1-.216.887,3.888,3.888,0,0,1-.7,1.009A8.108,8.108,0,0,1,38.7,27.823a16.493,16.493,0,0,0-1.652,1.391q-1.1,1.012-2.475,2.441a4.231,4.231,0,0,0-.75,1.171,3.254,3.254,0,0,0-.344,1.3,2.146,2.146,0,0,0,.665,1.558,2.38,2.38,0,0,0,1.753.656h7.477a2.084,2.084,0,0,0,1.577-.594,1.989,1.989,0,0,0,.554-1.4,1.847,1.847,0,0,0-.727-1.515,2.713,2.713,0,0,0-1.7-.494" fill="url(#linear-gradient)"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Tracciato_86861)">
+      <path id="Tracciato_86861-2" data-name="Tracciato 86861" d="M56.768,29.563a3.477,3.477,0,0,0-1.218-.274V22.217a2.265,2.265,0,0,0-2.345-2.569,1.964,1.964,0,0,0-1.368.539,9.062,9.062,0,0,0-.962,1.135l-5.756,7.7c-.113.15-.222.306-.325.462a2.825,2.825,0,0,0-.3.59,2,2,0,0,0-.118.658,2.331,2.331,0,0,0,.746,1.783,2.862,2.862,0,0,0,1.986.643h4.3v1.09a2.451,2.451,0,0,0,.556,1.689,2.1,2.1,0,0,0,2.962.084c.024-.023.048-.047.071-.071a2.452,2.452,0,0,0,.554-1.7v-1.1a2.607,2.607,0,0,0,1.434-.408,1.743,1.743,0,0,0,.729-1.518,1.673,1.673,0,0,0-.945-1.665m-5.361-2.954v2.67H49.432Z" fill="url(#linear-gradient)"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Tracciato_86862)">
+      <path id="Tracciato_86862-2" data-name="Tracciato 86862" d="M59.6,8.8H20.312a6.008,6.008,0,0,0-6.006,6.008V73.33A3.869,3.869,0,0,0,18.175,77.2H48.4l.1-.115L65.49,57.961l.113-.128V14.809a6.008,6.008,0,0,0-6-6.008M48.505,70.645V59.693a1.735,1.735,0,0,1,1.731-1.733h9.537ZM61.329,37.271V53.687H50.236a6.007,6.007,0,0,0-6.006,6.006v13.23H20.312a1.734,1.734,0,0,1-1.733-1.73V14.809a1.735,1.735,0,0,1,1.731-1.733H59.6a1.734,1.734,0,0,1,1.731,1.733V37.271Z" fill="url(#linear-gradient)"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Tracciato_86863)">
+      <path id="Tracciato_86863-2" data-name="Tracciato 86863" d="M23.042,40.029h4.6v1.705H25.11v1.1h2.234v1.584H25.11v1.232h2.608v1.705H23.042Z" fill="url(#linear-gradient)"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Rettangolo_12315)">
+      <rect id="Rettangolo_12315-2" data-name="Rettangolo 12315" width="1.98" height="7.921" transform="translate(28.99 39.44)" fill="url(#linear-gradient)"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Tracciato_86864)">
+      <path id="Tracciato_86864-2" data-name="Tracciato 86864" d="M32.183,40.381a1.134,1.134,0,1,1,1.133,1.089,1.086,1.086,0,0,1-1.133-1.089m.132,1.551h2v5.424h-2Z" fill="url(#linear-gradient)"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Tracciato_86865)">
+      <path id="Tracciato_86865-2" data-name="Tracciato 86865" d="M35.252,44.661c0-1.738,1.034-2.86,2.453-2.86a2,2,0,0,1,1.155.319V39.436h1.98v6.04a8.828,8.828,0,0,0,.176,1.88H39.08a2.536,2.536,0,0,1-.121-.561,1.831,1.831,0,0,1-1.5.7c-1.4,0-2.211-1.012-2.211-2.838m3.608.924V43.561a.916.916,0,0,0-.66-.253c-.55,0-.858.418-.858,1.375,0,.881.286,1.3.781,1.3a.931.931,0,0,0,.737-.4" fill="url(#linear-gradient)"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Tracciato_86866)">
+      <path id="Tracciato_86866-2" data-name="Tracciato 86866" d="M41.653,44.628A2.715,2.715,0,0,1,44.514,41.8c1.694,0,2.541,1,2.541,2.849a6.115,6.115,0,0,1-.033.616H43.777a.994.994,0,0,0,1.133.814,2.885,2.885,0,0,0,1.342-.286l.583,1.188a3.911,3.911,0,0,1-2.134.506,2.714,2.714,0,0,1-3.048-2.86m3.488-.638c-.011-.5-.176-.848-.649-.848-.452,0-.693.265-.781.848Z" fill="url(#linear-gradient)"/>
+    </g>
+  </g>
+</svg>
